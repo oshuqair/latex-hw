@@ -1,0 +1,39 @@
+$ bun --filter tegaki-generator start stroke-order-report --font-file /workspace/caveat-math/work/CaveatMath-Regular.ttf -c π‖‴⁺⁻⁼⁽⁾ⁿ₊₋₌₍₎ₙℂℕℚℝℤ⅐⅑⅒⅕⅖⅗⅘⅙⅚←↑→↓↔↦⇐⇒⇔∀∁∂∃∄∅∆∇∈∉∊∋∌∏∐∑∓∖∗∘√∛∜∝∞∠∡∣∤∥∦∧∨∩∪∫∬∭∮∴∵∶∷∼≃≅≉≐≔≙≜≡≢≪≫≮≯⊂⊃⊄⊅⊆⊇⊊⊋⊕⊖⊗⊘⊙⊢⊣⊤⊥⊨⊻⊼⊽⋅⋆⌈⌉⌊⌋ -j "/workspace/caveat-math/work/reports/v3-so-sym-noref.json"
+✔ Matched 1/122 glyphs against their references
+
+glyphs processed:   122 (0 not in font)
+dataset coverage:   1/122 (0.8%)
+count agreement:    1/1 (100.0%)
+dataset applied:    1/1 (100.0%)
+  via re-grouping:  0/1 (0.0%)
+reference-guided:   0/1 (0.0%)
+mean cost (applied): 0.0666
+
+highest-cost applied matches:
+  π  cost 0.0666
+
+full report: /workspace/caveat-math/work/reports/v3-so-sym-noref.json
+{
+  totalGlyphs: 122,
+  missingGlyph: 0,
+  withReference: 1,
+  countsAgree: 1,
+  applied: 1,
+  regrouped: 0,
+  guided: 0,
+  meanCostApplied: 0.06661208298714617,
+  worstCountMismatches: [],
+  highestCostApplied: [
+    {
+      char: "π",
+      extracted: 3,
+      reference: 3,
+      meanCost: 0.06661208298714617,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }
+  ],
+}
+Exited with code 0

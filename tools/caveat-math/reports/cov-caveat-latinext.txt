@@ -1,0 +1,24 @@
+$ bun --filter tegaki-generator start coverage-report --font-file /workspace/caveat-math/Caveat-GF-Regular.ttf -c "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:!?'\"-()/\\@#\$%&*+=<>~\`^_|ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿×÷‐‒–—―‘’‚‛“”„‟†‡•…‰′″‹›⁄€™" -j /workspace/caveat-math/work/reports/cov-caveat-latinext.json
+✔ Measured 332 glyphs of Caveat
+
+glyphs processed:   332 (5 not in font, 0 without geometry strokes)
+                    geometry   raster
+mean unpainted:     0.25%      2.09%
+glyphs over 2%:     0          150
+glyphs over 5%:     0          6
+geometry vs raster: 275/332 better, 0/332 worse (by 1+ point)
+
+most unpainted with geometry (geometry / raster):
+  š  0.88% / 3.37%
+  `  0.87% / 0.90%
+  ň  0.82% / 2.99%
+  ^  0.74% / 1.64%
+  ¬  0.73% / 2.76%
+  ·  0.71% / 3.17%
+  ž  0.71% / 7.56%
+  Ě  0.70% / 2.28%
+  ŵ  0.70% / 2.11%
+  č  0.68% / 3.18%
+
+full report: /workspace/caveat-math/work/reports/cov-caveat-latinext.json
+Exited with code 0

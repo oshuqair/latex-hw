@@ -1,0 +1,24 @@
+$ bun --filter tegaki-generator start coverage-report --font-file /workspace/caveat-math/work/CaveatMath-Regular.ttf -c π‖‴⁺⁻⁼⁽⁾ⁿ₊₋₌₍₎ₙℂℕℚℝℤ⅐⅑⅒⅕⅖⅗⅘⅙⅚←↑→↓↔↦⇐⇒⇔∀∁∂∃∄∅∆∇∈∉∊∋∌∏∐∑∓∖∗∘√∛∜∝∞∠∡∣∤∥∦∧∨∩∪∫∬∭∮∴∵∶∷∼≃≅≉≐≔≙≜≡≢≪≫≮≯⊂⊃⊄⊅⊆⊇⊊⊋⊕⊖⊗⊘⊙⊢⊣⊤⊥⊨⊻⊼⊽⋅⋆⌈⌉⌊⌋ -j "/workspace/caveat-math/work/reports/v3-cov-sym-noref.json"
+✔ Measured 122 glyphs of Caveat Math
+
+glyphs processed:   122 (0 not in font, 0 without geometry strokes)
+                    geometry   raster
+mean unpainted:     0.17%      1.80%
+glyphs over 2%:     0          44
+glyphs over 5%:     0          2
+geometry vs raster: 83/122 better, 0/122 worse (by 1+ point)
+
+most unpainted with geometry (geometry / raster):
+  ≜  0.85% / 2.98%
+  ⋅  0.71% / 3.17%
+  ←  0.70% / 2.55%
+  →  0.69% / 3.53%
+  ⇔  0.57% / 2.44%
+  ↔  0.55% / 1.28%
+  ∡  0.46% / 2.55%
+  ⇒  0.46% / 2.61%
+  ⇐  0.44% / 2.79%
+  ⅖  0.43% / 1.13%
+
+full report: /workspace/caveat-math/work/reports/v3-cov-sym-noref.json
+Exited with code 0

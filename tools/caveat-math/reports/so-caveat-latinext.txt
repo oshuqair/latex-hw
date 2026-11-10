@@ -1,0 +1,233 @@
+$ bun --filter tegaki-generator start stroke-order-report --font-file /workspace/caveat-math/Caveat-GF-Regular.ttf -c "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:!?'\"-()/\\@#\$%&*+=<>~\`^_|ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿×÷‐‒–—―‘’‚‛“”„‟†‡•…‰′″‹›⁄€™" -j /workspace/caveat-math/work/reports/so-caveat-latinext.json
+✔ Matched 229/332 glyphs against their references
+
+glyphs processed:   332 (5 not in font)
+dataset coverage:   229/332 (69.0%)
+count agreement:    81/229 (35.4%)
+dataset applied:    179/229 (78.2%)
+  via re-grouping:  48/179 (26.8%)
+reference-guided:   36/229 (15.7%)
+mean cost (applied): 0.0920
+
+worst count mismatches (extracted/reference):
+  Ä  4/2
+  Ë  6/4
+  Ï  5/3
+  Ö  3/1
+  Ü  3/1
+  ä  3/1
+  ë  3/1
+  ö  3/1
+  ü  3/1
+  ÿ  4/2
+
+highest-cost applied matches:
+  Ç  cost 0.1469
+  m  cost 0.1469
+  r  cost 0.1468
+  p  cost 0.1466
+  b  cost 0.1429
+  d  cost 0.1413
+  R  cost 0.1379
+  L  cost 0.1346
+  :  cost 0.1334
+  D  cost 0.1326
+
+full report: /workspace/caveat-math/work/reports/so-caveat-latinext.json
+{
+  totalGlyphs: 332,
+  missingGlyph: 5,
+  withReference: 229,
+  countsAgree: 81,
+  applied: 179,
+  regrouped: 48,
+  guided: 36,
+  meanCostApplied: 0.09202371937120171,
+  worstCountMismatches: [
+    {
+      char: "Ä",
+      extracted: 4,
+      reference: 2,
+      meanCost: 0.09476891196971948,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "Ë",
+      extracted: 6,
+      reference: 4,
+      meanCost: 0.08312427925255092,
+      applied: true,
+      regrouped: true,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "Ï",
+      extracted: 5,
+      reference: 3,
+      meanCost: 0.08258651021574369,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "Ö",
+      extracted: 3,
+      reference: 1,
+      meanCost: 0.06633624145430646,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "Ü",
+      extracted: 3,
+      reference: 1,
+      meanCost: 0.11026801886688067,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "ä",
+      extracted: 3,
+      reference: 1,
+      meanCost: 0.1900482250189526,
+      applied: false,
+      regrouped: false,
+      guided: true,
+      warnings: [Array ...],
+    }, {
+      char: "ë",
+      extracted: 3,
+      reference: 1,
+      meanCost: 0.060534008343346116,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "ö",
+      extracted: 3,
+      reference: 1,
+      meanCost: 0.06727124530298759,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "ü",
+      extracted: 3,
+      reference: 1,
+      meanCost: 0.08193919904730136,
+      applied: true,
+      regrouped: true,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "ÿ",
+      extracted: 4,
+      reference: 2,
+      meanCost: 0.07430329997607768,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }
+  ],
+  highestCostApplied: [
+    {
+      char: "Ç",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.14693020643152654,
+      applied: true,
+      regrouped: true,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "m",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.1468916595330205,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "r",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.14679189327564493,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "p",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.1465571086624792,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "b",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.14285496930283417,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "d",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.1413248873668993,
+      applied: true,
+      regrouped: true,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "R",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.13793948684217372,
+      applied: true,
+      regrouped: true,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "L",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.1345894204827047,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: ":",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.13343844401161578,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "D",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.1326188268291732,
+      applied: true,
+      regrouped: true,
+      guided: false,
+      warnings: [Array ...],
+    }
+  ],
+}
+Exited with code 0

@@ -1,0 +1,8 @@
+- **Arithmetic & relations** (28): ∓ ≡ ≢ ≃ ≅ ≉ ∼ ∝ ∞ ≪ ≫ ≮ ≯ ≔ ≐ ≜ ≙ ∗ ∘ ⋅ ⋆ ∣ ∤ ∥ ∦ ‖ ∠ ∡
+- **Roots, big operators, calculus** (14): √ ∛ ∜ ∑ ∏ ∐ ∫ ∬ ∭ ∮ ∂ ∆ ∇ π
+- **Logic** (22): ∧ ∨ ⊻ ⊼ ⊽ ⊕ ⊖ ⊗ ⊘ ⊙ ⊤ ⊥ ⊢ ⊣ ⊨ ∀ ∃ ∄ ∴ ∵ ∶ ∷
+- **Arrows** (9): → ← ↔ ↑ ↓ ↦ ⇒ ⇐ ⇔
+- **Sets & number sets** (23): ∈ ∉ ∊ ∋ ∌ ⊂ ⊃ ⊄ ⊅ ⊆ ⊇ ⊊ ⊋ ∪ ∩ ∅ ∖ ∁ ℕ ℤ ℚ ℝ ℂ
+- **Floor / ceiling** (4): ⌊ ⌋ ⌈ ⌉
+- **Super/subscripts & primes** (13): ⁺ ⁻ ⁼ ⁽ ⁾ ⁿ ₊ ₋ ₌ ₍ ₎ ₙ ‴
+- **Fractions** (9): ⅐ ⅑ ⅒ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚

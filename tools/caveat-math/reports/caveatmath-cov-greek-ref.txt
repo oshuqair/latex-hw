@@ -1,0 +1,23 @@
+✔ Measured 52 glyphs of Caveat Math
+
+glyphs processed:   52 (0 not in font, 0 without geometry strokes)
+                    geometry   raster
+mean unpainted:     0.25%      1.54%
+glyphs over 2%:     1          10
+glyphs over 5%:     0          1
+geometry vs raster: 32/52 better, 1/52 worse (by 1+ point)
+
+most unpainted with geometry (geometry / raster):
+  θ  4.87% / 0.28%
+  Ε  0.56% / 1.73%
+  Χ  0.34% / 2.48%
+  Ρ  0.34% / 1.30%
+  ξ  0.32% / 4.12%
+  ν  0.31% / 3.16%
+  Σ  0.31% / 3.63%
+  Ν  0.31% / 1.57%
+  ι  0.26% / 1.62%
+  Α  0.26% / 1.97%
+
+full report: /workspace/caveat-math/work/greek/cov-greek-ref.json
+Exited with code 0

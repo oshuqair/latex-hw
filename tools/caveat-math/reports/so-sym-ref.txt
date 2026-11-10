@@ -1,0 +1,129 @@
+$ bun --filter tegaki-generator start stroke-order-report --font-file /workspace/caveat-math/work/CaveatMath-Regular.ttf -c π‖‴⁺⁻⁼⁽⁾ⁿ₊₋₌₍₎ₙℂℕℚℝℤ⅐⅑⅒⅕⅖⅗⅘⅙⅚←↑→↓↔↦⇐⇒⇔∀∁∂∃∄∅∆∇∈∉∊∋∌∏∐∑∓∖∗∘√∛∜∝∞∠∡∣∤∥∦∧∨∩∪∫∬∭∮∴∵∶∷∼≃≅≉≐≔≙≜≡≢≪≫≮≯⊂⊃⊄⊅⊆⊇⊊⊋⊕⊖⊗⊘⊙⊢⊣⊤⊥⊨⊻⊼⊽⋅⋆⌈⌉⌊⌋ --reference-file /workspace/caveat-math/work/caveat-math.strokes.json -j "/workspace/caveat-math/work/reports/v3-so-sym-ref.json"
+✔ Matched 110/122 glyphs against their references
+
+glyphs processed:   122 (0 not in font)
+dataset coverage:   110/122 (90.2%)
+count agreement:    110/110 (100.0%)
+dataset applied:    108/110 (98.2%)
+  via re-grouping:  1/108 (0.9%)
+reference-guided:   0/110 (0.0%)
+mean cost (applied): 0.0419
+
+highest-cost applied matches:
+  ∶  cost 0.1395
+  ∵  cost 0.1109
+  ∴  cost 0.1108
+  ≪  cost 0.0961
+  ≫  cost 0.0946
+  ∤  cost 0.0932
+  ⋅  cost 0.0791
+  ∞  cost 0.0737
+  ≔  cost 0.0684
+  ⁿ  cost 0.0590
+
+full report: /workspace/caveat-math/work/reports/v3-so-sym-ref.json
+{
+  totalGlyphs: 122,
+  missingGlyph: 0,
+  withReference: 110,
+  countsAgree: 110,
+  applied: 108,
+  regrouped: 1,
+  guided: 0,
+  meanCostApplied: 0.04189411054778848,
+  worstCountMismatches: [],
+  highestCostApplied: [
+    {
+      char: "∶",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.13954697760931029,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "∵",
+      extracted: 3,
+      reference: 3,
+      meanCost: 0.11090051674854007,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "∴",
+      extracted: 3,
+      reference: 3,
+      meanCost: 0.11076151746381695,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "≪",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.0960925268651798,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "≫",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.0945783403560678,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "∤",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.0931607169089862,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "⋅",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.07910107782215002,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "∞",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.07368097646012485,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "≔",
+      extracted: 4,
+      reference: 4,
+      meanCost: 0.06836704331728131,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "ⁿ",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.05903645081796709,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }
+  ],
+}
+Exited with code 0

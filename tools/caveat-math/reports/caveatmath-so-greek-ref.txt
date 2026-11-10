@@ -1,0 +1,128 @@
+✔ Matched 52/52 glyphs against their references
+
+glyphs processed:   52 (0 not in font)
+dataset coverage:   52/52 (100.0%)
+count agreement:    52/52 (100.0%)
+dataset applied:    52/52 (100.0%)
+  via re-grouping:  6/52 (11.5%)
+reference-guided:   0/52 (0.0%)
+mean cost (applied): 0.0376
+
+highest-cost applied matches:
+  σ  cost 0.0891
+  υ  cost 0.0790
+  ο  cost 0.0613
+  η  cost 0.0552
+  ρ  cost 0.0527
+  ε  cost 0.0500
+  α  cost 0.0499
+  κ  cost 0.0485
+  ϱ  cost 0.0473
+  τ  cost 0.0473
+
+full report: /workspace/caveat-math/work/greek/so-greek-ref.json
+{
+  totalGlyphs: 52,
+  missingGlyph: 0,
+  withReference: 52,
+  countsAgree: 52,
+  applied: 52,
+  regrouped: 6,
+  guided: 0,
+  meanCostApplied: 0.03758374175925258,
+  worstCountMismatches: [],
+  highestCostApplied: [
+    {
+      char: "σ",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.08913580281363673,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "υ",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.0789622353151912,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "ο",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.061250288860115985,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "η",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.05519179382332272,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "ρ",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.052728980746929804,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "ε",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.05002862880306152,
+      applied: true,
+      regrouped: true,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "α",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.04994575132625077,
+      applied: true,
+      regrouped: true,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "κ",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.04853185528226808,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }, {
+      char: "ϱ",
+      extracted: 1,
+      reference: 1,
+      meanCost: 0.04732646388588258,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [],
+    }, {
+      char: "τ",
+      extracted: 2,
+      reference: 2,
+      meanCost: 0.04729704250936949,
+      applied: true,
+      regrouped: false,
+      guided: false,
+      warnings: [Array ...],
+    }
+  ],
+}
+Exited with code 0

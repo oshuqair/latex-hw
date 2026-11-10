@@ -1,0 +1,19 @@
+---
+description: latex-hw project rules (always read AGENTS.md first)
+alwaysApply: true
+---
+
+Read `AGENTS.md` at the repo root before any change; it has the owner's decisions, architecture,
+writing-order and RTL rules, commands, font rebuild steps, QA checklist and backlog.
+
+Non-negotiables:
+- **Deterministic output**: the same input and options always give byte-identical SVG/JSON (no randomness,
+  time, locale or unordered iteration in the output path).
+- **Browser/Node byte parity**: `scripts/parity.sh` must report identical bytes after browser-visible changes.
+- **Tests and smoke must pass**: `npm test` all green; `npm run smoke` 0 errors and 0 warnings. Look at the
+  example PNGs after output changes.
+- **`\text{س}` form is required** for Arabic and must keep working (one script per `\text{}`).
+- **Digits are kept exactly as written** (0–9 via Caveat Math, ٠–٩ via Amiri; never converted or reordered).
+- **Two fonts only**: Amiri (Arabic) and Caveat Math (Latin, Greek, digits, math symbols). Missing glyphs get
+  added to these fonts (`tools/caveat-math`, `tools/amiri`), never a third font.
+- Don't edit `src/legacy/` casually; commit locally, don't push unless asked.
