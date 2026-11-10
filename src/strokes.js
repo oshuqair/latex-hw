@@ -12,6 +12,7 @@ const LARGE_VARIANTS = new Set(['LO', 'SO', 'S1', 'S2', 'S3', 'S4']);
 // similar pace in MathJax units.
 const SYNTH_SPEED = 2600; // units per second
 const MIN_DUR = 0.06;
+const HAMZA_CARRIERS = new Set(['أ', 'إ', 'آ', 'ؤ', 'ئ']);
 
 function bboxOfStrokes(strokes) {
   const b = emptyBox();
@@ -141,9 +142,14 @@ export function createStrokeBuilder(ctx) {
         const base = { source: 'glyph', char: g.char, font: 'arabic', glyphId: g.gid, mirrored: false, node };
         if (g.kind === 'glyph') {
           let prevEnd = 0;
+          // Amiri's bundle draws the hamza of أ إ آ ؤ ئ first, at body priority. People write
+          // the letter body first, so short strokes of those letters are moved to the mark tier.
+          const lens = g.data.s.map((st) => polylineLength(st.p));
+          const longest = Math.max(...lens);
+          const hamzaCarrier = HAMZA_CARRIERS.has(g.char);
           g.data.s.forEach((st, idx) => {
             const pts = st.p.map((p) => toRoot((g.x + p[0]) * s, (p[1] - g.y) * s));
-            const pr = st.r ?? 0;
+            const pr = st.r ?? (hamzaCarrier && lens[idx] < 0.45 * longest ? -1 : 0);
             const scaleT = Math.sqrt(sigma * s);
             const gap = idx === 0 || pr !== 0 ? 0 : Math.max(0, st.d - prevEnd) * scaleT;
             prevEnd = st.d + st.a;
