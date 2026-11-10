@@ -9,11 +9,13 @@ import { createStrokeBuilder } from './strokes.js';
 import { orderUnits } from './order.js';
 import { createArabicShaper } from './arabic.js';
 import { translateOperators, DEFAULT_DICTIONARY, parseDictionary } from './dictionary.js';
+import { autoWrapArabic } from './autowrap.js';
 import { emitSvg } from './svg.js';
 import { elementList } from './elements.js';
 
 export { keepMirroredCharacters, mirroredRelations, relationPairs, rtlStrokeDirection, rtlGlyphPolicy } from './mirror-set.js';
 export { translateOperators, parseDictionary, DEFAULT_DICTIONARY } from './dictionary.js';
+export { autoWrapArabic } from './autowrap.js';
 export { stripDelimiters } from './mathjax.js';
 export { synthShape } from './strokes.js';
 
@@ -23,6 +25,8 @@ const DEFAULTS = {
   fontSize: 48,
   scale: 1,
   translateOperators: true,
+  // Bare Arabic letters become \text{}. See src/autowrap.js for what stays a variable.
+  autoWrapArabic: true,
   color: '#000',
   // Caveat's em, relative to MathJax's em. Scales advances and strokes together.
   latinScale: 1.2,
@@ -78,6 +82,9 @@ export async function createRenderer(init = {}) {
     const stripped = stripDelimiters(source);
     const display = opts.display ?? stripped.display ?? true;
     let expression = stripped.tex;
+    // Wrap before the operator dictionary, so `\sin` is still a control word here
+    // and the `\text{جا}` it expands to is not wrapped again.
+    if (opts.autoWrapArabic) expression = autoWrapArabic(expression);
     if (rtl && opts.translateOperators) expression = translateOperators(expression, dictionary);
 
     const measure = (text, fontSize) => {

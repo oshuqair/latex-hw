@@ -17,7 +17,7 @@ Status: Phase 0 + Phase 1, plus the first Phase 2 items: Greek, Arabic punctuati
 
 ```sh
 npm install
-npm test                      # 19 tests: order rules, rtl, relations, Greek, Arabic punctuation, determinism, fallbacks, legacy path
+npm test                      # order rules, rtl, relations, Greek, Arabic punctuation, auto-wrap, determinism, fallbacks, legacy path
 npm run examples              # renders examples/*.svg|json|png|order.png
 npm run smoke                 # all of samples/arabic-samples.txt + gpt-samples.txt in rtl
 ```
@@ -35,7 +35,7 @@ node bin/latex-hw.js --help
 
 (`npm link` or `npx latex-hw …` exposes it as `latex-hw`.) Options: `--dir ltr|rtl`,
 `-j strokes.json`, `--layout elements.json`, `-s/--font-size px`, `--scale`, `--inline`,
-`--color`, `--no-mirror-relations`, `--no-translate`. Warnings go to stderr.
+`--color`, `--no-mirror-relations`, `--no-translate`, `--no-auto-wrap`. Warnings go to stderr.
 
 ### API (Node)
 
@@ -69,6 +69,7 @@ are passed in as data.
 | `display` | `true` | display or inline style (`$…$` / `\(...\)` select inline) |
 | `fontSize` / `scale` | `48` / `1` | px per em |
 | `translateOperators` | `true` | rtl: `\sin`→جا, `\log`→لو, `\lim`→نهـــا … (`dictionary.md`) |
+| `autoWrapArabic` | `true` | bare Arabic → `\text{}`: one letter is a variable (`س^2`), two adjacent letters stay two variables (`أج`; write `\text{كح}` for a two-letter name), three or more join as a word. `لا` stays one ligature. `--no-auto-wrap` turns it off |
 | `mirrorRelations` | `true` | rtl: draw `< > ≤ ≥ ≪ ≫ ⊂ ⊃ ⊆ ⊇ ∈ ∋ ∉ ⊢ ⊣ …` mirrored, as Unicode bidi does; `false` = latex-svg (LTR shapes) |
 | `penScale` | `0.85` | pen width relative to Caveat's mean stroke width |
 | `latinScale` / `arabicScale` | `1.2` / `1` | Caveat em relative to MathJax's em (advances and strokes); Amiri size factor |
@@ -115,7 +116,7 @@ animates the strokes with `stroke-dashoffset`. The demo is the only place with a
 
 | stage | file | notes |
 |---|---|---|
-| preprocess | `src/mathjax.js`, `src/dictionary.js` | delimiter stripping, operator dictionary (rtl), TeX reset per call — from latex-svg `convert.js` |
+| preprocess | `src/mathjax.js`, `src/autowrap.js`, `src/dictionary.js` | delimiter stripping, bare Arabic → `\text{}`, operator dictionary (rtl), TeX reset per call — from latex-svg `convert.js` |
 | layout | `src/mathjax.js`, `src/metrics.js` | MathJax 3.2.2 TeX→SVG, liteAdaptor, keepPhrasesTogether patch; text measured with harfbuzzjs + Amiri. Text-size advances and heights are Caveat's (`latinScale`) |
 | flatten | `src/flatten.js` | SVG tree → leaves with absolute matrices (nested `<svg>` viewports included) |
 | rtl | `src/mirror-set.js`, `src/strokes.js`, `src/elements.js` | same rule as latex-svg `rtl.js`: mirror the layout, flip glyphs back unless in `keepMirroredCharacters` (now + horizontal arrows); Bidi_Mirrored relations drawn as their mirror partner (`rtlGlyphPolicy`) |
@@ -144,6 +145,7 @@ Numbers inside Arabic text keep their left-to-right order (١٠٠).
 - **Tatweel (ـ) in نهـــا**: now drawn from the bundle (Amiri even joins ـــا into one long kashida glyph). The
   synthesized kashida stroke is gone.
 - **Hamza**: for أ إ آ ؤ ئ the letter body is drawn first and the hamza after (Amiri's data has hamza first).
+- **Bare Arabic is wrapped** (`autoWrapArabic`, default on). `س^2` becomes `\text{س}^2`, so the superscript sits on the Amiri letter. A word of three or more letters joins (`إذا`); two adjacent letters stay separate variables (`٤أج` is ٤ × أ × ج). `لا` / `لأ` / `لإ` / `لآ` stay one ligature. A two-letter name is still written `\text{كح}`. Arabic-Indic digits are wrapped (`٣٫٥`); Western digits stay Caveat. `--no-auto-wrap` leaves the old isolated letters.
 - **Arabic `\text{}` is one shaped run** even when it contains `=`, `≠`, `%`, digits or punctuation, so letters
   join and numbers keep their order. A math symbol Amiri lacks (≠ ≤ ∞ …) inside Arabic text is drawn with
   Caveat Math's strokes in its slot.

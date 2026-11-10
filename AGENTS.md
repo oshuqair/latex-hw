@@ -31,7 +31,7 @@ It reuses, rather than rewrites: **MathJax 3.2.2** (layout), the owner's **latex
 | API | `render(latex, { dir, display, scale, … })` → `{ svg, strokes, warnings }`; **direction is an input** |
 | Determinism | "Same input always gives identical strokes" — byte-identical SVG, and browser == Node bytes |
 | Fonts | **Two fonts only**: Amiri for Arabic, Caveat Math for Latin, Greek, digits 0–9 and all math symbols |
-| Arabic input | `\text{س}` form is **required** (must work). Plain `س` without `\text{}` (auto-wrap) is nice-to-have |
+| Arabic input | `\text{س}` works. Bare Arabic is wrapped (`autoWrapArabic`, default on): one letter is a variable (`س^2` → `\text{س}^2`); two adjacent letters stay two variables (`أج` → `\text{أ}\text{ج}`, so write `\text{كح}` for a two-letter name); three or more letters are one word. `لا` stays one ligature |
 | Digits | **Kept exactly as written**: 0–9 drawn with Caveat Math, ٠–٩ with Amiri; never converted |
 | Scope | School math first (fractions, roots, scripts, ∑ ∫ lim, brackets, matrices, cases, arrows) |
 | Mixing | One script per `\text{}`; no Arabic+Latin mixing inside one `\text{}` (warns `mixed-script-text`) |
@@ -54,7 +54,7 @@ latex ─► preprocess ─► MathJax TeX→SVG ─► flatten ─► rtl mirro
 |---|---|---|
 | entry | `src/index.js` | `createRenderer({ fonts, fontData, dictionary })` → `{ render, layout }`; DEFAULTS; TeX errors → drawn message + `tex-error` warning |
 | Node / browser loaders | `src/node.js`, `src/browser.js` | load `fonts/` from disk / via `fetch`; nothing else differs |
-| preprocess | `src/dictionary.js`, `dictionary.md` | rtl operator translation: `\mathop{\text{جا}}\nolimits`; limit words (lim, max, min…) keep limits |
+| preprocess | `src/autowrap.js`, `src/dictionary.js`, `dictionary.md` | bare Arabic → `\text{}` (`autoWrapArabic`); rtl operator translation: `\mathop{\text{جا}}\nolimits`; limit words (lim, max, min…) keep limits |
 | layout | `src/mathjax.js`, `src/metrics.js` | MathJax 3.2.2 (AllPackages minus noerrors/noundefined), TeX reset per call, `keepPhrasesTogether` patch (Arabic `\text{}` = one run), text widths from harfbuzzjs via `setTextMeasurer`. Text-size char advances, heights and depths are Caveat's (`latinScale` scales them); large-op and stretchy size variants stay TeX |
 | flatten | `src/flatten.js` | SVG tree → nodes (`mml`, chain) and leaves (glyph `<use>`, rule `<rect>`, text) with absolute matrices, nested `<svg>` viewports |
 | rtl policy | `src/mirror-set.js` | `keepMirroredCharacters`, `rtlStrokeDirection`, `relationPairs`, `mirroredRelations`, `rtlGlyphPolicy()` |
@@ -67,7 +67,7 @@ latex ─► preprocess ─► MathJax TeX→SVG ─► flatten ─► rtl mirro
 | geometry | `src/geom.js` | affine math, path parsing/flattening, Catmull-Rom smoothing |
 | types | `src/index.d.ts`, `node.d.ts`, `browser.d.ts` | public API types — keep in sync with the code |
 | legacy | `src/legacy/` | latex-svg converter (SVG-transform output) kept for comparison; only `text-measure.js` was rewritten (harfbuzzjs) |
-| CLI | `bin/latex-hw.js` | `--dir -o -j --layout -f -i -s --scale --color --no-mirror-relations --no-translate` |
+| CLI | `bin/latex-hw.js` | `--dir -o -j --layout -f -i -s --scale --color --no-mirror-relations --no-translate --no-auto-wrap` |
 
 Coordinates inside the pipeline: MathJax root units (1000 per em, y down). Caveat/Amiri bundle points are
 font units, baseline origin, y down. In rtl, `G(x) = 2·vb.x + vb.w − x` mirrors the whole layout.
@@ -110,6 +110,11 @@ glyph strokes, 2600 units/s for synthesized strokes, `unitPause` 0.12 s between 
    both in sync): `sin→جا cos→جتا tan→ظا cot→ظتا sec→قا csc→قتا log→لو ln→لوط lim→نهـــا …`. Non-limit
    words get `\nolimits` so `\sin^2` puts ٢ beside جا; `translateOperators:false` / `--no-translate` disables.
 5. Inside Arabic `\text{}`, a math symbol Amiri lacks (≠ ∞ …) is drawn with Caveat Math strokes in its slot.
+6. Bare Arabic is wrapped before that dictionary (`autoWrapArabic`, default on; `--no-auto-wrap` leaves the old
+   isolated letters). A single letter stays a variable, two adjacent letters stay two variables, three or more
+   join as a word, and `لا`/`لأ`/`لإ`/`لآ` stay one ligature. Arabic-Indic digits are wrapped as one number;
+   Western digits stay Caveat. Text already inside `\text{}`, `\textbf`, `\hbox` and the other text commands
+   is not wrapped again.
 
 ## 6. Determinism and parity (non-negotiable)
 
@@ -197,16 +202,13 @@ Everything needed is in the repo (`/workspace/caveat-math` on the original box i
 
 ## 11. Backlog (prioritized)
 
-1. **Plain Arabic letters without `\text{}`** (`autoWrapArabic`): today `س^2` renders each letter as its own
-   isolated `mi` with no warning; wrap Arabic runs in `\text{}` automatically (letters that are variables
-   should stay separate variables).
-2. **Slanted `|` for `\mid`**: Caveat's `|` leans strongly and can read as `/`; draw a near-vertical bar for
+1. **Slanted `|` for `\mid`**: Caveat's `|` leans strongly and can read as `/`; draw a near-vertical bar for
    `\mid`, `|x|`, `\vert` (synthesized or a new upright glyph in Caveat Math).
-3. **Cramped ≠ (and other math symbols) inside Arabic `\text{}`**: they sit in Amiri's .notdef slot (364 units);
+2. **Cramped ≠ (and other math symbols) inside Arabic `\text{}`**: they sit in Amiri's .notdef slot (364 units);
    measure with Caveat's advance instead (must stay consistent between `setTextMeasurer` and `textUnit`).
-4. **ℵ ℘ ∎ (and ᵢ ₓ ⊦ ≺ ≻)**: add to Caveat Math via `tools/caveat-math/build.py`; they use the outline fallback now.
-5. **∠ ∖ ∝ in rtl**: unmirrored pending the owner's confirmation — if confirmed, add to `RELATION_PAIRS`/policy.
-6. Remaining roadmap:
+3. **ℵ ℘ ∎ (and ᵢ ₓ ⊦ ≺ ≻)**: add to Caveat Math via `tools/caveat-math/build.py`; they use the outline fallback now.
+4. **∠ ∖ ∝ in rtl**: unmirrored pending the owner's confirmation — if confirmed, add to `RELATION_PAIRS`/policy.
+5. Remaining roadmap:
    - Phase 2 rest: Arabic size/width balance vs Caveat (`arabicScale`), letter-like symbols, Tegaki drawn order for ∘ ∷ ⋆.
    - Phase 3 broad MathJax: math alphabets (bold, calligraphic, fraktur, script, sans, mono), `\big…\Bigg`,
      `\overset/\underset/\stackrel`, `\cancel`, `\boxed`, `\phantom`, `aligned/array` + `\hline`, matrix variants,
@@ -216,13 +218,14 @@ Everything needed is in the repo (`/workspace/caveat-math` on the original box i
      the TeX font's. Glyph advances, heights and depths are Caveat's.
 
 
-7. **Subset the browser bundle** (~1.8 MB minified JS + ~2 MB font JSON): ship only the math charset of
+6. **Subset the browser bundle** (~1.8 MB minified JS + ~2 MB font JSON): ship only the math charset of
    Caveat Math, lazy-load Amiri for rtl only.
 
-## 12. Status (Nov 10, 2026)
+## 12. Status (Nov 11, 2026)
 
 Phase 0, Phase 1 and the first Phase 2 items are done: Greek (Caveat Math 1.1), Arabic punctuation and
 tatweel in the Amiri bundle, rtl relations mirrored with partner glyphs, natural tall radicals and delimiters.
+Bare Arabic is auto-wrapped (`autoWrapArabic`): `س^2` is a variable, `إذا` joins, `أج` stays أ × ج.
 Phase 4 spacing: text-size glyphs use Caveat's advance, height and depth (`src/metrics.js`), drawn from
 Caveat's origin. `latinScale` (default 1.2) scales the em and the strokes together. Large operators, stretched
 delimiters and wide accents keep their TeX boxes. MathJax 4 was not adopted: it still lays out from compiled

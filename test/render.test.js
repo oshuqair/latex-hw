@@ -45,6 +45,39 @@ test('base before superscript', async () => {
   assert.equal(r.strokes.at(-1).char, '2');
 });
 
+test('bare Arabic wraps into \\text{}: variables stay separate, words join', async () => {
+  const off = { dir: 'rtl', autoWrapArabic: false };
+  const quad = 'س = \\frac{-ب \\pm \\sqrt{ب^٢ - ٤أج}}{٢أ}';
+  const bare = await render(quad, { dir: 'rtl' });
+  const explicit = await render(QUAD_RTL, off);
+  assert.equal(bare.expression, QUAD_RTL);
+  assert.equal(bare.warnings.length, 0);
+  assert.equal(bare.svg, explicit.svg);
+
+  const word = await render('إذا', { dir: 'rtl' });
+  assert.equal(word.svg, (await render('\\text{إذا}', off)).svg);
+
+  const product = await render('أج', { dir: 'rtl' });
+  assert.equal(product.svg, (await render('\\text{أ}\\text{ج}', off)).svg);
+  assert.notEqual(product.svg, (await render('\\text{أج}', off)).svg);
+
+  const sup = await render('س^2', { dir: 'rtl' });
+  assert.equal(sup.expression, '\\text{س}^2');
+  assert.equal(sup.svg, (await render('\\text{س}^2', off)).svg);
+  const isolated = await render('س^2', off);
+  assert.notEqual(sup.svg, isolated.svg);
+
+  const kept = await render(QUAD_RTL, { dir: 'rtl' });
+  assert.equal(kept.svg, explicit.svg);
+  assert.equal((await render('x^2')).svg, (await render('x^2', { autoWrapArabic: false })).svg);
+
+  const op = await render('\\sin س', { dir: 'rtl' });
+  assert.equal(op.warnings.length, 0);
+  assert.ok(op.expression.includes('\\mathop{\\text{جا}}\\nolimits'));
+  assert.ok(op.expression.includes('\\text{س}'));
+  assert.equal(op.svg, (await render('\\sin \\text{س}', off)).svg);
+});
+
 test('rtl reads right to left at the top level', async () => {
   const r = await render('\\text{أ} + \\text{ب} = \\text{ج}', { dir: 'rtl' });
   const firstOf = (ch) => r.strokes.find((s) => s.char === ch);

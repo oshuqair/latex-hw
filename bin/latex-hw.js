@@ -23,6 +23,7 @@ Options:
       --color <css>       stroke colour (default #000)
       --no-mirror-relations  rtl: draw < > ≤ ≥ ⊂ ∈ in their LTR shape (default: mirrored, Unicode bidi style)
       --no-translate      rtl: keep \\sin, \\log... as Latin words
+      --no-auto-wrap      leave bare Arabic letters as separate math characters
   -h, --help              show this help
 
 Use single quotes in the shell so backslashes reach latex-hw.
@@ -31,7 +32,7 @@ Warnings go to stderr; the exit code is 0 even with warnings.
 `;
 
 function parse(argv) {
-  const o = { dir: 'ltr', out: null, json: null, layout: null, file: null, display: true, fontSize: 48, scale: 1, color: '#000', mirrorRelations: true, translateOperators: true, parts: [] };
+  const o = { dir: 'ltr', out: null, json: null, layout: null, file: null, display: true, fontSize: 48, scale: 1, color: '#000', mirrorRelations: true, translateOperators: true, autoWrapArabic: true, parts: [] };
   const need = (i, f) => { if (i >= argv.length) throw new Error(`Missing value for ${f}`); return argv[i]; };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
@@ -48,6 +49,8 @@ function parse(argv) {
     else if (a === '--mirror-relations') o.mirrorRelations = true;
     else if (a === '--no-mirror-relations') o.mirrorRelations = false;
     else if (a === '--no-translate') o.translateOperators = false;
+    else if (a === '--auto-wrap') o.autoWrapArabic = true;
+    else if (a === '--no-auto-wrap') o.autoWrapArabic = false;
     else if (a === '--') { o.parts.push(...argv.slice(i + 1)); break; }
     else if (a.startsWith('-') && a.length > 1) throw new Error(`Unknown option: ${a}`);
     else o.parts.push(a);
@@ -68,7 +71,7 @@ async function main() {
     if (stdin.isTTY) return void stdout.write(help);
     tex = await readStdin();
   }
-  const opts = { dir: o.dir, display: o.display, fontSize: o.fontSize, scale: o.scale, color: o.color, mirrorRelations: o.mirrorRelations, translateOperators: o.translateOperators };
+  const opts = { dir: o.dir, display: o.display, fontSize: o.fontSize, scale: o.scale, color: o.color, mirrorRelations: o.mirrorRelations, translateOperators: o.translateOperators, autoWrapArabic: o.autoWrapArabic };
   const r = await render(tex, opts);
   if (o.out) { writeFileSync(o.out, r.svg); stderr.write(`wrote ${o.out} (${r.strokes.length} strokes, ${r.totalDuration}s)\n`); }
   else stdout.write(r.svg);

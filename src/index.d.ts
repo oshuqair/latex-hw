@@ -30,6 +30,11 @@ export interface RenderOptions {
   scale?: number;
   /** rtl: \sin -> جا etc. (default true). */
   translateOperators?: boolean;
+  /** Wrap bare Arabic in \\text{}. A single letter stays its own variable (`س^2` → `\\text{س}^2`);
+   *  two adjacent letters stay two variables (`أج` → `\\text{أ}\\text{ج}`, write `\\text{كح}` for a
+   *  two-letter name); three or more letters join as a word. `لا` stays one ligature.
+   *  Arabic-Indic digits are wrapped, Western digits are not. Default true. */
+  autoWrapArabic?: boolean;
   /** Stroke colour (default '#000'). */
   color?: string;
   /** Caveat's em relative to MathJax's em (default 1.2). Scales advances, heights and strokes together. */
@@ -82,7 +87,7 @@ export interface RenderResult {
   baseline: number;
   totalDuration: number;
   warnings: Warning[];
-  /** The TeX actually sent to MathJax (after delimiter stripping and the operator dictionary). */
+  /** The TeX actually sent to MathJax (after delimiter stripping, Arabic auto-wrap and the operator dictionary). */
   expression: string;
 }
 
@@ -120,4 +125,6 @@ export const rtlStrokeDirection: Set<number>;
 export const DEFAULT_DICTIONARY: [string, string][];
 export function parseDictionary(markdown: string): [string, string][];
 export function translateOperators(tex: string, entries?: [string, string][]): string;
+/** Wrap bare Arabic letters, Arabic-Indic digits and Arabic punctuation in `\\text{}`. */
+export function autoWrapArabic(tex: string): string;
 export function stripDelimiters(input: string): { tex: string; display: boolean | null };
