@@ -1,0 +1,74 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*.*.*']
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    uses: ./.github/workflows/ci.yml
+
+  release:
+    needs: checks
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # create the GitHub Release
+      id-token: write # npm provenance
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          registry-url: https://registry.npmjs.org
+
+      - run: npm ci
+
+      - name: Tag must match package.json version
+        run: |
+          PKG_VERSION="$(node -p "require('./package.json').version")"
+          if [ "${GITHUB_REF_NAME}" != "v${PKG_VERSION}" ]; then
+            echo "::error::Tag ${GITHUB_REF_NAME} does not match package.json version ${PKG_VERSION} (expected v${PKG_VERSION})"
+            exit 1
+          fi
+          echo "PKG_VERSION=${PKG_VERSION}" >> "$GITHUB_ENV"
+
+      - name: Pack (prepack builds dist/)
+        run: |
+          npm pack
+          TGZ="$(ls ./*.tgz)"
+          echo "TGZ=${TGZ}" >> "$GITHUB_ENV"
+          # Standalone browser bundle: dist/latex-hw.browser.js + harfbuzz.wasm + fonts/ + licenses.
+          mkdir -p "latex-hw-browser-${PKG_VERSION}"
+          cp -r dist/. "latex-hw-browser-${PKG_VERSION}/"
+          cp -r LICENSE LICENSES THIRD_PARTY_NOTICES.md "latex-hw-browser-${PKG_VERSION}/"
+          zip -qr "latex-hw-browser-${PKG_VERSION}.zip" "latex-hw-browser-${PKG_VERSION}"
+          ls -l "${TGZ}" "latex-hw-browser-${PKG_VERSION}.zip"
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            "${TGZ}" \
+            "latex-hw-browser-${PKG_VERSION}.zip" \
+            dist/latex-hw.browser.js \
+            --title "${GITHUB_REF_NAME}" \
+            --generate-notes \
+            --verify-tag
+
+      - name: Publish to npm (with provenance)
+        if: env.NPM_TOKEN != ''
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --provenance --access public
+
+      - name: Skip npm publish
+        if: env.NPM_TOKEN == ''
+        run: echo "::notice title=npm publish skipped::NPM_TOKEN secret is not set. Add it under Settings > Secrets and variables > Actions to publish ${GITHUB_REF_NAME} to npm."

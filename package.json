@@ -2,6 +2,30 @@
   "name": "latex-hw",
   "version": "0.2.0",
   "description": "LaTeX math in, ordered handwriting pen strokes (SVG + JSON) out. LTR (Caveat Math) and Arabic RTL (Amiri).",
+  "keywords": [
+    "latex",
+    "math",
+    "handwriting",
+    "svg",
+    "stroke-order",
+    "animation",
+    "arabic",
+    "rtl",
+    "mathjax",
+    "tegaki",
+    "harfbuzz",
+    "education"
+  ],
+  "homepage": "https://github.com/oshuqair/latex-hw#readme",
+  "bugs": {
+    "url": "https://github.com/oshuqair/latex-hw/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oshuqair/latex-hw.git"
+  },
+  "license": "MIT AND OFL-1.1",
+  "author": "Othman Shuqair",
   "type": "module",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
@@ -29,25 +53,32 @@
     "src",
     "bin",
     "fonts",
+    "!fonts/*/reports",
+    "!fonts/*/bundle.ts",
+    "dist/latex-hw.browser.js",
+    "dist/harfbuzz.wasm",
     "dictionary.md",
     "README.md",
-    "LICENSES"
+    "LICENSE",
+    "LICENSES",
+    "THIRD_PARTY_NOTICES.md"
   ],
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "scripts": {
     "test": "node --test test/*.test.js",
     "examples": "node scripts/examples.js",
     "smoke": "node scripts/smoke.js",
     "demo": "node scripts/serve-demo.js",
-    "build:browser": "node scripts/build-browser.js"
+    "build:browser": "node scripts/build-browser.js",
+    "parity": "scripts/ci-parity.sh",
+    "prepack": "npm run build:browser"
   },
   "dependencies": {
     "harfbuzzjs": "1.6.2",
     "mathjax-full": "3.2.2"
   },
-  "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
     "esbuild": "^0.25.12"
   }

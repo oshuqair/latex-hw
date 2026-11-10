@@ -13,9 +13,11 @@ Fonts and stroke data in fonts/ are NOT under MIT:
     SIL Open Font License 1.1 (LICENSES/OFL-Amiri.txt). Copyright 2010-2022 The Amiri Project Authors.
   Stroke data derived from a font is distributed under the font's license.
 
-Runtime dependencies (installed by npm, not vendored):
-  - mathjax-full 3.2.2, Apache-2.0
-  - harfbuzzjs 1.6.2, MIT (LICENSES/MIT-harfbuzzjs.txt); dist/harfbuzz.wasm in the browser build is from it.
+Third-party code (not covered by the MIT grant above; see THIRD_PARTY_NOTICES.md):
+  - mathjax-full 3.2.2 and mhchemparser 4.2.1, Apache-2.0 (LICENSES/Apache-2.0-MathJax.txt)
+  - harfbuzzjs 1.6.2, MIT (LICENSES/MIT-harfbuzzjs.txt)
+  They are npm dependencies of the Node package; dist/latex-hw.browser.js bundles them and
+  dist/harfbuzz.wasm is copied from harfbuzzjs.
 
 -------------------------------------------------------------------------------
 MIT License

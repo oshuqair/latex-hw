@@ -3,3 +3,4 @@ scratch/
 dist/
 *.log
 tools/*/out/
+*.tgz

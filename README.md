@@ -1,5 +1,7 @@
 # latex-hw
 
+[![CI](https://github.com/oshuqair/latex-hw/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/oshuqair/latex-hw/actions/workflows/ci.yml)
+
 LaTeX math in, handwriting out. `latex-hw` lays out an expression with MathJax 3,
 optionally mirrors it for Arabic right-to-left math, and replaces every glyph,
 rule and stretchy delimiter with pen strokes. The result is a **static SVG with
@@ -8,15 +10,27 @@ so you can animate them one by one.
 
 - Latin and Greek letters, digits and math symbols: **Caveat Math** (Caveat + 122 math symbols + 52 Greek letters), Tegaki stroke data.
 - Arabic letters, Arabic-Indic digits, Arabic punctuation (، ؛ ؟ ٪ ٫ ٬ ـ) and operator words (جا, لو, نهـــا…): **Amiri**, Tegaki stroke data, shaped with harfbuzzjs (joined forms).
-- Runs in Node (>= 18) and in the browser (same code, byte-identical output; see `scripts/parity.sh`).
+- Runs in Node (>= 20) and in the browser (same code, byte-identical output; see `scripts/parity.sh`).
 - Deterministic: the same input and options always give the same bytes.
 
 Status: Phase 0 + Phase 1, plus the first Phase 2 items: Greek, Arabic punctuation, mirrored rtl relations, natural tall radicals (see "Status and known gaps").
 
-## Install and run
+## Install
 
 ```sh
-npm install
+npm install latex-hw           # once a release is published to npm (see "Releases")
+```
+
+Until then, install a release tarball from GitHub (`npm install https://github.com/oshuqair/latex-hw/releases/download/vX.Y.Z/latex-hw-X.Y.Z.tgz`)
+or work from a clone. For a page without a bundler, download `latex-hw-browser-X.Y.Z.zip` from the
+release: it holds `latex-hw.browser.js`, `harfbuzz.wasm` and `fonts/`; pass the URL of that `fonts/`
+folder to `createBrowserRenderer`. From the npm package the bundle is `latex-hw/dist/latex-hw.browser.js`
+and it finds the package's `fonts/` by itself.
+
+## Run from a clone
+
+```sh
+npm ci
 npm test                      # order rules, rtl, relations, Greek, Arabic punctuation, auto-wrap, determinism, fallbacks, legacy path
 npm run examples              # renders examples/*.svg|json|png|order.png
 npm run smoke                 # all of samples/arabic-samples.txt + gpt-samples.txt in rtl
@@ -187,10 +201,46 @@ examples/       rendered targets: .svg, .json, .png, .order.png, GIF/MP4 of rtl-
 demo/           animation demo page
 scripts/        examples, smoke test, raster/GIF helper, browser build, parity check
 test/           node:test suite (+ browser parity page)
+tools/          Caveat Math and Amiri font/stroke rebuild scripts (see AGENTS.md)
+.github/        CI and release workflows
 ```
+
+## Releases
+
+CI (`.github/workflows/ci.yml`) runs on every push and pull request to `master`, on Node 20, 22 and 24:
+`npm test`, `npm run smoke -- --strict`, the examples determinism check, `npm run build:browser`,
+the headless-Chrome browser/Node parity check (`npm run parity`), and `npm pack`. The package
+tarball, the `dist/` bundle and `examples/` are kept as run artifacts.
+
+To ship a version:
+
+1. Bump `version` in `package.json` (`npm version 0.3.0 --no-git-tag-version`), commit, push to `master`.
+2. Tag it with the same version and push the tag:
+   ```sh
+   git tag v0.3.0 && git push origin v0.3.0
+   ```
+3. `.github/workflows/release.yml` reruns all CI checks, fails if the tag is not `v` + the
+   `package.json` version, runs `npm pack` (its `prepack` builds `dist/`) and creates a GitHub
+   Release with auto-generated notes and these assets: `latex-hw-X.Y.Z.tgz`,
+   `latex-hw-browser-X.Y.Z.zip` and `latex-hw.browser.js`.
+4. npm: add an npm automation (or granular publish) token as the repository secret **`NPM_TOKEN`**
+   (Settings → Secrets and variables → Actions). With it the release job runs
+   `npm publish --provenance --access public`; without it the job skips npm and leaves a notice.
+
+The npm package holds `src/`, `bin/`, `fonts/` (without build reports), `dist/latex-hw.browser.js`,
+`dist/harfbuzz.wasm`, `dictionary.md` and the license files: about 1.8 MB packed, 5.4 MB unpacked
+(`npm pack --dry-run` lists it). `dist/` is not in git; CI and `prepack` build it.
 
 ## Licenses
 
-Code: MIT (see `LICENSE`). Fonts and their stroke data: SIL OFL 1.1 (`LICENSES/`).
-Reused upstream code: Tegaki (MIT, Gokhan Kurt) for the stroke format and the shaping
-approach; MathJax (Apache-2.0) and harfbuzzjs (MIT) as dependencies; latex-svg by its owner.
+- **Code** (`src/`, `bin/`, `scripts/`, `demo/`, `test/`, `tools/`): MIT, Copyright (c) 2026 Othman Shuqair (`LICENSE`).
+  This includes the ported latex-svg code (same author).
+- **Fonts and their stroke data** (`fonts/caveat-math/`, `fonts/amiri/`, `tools/caveat-math/Caveat-GF-Regular.ttf`):
+  SIL Open Font License 1.1, **not** MIT. Caveat Math is a modified Caveat (Copyright 2014 The Caveat
+  Project Authors); Amiri is Copyright 2010-2022 The Amiri Project Authors. Texts: `LICENSES/OFL-*.txt`
+  and `fonts/*/OFL.txt`. The OFL lets the fonts ship inside this package (with their license, never
+  sold on their own). SVGs and PNGs that latex-hw renders are documents, and the OFL does not cover them.
+  So the package's SPDX license is `MIT AND OFL-1.1`.
+- **Third-party code**: MathJax and mhchemparser (Apache-2.0) and harfbuzzjs (MIT) are npm dependencies,
+  bundled into `dist/latex-hw.browser.js`. The Tegaki generator (MIT, Gokhan Kurt) produced the stroke
+  data, and the shaping approach follows it. See `THIRD_PARTY_NOTICES.md`.

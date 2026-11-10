@@ -26,7 +26,7 @@ It reuses, rather than rewrites: **MathJax 3.2.2** (layout), the owner's **latex
 
 | Topic | Decision |
 |---|---|
-| Runtime | Browser **and** Node (>= 18), same code, ESM |
+| Runtime | Browser **and** Node (>= 20; CI runs 20, 22, 24), same code, ESM |
 | Output | Static SVG of ordered stroke paths + JSON; **no animation in the library** ("I animate them myself") |
 | API | `render(latex, { dir, display, scale, … })` → `{ svg, strokes, warnings }`; **direction is an input** |
 | Determinism | "Same input always gives identical strokes" — byte-identical SVG, and browser == Node bytes |
@@ -127,12 +127,14 @@ glyph strokes, 2600 units/s for synthesized strokes, `unitPause` 0.12 s between 
 
 ```sh
 npm install
-npm test                       # node --test test/*.test.js — 19 tests, must all pass
+npm test                       # node --test test/*.test.js — 28 tests, must all pass
+npm run smoke -- --strict      # CI form: exits 1 on any error or warning
 npm run smoke                  # 176 rtl expressions from samples/*.txt → examples/smoke-report.json; must be 0 errors, 0 warnings
 npm run examples               # all targets in scripts/examples.js → examples/*.svg|json|png|order.png (+ index.json)
 node scripts/examples.js rtl-relations   # just one target
 npm run build:browser          # dist/latex-hw.browser.js + dist/harfbuzz.wasm + dist/fonts/ (dist/ is gitignored)
 npm run demo                   # http://localhost:8787/demo/ (PORT env to change)
+npm run parity                 # after build:browser: starts the demo server, runs parity.sh rtl + ltr, stops it (what CI runs)
 ./scripts/parity.sh            # needs build:browser + demo running + google-chrome; default = rtl quadratic
 ./scripts/parity.sh '\sqrt{\frac{a}{b}}' ltr
 node bin/latex-hw.js '\text{س} < \text{٥}' --dir rtl -o out.svg -j out.json
@@ -199,6 +201,12 @@ Everything needed is in the repo (`/workspace/caveat-math` on the original box i
   letter body`, `Phase 2 start: …`. Regenerated examples go in the same commit as the change that caused them.
   Don't push unless the owner asks.
 - Scratch work goes in `scratch/` (gitignored), font build output in `tools/*/out/` (gitignored).
+- CI and releases: `.github/workflows/ci.yml` (push/PR to master, Node 20/22/24: test, smoke --strict,
+  examples byte check, build:browser, parity, npm pack + artifacts) and `release.yml` (tag `vX.Y.Z` that
+  matches `package.json`: same checks, GitHub Release with the .tgz and browser zip, `npm publish
+  --provenance` only when the `NPM_TOKEN` secret exists). The package name is `latex-hw` (free on npm as of
+  2026-11-11). Keep the `files` whitelist in `package.json` and `THIRD_PARTY_NOTICES.md` current when you
+  add a dependency, font or shipped folder. Lint edited workflows with actionlint (https://github.com/rhysd/actionlint, with shellcheck installed).
 
 ## 11. Backlog (prioritized)
 

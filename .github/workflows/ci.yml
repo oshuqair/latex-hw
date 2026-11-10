@@ -1,0 +1,83 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+  workflow_call: # release.yml runs the same checks before shipping
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  test:
+    name: test (Node ${{ matrix.node }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 22, 24]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - run: npm ci
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Smoke (all sample expressions must render clean)
+        run: npm run smoke -- --strict
+
+      - name: Examples are reproducible (determinism)
+        # PNG export needs python3 + cairosvg and is skipped here; SVG and JSON must match the committed files byte for byte.
+        run: |
+          npm run examples
+          git diff --exit-code -- 'examples/*.svg' 'examples/*.json' ':(exclude)examples/smoke-report.json'
+
+      - name: Browser bundle
+        run: npm run build:browser
+
+      - name: Browser/Node parity (headless Chrome)
+        # ubuntu-latest ships google-chrome; the check renders in Chrome from dist/ and in Node and compares bytes.
+        run: npm run parity
+
+      - name: Package
+        if: matrix.node == 22
+        run: |
+          npm pack
+          ls -l ./*.tgz
+
+      - name: Upload package
+        if: matrix.node == 22
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-package
+          path: '*.tgz'
+          if-no-files-found: error
+
+      - name: Upload browser bundle
+        if: matrix.node == 22
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-bundle
+          path: dist/
+          if-no-files-found: error
+
+      - name: Upload examples
+        if: matrix.node == 22
+        uses: actions/upload-artifact@v4
+        with:
+          name: examples
+          path: examples/
+          if-no-files-found: error

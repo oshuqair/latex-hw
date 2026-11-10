@@ -27,3 +27,8 @@ mkdirSync(new URL('../examples/', import.meta.url), { recursive: true });
 writeFileSync(new URL('../examples/smoke-report.json', import.meta.url), JSON.stringify(report, null, 1));
 console.log(`${report.total} expressions: ${clean} clean, ${report.withWarnings} with warnings, ${errors} errors (${report.ms} ms)`);
 console.log(Object.entries(codes).sort((a, b) => b[1] - a[1]).map(([k, v]) => `  ${v}× ${k}`).join('\n'));
+// --strict (used by CI): fail when any expression errors or warns.
+if (process.argv.includes('--strict') && (errors || report.withWarnings)) {
+  console.error('smoke --strict: expected every expression to be clean');
+  process.exit(1);
+}
