@@ -4,7 +4,6 @@
 // MathJax viewBox frame. This is what golden/snapshot tests compare.
 
 import { IDENTITY, mul, transformBox, emptyBox, unionBox } from './geom.js';
-import { keepMirroredCharacters, mirroredRelations, rtlStrokeDirection } from './mirror-set.js';
 import { plainChar, classifyStretchy } from './chars.js';
 
 const r2 = (n) => Math.round(n * 100) / 100;
@@ -35,11 +34,13 @@ export function elementList(flat, builder, { rtl, opts }) {
       return;
     }
     if (n.kind === 'glyph') {
-      const keep = keepMirroredCharacters.has(n.code) || rtlStrokeDirection.has(n.code) || (opts.mirrorRelations && mirroredRelations.has(n.code));
+      const policy = builder.glyphPolicy(n.code);
+      const keep = policy.keep;
       const tcx = (n.inkLocal.x0 + n.inkLocal.x1) / 2;
       const L = rtl && !keep ? [-1, 0, 0, 1, 2 * tcx, 0] : IDENTITY;
       const isSurd = (parent?.mml === 'mo') && (n.code === 0x221a);
-      out.push({ kind: isSurd ? 'stretchy' : 'glyph', ...(isSurd ? { shape: 'radical' } : {}), char: plainChar(n.code), code: n.code, variant: n.variant, font: 'latin', box: box(transformBox(G, n.box)), matrix: mat(mul(G, mul(n.M, L))), mirrored: rtl && keep, node: node(n.chain) });
+      const swapped = policy.drawCode !== n.code;
+      out.push({ kind: isSurd ? 'stretchy' : 'glyph', ...(isSurd ? { shape: 'radical' } : {}), char: plainChar(n.code), code: n.code, ...(swapped ? { drawnAs: plainChar(policy.drawCode) } : {}), variant: n.variant, font: 'latin', box: box(transformBox(G, n.box)), matrix: mat(mul(G, mul(n.M, L))), mirrored: rtl && (keep || swapped), node: node(n.chain) });
     } else if (n.kind === 'rule') {
       out.push({ kind: 'rule', box: box(transformBox(G, n.box)), node: node(n.chain) });
     } else if (n.kind === 'text') {

@@ -42,13 +42,14 @@ export interface RenderOptions {
   strokeWidth?: 'uniform' | 'stroke';
   /** Seconds between units (glyphs, rules, delimiters). Default 0.12. */
   unitPause?: number;
-  /** rtl: keep < > ≤ ≥ ⊂ ∈ … mirrored, as Unicode bidi does (default false = latex-svg behaviour). */
+  /** rtl: draw < > ≤ ≥ ⊂ ∈ ⊢ … mirrored, as Unicode bidi does (default true). A relation whose partner
+   *  is in Caveat Math is drawn as that partner (< as >), so its strokes keep their natural order. false = latex-svg behaviour. */
   mirrorRelations?: boolean;
   /** Margin around the ink in px (default 2 pen widths, min 4). */
   margin?: number;
 }
 
-export type StrokeSource = 'glyph' | 'rule' | 'delimiter' | 'radical' | 'arrow' | 'kashida' | 'dots' | 'fallback';
+export type StrokeSource = 'glyph' | 'rule' | 'delimiter' | 'radical' | 'arrow' | 'dots' | 'fallback';
 
 export interface StrokeInfo {
   index: number;
@@ -113,6 +114,8 @@ export function render(latex: string, options?: RenderOptions): Promise<RenderRe
 export function layout(latex: string, options?: RenderOptions): Promise<LayoutResult>;
 export const keepMirroredCharacters: Set<number>;
 export const mirroredRelations: Set<number>;
+export const relationPairs: Map<number, number>;
+export function rtlGlyphPolicy(code: number, options: { mirrorRelations?: boolean }, has?: (code: number) => boolean): { keep: boolean; drawCode: number; relation?: boolean };
 export const rtlStrokeDirection: Set<number>;
 export const DEFAULT_DICTIONARY: [string, string][];
 export function parseDictionary(markdown: string): [string, string][];

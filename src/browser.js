@@ -13,13 +13,13 @@ export async function loadFonts(base = new URL('../fonts/', import.meta.url).hre
     json('caveat-math/glyphData.json'),
     json('amiri/glyphData.json'),
     json('amiri/glyphDataById.json'),
-    bin('amiri/amiri-7df37680.ttf'),
+    bin('amiri/amiri-8c2d3b63.ttf'),
     bin('amiri/Amiri-Regular.ttf'),
   ]);
   return {
     fonts: {
       latin: { family: 'Caveat Math', unitsPerEm: 1000, glyphData: latinGlyphs },
-      arabic: { family: 'Amiri Tegaki 7df37680', unitsPerEm: 1000, glyphData: arabicGlyphs, glyphDataById: arabicById, features: ['ccmp', 'dnom', 'fina', 'init', 'liga', 'locl', 'medi', 'numr', 'pnum', 'rlig'] },
+      arabic: { family: 'Amiri Tegaki 8c2d3b63', unitsPerEm: 1000, glyphData: arabicGlyphs, glyphDataById: arabicById, features: ['ccmp', 'dnom', 'fina', 'init', 'liga', 'locl', 'medi', 'numr', 'pnum', 'rlig'] },
     },
     fontData: { arabic: arabicFont, arabicFull },
   };

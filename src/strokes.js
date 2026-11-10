@@ -5,7 +5,7 @@
 
 import { apply, emptyBox, addPoint, parsePath, polylineLength, sizeOf } from './geom.js';
 import { plainChar, classifyStretchy, PIECE_RANGE, DELIMITER_CODES, ALIASES } from './chars.js';
-import { keepMirroredCharacters, mirroredRelations, rtlStrokeDirection } from './mirror-set.js';
+import { rtlGlyphPolicy } from './mirror-set.js';
 
 const LARGE_VARIANTS = new Set(['LO', 'SO', 'S1', 'S2', 'S3', 'S4']);
 // Tegaki's default glyph speed is ~3000 font units/s; synthesized strokes use a
@@ -41,11 +41,18 @@ export function createStrokeBuilder(ctx) {
   const penFor = (sigma) => pen * Math.min(1, Math.max(0.7, Math.sqrt(sigma)));
   const nodeName = (chain) => chain.filter((n) => n !== 'math').join('/');
 
+  const hasCaveat = (code) => !!getCaveat(plainChar(code));
+  /** rtl drawing policy for a TeX glyph code ({ keep, drawCode, relation }); ltr: drawn as is. */
+  const glyphPolicy = (code) => (rtl ? rtlGlyphPolicy(code, opts, hasCaveat) : { keep: false, drawCode: code });
+
   /** Strokes of a TeX glyph (<use>) from Caveat Math, or the outline fallback. */
   function glyphUnit(leaf) {
     const ch = plainChar(leaf.code);
-    const keep = keepMirroredCharacters.has(leaf.code) || rtlStrokeDirection.has(leaf.code) || (opts.mirrorRelations && mirroredRelations.has(leaf.code));
-    const mirrored = rtl && keep;
+    const policy = glyphPolicy(leaf.code);
+    const keep = policy.keep;
+    // A mirrored relation drawn as its partner glyph (< as >): upright strokes, natural order.
+    const drawCh = policy.drawCode !== leaf.code ? plainChar(policy.drawCode) : ch;
+    const mirrored = rtl && (keep || drawCh !== ch);
     const sigma = sizeOf(leaf.M);
     const w = penFor(sigma);
     const tb = leaf.inkLocal; // y-up local units
@@ -53,9 +60,9 @@ export function createStrokeBuilder(ctx) {
     const tcy = (tb.y0 + tb.y1) / 2;
     const flipLocal = rtl && !keep;
     const toRoot = (X, Y) => G(...apply(leaf.M, flipLocal ? 2 * tcx - X : X, Y));
-    const base = { source: 'glyph', char: ch, font: 'latin', mirrored, node: nodeName(leaf.chain) };
+    const base = { source: 'glyph', char: ch, font: 'latin', mirrored, node: nodeName(leaf.chain), ...(drawCh !== ch ? { glyphId: drawCh } : {}) };
     const alias = ALIASES.get(leaf.code);
-    const cav = getCaveat(ch) ?? (alias ? getCaveat(alias) : null);
+    const cav = getCaveat(drawCh) ?? (alias ? getCaveat(alias) : null);
     if (!cav) return fallbackFromOutline(leaf.subpaths, toRoot, w, { ...base, source: 'fallback' }, ch, 'latin');
     const { g, ink } = cav;
     // Caveat ink is a centreline: widen by the pen to compare with TeX outlines.
@@ -69,6 +76,8 @@ export function createStrokeBuilder(ctx) {
     if (big) {
       // Large operators and size variants: fit the TeX box height.
       ky = kx = Math.max(0.3, (tb.y1 - tb.y0 - pen) / Math.max(chh, 1));
+      // A taller ( [ { is drawn longer, not fatter: keep it inside its TeX box width.
+      if (DELIMITER_CODES.has(leaf.code)) kx = Math.min(kx, Math.max(0.3, (tb.x1 - tb.x0) / Math.max(cw, 1)) * 1.1);
     } else if (alias && !getCaveat(ch)) {
       // Borrowed glyph: fit the TeX box.
       kx = Math.max(0.1, (tb.x1 - tb.x0 - pen * 0.5) / Math.max(cw, 1));
@@ -156,14 +165,25 @@ export function createStrokeBuilder(ctx) {
             if (!tiers.has(pr)) tiers.set(pr, []);
             tiers.get(pr).push({ ...base, pts, smooth: true, w: opts.strokeWidth === 'stroke' ? meanWidth(st) * s * sigma : w, dur: Math.max(MIN_DUR, st.a * scaleT), gap, priority: pr });
           });
-        } else if (g.kind === 'tatweel') {
-          // Kashida: the bundle has no strokes for U+0640, so draw the joining line
-          // itself, right to left, at Amiri's connection height (y ≈ 45 units).
-          const pts = [toRoot((g.x + g.ax + 12) * s, -45 * s), toRoot((g.x - 12) * s, -45 * s)];
-          if (!tiers.has(0)) tiers.set(0, []);
-          tiers.get(0).push({ ...base, source: 'kashida', glyphId: undefined, pts, smooth: false, w, dur: Math.max(MIN_DUR, polylineLength(pts) / SYNTH_SPEED), gap: 0, priority: 0 });
         } else if (g.kind === 'missing') {
-          if (g.outline) {
+          const cav = getCaveat(g.char);
+          if (cav) {
+            // A math symbol Amiri lacks (≠ ≤ ∞ …) inside Arabic text: Caveat Math's strokes,
+            // centred in the slot the shaper gave it, at the Arabic size.
+            const { g: cg, ink } = cav;
+            const ccx = (ink.x0 + ink.x1) / 2;
+            const k = opts.latinScale / opts.arabicScale;
+            const slotC = g.x + g.ax / 2;
+            let prevEnd = 0;
+            if (!tiers.has(0)) tiers.set(0, []);
+            cg.s.forEach((st, idx) => {
+              const pts = st.p.map((p) => toRoot((slotC + (p[0] - ccx) * k) * s, (p[1] * k - g.y) * s));
+              const scaleT = Math.sqrt(sigma * s * k);
+              const gap = idx === 0 ? 0 : Math.max(0, st.d - prevEnd) * scaleT;
+              prevEnd = st.d + st.a;
+              tiers.get(0).push({ ...base, font: 'latin', glyphId: undefined, pts, smooth: true, w, dur: Math.max(MIN_DUR, st.a * scaleT), gap, priority: 0 });
+            });
+          } else if (g.outline) {
             const sub = parsePath(g.outline, 6);
             const fb = fallbackFromOutline(sub, (x, y) => toRoot((g.x + x) * s, (-y - g.y) * s), w, base, g.char, 'arabic');
             if (!tiers.has(0)) tiers.set(0, []);
@@ -239,14 +259,27 @@ export function createStrokeBuilder(ctx) {
     const top = bar ? (bar.box.y0 + bar.box.y1) / 2 : b.y0 + w / 2;
     const bottom = b.y1 - w / 2;
     const H = bottom - top;
-    const x0 = b.x0 + w / 2;
-    const wid = b.x1 - b.x0;
-    const tickY = top + 0.62 * H;
+    const xTop = b.x1 - w * 0.3; // where the long up-stroke meets the bar
+    // A hand-drawn √ is a short tick, a steep down-stroke and a long up-stroke whose
+    // slant grows with the height. TeX's tall surds are narrow (≈0.9 em for any
+    // height), so the sign may reach left of its box, by up to half the box width.
+    let tick = Math.min(0.05 * H + 90, 240);
+    let down = 0.07 * H + 80;
+    let up = Math.min(0.2 * H, 450 + 0.1 * H);
+    const need = tick + down + up;
+    const room = xTop - (b.x0 + w / 2);
+    const maxRoom = room + 0.5 * (b.x1 - b.x0);
+    const k = need <= room ? Math.min(room / need, 1.7) : need <= maxRoom ? 1 : maxRoom / need;
+    tick *= k; down *= k; up *= k;
+    const xBottom = xTop - up;
+    const xTickEnd = xBottom - down;
+    const x0 = xTickEnd - tick;
+    const tickY = bottom - Math.min(0.42 * H, 300 + 0.25 * H);
     const pts = [
-      [x0, tickY + Math.min(0.06 * H, 40)],
-      [x0 + Math.min(0.22 * wid, 0.1 * H + 70), tickY - Math.min(0.08 * H, 60)],
-      [x0 + Math.min(0.5 * wid, 0.2 * H + 200), bottom],
-      [b.x1 - w * 0.3, top],
+      [x0, tickY + 0.25 * tick],
+      [xTickEnd, tickY - 0.2 * tick],
+      [xBottom, bottom],
+      [xTop, top],
     ];
     if (bar) pts.push([bar.box.x1 - w / 2, top]);
     const root = pts.map(([x, y]) => G(x, y));
@@ -265,7 +298,7 @@ export function createStrokeBuilder(ctx) {
     return false;
   }
 
-  return { glyphUnit, textUnit, ruleUnit, stretchyUnit, radicalUnit, isStretchyMo, G };
+  return { glyphUnit, textUnit, ruleUnit, stretchyUnit, radicalUnit, isStretchyMo, glyphPolicy, G };
 }
 
 /** Shapes in the LTR frame, inside box b (y down), pen width w. */
@@ -277,8 +310,11 @@ export function synthShape(shape, b, w) {
   const curve = (n, f) => Array.from({ length: n + 1 }, (_, i) => f(i / n));
   switch (shape) {
     case 'lparen': {
-      const xr = x1 - 0.05 * W, xl = x0 + 0.1 * W;
-      return [{ smooth: true, pts: curve(10, (t) => [xr - (xr - xl) * Math.sin(Math.PI * t) ** 0.8, y0 + H * t]) }];
+      // A hand-drawn ( is one long arc: its ends stay inside the box, the bow grows
+      // with the height (a tall paren is not just a stretched small one).
+      const xr = x1 - 0.1 * W;
+      const depth = Math.min(0.8 * W, 0.16 * H + 0.2 * W);
+      return [{ smooth: true, pts: curve(12, (t) => [xr - depth * Math.sin(Math.PI * t) ** 0.65, y0 + H * t]) }];
     }
     case 'rparen': return flipX(synthShape('lparen', b, w));
     case 'lbrack': return [{ smooth: false, pts: [[x1, y0], [x0 + 0.15 * W, y0], [x0 + 0.15 * W, y1], [x1, y1]] }];

@@ -45,7 +45,7 @@
    "source": "glyph",
    "char": "أ",
    "font": "arabic",
-   "glyphId": "11",
+   "glyphId": "13",
    "mirrored": false,
    "node": "mrow/mtable/mtr/mtd/mtext",
    "priority": 0
@@ -60,7 +60,7 @@
    "source": "glyph",
    "char": "أ",
    "font": "arabic",
-   "glyphId": "11",
+   "glyphId": "13",
    "mirrored": false,
    "node": "mrow/mtable/mtr/mtd/mtext",
    "priority": -1
@@ -75,7 +75,7 @@
    "source": "glyph",
    "char": "أ",
    "font": "arabic",
-   "glyphId": "11",
+   "glyphId": "13",
    "mirrored": false,
    "node": "mrow/mtable/mtr/mtd/mtext",
    "priority": -1
@@ -90,7 +90,7 @@
    "source": "glyph",
    "char": "ب",
    "font": "arabic",
-   "glyphId": "16",
+   "glyphId": "18",
    "mirrored": false,
    "node": "mrow/mtable/mtr/mtd/mtext",
    "priority": 0
@@ -105,7 +105,7 @@
    "source": "glyph",
    "char": "ب",
    "font": "arabic",
-   "glyphId": "16",
+   "glyphId": "18",
    "mirrored": false,
    "node": "mrow/mtable/mtr/mtd/mtext",
    "priority": -1
@@ -120,7 +120,7 @@
    "source": "glyph",
    "char": "ج",
    "font": "arabic",
-   "glyphId": "20",
+   "glyphId": "22",
    "mirrored": false,
    "node": "mrow/mtable/mtr/mtd/mtext",
    "priority": 0
@@ -135,7 +135,7 @@
    "source": "glyph",
    "char": "ج",
    "font": "arabic",
-   "glyphId": "20",
+   "glyphId": "22",
    "mirrored": false,
    "node": "mrow/mtable/mtr/mtd/mtext",
    "priority": 0
@@ -150,7 +150,7 @@
    "source": "glyph",
    "char": "ج",
    "font": "arabic",
-   "glyphId": "20",
+   "glyphId": "22",
    "mirrored": false,
    "node": "mrow/mtable/mtr/mtd/mtext",
    "priority": 0
@@ -165,7 +165,7 @@
    "source": "glyph",
    "char": "د",
    "font": "arabic",
-   "glyphId": "23",
+   "glyphId": "25",
    "mirrored": false,
    "node": "mrow/mtable/mtr/mtd/mtext",
    "priority": 0
@@ -208,7 +208,7 @@
    "source": "glyph",
    "char": "أ",
    "font": "arabic",
-   "glyphId": "11",
+   "glyphId": "13",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -223,7 +223,7 @@
    "source": "glyph",
    "char": "أ",
    "font": "arabic",
-   "glyphId": "11",
+   "glyphId": "13",
    "mirrored": false,
    "node": "mtext",
    "priority": -1
@@ -238,7 +238,7 @@
    "source": "glyph",
    "char": "أ",
    "font": "arabic",
-   "glyphId": "11",
+   "glyphId": "13",
    "mirrored": false,
    "node": "mtext",
    "priority": -1
@@ -253,7 +253,7 @@
    "source": "glyph",
    "char": "د",
    "font": "arabic",
-   "glyphId": "23",
+   "glyphId": "25",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -282,7 +282,7 @@
    "source": "glyph",
    "char": "ب",
    "font": "arabic",
-   "glyphId": "16",
+   "glyphId": "18",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -297,7 +297,7 @@
    "source": "glyph",
    "char": "ب",
    "font": "arabic",
-   "glyphId": "16",
+   "glyphId": "18",
    "mirrored": false,
    "node": "mtext",
    "priority": -1
@@ -312,7 +312,7 @@
    "source": "glyph",
    "char": "ج",
    "font": "arabic",
-   "glyphId": "20",
+   "glyphId": "22",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -327,7 +327,7 @@
    "source": "glyph",
    "char": "ج",
    "font": "arabic",
-   "glyphId": "20",
+   "glyphId": "22",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -342,7 +342,7 @@
    "source": "glyph",
    "char": "ج",
    "font": "arabic",
-   "glyphId": "20",
+   "glyphId": "22",
    "mirrored": false,
    "node": "mtext",
    "priority": 0

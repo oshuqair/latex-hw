@@ -1,0 +1,149 @@
+{
+  "family": "Amiri",
+  "tolerance": 2,
+  "geometryOptions": {
+    "cornerAngleThresholdDeg": 45,
+    "cornerWindowRatio": 0.025,
+    "cutAlignToleranceDeg": 40,
+    "maxCutLengthFactor": 3,
+    "junctionCompactness": 1.5,
+    "continuationMaxBendDeg": 75,
+    "resampleSpacingRatio": 0.02,
+    "medialMethod": "straight-skeleton",
+    "strokeOrder": "auto",
+    "hanLocale": "ja",
+    "referenceDatasets": [
+      "kanjivg",
+      "makemeahanzi",
+      "hershey-script",
+      "hershey-simplex",
+      "hershey-greek",
+      "letterpaths-print",
+      "letterpaths-cursive",
+      "hangul",
+      "punctuation"
+    ],
+    "extraction": "ink-graph",
+    "inkSampleRatio": 0.006,
+    "inkSpurTolerance": 0.5,
+    "inkJunctionReach": 0.6,
+    "inkSerifs": true
+  },
+  "summary": {
+    "totalGlyphs": 8,
+    "missingGlyph": 0,
+    "geometryFailed": 0,
+    "geometry": {
+      "mean": 0.004672701389227655,
+      "over2": 0,
+      "over5": 0
+    },
+    "raster": {
+      "mean": 0.10289491342850095,
+      "over2": 7,
+      "over5": 5
+    },
+    "geometryWorse": 0,
+    "geometryBetter": 7,
+    "worstGeometry": [
+      {
+        "char": "،",
+        "geometry": 0.007145982207962666,
+        "raster": 0.016479509989791453,
+        "warnings": []
+      },
+      {
+        "char": "؛",
+        "geometry": 0.006971880083662561,
+        "raster": 0.09760632117127585,
+        "warnings": []
+      },
+      {
+        "char": "٬",
+        "geometry": 0.005641280902604944,
+        "raster": 0.0429732868757259,
+        "warnings": []
+      },
+      {
+        "char": "؟",
+        "geometry": 0.005500101853738032,
+        "raster": 0.13261356691790588,
+        "warnings": []
+      },
+      {
+        "char": "ؤ",
+        "geometry": 0.004893964110929853,
+        "raster": 0.05084284937466014,
+        "warnings": []
+      },
+      {
+        "char": "٫",
+        "geometry": 0.0042706964520367935,
+        "raster": 0.03646517739816032,
+        "warnings": []
+      },
+      {
+        "char": "٪",
+        "geometry": 0.0026981450252951096,
+        "raster": 0.3214165261382799,
+        "warnings": []
+      },
+      {
+        "char": "ـ",
+        "geometry": 0.00025956047759127874,
+        "raster": 0.12476206956220799,
+        "warnings": []
+      }
+    ]
+  },
+  "glyphs": [
+    {
+      "char": "ؤ",
+      "geometry": 0.004893964110929853,
+      "raster": 0.05084284937466014,
+      "warnings": []
+    },
+    {
+      "char": "،",
+      "geometry": 0.007145982207962666,
+      "raster": 0.016479509989791453,
+      "warnings": []
+    },
+    {
+      "char": "؛",
+      "geometry": 0.006971880083662561,
+      "raster": 0.09760632117127585,
+      "warnings": []
+    },
+    {
+      "char": "؟",
+      "geometry": 0.005500101853738032,
+      "raster": 0.13261356691790588,
+      "warnings": []
+    },
+    {
+      "char": "٪",
+      "geometry": 0.0026981450252951096,
+      "raster": 0.3214165261382799,
+      "warnings": []
+    },
+    {
+      "char": "٫",
+      "geometry": 0.0042706964520367935,
+      "raster": 0.03646517739816032,
+      "warnings": []
+    },
+    {
+      "char": "٬",
+      "geometry": 0.005641280902604944,
+      "raster": 0.0429732868757259,
+      "warnings": []
+    },
+    {
+      "char": "ـ",
+      "geometry": 0.00025956047759127874,
+      "raster": 0.12476206956220799,
+      "warnings": []
+    }
+  ]
+}

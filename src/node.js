@@ -17,14 +17,14 @@ export function loadDefaultFonts() {
     fonts: {
       latin: { family: 'Caveat Math', unitsPerEm: 1000, glyphData: json('../fonts/caveat-math/glyphData.json') },
       arabic: {
-        family: 'Amiri Tegaki 7df37680',
+        family: 'Amiri Tegaki 8c2d3b63',
         unitsPerEm: 1000,
         glyphData: json('../fonts/amiri/glyphData.json'),
         glyphDataById: json('../fonts/amiri/glyphDataById.json'),
         features: ['ccmp', 'dnom', 'fina', 'init', 'liga', 'locl', 'medi', 'numr', 'pnum', 'rlig'],
       },
     },
-    fontData: { arabic: bytes('../fonts/amiri/amiri-7df37680.ttf'), arabicFull: bytes('../fonts/amiri/Amiri-Regular.ttf') },
+    fontData: { arabic: bytes('../fonts/amiri/amiri-8c2d3b63.ttf'), arabicFull: bytes('../fonts/amiri/Amiri-Regular.ttf') },
   };
 }
 

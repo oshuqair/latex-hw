@@ -1,19 +1,10 @@
 {
  "total": 176,
- "clean": 148,
- "withWarnings": 28,
+ "clean": 176,
+ "withWarnings": 0,
  "errors": 0,
- "ms": 444,
- "warningCounts": {
-  "fallback-glyph θ": 14,
-  "fallback-glyph λ": 3,
-  "fallback-glyph ρ": 3,
-  "fallback-glyph Δ": 4,
-  "fallback-glyph α": 2,
-  "fallback-glyph β": 2,
-  "fallback-glyph γ": 2,
-  "fallback-glyph ٫": 2
- },
+ "ms": 452,
+ "warningCounts": {},
  "rows": [
   {
    "i": 0,
@@ -74,14 +65,14 @@
   {
    "i": 8,
    "set": "arabic-samples",
-   "strokes": 28,
+   "strokes": 25,
    "warnings": "",
    "tex": "\\lim_{\\text{س} \\to \\text{٠}} \\frac{\\sin \\text{س}}{\\text{س}} = \\text{١}"
   },
   {
    "i": 9,
    "set": "arabic-samples",
-   "strokes": 30,
+   "strokes": 27,
    "warnings": "",
    "tex": "\\lim_{\\text{س} \\to \\infty} \\frac{\\text{س}^\\text{٢} + \\text{١}}{\\text{س}^\\text{٢}} = \\text{١}"
   },
@@ -123,8 +114,8 @@
   {
    "i": 15,
    "set": "arabic-samples",
-   "strokes": 23,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 21,
+   "warnings": "",
    "tex": "\\sin^\\text{٢}\\theta + \\cos^\\text{٢}\\theta = \\text{١}"
   },
   {
@@ -179,8 +170,8 @@
   {
    "i": 23,
    "set": "arabic-samples",
-   "strokes": 21,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 20,
+   "warnings": "",
    "tex": "\\text{ش} = \\text{ق}\\text{ف}\\cos\\theta"
   },
   {
@@ -221,8 +212,8 @@
   {
    "i": 29,
    "set": "arabic-samples",
-   "strokes": 7,
-   "warnings": "fallback-glyph:λ",
+   "strokes": 8,
+   "warnings": "",
    "tex": "\\text{ع} = \\text{ت}\\lambda"
   },
   {
@@ -249,8 +240,8 @@
   {
    "i": 33,
    "set": "arabic-samples",
-   "strokes": 9,
-   "warnings": "fallback-glyph:ρ",
+   "strokes": 8,
+   "warnings": "",
    "tex": "\\rho = \\frac{\\text{ك}}{\\text{ح}}"
   },
   {
@@ -347,8 +338,8 @@
   {
    "i": 47,
    "set": "arabic-samples",
-   "strokes": 17,
-   "warnings": "fallback-glyph:Δ",
+   "strokes": 14,
+   "warnings": "",
    "tex": "\\Delta\\text{ط} = \\Delta\\text{ح} - \\text{د}\\Delta\\text{س}"
   },
   {
@@ -480,8 +471,8 @@
   {
    "i": 66,
    "set": "gpt-samples",
-   "strokes": 15,
-   "warnings": "fallback-glyph:Δ",
+   "strokes": 14,
+   "warnings": "",
    "tex": "\\Delta=\\text{ب}^{\\text{٢}}-\\text{٤}\\text{أ}\\text{ج}"
   },
   {
@@ -739,64 +730,64 @@
   {
    "i": 103,
    "set": "gpt-samples",
-   "strokes": 37,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 36,
+   "warnings": "",
    "tex": "\\sin(\\theta)=\\frac{\\text{الضلع المقابل}}{\\text{الوتر}}"
   },
   {
    "i": 104,
    "set": "gpt-samples",
-   "strokes": 39,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 38,
+   "warnings": "",
    "tex": "\\cos(\\theta)=\\frac{\\text{الضلع المجاور}}{\\text{الوتر}}"
   },
   {
    "i": 105,
    "set": "gpt-samples",
-   "strokes": 50,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 49,
+   "warnings": "",
    "tex": "\\tan(\\theta)=\\frac{\\text{الضلع المقابل}}{\\text{الضلع المجاور}}"
   },
   {
    "i": 106,
    "set": "gpt-samples",
-   "strokes": 27,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 25,
+   "warnings": "",
    "tex": "\\sin^{\\text{٢}}(\\theta)+\\cos^{\\text{٢}}(\\theta)=\\text{١}"
   },
   {
    "i": 107,
    "set": "gpt-samples",
-   "strokes": 24,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 22,
+   "warnings": "",
    "tex": "\\text{١}+\\tan^{\\text{٢}}(\\theta)=\\sec^{\\text{٢}}(\\theta)"
   },
   {
    "i": 108,
    "set": "gpt-samples",
-   "strokes": 32,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 29,
+   "warnings": "",
    "tex": "\\sin(\\text{٢}\\theta)=\\text{٢}\\sin(\\theta)\\cos(\\theta)"
   },
   {
    "i": 109,
    "set": "gpt-samples",
-   "strokes": 38,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 35,
+   "warnings": "",
    "tex": "\\cos(\\text{٢}\\theta)=\\cos^{\\text{٢}}(\\theta)-\\sin^{\\text{٢}}(\\theta)"
   },
   {
    "i": 110,
    "set": "gpt-samples",
-   "strokes": 34,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 33,
+   "warnings": "",
    "tex": "\\text{أ}^{\\text{٢}}=\\text{ب}^{\\text{٢}}+\\text{ج}^{\\text{٢}}-\\text{٢}\\text{ب}\\text{ج}\\cos(\\theta)"
   },
   {
    "i": 111,
    "set": "gpt-samples",
-   "strokes": 35,
-   "warnings": "fallback-glyph:α fallback-glyph:β fallback-glyph:γ",
+   "strokes": 33,
+   "warnings": "",
    "tex": "\\frac{\\text{أ}}{\\sin(\\alpha)}=\\frac{\\text{ب}}{\\sin(\\beta)}=\\frac{\\text{ج}}{\\sin(\\gamma)}"
   },
   {
@@ -1005,8 +996,8 @@
   {
    "i": 141,
    "set": "gpt-samples",
-   "strokes": 21,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 20,
+   "warnings": "",
    "tex": "\\text{ش}=\\text{ق}\\text{ف}\\cos\\theta"
   },
   {
@@ -1068,8 +1059,8 @@
   {
    "i": 150,
    "set": "gpt-samples",
-   "strokes": 24,
-   "warnings": "fallback-glyph:Δ",
+   "strokes": 23,
+   "warnings": "",
    "tex": "\\text{الدفع}=\\text{ق}\\text{ز}=\\Delta(\\text{ك}\\text{ع})"
   },
   {
@@ -1089,22 +1080,22 @@
   {
    "i": 153,
    "set": "gpt-samples",
-   "strokes": 18,
-   "warnings": "fallback-glyph:ρ",
+   "strokes": 17,
+   "warnings": "",
    "tex": "\\text{ض}=\\text{ض}_{\\text{٠}}+\\rho\\text{ج}\\text{ع}"
   },
   {
    "i": 154,
    "set": "gpt-samples",
-   "strokes": 35,
-   "warnings": "fallback-glyph:ρ",
+   "strokes": 34,
+   "warnings": "",
    "tex": "\\text{قوة الطفو}=\\rho_{\\text{مائع}}\\text{ج}\\text{ح}_{\\text{مزاح}}"
   },
   {
    "i": 155,
    "set": "gpt-samples",
-   "strokes": 22,
-   "warnings": "fallback-glyph:Δ",
+   "strokes": 21,
+   "warnings": "",
    "tex": "\\text{ط}_{\\text{حرارية}}=\\text{ك}\\text{س}\\Delta\\text{د}"
   },
   {
@@ -1159,22 +1150,22 @@
   {
    "i": 163,
    "set": "gpt-samples",
-   "strokes": 40,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 39,
+   "warnings": "",
    "tex": "\\text{ق}_{\\text{مغناطيسية}}=\\text{ش}\\text{ع}\\text{ب}\\sin\\theta"
   },
   {
    "i": 164,
    "set": "gpt-samples",
-   "strokes": 42,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 41,
+   "warnings": "",
    "tex": "\\text{فيض مغناطيسي}=\\text{ب}\\text{م}\\cos\\theta"
   },
   {
    "i": 165,
    "set": "gpt-samples",
-   "strokes": 7,
-   "warnings": "fallback-glyph:λ",
+   "strokes": 8,
+   "warnings": "",
    "tex": "\\text{ع}=\\lambda\\text{ت}"
   },
   {
@@ -1187,8 +1178,8 @@
   {
    "i": 167,
    "set": "gpt-samples",
-   "strokes": 22,
-   "warnings": "fallback-glyph:θ",
+   "strokes": 20,
+   "warnings": "",
    "tex": "\\text{ن}_{\\text{١}}\\sin\\theta_{\\text{١}}=\\text{ن}_{\\text{٢}}\\sin\\theta_{\\text{٢}}"
   },
   {
@@ -1215,22 +1206,22 @@
   {
    "i": 171,
    "set": "gpt-samples",
-   "strokes": 16,
-   "warnings": "fallback-glyph:λ",
+   "strokes": 17,
+   "warnings": "",
    "tex": "\\text{ن}(\\text{ز})=\\text{ن}_{\\text{٠}}e^{-\\lambda\\text{ز}}"
   },
   {
    "i": 172,
    "set": "gpt-samples",
    "strokes": 14,
-   "warnings": "fallback-glyph:٫",
+   "warnings": "",
    "tex": "\\pi\\approx\\text{٣٫١٤١٥٩}"
   },
   {
    "i": 173,
    "set": "gpt-samples",
    "strokes": 12,
-   "warnings": "fallback-glyph:٫",
+   "warnings": "",
    "tex": "e\\approx\\text{٢٫٧١٨٢٨}"
   },
   {
@@ -1243,8 +1234,8 @@
   {
    "i": 175,
    "set": "gpt-samples",
-   "strokes": 32,
-   "warnings": "fallback-glyph:α fallback-glyph:β fallback-glyph:γ",
+   "strokes": 30,
+   "warnings": "",
    "tex": "\\text{الزوايا}\n\\alpha = \\text{٣٠}^\\circ\n\\beta = \\text{٤٥}^\\circ\n\\gamma = \\text{٦٠}^\\circ"
   }
  ]

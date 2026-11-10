@@ -1,0 +1,97 @@
+{
+  "family": "Amiri",
+  "summary": {
+    "totalGlyphs": 8,
+    "missingGlyph": 0,
+    "withReference": 0,
+    "countsAgree": 0,
+    "applied": 0,
+    "regrouped": 0,
+    "guided": 0,
+    "meanCostApplied": 0,
+    "worstCountMismatches": [],
+    "highestCostApplied": []
+  },
+  "glyphs": [
+    {
+      "char": "ؤ",
+      "extracted": 3,
+      "reference": null,
+      "meanCost": null,
+      "applied": false,
+      "regrouped": false,
+      "guided": false,
+      "warnings": []
+    },
+    {
+      "char": "،",
+      "extracted": 1,
+      "reference": null,
+      "meanCost": null,
+      "applied": false,
+      "regrouped": false,
+      "guided": false,
+      "warnings": []
+    },
+    {
+      "char": "؛",
+      "extracted": 2,
+      "reference": null,
+      "meanCost": null,
+      "applied": false,
+      "regrouped": false,
+      "guided": false,
+      "warnings": []
+    },
+    {
+      "char": "؟",
+      "extracted": 4,
+      "reference": null,
+      "meanCost": null,
+      "applied": false,
+      "regrouped": false,
+      "guided": false,
+      "warnings": []
+    },
+    {
+      "char": "٪",
+      "extracted": 3,
+      "reference": null,
+      "meanCost": null,
+      "applied": false,
+      "regrouped": false,
+      "guided": false,
+      "warnings": []
+    },
+    {
+      "char": "٫",
+      "extracted": 1,
+      "reference": null,
+      "meanCost": null,
+      "applied": false,
+      "regrouped": false,
+      "guided": false,
+      "warnings": []
+    },
+    {
+      "char": "٬",
+      "extracted": 1,
+      "reference": null,
+      "meanCost": null,
+      "applied": false,
+      "regrouped": false,
+      "guided": false,
+      "warnings": []
+    },
+    {
+      "char": "ـ",
+      "extracted": 1,
+      "reference": null,
+      "meanCost": null,
+      "applied": false,
+      "regrouped": false,
+      "guided": false,
+      "warnings": []
+    }
+  ]
+}

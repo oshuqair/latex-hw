@@ -9,7 +9,6 @@
 
 import { Blob, Buffer as HbBuffer, Direction, Face, Feature, Font, shape } from 'harfbuzzjs';
 
-const TATWEEL = 0x640;
 // Features harfbuzz manages itself for Arabic; the bundle's list is filtered like Tegaki does.
 const SHAPER_MANAGED = new Set(['init', 'medi', 'fina', 'isol', 'rlig', 'frac', 'numr', 'dnom']);
 
@@ -48,7 +47,7 @@ export function createArabicShaper({ font, fullFont, bundle }) {
   /**
    * Shape one run right to left. Returns glyphs in visual order (left to right)
    * with `x` = pen position from the run's left edge in font units, plus
-   * `kind`: 'glyph' (strokes in the bundle), 'space', 'tatweel', or 'missing'.
+   * `kind`: 'glyph' (strokes in the bundle), 'space', or 'missing'.
    */
   function shapeRun(text) {
     if (cache.has(text)) return cache.get(text);
@@ -85,10 +84,7 @@ export function createArabicShaper({ font, fullFont, bundle }) {
       let kind = 'glyph';
       let outline = null;
       if (/\s/u.test(ch)) kind = 'space';
-      else if (cp === TATWEEL && (g.codepoint === 0 || !byId[gid])) {
-        kind = 'tatweel';
-        ax = full ? run(full, ch)[0]?.xAdvance ?? 185 : 185;
-      } else if (g.codepoint === 0 || !byId[gid]) {
+      else if (g.codepoint === 0 || !byId[gid]) {
         kind = 'missing';
         if (full && full.cmap.has(cp)) {
           const alone = run(full, ch)[0];

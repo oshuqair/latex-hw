@@ -31,7 +31,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "msup/mtext",
    "priority": 0
@@ -46,7 +46,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "msup/mtext",
    "priority": 0
@@ -61,7 +61,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "msup/mtext",
    "priority": 0
@@ -76,7 +76,7 @@
    "source": "glyph",
    "char": "ن",
    "font": "arabic",
-   "glyphId": "41",
+   "glyphId": "43",
    "mirrored": false,
    "node": "msup/mtext",
    "priority": 0
@@ -91,7 +91,7 @@
    "source": "glyph",
    "char": "ن",
    "font": "arabic",
-   "glyphId": "41",
+   "glyphId": "43",
    "mirrored": false,
    "node": "msup/mtext",
    "priority": -1
@@ -134,7 +134,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -149,7 +149,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -164,7 +164,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -207,7 +207,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mfrac/msup/mtext",
    "priority": 0
@@ -222,7 +222,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mfrac/msup/mtext",
    "priority": 0
@@ -237,7 +237,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mfrac/msup/mtext",
    "priority": 0
@@ -252,7 +252,7 @@
    "source": "glyph",
    "char": "ن",
    "font": "arabic",
-   "glyphId": "41",
+   "glyphId": "43",
    "mirrored": false,
    "node": "mfrac/msup/TeXAtom/mtext",
    "priority": 0
@@ -267,7 +267,7 @@
    "source": "glyph",
    "char": "ن",
    "font": "arabic",
-   "glyphId": "41",
+   "glyphId": "43",
    "mirrored": false,
    "node": "mfrac/msup/TeXAtom/mtext",
    "priority": -1
@@ -310,7 +310,7 @@
    "source": "glyph",
    "char": "١",
    "font": "arabic",
-   "glyphId": "953",
+   "glyphId": "961",
    "mirrored": false,
    "node": "mfrac/msup/TeXAtom/mtext",
    "priority": 0
@@ -337,7 +337,7 @@
    "source": "glyph",
    "char": "ن",
    "font": "arabic",
-   "glyphId": "41",
+   "glyphId": "43",
    "mirrored": false,
    "node": "mfrac/mrow/mtext",
    "priority": 0
@@ -352,7 +352,7 @@
    "source": "glyph",
    "char": "ن",
    "font": "arabic",
-   "glyphId": "41",
+   "glyphId": "43",
    "mirrored": false,
    "node": "mfrac/mrow/mtext",
    "priority": -1
@@ -395,7 +395,7 @@
    "source": "glyph",
    "char": "١",
    "font": "arabic",
-   "glyphId": "953",
+   "glyphId": "961",
    "mirrored": false,
    "node": "mfrac/mrow/mtext",
    "priority": 0
@@ -438,7 +438,7 @@
    "source": "glyph",
    "char": "ث",
    "font": "arabic",
-   "glyphId": "19",
+   "glyphId": "21",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -453,7 +453,7 @@
    "source": "glyph",
    "char": "ث",
    "font": "arabic",
-   "glyphId": "19",
+   "glyphId": "21",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -468,7 +468,7 @@
    "source": "glyph",
    "char": "ث",
    "font": "arabic",
-   "glyphId": "19",
+   "glyphId": "21",
    "mirrored": false,
    "node": "mtext",
    "priority": -1

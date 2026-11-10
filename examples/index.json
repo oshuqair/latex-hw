@@ -85,6 +85,36 @@
   "latex": "\\vec{F} = m\\vec{a}, \\quad a_1 + \\cdots + a_n, \\quad \\left\\{ x \\mid x > 0 \\right\\}"
  },
  {
+  "name": "ltr-greek-trig",
+  "dir": "ltr",
+  "latex": "\\sin^2\\theta + \\cos^2\\theta = 1, \\quad \\Delta = b^2 - 4ac, \\quad \\alpha + \\beta = \\pi - \\gamma"
+ },
+ {
+  "name": "rtl-discriminant",
+  "dir": "rtl",
+  "latex": "\\Delta = \\text{ب}^\\text{٢} - \\text{٤}\\text{أ}\\text{ج}"
+ },
+ {
+  "name": "rtl-relations",
+  "dir": "rtl",
+  "latex": "\\text{س} < \\text{٥} \\le \\text{ص}"
+ },
+ {
+  "name": "rtl-sets",
+  "dir": "rtl",
+  "latex": "\\text{أ} \\subset \\text{ب}, \\quad \\text{س} \\in \\text{ط}, \\quad \\text{ص} \\notin \\text{ع}, \\quad \\text{س} \\ge \\text{٢} \\Rightarrow \\text{س}^\\text{٢} \\ge \\text{٤}"
+ },
+ {
+  "name": "ltr-tall-roots",
+  "dir": "ltr",
+  "latex": "\\sqrt{\\frac{a}{b}} + \\sqrt[3]{\\frac{x^2+1}{\\frac{y}{2}}} + \\left( \\frac{\\frac{a}{b}}{c} \\right) + \\left[ \\begin{matrix} a \\\\ b \\\\ c \\end{matrix} \\right]"
+ },
+ {
+  "name": "rtl-punctuation",
+  "dir": "rtl",
+  "latex": "\\text{إذا كان س ≠ ٠، فإن ص = ٢٫٥؛ لماذا؟} \\quad \\text{٪٥٠} \\quad \\text{١٬٠٠٠} \\quad \\text{رؤوس}"
+ },
+ {
   "name": "rtl-phrase-arrow",
   "dir": "rtl",
   "latex": "\\text{النسبة المئوية} = \\frac{\\text{الجزء}}{\\text{الكل}} \\times \\text{١٠٠} \\Rightarrow \\text{س} \\xrightarrow{} \\text{ص}"

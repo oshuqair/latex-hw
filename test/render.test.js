@@ -72,11 +72,56 @@ test('Arabic dots come after letter bodies within a word', async () => {
   assert.ok(pr.slice(firstDot).every((p) => p < 0));
 });
 
-test('operator words: \\sin -> جا joined, \\lim -> نهـــا with kashida strokes', async () => {
+test('operator words: \\sin -> جا joined, \\lim -> نهـــا with tatweel strokes from Amiri', async () => {
   const r = await render('\\lim_{\\text{س} \\to \\text{٠}} \\sin \\text{س}', { dir: 'rtl' });
   assert.equal(r.warnings.length, 0);
-  assert.ok(r.strokes.some((s) => s.source === 'kashida'));
+  // Amiri joins ـــا into one long kashida glyph; it is drawn from the bundle.
+  const tatweel = r.strokes.filter((s) => s.char === 'ـ');
+  assert.ok(tatweel.length >= 1);
+  assert.ok(tatweel.every((s) => s.source === 'glyph' && s.font === 'arabic'));
+  assert.ok(!r.strokes.some((s) => s.source === 'kashida'));
   assert.ok(r.expression.includes('\\mathop{\\text{جا}}\\nolimits'));
+});
+
+test('Arabic punctuation and ؤ come from the Amiri bundle, no fallback', async () => {
+  const r = await render('\\text{ؤ، ؛ ؟ ٪ ٣٫٥ ١٬٠٠٠}', { dir: 'rtl' });
+  assert.equal(r.warnings.length, 0);
+  for (const c of 'ؤ،؛؟٪٫٬') assert.ok(r.strokes.some((s) => s.char === c && s.source === 'glyph'), c);
+  // ؤ: the waw body before its hamza
+  const w = r.strokes.filter((s) => s.char === 'ؤ');
+  assert.ok(w[0].priority === 0 && w.at(-1).priority < 0);
+});
+
+test('Greek letters are drawn from Caveat Math, no fallback', async () => {
+  const tex = '\\alpha\\beta\\gamma\\delta\\epsilon\\varepsilon\\zeta\\eta\\theta\\vartheta\\iota\\kappa\\lambda\\mu\\nu\\xi\\pi\\varpi\\rho\\varrho\\sigma\\varsigma\\tau\\upsilon\\phi\\varphi\\chi\\psi\\omega' +
+    '\\Gamma\\Delta\\Theta\\Lambda\\Xi\\Pi\\Sigma\\Upsilon\\Phi\\Psi\\Omega';
+  for (const dir of ['ltr', 'rtl']) {
+    const r = await render(tex, { dir });
+    assert.deepEqual(r.warnings, [], dir);
+    assert.ok(r.strokes.every((s) => s.source === 'glyph'), dir);
+  }
+});
+
+test('rtl relations are mirrored by default and drawn as their partner glyph', async () => {
+  const r = await render('\\text{س} < \\text{٥} \\le \\text{ص}', { dir: 'rtl' });
+  const lt = r.strokes.filter((s) => s.char === '<');
+  const le = r.strokes.filter((s) => s.char === '≤');
+  assert.ok(lt.length && lt.every((s) => s.mirrored && s.glyphId === '>'));
+  assert.ok(le.length && le.every((s) => s.mirrored && s.glyphId === '≥'));
+  // the point of < faces س, which is on the right in rtl
+  const pts = [...lt[0].d.matchAll(/(-?[\d.]+) (-?[\d.]+)/g)].map((m) => Number(m[1]));
+  const mid = pts[Math.floor(pts.length / 2)];
+  assert.ok(mid > pts[0] && mid > pts.at(-1), 'vertex on the right');
+  const off = await render('\\text{س} < \\text{٥}', { dir: 'rtl', mirrorRelations: false });
+  assert.ok(off.strokes.filter((s) => s.char === '<').every((s) => !s.glyphId));
+});
+
+test('rtl relations without a partner in Caveat Math are reflected (⊨)', async () => {
+  const l = await layout('a \\models b', { dir: 'rtl' });
+  const m = l.elements.find((e) => e.char === '⊨');
+  assert.ok(m.mirrored && !m.drawnAs);
+  const l2 = await layout('a \\in B', { dir: 'rtl' });
+  assert.equal(l2.elements.find((e) => e.char === '∈').drawnAs, '∋');
 });
 
 test('horizontal arrows are mirrored in rtl', async () => {
@@ -93,9 +138,9 @@ test('digits keep their order in rtl text (١٠٠)', async () => {
 });
 
 test('unknown glyph falls back to its outline with a warning, never silently', async () => {
-  const r = await render('\\theta');
+  const r = await render('\\aleph');
   assert.ok(r.strokes.length > 0);
-  assert.ok(r.warnings.some((w) => w.code === 'fallback-glyph' && w.char === 'θ'));
+  assert.ok(r.warnings.some((w) => w.code === 'fallback-glyph' && w.char === 'ℵ'));
 });
 
 test('TeX errors are reported and drawn, not dropped', async () => {

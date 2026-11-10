@@ -35,6 +35,9 @@ function isConnectedPhrase(wrapper) {
   const variant = wrapper.parent?.variant;
   const text = wrapper.node?.getText?.() ?? '';
   if (!variant || variant === '-explicitFont' || [...text].length < 2) return false;
+  // Arabic text (one script per \\text{}): the whole run goes to the Arabic shaper,
+  // digits, = ≠ % and punctuation included, so letters join and numbers keep their order.
+  if (/[\u0600-\u06FF]/u.test(text) && !/[A-Za-z]/.test(text)) return true;
   const chars = wrapper.remappedText(text, variant);
   if (chars.length < 2) return false;
   let letters = 0;

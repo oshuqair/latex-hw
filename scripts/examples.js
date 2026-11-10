@@ -23,6 +23,12 @@ export const TARGETS = [
   ['rtl-cases', 'rtl', '\\text{د}(\\text{س}) = \\begin{cases} \\text{أ}\\text{س} + \\text{ب} & \\text{س} < \\text{٠} \\\\ \\text{س}^\\text{٢} & \\text{٠} \\le \\text{س} < \\text{١} \\\\ \\text{س} + \\text{١} & \\text{س} \\ge \\text{١} \\end{cases}'],
   ['rtl-brackets', 'rtl', '\\left[ \\begin{matrix} \\text{أ} & \\text{ب} \\\\ \\text{ج} & \\text{د} \\end{matrix} \\right] \\left\\langle \\begin{matrix} \\text{س}_\\text{١} \\\\ \\text{س}_\\text{٢} \\end{matrix} \\right\\rangle \\left\\lfloor \\text{س} \\right\\rfloor \\left\\lceil \\frac{\\text{أ}}{\\text{ب}} \\right\\rceil'],
   ['ltr-vec-dots', 'ltr', '\\vec{F} = m\\vec{a}, \\quad a_1 + \\cdots + a_n, \\quad \\left\\{ x \\mid x > 0 \\right\\}'],
+  ['ltr-greek-trig', 'ltr', '\\sin^2\\theta + \\cos^2\\theta = 1, \\quad \\Delta = b^2 - 4ac, \\quad \\alpha + \\beta = \\pi - \\gamma'],
+  ['rtl-discriminant', 'rtl', '\\Delta = \\text{ب}^\\text{٢} - \\text{٤}\\text{أ}\\text{ج}'],
+  ['rtl-relations', 'rtl', '\\text{س} < \\text{٥} \\le \\text{ص}'],
+  ['rtl-sets', 'rtl', '\\text{أ} \\subset \\text{ب}, \\quad \\text{س} \\in \\text{ط}, \\quad \\text{ص} \\notin \\text{ع}, \\quad \\text{س} \\ge \\text{٢} \\Rightarrow \\text{س}^\\text{٢} \\ge \\text{٤}'],
+  ['ltr-tall-roots', 'ltr', '\\sqrt{\\frac{a}{b}} + \\sqrt[3]{\\frac{x^2+1}{\\frac{y}{2}}} + \\left( \\frac{\\frac{a}{b}}{c} \\right) + \\left[ \\begin{matrix} a \\\\ b \\\\ c \\end{matrix} \\right]'],
+  ['rtl-punctuation', 'rtl', '\\text{إذا كان س ≠ ٠، فإن ص = ٢٫٥؛ لماذا؟} \\quad \\text{٪٥٠} \\quad \\text{١٬٠٠٠} \\quad \\text{رؤوس}'],
   ['rtl-phrase-arrow', 'rtl', '\\text{النسبة المئوية} = \\frac{\\text{الجزء}}{\\text{الكل}} \\times \\text{١٠٠} \\Rightarrow \\text{س} \\xrightarrow{} \\text{ص}'],
 ];
 

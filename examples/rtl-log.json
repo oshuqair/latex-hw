@@ -17,7 +17,7 @@
    "source": "glyph",
    "char": "ل",
    "font": "arabic",
-   "glyphId": "370",
+   "glyphId": "378",
    "mirrored": false,
    "node": "TeXAtom/mtext",
    "priority": 0
@@ -32,7 +32,7 @@
    "source": "glyph",
    "char": "و",
    "font": "arabic",
-   "glyphId": "398",
+   "glyphId": "406",
    "mirrored": false,
    "node": "TeXAtom/mtext",
    "priority": 0
@@ -61,7 +61,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -76,7 +76,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -91,7 +91,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -106,7 +106,7 @@
    "source": "glyph",
    "char": "ص",
    "font": "arabic",
-   "glyphId": "29",
+   "glyphId": "31",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -121,7 +121,7 @@
    "source": "glyph",
    "char": "ص",
    "font": "arabic",
-   "glyphId": "29",
+   "glyphId": "31",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -178,7 +178,7 @@
    "source": "glyph",
    "char": "ل",
    "font": "arabic",
-   "glyphId": "370",
+   "glyphId": "378",
    "mirrored": false,
    "node": "TeXAtom/mtext",
    "priority": 0
@@ -193,7 +193,7 @@
    "source": "glyph",
    "char": "و",
    "font": "arabic",
-   "glyphId": "398",
+   "glyphId": "406",
    "mirrored": false,
    "node": "TeXAtom/mtext",
    "priority": 0
@@ -208,7 +208,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -223,7 +223,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -238,7 +238,7 @@
    "source": "glyph",
    "char": "س",
    "font": "arabic",
-   "glyphId": "27",
+   "glyphId": "29",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -281,7 +281,7 @@
    "source": "glyph",
    "char": "ل",
    "font": "arabic",
-   "glyphId": "370",
+   "glyphId": "378",
    "mirrored": false,
    "node": "TeXAtom/mtext",
    "priority": 0
@@ -296,7 +296,7 @@
    "source": "glyph",
    "char": "و",
    "font": "arabic",
-   "glyphId": "398",
+   "glyphId": "406",
    "mirrored": false,
    "node": "TeXAtom/mtext",
    "priority": 0
@@ -311,7 +311,7 @@
    "source": "glyph",
    "char": "ص",
    "font": "arabic",
-   "glyphId": "29",
+   "glyphId": "31",
    "mirrored": false,
    "node": "mtext",
    "priority": 0
@@ -326,7 +326,7 @@
    "source": "glyph",
    "char": "ص",
    "font": "arabic",
-   "glyphId": "29",
+   "glyphId": "31",
    "mirrored": false,
    "node": "mtext",
    "priority": 0

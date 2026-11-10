@@ -11,7 +11,7 @@ import { translateOperators, DEFAULT_DICTIONARY, parseDictionary } from './dicti
 import { emitSvg } from './svg.js';
 import { elementList } from './elements.js';
 
-export { keepMirroredCharacters, mirroredRelations, rtlStrokeDirection } from './mirror-set.js';
+export { keepMirroredCharacters, mirroredRelations, relationPairs, rtlStrokeDirection, rtlGlyphPolicy } from './mirror-set.js';
 export { translateOperators, parseDictionary, DEFAULT_DICTIONARY } from './dictionary.js';
 export { stripDelimiters } from './mathjax.js';
 export { synthShape } from './strokes.js';
@@ -29,7 +29,7 @@ const DEFAULTS = {
   strokeWidth: 'uniform',
   margin: undefined,
   unitPause: 0.12,
-  mirrorRelations: false,
+  mirrorRelations: true,
 };
 
 function meanBundleWidth(glyphData, chars = 'abcdexyz0123456789+=') {
