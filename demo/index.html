@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>latex-hw demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; margin: 24px; color: #222; background: #fafafa; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0; }
+  textarea { width: 100%; max-width: 900px; height: 64px; font: 14px ui-monospace, monospace; }
+  #stage { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 16px; min-height: 120px; max-width: 1100px; overflow: auto; }
+  #stage svg { max-width: 100%; height: auto; }
+  #info { color: #666; font-size: 13px; white-space: pre-wrap; }
+  button, select, input { font: inherit; }
+</style>
+</head>
+<body>
+<h1>latex-hw demo</h1>
+<div>Renders LaTeX to ordered handwriting strokes (static SVG), then animates them one by one with <code>stroke-dashoffset</code>. The animation lives in this page only; the library output is static.</div>
+
+<div class="row">
+  <label>Example <select id="examples"></select></label>
+  <label>or SVG file <input type="file" id="file" accept=".svg,image/svg+xml"></label>
+</div>
+<div class="row"><textarea id="tex" spellcheck="false">\frac{a+b}{2} = \sqrt{x^2+1}</textarea></div>
+<div class="row">
+  <label><input type="radio" name="dir" value="ltr" checked> ltr</label>
+  <label><input type="radio" name="dir" value="rtl"> rtl</label>
+  <button id="render">Render in browser</button>
+  <button id="play">Replay</button>
+  <label>Speed <input type="range" id="speed" min="0.25" max="4" step="0.25" value="1"> <span id="speedv"></span></label>
+</div>
+<div id="stage"></div>
+<div id="info"></div>
+
+<script type="module">
+const stage = document.getElementById('stage');
+const info = document.getElementById('info');
+const speedEl = document.getElementById('speed');
+let animations = [];
+
+// The caller-side animation from the design doc: no library runtime needed.
+function animate(svgEl) {
+  animations.forEach((a) => a.cancel());
+  animations = [];
+  const speed = Number(speedEl.value);
+  for (const p of svgEl.querySelectorAll('path.hw-stroke')) {
+    const len = p.getAttribute('data-len');
+    p.style.strokeDasharray = `${len} ${len}`;
+    p.style.strokeDashoffset = len;
+    animations.push(p.animate([{ strokeDashoffset: len }, { strokeDashoffset: 0 }], {
+      delay: (Number(p.dataset.start) * 1000) / speed,
+      duration: (Number(p.dataset.dur) * 1000) / speed,
+      easing: 'ease-out',
+      fill: 'both',
+    }));
+  }
+}
+
+function show(svgText, note = '') {
+  stage.innerHTML = svgText;
+  const svgEl = stage.querySelector('svg');
+  if (!svgEl) return;
+  const w = Number(svgEl.getAttribute('width'));
+  svgEl.setAttribute('width', String(Math.min(1060, w * 1.5)));
+  svgEl.removeAttribute('height');
+  info.textContent = `${svgEl.dataset.strokeCount} strokes, ${svgEl.dataset.totalDuration}s, dir=${svgEl.dataset.dir}${note ? '\n' + note : ''}`;
+  animate(svgEl);
+  document.body.dataset.ready = 'true';
+}
+
+// Examples rendered by `npm run examples`.
+const sel = document.getElementById('examples');
+try {
+  const list = await (await fetch('../examples/index.json')).json();
+  sel.innerHTML = '<option value="">—</option>' + list.map((e) => `<option value="${e.name}">${e.name}</option>`).join('');
+  sel.onchange = async () => {
+    if (!sel.value) return;
+    const e = list.find((x) => x.name === sel.value);
+    document.getElementById('tex').value = e.latex;
+    document.querySelector(`input[name=dir][value=${e.dir}]`).checked = true;
+    show(await (await fetch(`../examples/${e.name}.svg`)).text());
+  };
+} catch { sel.innerHTML = '<option>(run npm run examples)</option>'; }
+
+document.getElementById('file').onchange = async (ev) => {
+  const f = ev.target.files[0];
+  if (f) show(await f.text(), f.name);
+};
+
+let renderer = null;
+async function renderLive() {
+  info.textContent = 'Loading MathJax, harfbuzz and fonts…';
+  try {
+    if (!renderer) {
+      const lib = await import('../dist/latex-hw.browser.js');
+      renderer = await lib.createBrowserRenderer(new URL('../dist/fonts/', import.meta.url).href);
+    }
+    const dir = document.querySelector('input[name=dir]:checked').value;
+    const r = renderer.render(document.getElementById('tex').value, { dir });
+    show(r.svg, r.warnings.map((w) => `warning [${w.code}] ${w.message}`).join('\n'));
+  } catch (e) {
+    info.textContent = `Could not render in the browser: ${e.message}\n(build it first with: npm run build:browser)`;
+  }
+}
+document.getElementById('render').onclick = renderLive;
+document.getElementById('play').onclick = () => { const s = stage.querySelector('svg'); if (s) animate(s); };
+speedEl.oninput = () => { document.getElementById('speedv').textContent = `${speedEl.value}×`; };
+speedEl.oninput();
+queueMicrotask(() => speedEl.oninput());
+
+const params = new URLSearchParams(location.search);
+if (params.get('tex')) {
+  document.getElementById('tex').value = params.get('tex');
+  if (params.get('dir')) document.querySelector(`input[name=dir][value=${params.get('dir')}]`).checked = true;
+  if (params.get('speed')) speedEl.value = params.get('speed');
+  renderLive();
+}
+</script>
+</body>
+</html>

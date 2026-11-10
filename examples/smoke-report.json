@@ -1,0 +1,1251 @@
+{
+ "total": 176,
+ "clean": 148,
+ "withWarnings": 28,
+ "errors": 0,
+ "ms": 508,
+ "warningCounts": {
+  "fallback-glyph θ": 14,
+  "fallback-glyph λ": 3,
+  "fallback-glyph ρ": 3,
+  "fallback-glyph Δ": 4,
+  "fallback-glyph α": 2,
+  "fallback-glyph β": 2,
+  "fallback-glyph γ": 2,
+  "fallback-glyph ٫": 2
+ },
+ "rows": [
+  {
+   "i": 0,
+   "set": "arabic-samples",
+   "strokes": 28,
+   "warnings": "",
+   "tex": "\\text{س} = \\frac{-\\text{ب} \\pm \\sqrt{\\text{ب}^\\text{٢} - \\text{٤}\\text{أ}\\text{ج}}}{\\text{٢}\\text{أ}}"
+  },
+  {
+   "i": 1,
+   "set": "arabic-samples",
+   "strokes": 15,
+   "warnings": "",
+   "tex": "\\text{أ}^\\text{٢} + \\text{ب}^\\text{٢} = \\text{ج}^\\text{٢}"
+  },
+  {
+   "i": 2,
+   "set": "arabic-samples",
+   "strokes": 12,
+   "warnings": "",
+   "tex": "\\text{م} = \\pi \\text{نق}^\\text{٢}"
+  },
+  {
+   "i": 3,
+   "set": "arabic-samples",
+   "strokes": 20,
+   "warnings": "",
+   "tex": "\\text{م} = \\frac{\\text{ص}_\\text{٢} - \\text{ص}_\\text{١}}{\\text{س}_\\text{٢} - \\text{س}_\\text{١}}"
+  },
+  {
+   "i": 4,
+   "set": "arabic-samples",
+   "strokes": 29,
+   "warnings": "",
+   "tex": "\\text{ف} = \\sqrt{(\\text{س}_\\text{٢} - \\text{س}_\\text{١})^\\text{٢} + (\\text{ص}_\\text{٢} - \\text{ص}_\\text{١})^\\text{٢}}"
+  },
+  {
+   "i": 5,
+   "set": "arabic-samples",
+   "strokes": 29,
+   "warnings": "",
+   "tex": "(\\text{س} + \\text{ص})^\\text{٢} = \\text{س}^\\text{٢} + \\text{٢}\\text{س}\\text{ص} + \\text{ص}^\\text{٢}"
+  },
+  {
+   "i": 6,
+   "set": "arabic-samples",
+   "strokes": 24,
+   "warnings": "",
+   "tex": "\\frac{d}{d\\text{س}}\\text{س}^\\text{ن} = \\text{ن}\\text{س}^{\\text{ن} - \\text{١}}"
+  },
+  {
+   "i": 7,
+   "set": "arabic-samples",
+   "strokes": 32,
+   "warnings": "",
+   "tex": "\\int \\text{س}^\\text{ن} \\, d\\text{س} = \\frac{\\text{س}^{\\text{ن} + \\text{١}}}{\\text{ن} + \\text{١}} + \\text{ث}"
+  },
+  {
+   "i": 8,
+   "set": "arabic-samples",
+   "strokes": 28,
+   "warnings": "",
+   "tex": "\\lim_{\\text{س} \\to \\text{٠}} \\frac{\\sin \\text{س}}{\\text{س}} = \\text{١}"
+  },
+  {
+   "i": 9,
+   "set": "arabic-samples",
+   "strokes": 30,
+   "warnings": "",
+   "tex": "\\lim_{\\text{س} \\to \\infty} \\frac{\\text{س}^\\text{٢} + \\text{١}}{\\text{س}^\\text{٢}} = \\text{١}"
+  },
+  {
+   "i": 10,
+   "set": "arabic-samples",
+   "strokes": 23,
+   "warnings": "",
+   "tex": "\\sum_{\\text{ك} = \\text{١}}^{\\text{ن}} \\text{ك} = \\frac{\\text{ن}(\\text{ن} + \\text{١})}{\\text{٢}}"
+  },
+  {
+   "i": 11,
+   "set": "arabic-samples",
+   "strokes": 22,
+   "warnings": "",
+   "tex": "\\log(\\text{س}\\text{ص}) = \\log \\text{س} + \\log \\text{ص}"
+  },
+  {
+   "i": 12,
+   "set": "arabic-samples",
+   "strokes": 18,
+   "warnings": "",
+   "tex": "\\text{ح}_\\text{ن} = \\text{ح}_\\text{١} + (\\text{ن} - \\text{١})\\text{د}"
+  },
+  {
+   "i": 13,
+   "set": "arabic-samples",
+   "strokes": 15,
+   "warnings": "",
+   "tex": "\\text{م} = \\text{أ}\\frac{\\text{ر}^\\text{ن} - \\text{١}}{\\text{ر} - \\text{١}}"
+  },
+  {
+   "i": 14,
+   "set": "arabic-samples",
+   "strokes": 23,
+   "warnings": "",
+   "tex": "\\begin{vmatrix} \\text{أ} & \\text{ب} \\\\ \\text{ج} & \\text{د} \\end{vmatrix} = \\text{أ}\\text{د} - \\text{ب}\\text{ج}"
+  },
+  {
+   "i": 15,
+   "set": "arabic-samples",
+   "strokes": 23,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\sin^\\text{٢}\\theta + \\cos^\\text{٢}\\theta = \\text{١}"
+  },
+  {
+   "i": 16,
+   "set": "arabic-samples",
+   "strokes": 32,
+   "warnings": "",
+   "tex": "\\text{ج}^\\text{٢} = \\text{أ}^\\text{٢} + \\text{ب}^\\text{٢} - \\text{٢}\\text{أ}\\text{ب}\\cos \\text{ج}"
+  },
+  {
+   "i": 17,
+   "set": "arabic-samples",
+   "strokes": 18,
+   "warnings": "",
+   "tex": "\\bar{\\text{س}} = \\frac{\\text{س}_\\text{١} + \\text{س}_\\text{٢}}{\\text{٢}}"
+  },
+  {
+   "i": 18,
+   "set": "arabic-samples",
+   "strokes": 9,
+   "warnings": "",
+   "tex": "\\text{ع} = \\frac{\\text{ف}}{\\text{ز}}"
+  },
+  {
+   "i": 19,
+   "set": "arabic-samples",
+   "strokes": 13,
+   "warnings": "",
+   "tex": "\\text{ت} = \\frac{\\text{ع} - \\text{ع}_\\text{٠}}{\\text{ز}}"
+  },
+  {
+   "i": 20,
+   "set": "arabic-samples",
+   "strokes": 8,
+   "warnings": "",
+   "tex": "\\text{ق} = \\text{ك}\\text{ت}"
+  },
+  {
+   "i": 21,
+   "set": "arabic-samples",
+   "strokes": 12,
+   "warnings": "",
+   "tex": "\\text{ط} = \\frac{\\text{١}}{\\text{٢}}\\text{ك}\\text{ع}^\\text{٢}"
+  },
+  {
+   "i": 22,
+   "set": "arabic-samples",
+   "strokes": 11,
+   "warnings": "",
+   "tex": "\\text{ط} = \\text{ك}\\text{ج}\\text{ف}"
+  },
+  {
+   "i": 23,
+   "set": "arabic-samples",
+   "strokes": 21,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\text{ش} = \\text{ق}\\text{ف}\\cos\\theta"
+  },
+  {
+   "i": 24,
+   "set": "arabic-samples",
+   "strokes": 9,
+   "warnings": "",
+   "tex": "\\text{كح} = \\text{ك}\\text{ع}"
+  },
+  {
+   "i": 25,
+   "set": "arabic-samples",
+   "strokes": 17,
+   "warnings": "",
+   "tex": "\\text{ق} = \\text{ج}\\frac{\\text{ك}_\\text{١}\\text{ك}_\\text{٢}}{\\text{ف}^\\text{٢}}"
+  },
+  {
+   "i": 26,
+   "set": "arabic-samples",
+   "strokes": 8,
+   "warnings": "",
+   "tex": "\\text{ج} = \\text{ت}\\text{م}"
+  },
+  {
+   "i": 27,
+   "set": "arabic-samples",
+   "strokes": 11,
+   "warnings": "",
+   "tex": "\\text{قد} = \\text{ج}\\text{ت}"
+  },
+  {
+   "i": 28,
+   "set": "arabic-samples",
+   "strokes": 22,
+   "warnings": "",
+   "tex": "\\text{ق} = \\text{ك}\\frac{\\text{ش}_\\text{١}\\text{ش}_\\text{٢}}{\\text{ف}^\\text{٢}}"
+  },
+  {
+   "i": 29,
+   "set": "arabic-samples",
+   "strokes": 7,
+   "warnings": "fallback-glyph:λ",
+   "tex": "\\text{ع} = \\text{ت}\\lambda"
+  },
+  {
+   "i": 30,
+   "set": "arabic-samples",
+   "strokes": 8,
+   "warnings": "",
+   "tex": "\\text{ط} = \\text{ك}c^\\text{٢}"
+  },
+  {
+   "i": 31,
+   "set": "arabic-samples",
+   "strokes": 14,
+   "warnings": "",
+   "tex": "\\text{ز} = \\text{٢}\\pi\\sqrt{\\frac{\\text{ل}}{\\text{ج}}}"
+  },
+  {
+   "i": 32,
+   "set": "arabic-samples",
+   "strokes": 17,
+   "warnings": "",
+   "tex": "\\frac{\\text{١}}{\\text{ب}} = \\frac{\\text{١}}{\\text{س}} + \\frac{\\text{١}}{\\text{ص}}"
+  },
+  {
+   "i": 33,
+   "set": "arabic-samples",
+   "strokes": 9,
+   "warnings": "fallback-glyph:ρ",
+   "tex": "\\rho = \\frac{\\text{ك}}{\\text{ح}}"
+  },
+  {
+   "i": 34,
+   "set": "arabic-samples",
+   "strokes": 11,
+   "warnings": "",
+   "tex": "\\text{ض}\\text{ح} = \\text{ن}\\text{ر}\\text{د}"
+  },
+  {
+   "i": 35,
+   "set": "arabic-samples",
+   "strokes": 16,
+   "warnings": "",
+   "tex": "\\text{ض}_\\text{١}\\text{ح}_\\text{١} = \\text{ض}_\\text{٢}\\text{ح}_\\text{٢}"
+  },
+  {
+   "i": 36,
+   "set": "arabic-samples",
+   "strokes": 14,
+   "warnings": "",
+   "tex": "\\frac{\\text{ح}_\\text{١}}{\\text{د}_\\text{١}} = \\frac{\\text{ح}_\\text{٢}}{\\text{د}_\\text{٢}}"
+  },
+  {
+   "i": 37,
+   "set": "arabic-samples",
+   "strokes": 22,
+   "warnings": "",
+   "tex": "\\frac{\\text{ض}_\\text{١}\\text{ح}_\\text{١}}{\\text{د}_\\text{١}} = \\frac{\\text{ض}_\\text{٢}\\text{ح}_\\text{٢}}{\\text{د}_\\text{٢}}"
+  },
+  {
+   "i": 38,
+   "set": "arabic-samples",
+   "strokes": 10,
+   "warnings": "",
+   "tex": "\\text{ن} = \\frac{\\text{ك}}{\\text{ك}_\\text{م}}"
+  },
+  {
+   "i": 39,
+   "set": "arabic-samples",
+   "strokes": 10,
+   "warnings": "",
+   "tex": "\\text{تر} = \\frac{\\text{ن}}{\\text{ح}}"
+  },
+  {
+   "i": 40,
+   "set": "arabic-samples",
+   "strokes": 16,
+   "warnings": "",
+   "tex": "\\text{تر}_\\text{١}\\text{ح}_\\text{١} = \\text{تر}_\\text{٢}\\text{ح}_\\text{٢}"
+  },
+  {
+   "i": 41,
+   "set": "arabic-samples",
+   "strokes": 12,
+   "warnings": "",
+   "tex": "\\text{ر} = -\\log[\\text{ه}^+]"
+  },
+  {
+   "i": 42,
+   "set": "arabic-samples",
+   "strokes": 27,
+   "warnings": "",
+   "tex": "\\text{ث} = \\frac{[\\text{ج}][\\text{د}]}{[\\text{أ}][\\text{ب}]}"
+  },
+  {
+   "i": 43,
+   "set": "arabic-samples",
+   "strokes": 16,
+   "warnings": "",
+   "tex": "\\text{سر} = \\text{ث}[\\text{أ}]^\\text{ن}"
+  },
+  {
+   "i": 44,
+   "set": "arabic-samples",
+   "strokes": 15,
+   "warnings": "",
+   "tex": "\\text{ز}_{\\text{١}/\\text{٢}} = \\frac{\\ln \\text{٢}}{\\text{ك}}"
+  },
+  {
+   "i": 45,
+   "set": "arabic-samples",
+   "strokes": 30,
+   "warnings": "",
+   "tex": "\\text{نس} = \\frac{\\text{ك}_\\text{فع}}{\\text{ك}_\\text{نظ}} \\times \\text{١٠٠}\\%"
+  },
+  {
+   "i": 46,
+   "set": "arabic-samples",
+   "strokes": 17,
+   "warnings": "",
+   "tex": "\\text{٢}\\text{ه}_\\text{٢} + \\text{أ}_\\text{٢} \\rightarrow \\text{٢}\\text{ه}_\\text{٢}\\text{أ}"
+  },
+  {
+   "i": 47,
+   "set": "arabic-samples",
+   "strokes": 17,
+   "warnings": "fallback-glyph:Δ",
+   "tex": "\\Delta\\text{ط} = \\Delta\\text{ح} - \\text{د}\\Delta\\text{س}"
+  },
+  {
+   "i": 48,
+   "set": "arabic-samples",
+   "strokes": 23,
+   "warnings": "",
+   "tex": "\\left( \\begin{matrix} \\text{س} + \\text{ص} \\\\ \\text{س} - \\text{ص} \\\\ \\text{٢}\\text{س} + \\text{ص} \\end{matrix} \\right)"
+  },
+  {
+   "i": 49,
+   "set": "arabic-samples",
+   "strokes": 48,
+   "warnings": "",
+   "tex": "\\text{د}(\\text{س}) = \\begin{cases} \\text{أ}\\text{س} + \\text{ب} & \\text{س} < \\text{٠} \\\\ \\text{س}^\\text{٢} & \\text{٠} \\le \\text{س} < \\text{١} \\\\ \\text{س} + \\text{١} & \\text{س} \\ge \\text{١} \\end{cases}"
+  },
+  {
+   "i": 50,
+   "set": "arabic-samples",
+   "strokes": 19,
+   "warnings": "",
+   "tex": "\\left[ \\begin{matrix} \\text{أ} & \\text{ب} & \\text{ج} \\\\ \\text{د} & \\text{ه} & \\text{و} \\\\ \\text{ز} & \\text{ح} & \\text{ط} \\end{matrix} \\right]"
+  },
+  {
+   "i": 51,
+   "set": "arabic-samples",
+   "strokes": 16,
+   "warnings": "",
+   "tex": "\\left\\langle \\begin{matrix} \\text{س}_\\text{١} \\\\ \\text{س}_\\text{٢} \\\\ \\text{س}_\\text{٣} \\end{matrix} \\right\\rangle"
+  },
+  {
+   "i": 52,
+   "set": "arabic-samples",
+   "strokes": 9,
+   "warnings": "",
+   "tex": "\\left\\lfloor \\begin{matrix} \\text{س} \\\\ \\text{ص} \\\\ \\text{ع} \\end{matrix} \\right\\rfloor"
+  },
+  {
+   "i": 53,
+   "set": "arabic-samples",
+   "strokes": 10,
+   "warnings": "",
+   "tex": "\\left\\lceil \\begin{matrix} \\text{أ} \\\\ \\text{ب} \\\\ \\text{ج} \\end{matrix} \\right\\rceil"
+  },
+  {
+   "i": 54,
+   "set": "arabic-samples",
+   "strokes": 14,
+   "warnings": "",
+   "tex": "\\text{م}^{\\text{س}^{\\text{٢}} + \\text{٥}\\text{س} + \\text{٩}}"
+  },
+  {
+   "i": 55,
+   "set": "gpt-samples",
+   "strokes": 11,
+   "warnings": "",
+   "tex": "\\text{س}+\\text{ص}=\\text{ع}"
+  },
+  {
+   "i": 56,
+   "set": "gpt-samples",
+   "strokes": 10,
+   "warnings": "",
+   "tex": "\\text{س}-\\text{ص}=\\text{ع}"
+  },
+  {
+   "i": 57,
+   "set": "gpt-samples",
+   "strokes": 11,
+   "warnings": "",
+   "tex": "\\text{س}\\times\\text{ص}=\\text{ع}"
+  },
+  {
+   "i": 58,
+   "set": "gpt-samples",
+   "strokes": 10,
+   "warnings": "",
+   "tex": "\\frac{\\text{س}}{\\text{ص}}=\\text{ع}"
+  },
+  {
+   "i": 59,
+   "set": "gpt-samples",
+   "strokes": 14,
+   "warnings": "",
+   "tex": "\\text{س}^{\\text{٢}}+\\text{ص}^{\\text{٢}}=\\text{ع}^{\\text{٢}}"
+  },
+  {
+   "i": 60,
+   "set": "gpt-samples",
+   "strokes": 29,
+   "warnings": "",
+   "tex": "(\\text{س}+\\text{ص})^{\\text{٢}}=\\text{س}^{\\text{٢}}+ \\text{٢}\\text{س}\\text{ص}+\\text{ص}^{\\text{٢}}"
+  },
+  {
+   "i": 61,
+   "set": "gpt-samples",
+   "strokes": 27,
+   "warnings": "",
+   "tex": "(\\text{س}-\\text{ص})^{\\text{٢}}=\\text{س}^{\\text{٢}}-\\text{٢}\\text{س}\\text{ص}+\\text{ص}^{\\text{٢}}"
+  },
+  {
+   "i": 62,
+   "set": "gpt-samples",
+   "strokes": 27,
+   "warnings": "",
+   "tex": "\\text{س}^{\\text{٢}}-\\text{ص}^{\\text{٢}}=(\\text{س}-\\text{ص})(\\text{س}+\\text{ص})"
+  },
+  {
+   "i": 63,
+   "set": "gpt-samples",
+   "strokes": 13,
+   "warnings": "",
+   "tex": "\\text{أ}\\text{س}+\\text{ب}=\\text{٠}"
+  },
+  {
+   "i": 64,
+   "set": "gpt-samples",
+   "strokes": 22,
+   "warnings": "",
+   "tex": "\\text{أ}\\text{س}^{\\text{٢}}+\\text{ب}\\text{س}+\\text{ج}=\\text{٠}"
+  },
+  {
+   "i": 65,
+   "set": "gpt-samples",
+   "strokes": 28,
+   "warnings": "",
+   "tex": "\\text{س}=\\frac{-\\text{ب}\\pm\\sqrt{\\text{ب}^{\\text{٢}}-\\text{٤}\\text{أ}\\text{ج}}}{\\text{٢}\\text{أ}}"
+  },
+  {
+   "i": 66,
+   "set": "gpt-samples",
+   "strokes": 15,
+   "warnings": "fallback-glyph:Δ",
+   "tex": "\\Delta=\\text{ب}^{\\text{٢}}-\\text{٤}\\text{أ}\\text{ج}"
+  },
+  {
+   "i": 67,
+   "set": "gpt-samples",
+   "strokes": 19,
+   "warnings": "",
+   "tex": "\\text{س}_{\\text{١}}+\\text{س}_{\\text{٢}}=-\\frac{\\text{ب}}{\\text{أ}}"
+  },
+  {
+   "i": 68,
+   "set": "gpt-samples",
+   "strokes": 17,
+   "warnings": "",
+   "tex": "\\text{س}_{\\text{١}}\\text{س}_{\\text{٢}}=\\frac{\\text{ج}}{\\text{أ}}"
+  },
+  {
+   "i": 69,
+   "set": "gpt-samples",
+   "strokes": 10,
+   "warnings": "",
+   "tex": "|\\text{س}-\\text{م}|<\\text{ن}"
+  },
+  {
+   "i": 70,
+   "set": "gpt-samples",
+   "strokes": 21,
+   "warnings": "",
+   "tex": "\\text{أ}^{\\text{م}}\\times\\text{أ}^{\\text{ن}}=\\text{أ}^{\\text{م}+\\text{ن}}"
+  },
+  {
+   "i": 71,
+   "set": "gpt-samples",
+   "strokes": 19,
+   "warnings": "",
+   "tex": "\\frac{\\text{أ}^{\\text{م}}}{\\text{أ}^{\\text{ن}}}=\\text{أ}^{\\text{م}-\\text{ن}}"
+  },
+  {
+   "i": 72,
+   "set": "gpt-samples",
+   "strokes": 16,
+   "warnings": "",
+   "tex": "(\\text{أ}^{\\text{م}})^{\\text{ن}}=\\text{أ}^{\\text{م}\\text{ن}}"
+  },
+  {
+   "i": 73,
+   "set": "gpt-samples",
+   "strokes": 7,
+   "warnings": "",
+   "tex": "\\text{أ}^{\\text{٠}}=\\text{١}"
+  },
+  {
+   "i": 74,
+   "set": "gpt-samples",
+   "strokes": 15,
+   "warnings": "",
+   "tex": "\\text{أ}^{-\\text{ن}}=\\frac{\\text{١}}{\\text{أ}^{\\text{ن}}}"
+  },
+  {
+   "i": 75,
+   "set": "gpt-samples",
+   "strokes": 15,
+   "warnings": "",
+   "tex": "\\sqrt{\\text{أ}\\text{ب}}=\\sqrt{\\text{أ}}\\sqrt{\\text{ب}}"
+  },
+  {
+   "i": 76,
+   "set": "gpt-samples",
+   "strokes": 17,
+   "warnings": "",
+   "tex": "\\sqrt{\\frac{\\text{أ}}{\\text{ب}}}=\\frac{\\sqrt{\\text{أ}}}{\\sqrt{\\text{ب}}}"
+  },
+  {
+   "i": 77,
+   "set": "gpt-samples",
+   "strokes": 16,
+   "warnings": "",
+   "tex": "\\sqrt[\\text{ن}]{\\text{أ}^{\\text{م}}}=\\text{أ}^{\\frac{\\text{م}}{\\text{ن}}}"
+  },
+  {
+   "i": 78,
+   "set": "gpt-samples",
+   "strokes": 35,
+   "warnings": "",
+   "tex": "\\log_{\\text{أ}}(\\text{س}\\text{ص})=\\log_{\\text{أ}}(\\text{س})+\\log_{\\text{أ}}(\\text{ص})"
+  },
+  {
+   "i": 79,
+   "set": "gpt-samples",
+   "strokes": 35,
+   "warnings": "",
+   "tex": "\\log_{\\text{أ}}\\left(\\frac{\\text{س}}{\\text{ص}}\\right)=\\log_{\\text{أ}}(\\text{س})-\\log_{\\text{أ}}(\\text{ص})"
+  },
+  {
+   "i": 80,
+   "set": "gpt-samples",
+   "strokes": 26,
+   "warnings": "",
+   "tex": "\\log_{\\text{أ}}(\\text{س}^{\\text{ن}})=\\text{ن}\\log_{\\text{أ}}(\\text{س})"
+  },
+  {
+   "i": 81,
+   "set": "gpt-samples",
+   "strokes": 18,
+   "warnings": "",
+   "tex": "\\text{ح}_{\\text{ن}}=\\text{ح}_{\\text{١}}+(\\text{ن}-\\text{١})\\text{د}"
+  },
+  {
+   "i": 82,
+   "set": "gpt-samples",
+   "strokes": 12,
+   "warnings": "",
+   "tex": "\\text{م}_{\\text{ن}}=\\text{م}_{\\text{١}}\\text{ر}^{\\text{ن}-\\text{١}}"
+  },
+  {
+   "i": 83,
+   "set": "gpt-samples",
+   "strokes": 26,
+   "warnings": "",
+   "tex": "\\text{ج}_{\\text{ن}}=\\frac{\\text{ن}}{\\text{٢}}\\left(\\text{٢}\\text{ح}_{\\text{١}}+(\\text{ن}-\\text{١})\\text{د}\\right)"
+  },
+  {
+   "i": 84,
+   "set": "gpt-samples",
+   "strokes": 23,
+   "warnings": "",
+   "tex": "\\sum_{\\text{ك}=\\text{١}}^{\\text{ن}}\\text{ك}=\\frac{\\text{ن}(\\text{ن}+\\text{١})}{\\text{٢}}"
+  },
+  {
+   "i": 85,
+   "set": "gpt-samples",
+   "strokes": 33,
+   "warnings": "",
+   "tex": "\\sum_{\\text{ك}=\\text{١}}^{\\text{ن}}\\text{ك}^{\\text{٢}}=\\frac{\\text{ن}(\\text{ن}+\\text{١})(\\text{٢}\\text{ن}+\\text{١})}{\\text{٦}}"
+  },
+  {
+   "i": 86,
+   "set": "gpt-samples",
+   "strokes": 23,
+   "warnings": "",
+   "tex": "\\text{محيط المربع}=\\text{٤}\\text{س}"
+  },
+  {
+   "i": 87,
+   "set": "gpt-samples",
+   "strokes": 22,
+   "warnings": "",
+   "tex": "\\text{مساحة المربع}=\\text{س}^{\\text{٢}}"
+  },
+  {
+   "i": 88,
+   "set": "gpt-samples",
+   "strokes": 36,
+   "warnings": "",
+   "tex": "\\text{محيط المستطيل}=\\text{٢}(\\text{س}+\\text{ص})"
+  },
+  {
+   "i": 89,
+   "set": "gpt-samples",
+   "strokes": 30,
+   "warnings": "",
+   "tex": "\\text{مساحة المستطيل}=\\text{س}\\text{ص}"
+  },
+  {
+   "i": 90,
+   "set": "gpt-samples",
+   "strokes": 30,
+   "warnings": "",
+   "tex": "\\text{مساحة المثلث}=\\frac{\\text{١}}{\\text{٢}}\\text{ق}\\text{ع}"
+  },
+  {
+   "i": 91,
+   "set": "gpt-samples",
+   "strokes": 31,
+   "warnings": "",
+   "tex": "\\text{محيط الدائرة}=\\text{٢}\\pi\\text{نق}"
+  },
+  {
+   "i": 92,
+   "set": "gpt-samples",
+   "strokes": 30,
+   "warnings": "",
+   "tex": "\\text{مساحة الدائرة}=\\pi\\text{نق}^{\\text{٢}}"
+  },
+  {
+   "i": 93,
+   "set": "gpt-samples",
+   "strokes": 13,
+   "warnings": "",
+   "tex": "\\text{س}^{\\text{٢}}+\\text{ص}^{\\text{٢}}=\\text{و}^{\\text{٢}}"
+  },
+  {
+   "i": 94,
+   "set": "gpt-samples",
+   "strokes": 20,
+   "warnings": "",
+   "tex": "\\text{م}=\\frac{\\text{ص}_{\\text{٢}}-\\text{ص}_{\\text{١}}}{\\text{س}_{\\text{٢}}-\\text{س}_{\\text{١}}}"
+  },
+  {
+   "i": 95,
+   "set": "gpt-samples",
+   "strokes": 19,
+   "warnings": "",
+   "tex": "\\text{ص}-\\text{ص}_{\\text{١}}=\\text{م}(\\text{س}-\\text{س}_{\\text{١}})"
+  },
+  {
+   "i": 96,
+   "set": "gpt-samples",
+   "strokes": 23,
+   "warnings": "",
+   "tex": "(\\text{س}-\\text{م})^{\\text{٢}}+(\\text{ص}-\\text{ع})^{\\text{٢}}=\\text{ن}^{\\text{٢}}"
+  },
+  {
+   "i": 97,
+   "set": "gpt-samples",
+   "strokes": 21,
+   "warnings": "",
+   "tex": "\\frac{\\text{س}^{\\text{٢}}}{\\text{أ}^{\\text{٢}}}+\\frac{\\text{ص}^{\\text{٢}}}{\\text{ب}^{\\text{٢}}}=\\text{١}"
+  },
+  {
+   "i": 98,
+   "set": "gpt-samples",
+   "strokes": 25,
+   "warnings": "",
+   "tex": "\\text{حجم المكعب}=\\text{س}^{\\text{٣}}"
+  },
+  {
+   "i": 99,
+   "set": "gpt-samples",
+   "strokes": 37,
+   "warnings": "",
+   "tex": "\\text{حجم الأسطوانة}=\\pi\\text{نق}^{\\text{٢}}\\text{ع}"
+  },
+  {
+   "i": 100,
+   "set": "gpt-samples",
+   "strokes": 35,
+   "warnings": "",
+   "tex": "\\text{حجم المخروط}=\\frac{\\text{١}}{\\text{٣}}\\pi\\text{نق}^{\\text{٢}}\\text{ع}"
+  },
+  {
+   "i": 101,
+   "set": "gpt-samples",
+   "strokes": 33,
+   "warnings": "",
+   "tex": "\\text{حجم الكرة}=\\frac{\\text{٤}}{\\text{٣}}\\pi\\text{نق}^{\\text{٣}}"
+  },
+  {
+   "i": 102,
+   "set": "gpt-samples",
+   "strokes": 36,
+   "warnings": "",
+   "tex": "\\text{مساحة سطح الكرة}=\\text{٤}\\pi\\text{نق}^{\\text{٢}}"
+  },
+  {
+   "i": 103,
+   "set": "gpt-samples",
+   "strokes": 37,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\sin(\\theta)=\\frac{\\text{الضلع المقابل}}{\\text{الوتر}}"
+  },
+  {
+   "i": 104,
+   "set": "gpt-samples",
+   "strokes": 39,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\cos(\\theta)=\\frac{\\text{الضلع المجاور}}{\\text{الوتر}}"
+  },
+  {
+   "i": 105,
+   "set": "gpt-samples",
+   "strokes": 50,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\tan(\\theta)=\\frac{\\text{الضلع المقابل}}{\\text{الضلع المجاور}}"
+  },
+  {
+   "i": 106,
+   "set": "gpt-samples",
+   "strokes": 27,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\sin^{\\text{٢}}(\\theta)+\\cos^{\\text{٢}}(\\theta)=\\text{١}"
+  },
+  {
+   "i": 107,
+   "set": "gpt-samples",
+   "strokes": 24,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\text{١}+\\tan^{\\text{٢}}(\\theta)=\\sec^{\\text{٢}}(\\theta)"
+  },
+  {
+   "i": 108,
+   "set": "gpt-samples",
+   "strokes": 32,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\sin(\\text{٢}\\theta)=\\text{٢}\\sin(\\theta)\\cos(\\theta)"
+  },
+  {
+   "i": 109,
+   "set": "gpt-samples",
+   "strokes": 38,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\cos(\\text{٢}\\theta)=\\cos^{\\text{٢}}(\\theta)-\\sin^{\\text{٢}}(\\theta)"
+  },
+  {
+   "i": 110,
+   "set": "gpt-samples",
+   "strokes": 34,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\text{أ}^{\\text{٢}}=\\text{ب}^{\\text{٢}}+\\text{ج}^{\\text{٢}}-\\text{٢}\\text{ب}\\text{ج}\\cos(\\theta)"
+  },
+  {
+   "i": 111,
+   "set": "gpt-samples",
+   "strokes": 35,
+   "warnings": "fallback-glyph:α fallback-glyph:β fallback-glyph:γ",
+   "tex": "\\frac{\\text{أ}}{\\sin(\\alpha)}=\\frac{\\text{ب}}{\\sin(\\beta)}=\\frac{\\text{ج}}{\\sin(\\gamma)}"
+  },
+  {
+   "i": 112,
+   "set": "gpt-samples",
+   "strokes": 26,
+   "warnings": "",
+   "tex": "\\frac{d}{d\\text{س}}(\\text{س}^{\\text{ن}})=\\text{ن}\\text{س}^{\\text{ن}-\\text{١}}"
+  },
+  {
+   "i": 113,
+   "set": "gpt-samples",
+   "strokes": 16,
+   "warnings": "",
+   "tex": "\\frac{d}{d\\text{س}}(\\text{س})=\\text{١}"
+  },
+  {
+   "i": 114,
+   "set": "gpt-samples",
+   "strokes": 28,
+   "warnings": "",
+   "tex": "\\frac{d}{d\\text{س}}(\\sin\\text{س})=\\cos\\text{س}"
+  },
+  {
+   "i": 115,
+   "set": "gpt-samples",
+   "strokes": 29,
+   "warnings": "",
+   "tex": "\\frac{d}{d\\text{س}}(\\cos\\text{س})=-\\sin\\text{س}"
+  },
+  {
+   "i": 116,
+   "set": "gpt-samples",
+   "strokes": 20,
+   "warnings": "",
+   "tex": "\\frac{d}{d\\text{س}}(e^{\\text{س}})=e^{\\text{س}}"
+  },
+  {
+   "i": 117,
+   "set": "gpt-samples",
+   "strokes": 24,
+   "warnings": "",
+   "tex": "\\frac{d}{d\\text{س}}(\\ln\\text{س})=\\frac{\\text{١}}{\\text{س}}"
+  },
+  {
+   "i": 118,
+   "set": "gpt-samples",
+   "strokes": 34,
+   "warnings": "",
+   "tex": "\\frac{d}{d\\text{س}}(\\text{س}\\text{ص})=\\text{س}\\frac{d\\text{ص}}{d\\text{س}}+\\text{ص}"
+  },
+  {
+   "i": 119,
+   "set": "gpt-samples",
+   "strokes": 13,
+   "warnings": "",
+   "tex": "\\frac{d\\text{ص}}{d\\text{س}}=\\text{م}"
+  },
+  {
+   "i": 120,
+   "set": "gpt-samples",
+   "strokes": 12,
+   "warnings": "",
+   "tex": "\\frac{d^{\\text{٢}}\\text{ص}}{d\\text{س}^{\\text{٢}}}"
+  },
+  {
+   "i": 121,
+   "set": "gpt-samples",
+   "strokes": 32,
+   "warnings": "",
+   "tex": "\\int \\text{س}^{\\text{ن}}\\,d\\text{س}=\\frac{\\text{س}^{\\text{ن}+\\text{١}}}{\\text{ن}+\\text{١}}+\\text{ث}"
+  },
+  {
+   "i": 122,
+   "set": "gpt-samples",
+   "strokes": 27,
+   "warnings": "",
+   "tex": "\\int \\frac{\\text{١}}{\\text{س}}\\,d\\text{س}=\\ln|\\text{س}|+\\text{ث}"
+  },
+  {
+   "i": 123,
+   "set": "gpt-samples",
+   "strokes": 30,
+   "warnings": "",
+   "tex": "\\int \\sin\\text{س}\\,d\\text{س}=-\\cos\\text{س}+\\text{ث}"
+  },
+  {
+   "i": 124,
+   "set": "gpt-samples",
+   "strokes": 29,
+   "warnings": "",
+   "tex": "\\int \\cos\\text{س}\\,d\\text{س}=\\sin\\text{س}+\\text{ث}"
+  },
+  {
+   "i": 125,
+   "set": "gpt-samples",
+   "strokes": 18,
+   "warnings": "",
+   "tex": "\\int_{\\text{أ}}^{\\text{ب}}f(\\text{س})\\,d\\text{س}"
+  },
+  {
+   "i": 126,
+   "set": "gpt-samples",
+   "strokes": 22,
+   "warnings": "",
+   "tex": "\\bar{\\text{س}}=\\frac{\\sum_{\\text{ك}=\\text{١}}^{\\text{ن}}\\text{س}_{\\text{ك}}}{\\text{ن}}"
+  },
+  {
+   "i": 127,
+   "set": "gpt-samples",
+   "strokes": 39,
+   "warnings": "",
+   "tex": "\\text{التباين}=\\frac{\\sum_{\\text{ك}=\\text{١}}^{\\text{ن}}(\\text{س}_{\\text{ك}}-\\bar{\\text{س}})^{\\text{٢}}}{\\text{ن}}"
+  },
+  {
+   "i": 128,
+   "set": "gpt-samples",
+   "strokes": 39,
+   "warnings": "",
+   "tex": "\\text{الانحراف المعياري}=\\sqrt{\\text{التباين}}"
+  },
+  {
+   "i": 129,
+   "set": "gpt-samples",
+   "strokes": 68,
+   "warnings": "",
+   "tex": "\\text{ح}(\\text{أ})=\\frac{\\text{عدد النواتج الملائمة}}{\\text{عدد النواتج الممكنة}}"
+  },
+  {
+   "i": 130,
+   "set": "gpt-samples",
+   "strokes": 38,
+   "warnings": "",
+   "tex": "\\text{ح}(\\text{أ}\\cup\\text{ب})=\\text{ح}(\\text{أ})+\\text{ح}(\\text{ب})-\\text{ح}(\\text{أ}\\cap\\text{ب})"
+  },
+  {
+   "i": 131,
+   "set": "gpt-samples",
+   "strokes": 29,
+   "warnings": "",
+   "tex": "\\text{ح}(\\text{أ}\\mid\\text{ب})=\\frac{\\text{ح}(\\text{أ}\\cap\\text{ب})}{\\text{ح}(\\text{ب})}"
+  },
+  {
+   "i": 132,
+   "set": "gpt-samples",
+   "strokes": 18,
+   "warnings": "",
+   "tex": "\\vec{\\text{أ}}=(\\text{س},\\text{ص},\\text{ع})"
+  },
+  {
+   "i": 133,
+   "set": "gpt-samples",
+   "strokes": 24,
+   "warnings": "",
+   "tex": "|\\vec{\\text{أ}}|=\\sqrt{\\text{س}^{\\text{٢}}+\\text{ص}^{\\text{٢}}+\\text{ع}^{\\text{٢}}}"
+  },
+  {
+   "i": 134,
+   "set": "gpt-samples",
+   "strokes": 36,
+   "warnings": "",
+   "tex": "\\vec{\\text{أ}}\\cdot\\vec{\\text{ب}}=\\text{س}_{\\text{١}}\\text{س}_{\\text{٢}}+\\text{ص}_{\\text{١}}\\text{ص}_{\\text{٢}}+\\text{ع}_{\\text{١}}\\text{ع}_{\\text{٢}}"
+  },
+  {
+   "i": 135,
+   "set": "gpt-samples",
+   "strokes": 23,
+   "warnings": "",
+   "tex": "\\begin{vmatrix}\\text{أ}&\\text{ب}\\\\\\text{ج}&\\text{د}\\end{vmatrix}=\\text{أ}\\text{د}-\\text{ب}\\text{ج}"
+  },
+  {
+   "i": 136,
+   "set": "gpt-samples",
+   "strokes": 9,
+   "warnings": "",
+   "tex": "\\text{ع}=\\frac{\\text{ف}}{\\text{ز}}"
+  },
+  {
+   "i": 137,
+   "set": "gpt-samples",
+   "strokes": 13,
+   "warnings": "",
+   "tex": "\\text{ت}=\\frac{\\text{ع}-\\text{ع}_{\\text{٠}}}{\\text{ز}}"
+  },
+  {
+   "i": 138,
+   "set": "gpt-samples",
+   "strokes": 8,
+   "warnings": "",
+   "tex": "\\text{ق}=\\text{ك}\\text{ت}"
+  },
+  {
+   "i": 139,
+   "set": "gpt-samples",
+   "strokes": 12,
+   "warnings": "",
+   "tex": "\\text{ط}=\\frac{\\text{١}}{\\text{٢}}\\text{ك}\\text{ع}^{\\text{٢}}"
+  },
+  {
+   "i": 140,
+   "set": "gpt-samples",
+   "strokes": 11,
+   "warnings": "",
+   "tex": "\\text{ط}=\\text{ك}\\text{ج}\\text{ف}"
+  },
+  {
+   "i": 141,
+   "set": "gpt-samples",
+   "strokes": 21,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\text{ش}=\\text{ق}\\text{ف}\\cos\\theta"
+  },
+  {
+   "i": 142,
+   "set": "gpt-samples",
+   "strokes": 20,
+   "warnings": "",
+   "tex": "\\text{ق}_{\\text{المحصلة}}=\\text{ك}\\text{ت}"
+  },
+  {
+   "i": 143,
+   "set": "gpt-samples",
+   "strokes": 13,
+   "warnings": "",
+   "tex": "\\text{ع}=\\text{ع}_{\\text{٠}}+\\text{ت}\\text{ز}"
+  },
+  {
+   "i": 144,
+   "set": "gpt-samples",
+   "strokes": 24,
+   "warnings": "",
+   "tex": "\\text{ف}=\\text{ف}_{\\text{٠}}+\\text{ع}_{\\text{٠}}\\text{ز}+\\frac{\\text{١}}{\\text{٢}}\\text{ت}\\text{ز}^{\\text{٢}}"
+  },
+  {
+   "i": 145,
+   "set": "gpt-samples",
+   "strokes": 22,
+   "warnings": "",
+   "tex": "\\text{ع}^{\\text{٢}}=\\text{ع}_{\\text{٠}}^{\\text{٢}}+\\text{٢}\\text{ت}(\\text{ف}-\\text{ف}_{\\text{٠}})"
+  },
+  {
+   "i": 146,
+   "set": "gpt-samples",
+   "strokes": 31,
+   "warnings": "",
+   "tex": "\\text{ق}_{\\text{الجاذبية}}=\\text{ج}\\frac{\\text{ك}_{\\text{١}}\\text{ك}_{\\text{٢}}}{\\text{ر}^{\\text{٢}}}"
+  },
+  {
+   "i": 147,
+   "set": "gpt-samples",
+   "strokes": 20,
+   "warnings": "",
+   "tex": "\\text{القدرة}=\\frac{\\text{ش}}{\\text{ز}}"
+  },
+  {
+   "i": 148,
+   "set": "gpt-samples",
+   "strokes": 16,
+   "warnings": "",
+   "tex": "\\text{القدرة}=\\text{ق}\\text{ع}"
+  },
+  {
+   "i": 149,
+   "set": "gpt-samples",
+   "strokes": 23,
+   "warnings": "",
+   "tex": "\\text{كمية الحركة}=\\text{ك}\\text{ع}"
+  },
+  {
+   "i": 150,
+   "set": "gpt-samples",
+   "strokes": 24,
+   "warnings": "fallback-glyph:Δ",
+   "tex": "\\text{الدفع}=\\text{ق}\\text{ز}=\\Delta(\\text{ك}\\text{ع})"
+  },
+  {
+   "i": 151,
+   "set": "gpt-samples",
+   "strokes": 9,
+   "warnings": "",
+   "tex": "\\text{ض}=\\frac{\\text{ق}}{\\text{م}}"
+  },
+  {
+   "i": 152,
+   "set": "gpt-samples",
+   "strokes": 20,
+   "warnings": "",
+   "tex": "\\text{الكثافة}=\\frac{\\text{ك}}{\\text{ح}}"
+  },
+  {
+   "i": 153,
+   "set": "gpt-samples",
+   "strokes": 18,
+   "warnings": "fallback-glyph:ρ",
+   "tex": "\\text{ض}=\\text{ض}_{\\text{٠}}+\\rho\\text{ج}\\text{ع}"
+  },
+  {
+   "i": 154,
+   "set": "gpt-samples",
+   "strokes": 35,
+   "warnings": "fallback-glyph:ρ",
+   "tex": "\\text{قوة الطفو}=\\rho_{\\text{مائع}}\\text{ج}\\text{ح}_{\\text{مزاح}}"
+  },
+  {
+   "i": 155,
+   "set": "gpt-samples",
+   "strokes": 22,
+   "warnings": "fallback-glyph:Δ",
+   "tex": "\\text{ط}_{\\text{حرارية}}=\\text{ك}\\text{س}\\Delta\\text{د}"
+  },
+  {
+   "i": 156,
+   "set": "gpt-samples",
+   "strokes": 11,
+   "warnings": "",
+   "tex": "\\text{ض}\\text{ح}=\\text{ن}\\text{ر}\\text{د}"
+  },
+  {
+   "i": 157,
+   "set": "gpt-samples",
+   "strokes": 22,
+   "warnings": "",
+   "tex": "\\frac{\\text{ض}_{\\text{١}}\\text{ح}_{\\text{١}}}{\\text{د}_{\\text{١}}}=\\frac{\\text{ض}_{\\text{٢}}\\text{ح}_{\\text{٢}}}{\\text{د}_{\\text{٢}}}"
+  },
+  {
+   "i": 158,
+   "set": "gpt-samples",
+   "strokes": 12,
+   "warnings": "",
+   "tex": "\\text{ت}=\\frac{\\text{ش}}{\\text{ز}}"
+  },
+  {
+   "i": 159,
+   "set": "gpt-samples",
+   "strokes": 8,
+   "warnings": "",
+   "tex": "\\text{ج}=\\text{ت}\\text{م}"
+  },
+  {
+   "i": 160,
+   "set": "gpt-samples",
+   "strokes": 9,
+   "warnings": "",
+   "tex": "\\text{م}=\\frac{\\text{ج}}{\\text{ت}}"
+  },
+  {
+   "i": 161,
+   "set": "gpt-samples",
+   "strokes": 27,
+   "warnings": "",
+   "tex": "\\text{ق}_{\\text{كولوم}}=\\text{ث}\\frac{\\text{ش}_{\\text{١}}\\text{ش}_{\\text{٢}}}{\\text{ر}^{\\text{٢}}}"
+  },
+  {
+   "i": 162,
+   "set": "gpt-samples",
+   "strokes": 26,
+   "warnings": "",
+   "tex": "\\text{ط}_{\\text{كهربائية}}=\\text{ج}\\text{ت}\\text{ز}"
+  },
+  {
+   "i": 163,
+   "set": "gpt-samples",
+   "strokes": 40,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\text{ق}_{\\text{مغناطيسية}}=\\text{ش}\\text{ع}\\text{ب}\\sin\\theta"
+  },
+  {
+   "i": 164,
+   "set": "gpt-samples",
+   "strokes": 42,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\text{فيض مغناطيسي}=\\text{ب}\\text{م}\\cos\\theta"
+  },
+  {
+   "i": 165,
+   "set": "gpt-samples",
+   "strokes": 7,
+   "warnings": "fallback-glyph:λ",
+   "tex": "\\text{ع}=\\lambda\\text{ت}"
+  },
+  {
+   "i": 166,
+   "set": "gpt-samples",
+   "strokes": 13,
+   "warnings": "",
+   "tex": "\\text{ت}=\\frac{\\text{١}}{\\text{ز}_{\\text{دورة}}}"
+  },
+  {
+   "i": 167,
+   "set": "gpt-samples",
+   "strokes": 22,
+   "warnings": "fallback-glyph:θ",
+   "tex": "\\text{ن}_{\\text{١}}\\sin\\theta_{\\text{١}}=\\text{ن}_{\\text{٢}}\\sin\\theta_{\\text{٢}}"
+  },
+  {
+   "i": 168,
+   "set": "gpt-samples",
+   "strokes": 16,
+   "warnings": "",
+   "tex": "\\frac{\\text{١}}{\\text{ب}}=\\frac{\\text{١}}{\\text{ف}}+\\frac{\\text{١}}{\\text{ص}}"
+  },
+  {
+   "i": 169,
+   "set": "gpt-samples",
+   "strokes": 11,
+   "warnings": "",
+   "tex": "\\text{هـ}=\\text{ك}\\text{ض}^{\\text{٢}}"
+  },
+  {
+   "i": 170,
+   "set": "gpt-samples",
+   "strokes": 17,
+   "warnings": "",
+   "tex": "\\text{ط}_{\\text{فوتون}}=\\text{ث } \\text{ت}"
+  },
+  {
+   "i": 171,
+   "set": "gpt-samples",
+   "strokes": 16,
+   "warnings": "fallback-glyph:λ",
+   "tex": "\\text{ن}(\\text{ز})=\\text{ن}_{\\text{٠}}e^{-\\lambda\\text{ز}}"
+  },
+  {
+   "i": 172,
+   "set": "gpt-samples",
+   "strokes": 14,
+   "warnings": "fallback-glyph:٫",
+   "tex": "\\pi\\approx\\text{٣٫١٤١٥٩}"
+  },
+  {
+   "i": 173,
+   "set": "gpt-samples",
+   "strokes": 12,
+   "warnings": "fallback-glyph:٫",
+   "tex": "e\\approx\\text{٢٫٧١٨٢٨}"
+  },
+  {
+   "i": 174,
+   "set": "gpt-samples",
+   "strokes": 78,
+   "warnings": "",
+   "tex": "\\text{النسبة المئوية}=\\frac{\\text{الجزء}}{\\text{الكل}}\\times\\text{١٠٠}\\%\\text{النسبة المئوية}"
+  },
+  {
+   "i": 175,
+   "set": "gpt-samples",
+   "strokes": 32,
+   "warnings": "fallback-glyph:α fallback-glyph:β fallback-glyph:γ",
+   "tex": "\\text{الزوايا}\n\\alpha = \\text{٣٠}^\\circ\n\\beta = \\text{٤٥}^\\circ\n\\gamma = \\text{٦٠}^\\circ"
+  }
+ ]
+}

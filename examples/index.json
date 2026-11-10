@@ -1,0 +1,92 @@
+[
+ {
+  "name": "ltr-fraction-sqrt",
+  "dir": "ltr",
+  "latex": "\\frac{a+b}{2} = \\sqrt{x^2+1}"
+ },
+ {
+  "name": "ltr-quadratic",
+  "dir": "ltr",
+  "latex": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}"
+ },
+ {
+  "name": "ltr-limit",
+  "dir": "ltr",
+  "latex": "\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1"
+ },
+ {
+  "name": "ltr-sum-integral",
+  "dir": "ltr",
+  "latex": "\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}, \\quad \\int_0^1 x^2 \\, dx = \\frac{1}{3}"
+ },
+ {
+  "name": "ltr-matrix",
+  "dir": "ltr",
+  "latex": "\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{bmatrix} x \\\\ y \\end{bmatrix} = \\left( \\frac{a}{b} \\right)"
+ },
+ {
+  "name": "rtl-quadratic",
+  "dir": "rtl",
+  "latex": "\\text{س} = \\frac{-\\text{ب} \\pm \\sqrt{\\text{ب}^\\text{٢} - \\text{٤}\\text{أ}\\text{ج}}}{\\text{٢}\\text{أ}}"
+ },
+ {
+  "name": "rtl-pythagoras",
+  "dir": "rtl",
+  "latex": "\\text{أ}^\\text{٢} + \\text{ب}^\\text{٢} = \\text{ج}^\\text{٢}"
+ },
+ {
+  "name": "rtl-limit-sin",
+  "dir": "rtl",
+  "latex": "\\lim_{\\text{س} \\to \\text{٠}} \\frac{\\sin \\text{س}}{\\text{س}} = \\text{١}"
+ },
+ {
+  "name": "rtl-distance",
+  "dir": "rtl",
+  "latex": "\\text{ف} = \\sqrt{(\\text{س}_\\text{٢} - \\text{س}_\\text{١})^\\text{٢} + (\\text{ص}_\\text{٢} - \\text{ص}_\\text{١})^\\text{٢}}"
+ },
+ {
+  "name": "rtl-sum",
+  "dir": "rtl",
+  "latex": "\\sum_{\\text{ك} = \\text{١}}^{\\text{ن}} \\text{ك} = \\frac{\\text{ن}(\\text{ن} + \\text{١})}{\\text{٢}}"
+ },
+ {
+  "name": "rtl-integral",
+  "dir": "rtl",
+  "latex": "\\int \\text{س}^\\text{ن} \\, d\\text{س} = \\frac{\\text{س}^{\\text{ن} + \\text{١}}}{\\text{ن} + \\text{١}} + \\text{ث}"
+ },
+ {
+  "name": "rtl-log",
+  "dir": "rtl",
+  "latex": "\\log(\\text{س}\\text{ص}) = \\log \\text{س} + \\log \\text{ص}"
+ },
+ {
+  "name": "rtl-vmatrix",
+  "dir": "rtl",
+  "latex": "\\begin{vmatrix} \\text{أ} & \\text{ب} \\\\ \\text{ج} & \\text{د} \\end{vmatrix} = \\text{أ}\\text{د} - \\text{ب}\\text{ج}"
+ },
+ {
+  "name": "rtl-trig-theta",
+  "dir": "rtl",
+  "latex": "\\sin^\\text{٢}\\theta + \\cos^\\text{٢}\\theta = \\text{١}"
+ },
+ {
+  "name": "rtl-cases",
+  "dir": "rtl",
+  "latex": "\\text{د}(\\text{س}) = \\begin{cases} \\text{أ}\\text{س} + \\text{ب} & \\text{س} < \\text{٠} \\\\ \\text{س}^\\text{٢} & \\text{٠} \\le \\text{س} < \\text{١} \\\\ \\text{س} + \\text{١} & \\text{س} \\ge \\text{١} \\end{cases}"
+ },
+ {
+  "name": "rtl-brackets",
+  "dir": "rtl",
+  "latex": "\\left[ \\begin{matrix} \\text{أ} & \\text{ب} \\\\ \\text{ج} & \\text{د} \\end{matrix} \\right] \\left\\langle \\begin{matrix} \\text{س}_\\text{١} \\\\ \\text{س}_\\text{٢} \\end{matrix} \\right\\rangle \\left\\lfloor \\text{س} \\right\\rfloor \\left\\lceil \\frac{\\text{أ}}{\\text{ب}} \\right\\rceil"
+ },
+ {
+  "name": "ltr-vec-dots",
+  "dir": "ltr",
+  "latex": "\\vec{F} = m\\vec{a}, \\quad a_1 + \\cdots + a_n, \\quad \\left\\{ x \\mid x > 0 \\right\\}"
+ },
+ {
+  "name": "rtl-phrase-arrow",
+  "dir": "rtl",
+  "latex": "\\text{النسبة المئوية} = \\frac{\\text{الجزء}}{\\text{الكل}} \\times \\text{١٠٠} \\Rightarrow \\text{س} \\xrightarrow{} \\text{ص}"
+ }
+]
