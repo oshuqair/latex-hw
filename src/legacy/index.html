@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LaTeX to SVG</title>
+  <style>
+    :root {
+      --bg: #141210;
+      --panel: #1d1a16;
+      --line: #3c352c;
+      --ink: #f4eee4;
+      --muted: #a89b8a;
+      --paper: #f6f0e4;
+      --paper-edge: #e4d9c6;
+      --accent: #e4532b;
+      --accent-ink: #fff8f4;
+      --danger: #ff8d78;
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, rgba(228, 83, 43, 0.16), transparent 55%),
+        var(--bg);
+      color: var(--ink);
+      font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+    }
+
+    body {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 32px 24px 48px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: flex-end;
+      margin-bottom: 22px;
+    }
+
+    .kicker {
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 44px;
+      font-weight: 560;
+      letter-spacing: -0.035em;
+      line-height: 0.95;
+    }
+
+    .lede {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 18px;
+      align-items: center;
+      justify-content: flex-end;
+      color: var(--muted);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 12px;
+    }
+
+    .controls label { display: inline-flex; gap: 8px; align-items: center; }
+    input[type="range"] { accent-color: var(--accent); width: 110px; }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      min-width: 0;
+      box-shadow: var(--shadow);
+    }
+
+    .bar {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    textarea {
+      display: block;
+      width: 100%;
+      min-height: 280px;
+      margin: 0;
+      padding: 16px;
+      border: 0;
+      resize: vertical;
+      background: transparent;
+      color: var(--ink);
+      font: 15px/1.55 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      outline: none;
+    }
+
+    .examples {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0 14px 14px;
+    }
+
+    .examples button,
+    .actions button,
+    .ghost {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font: 12px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      cursor: pointer;
+    }
+
+    .examples button:hover,
+    .ghost:hover { border-color: var(--muted); }
+
+    .plate {
+      min-height: 280px;
+      margin: 14px;
+      padding: 28px 20px;
+      display: grid;
+      place-items: center;
+      overflow: auto;
+      background:
+        linear-gradient(180deg, #fffaf2, var(--paper));
+      border: 1px solid var(--paper-edge);
+      border-radius: 12px;
+    }
+
+    #preview,
+    #error { grid-area: 1 / 1; }
+
+    #preview { max-width: 100%; color: #000; }
+    #preview svg { max-width: 100%; height: auto; }
+
+    #error {
+      margin: 0;
+      color: #8c2f1d;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+      padding: 0 14px 14px;
+    }
+
+    #download {
+      border: 0;
+      background: var(--accent);
+      color: var(--accent-ink);
+    }
+
+    #download:disabled,
+    #copy:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    details { padding: 0 14px 14px; }
+    summary {
+      cursor: pointer;
+      color: var(--muted);
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 12px;
+    }
+
+    pre {
+      margin: 10px 0 0;
+      max-height: 180px;
+      overflow: auto;
+      padding: 12px;
+      border-radius: 10px;
+      background: #100e0c;
+      color: #eadfce;
+      font: 11px/1.45 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+
+    footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 840px) {
+      header { flex-direction: column; align-items: flex-start; }
+      h1 { font-size: 36px; }
+      main { grid-template-columns: 1fr; }
+      .controls { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <p class="kicker">Local converter</p>
+      <h1>LaTeX to SVG</h1>
+      <p class="lede">The expression reads right to left, with each character in its normal shape.</p>
+    </div>
+    <div class="controls">
+      <label>Scale
+        <input id="scale" type="range" min="0.6" max="3" step="0.1" value="1.4" />
+        <span id="scaleVal">1.4×</span>
+      </label>
+      <label><input id="rtl" type="checkbox" checked /> Right to left</label>
+      <label><input id="inline" type="checkbox" /> Inline</label>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="bar">
+        <span>Expression</span>
+        <span id="texCount"></span>
+      </div>
+      <textarea id="tex" spellcheck="false" aria-label="LaTeX expression">\frac{-b \pm \sqrt{b^2-4ac}}{2a}</textarea>
+      <div class="examples" id="examples"></div>
+    </section>
+
+    <section>
+      <div class="bar">
+        <span>Preview</span>
+        <span id="meta">Waiting</span>
+      </div>
+      <div class="plate">
+        <div id="preview"></div>
+        <p id="error" hidden></p>
+      </div>
+      <div class="actions">
+        <button id="download" type="button" disabled>Download SVG</button>
+        <button id="copy" type="button" class="ghost" disabled>Copy SVG</button>
+      </div>
+      <details>
+        <summary>SVG source</summary>
+        <pre id="source"></pre>
+      </details>
+    </section>
+  </main>
+
+  <footer>Right to left. Each character is turned back to its normal shape. Black ink on a transparent background.</footer>
+
+  <script>
+    const tex = document.querySelector("#tex");
+    const preview = document.querySelector("#preview");
+    const error = document.querySelector("#error");
+    const meta = document.querySelector("#meta");
+    const source = document.querySelector("#source");
+    const download = document.querySelector("#download");
+    const copy = document.querySelector("#copy");
+    const scale = document.querySelector("#scale");
+    const scaleVal = document.querySelector("#scaleVal");
+    const inline = document.querySelector("#inline");
+    const rtl = document.querySelector("#rtl");
+    const lede = document.querySelector(".lede");
+    const texCount = document.querySelector("#texCount");
+    const examples = document.querySelector("#examples");
+
+    const samples = [
+      ["quadratic", String.raw`\frac{-b \pm \sqrt{b^2-4ac}}{2a}`],
+      ["euler", String.raw`e^{i\pi}+1=0`],
+      ["integral", String.raw`\int_{-\infty}^{\infty} e^{-x^2}\,dx=\sqrt{\pi}`],
+      ["matrix", String.raw`\begin{pmatrix} a & b \\ c & d \end{pmatrix}`],
+      ["maxwell", String.raw`\nabla\times\mathbf{B}=\mu_0\mathbf{J}+\mu_0\varepsilon_0\frac{\partial\mathbf{E}}{\partial t}`],
+    ];
+
+    for (const [name, sample] of samples) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = name;
+      button.addEventListener("click", () => {
+        tex.value = sample;
+        schedule();
+      });
+      examples.appendChild(button);
+    }
+
+    let svgText = "";
+    let timer = 0;
+    let seq = 0;
+
+    function setSvg(next) {
+      svgText = next || "";
+      const ready = Boolean(svgText);
+      download.disabled = !ready;
+      copy.disabled = !ready;
+      source.textContent = svgText;
+    }
+
+    function schedule() {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(render, 160);
+    }
+
+    async function render() {
+      const id = ++seq;
+      const latex = tex.value;
+      texCount.textContent = `${latex.length} chars`;
+      scaleVal.textContent = `${scale.value}×`;
+
+      if (!latex.trim()) {
+        preview.replaceChildren();
+        error.hidden = true;
+        meta.textContent = "Empty";
+        setSvg("");
+        return;
+      }
+
+      meta.textContent = "Rendering";
+      try {
+        const response = await fetch("/api/convert", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({
+            latex,
+            display: !inline.checked,
+            scale: Number(scale.value),
+            rightToLeft: rtl.checked,
+          }),
+        });
+        const payload = await response.json();
+        if (id !== seq) return;
+        if (!response.ok) throw new Error(payload.error || "Could not convert that expression.");
+
+        setSvg(payload.svg);
+        preview.innerHTML = payload.svg.replace(/^<\?xml[^>]*>\s*/, "");
+        error.hidden = true;
+        const drawn = preview.querySelector("svg");
+        const width = drawn?.getAttribute("width") ?? "";
+        const height = drawn?.getAttribute("height") ?? "";
+        const bytes = new Blob([payload.svg]).size;
+        meta.textContent = width && height ? `${width} × ${height} · ${bytes} bytes` : `${bytes} bytes`;
+      } catch (err) {
+        if (id !== seq) return;
+        preview.replaceChildren();
+        error.hidden = false;
+        error.textContent = err.message;
+        meta.textContent = "Error";
+        setSvg("");
+      }
+    }
+
+    download.addEventListener("click", () => {
+      const blob = new Blob([svgText], { type: "image/svg+xml" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "expression.svg";
+      link.click();
+      URL.revokeObjectURL(url);
+    });
+
+    copy.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(svgText);
+      const previous = copy.textContent;
+      copy.textContent = "Copied";
+      window.setTimeout(() => { copy.textContent = previous; }, 1200);
+    });
+
+    function describeDirection() {
+      lede.textContent = rtl.checked
+        ? "The expression reads right to left, with each character in its normal shape."
+        : "The expression reads left to right, in the usual order.";
+    }
+
+    tex.addEventListener("input", schedule);
+    scale.addEventListener("input", schedule);
+    inline.addEventListener("change", schedule);
+    rtl.addEventListener("change", () => {
+      describeDirection();
+      schedule();
+    });
+    describeDirection();
+    tex.addEventListener("dragover", (event) => event.preventDefault());
+    tex.addEventListener("drop", async (event) => {
+      event.preventDefault();
+      const file = event.dataTransfer?.files?.[0];
+      if (!file) return;
+      tex.value = await file.text();
+      schedule();
+    });
+
+    schedule();
+  </script>
+</body>
+</html>

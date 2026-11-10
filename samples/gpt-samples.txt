@@ -1,0 +1,466 @@
+# تعبيرات رياضية وفيزيائية بصيغة LaTeX
+
+**قاعدة التنسيق:** كل حرف عربي وكل رقم هندي عربي داخل التعبير الرياضي موضوع داخل `\text{...}`، بما في ذلك المتغيرات في الأسس والمؤشرات. تبقى أوامر LaTeX الرياضية مثل `\frac` و`\sqrt` و`\sin` و`\cos` خارج كتل النص.
+
+## الجبر والمعادلات
+
+\[
+\text{س}+\text{ص}=\text{ع}
+\]
+\[
+\text{س}-\text{ص}=\text{ع}
+\]
+\[
+\text{س}\times\text{ص}=\text{ع}
+\]
+\[
+\frac{\text{س}}{\text{ص}}=\text{ع}
+\]
+\[
+\text{س}^{\text{٢}}+\text{ص}^{\text{٢}}=\text{ع}^{\text{٢}}
+\]
+\[
+(\text{س}+\text{ص})^{\text{٢}}=\text{س}^{\text{٢}}+ \text{٢}\text{س}\text{ص}+\text{ص}^{\text{٢}}
+\]
+\[
+(\text{س}-\text{ص})^{\text{٢}}=\text{س}^{\text{٢}}-\text{٢}\text{س}\text{ص}+\text{ص}^{\text{٢}}
+\]
+\[
+\text{س}^{\text{٢}}-\text{ص}^{\text{٢}}=(\text{س}-\text{ص})(\text{س}+\text{ص})
+\]
+\[
+\text{أ}\text{س}+\text{ب}=\text{٠}
+\]
+\[
+\text{أ}\text{س}^{\text{٢}}+\text{ب}\text{س}+\text{ج}=\text{٠}
+\]
+\[
+\text{س}=\frac{-\text{ب}\pm\sqrt{\text{ب}^{\text{٢}}-\text{٤}\text{أ}\text{ج}}}{\text{٢}\text{أ}}
+\]
+\[
+\Delta=\text{ب}^{\text{٢}}-\text{٤}\text{أ}\text{ج}
+\]
+\[
+\text{س}_{\text{١}}+\text{س}_{\text{٢}}=-\frac{\text{ب}}{\text{أ}}
+\]
+\[
+\text{س}_{\text{١}}\text{س}_{\text{٢}}=\frac{\text{ج}}{\text{أ}}
+\]
+\[
+|\text{س}-\text{م}|<\text{ن}
+\]
+
+## الأسس والجذور واللوغاريتمات
+
+\[
+\text{أ}^{\text{م}}\times\text{أ}^{\text{ن}}=\text{أ}^{\text{م}+\text{ن}}
+\]
+\[
+\frac{\text{أ}^{\text{م}}}{\text{أ}^{\text{ن}}}=\text{أ}^{\text{م}-\text{ن}}
+\]
+\[
+(\text{أ}^{\text{م}})^{\text{ن}}=\text{أ}^{\text{م}\text{ن}}
+\]
+\[
+\text{أ}^{\text{٠}}=\text{١}
+\]
+\[
+\text{أ}^{-\text{ن}}=\frac{\text{١}}{\text{أ}^{\text{ن}}}
+\]
+\[
+\sqrt{\text{أ}\text{ب}}=\sqrt{\text{أ}}\sqrt{\text{ب}}
+\]
+\[
+\sqrt{\frac{\text{أ}}{\text{ب}}}=\frac{\sqrt{\text{أ}}}{\sqrt{\text{ب}}}
+\]
+\[
+\sqrt[\text{ن}]{\text{أ}^{\text{م}}}=\text{أ}^{\frac{\text{م}}{\text{ن}}}
+\]
+\[
+\log_{\text{أ}}(\text{س}\text{ص})=\log_{\text{أ}}(\text{س})+\log_{\text{أ}}(\text{ص})
+\]
+\[
+\log_{\text{أ}}\left(\frac{\text{س}}{\text{ص}}\right)=\log_{\text{أ}}(\text{س})-\log_{\text{أ}}(\text{ص})
+\]
+\[
+\log_{\text{أ}}(\text{س}^{\text{ن}})=\text{ن}\log_{\text{أ}}(\text{س})
+\]
+
+## المتتاليات والمتسلسلات
+
+\[
+\text{ح}_{\text{ن}}=\text{ح}_{\text{١}}+(\text{ن}-\text{١})\text{د}
+\]
+\[
+\text{م}_{\text{ن}}=\text{م}_{\text{١}}\text{ر}^{\text{ن}-\text{١}}
+\]
+\[
+\text{ج}_{\text{ن}}=\frac{\text{ن}}{\text{٢}}\left(\text{٢}\text{ح}_{\text{١}}+(\text{ن}-\text{١})\text{د}\right)
+\]
+\[
+\sum_{\text{ك}=\text{١}}^{\text{ن}}\text{ك}=\frac{\text{ن}(\text{ن}+\text{١})}{\text{٢}}
+\]
+\[
+\sum_{\text{ك}=\text{١}}^{\text{ن}}\text{ك}^{\text{٢}}=\frac{\text{ن}(\text{ن}+\text{١})(\text{٢}\text{ن}+\text{١})}{\text{٦}}
+\]
+
+## الهندسة
+
+\[
+\text{محيط المربع}=\text{٤}\text{س}
+\]
+\[
+\text{مساحة المربع}=\text{س}^{\text{٢}}
+\]
+\[
+\text{محيط المستطيل}=\text{٢}(\text{س}+\text{ص})
+\]
+\[
+\text{مساحة المستطيل}=\text{س}\text{ص}
+\]
+\[
+\text{مساحة المثلث}=\frac{\text{١}}{\text{٢}}\text{ق}\text{ع}
+\]
+\[
+\text{محيط الدائرة}=\text{٢}\pi\text{نق}
+\]
+\[
+\text{مساحة الدائرة}=\pi\text{نق}^{\text{٢}}
+\]
+\[
+\text{س}^{\text{٢}}+\text{ص}^{\text{٢}}=\text{و}^{\text{٢}}
+\]
+\[
+\text{م}=\frac{\text{ص}_{\text{٢}}-\text{ص}_{\text{١}}}{\text{س}_{\text{٢}}-\text{س}_{\text{١}}}
+\]
+\[
+\text{ص}-\text{ص}_{\text{١}}=\text{م}(\text{س}-\text{س}_{\text{١}})
+\]
+\[
+(\text{س}-\text{م})^{\text{٢}}+(\text{ص}-\text{ع})^{\text{٢}}=\text{ن}^{\text{٢}}
+\]
+\[
+\frac{\text{س}^{\text{٢}}}{\text{أ}^{\text{٢}}}+\frac{\text{ص}^{\text{٢}}}{\text{ب}^{\text{٢}}}=\text{١}
+\]
+\[
+\text{حجم المكعب}=\text{س}^{\text{٣}}
+\]
+\[
+\text{حجم الأسطوانة}=\pi\text{نق}^{\text{٢}}\text{ع}
+\]
+\[
+\text{حجم المخروط}=\frac{\text{١}}{\text{٣}}\pi\text{نق}^{\text{٢}}\text{ع}
+\]
+\[
+\text{حجم الكرة}=\frac{\text{٤}}{\text{٣}}\pi\text{نق}^{\text{٣}}
+\]
+\[
+\text{مساحة سطح الكرة}=\text{٤}\pi\text{نق}^{\text{٢}}
+\]
+
+## المثلثات
+
+\[
+\sin(\theta)=\frac{\text{الضلع المقابل}}{\text{الوتر}}
+\]
+\[
+\cos(\theta)=\frac{\text{الضلع المجاور}}{\text{الوتر}}
+\]
+\[
+\tan(\theta)=\frac{\text{الضلع المقابل}}{\text{الضلع المجاور}}
+\]
+\[
+\sin^{\text{٢}}(\theta)+\cos^{\text{٢}}(\theta)=\text{١}
+\]
+\[
+\text{١}+\tan^{\text{٢}}(\theta)=\sec^{\text{٢}}(\theta)
+\]
+\[
+\sin(\text{٢}\theta)=\text{٢}\sin(\theta)\cos(\theta)
+\]
+\[
+\cos(\text{٢}\theta)=\cos^{\text{٢}}(\theta)-\sin^{\text{٢}}(\theta)
+\]
+\[
+\text{أ}^{\text{٢}}=\text{ب}^{\text{٢}}+\text{ج}^{\text{٢}}-\text{٢}\text{ب}\text{ج}\cos(\theta)
+\]
+\[
+\frac{\text{أ}}{\sin(\alpha)}=\frac{\text{ب}}{\sin(\beta)}=\frac{\text{ج}}{\sin(\gamma)}
+\]
+
+## التفاضل والتكامل
+
+\[
+\frac{d}{d\text{س}}(\text{س}^{\text{ن}})=\text{ن}\text{س}^{\text{ن}-\text{١}}
+\]
+\[
+\frac{d}{d\text{س}}(\text{س})=\text{١}
+\]
+\[
+\frac{d}{d\text{س}}(\sin\text{س})=\cos\text{س}
+\]
+\[
+\frac{d}{d\text{س}}(\cos\text{س})=-\sin\text{س}
+\]
+\[
+\frac{d}{d\text{س}}(e^{\text{س}})=e^{\text{س}}
+\]
+\[
+\frac{d}{d\text{س}}(\ln\text{س})=\frac{\text{١}}{\text{س}}
+\]
+\[
+\frac{d}{d\text{س}}(\text{س}\text{ص})=\text{س}\frac{d\text{ص}}{d\text{س}}+\text{ص}
+\]
+\[
+\frac{d\text{ص}}{d\text{س}}=\text{م}
+\]
+\[
+\frac{d^{\text{٢}}\text{ص}}{d\text{س}^{\text{٢}}}
+\]
+\[
+\int \text{س}^{\text{ن}}\,d\text{س}=\frac{\text{س}^{\text{ن}+\text{١}}}{\text{ن}+\text{١}}+\text{ث}
+\]
+\[
+\int \frac{\text{١}}{\text{س}}\,d\text{س}=\ln|\text{س}|+\text{ث}
+\]
+\[
+\int \sin\text{س}\,d\text{س}=-\cos\text{س}+\text{ث}
+\]
+\[
+\int \cos\text{س}\,d\text{س}=\sin\text{س}+\text{ث}
+\]
+\[
+\int_{\text{أ}}^{\text{ب}}f(\text{س})\,d\text{س}
+\]
+
+## الإحصاء والاحتمالات
+
+\[
+\bar{\text{س}}=\frac{\sum_{\text{ك}=\text{١}}^{\text{ن}}\text{س}_{\text{ك}}}{\text{ن}}
+\]
+\[
+\text{التباين}=\frac{\sum_{\text{ك}=\text{١}}^{\text{ن}}(\text{س}_{\text{ك}}-\bar{\text{س}})^{\text{٢}}}{\text{ن}}
+\]
+\[
+\text{الانحراف المعياري}=\sqrt{\text{التباين}}
+\]
+\[
+\text{ح}(\text{أ})=\frac{\text{عدد النواتج الملائمة}}{\text{عدد النواتج الممكنة}}
+\]
+\[
+\text{ح}(\text{أ}\cup\text{ب})=\text{ح}(\text{أ})+\text{ح}(\text{ب})-\text{ح}(\text{أ}\cap\text{ب})
+\]
+\[
+\text{ح}(\text{أ}\mid\text{ب})=\frac{\text{ح}(\text{أ}\cap\text{ب})}{\text{ح}(\text{ب})}
+\]
+
+## المتجهات والمصفوفات
+
+\[
+\vec{\text{أ}}=(\text{س},\text{ص},\text{ع})
+\]
+\[
+|\vec{\text{أ}}|=\sqrt{\text{س}^{\text{٢}}+\text{ص}^{\text{٢}}+\text{ع}^{\text{٢}}}
+\]
+\[
+\vec{\text{أ}}\cdot\vec{\text{ب}}=\text{س}_{\text{١}}\text{س}_{\text{٢}}+\text{ص}_{\text{١}}\text{ص}_{\text{٢}}+\text{ع}_{\text{١}}\text{ع}_{\text{٢}}
+\]
+\[
+\begin{vmatrix}\text{أ}&\text{ب}\\\text{ج}&\text{د}\end{vmatrix}=\text{أ}\text{د}-\text{ب}\text{ج}
+\]
+
+## الفيزياء: الحركة والقوى والطاقة
+
+\[
+\text{ع}=\frac{\text{ف}}{\text{ز}}
+\]
+\[
+\text{ت}=\frac{\text{ع}-\text{ع}_{\text{٠}}}{\text{ز}}
+\]
+\[
+\text{ق}=\text{ك}\text{ت}
+\]
+\[
+\text{ط}=\frac{\text{١}}{\text{٢}}\text{ك}\text{ع}^{\text{٢}}
+\]
+\[
+\text{ط}=\text{ك}\text{ج}\text{ف}
+\]
+\[
+\text{ش}=\text{ق}\text{ف}\cos\theta
+\]
+\[
+\text{ق}_{\text{المحصلة}}=\text{ك}\text{ت}
+\]
+\[
+\text{ع}=\text{ع}_{\text{٠}}+\text{ت}\text{ز}
+\]
+\[
+\text{ف}=\text{ف}_{\text{٠}}+\text{ع}_{\text{٠}}\text{ز}+\frac{\text{١}}{\text{٢}}\text{ت}\text{ز}^{\text{٢}}
+\]
+\[
+\text{ع}^{\text{٢}}=\text{ع}_{\text{٠}}^{\text{٢}}+\text{٢}\text{ت}(\text{ف}-\text{ف}_{\text{٠}})
+\]
+\[
+\text{ق}_{\text{الجاذبية}}=\text{ج}\frac{\text{ك}_{\text{١}}\text{ك}_{\text{٢}}}{\text{ر}^{\text{٢}}}
+\]
+\[
+\text{القدرة}=\frac{\text{ش}}{\text{ز}}
+\]
+\[
+\text{القدرة}=\text{ق}\text{ع}
+\]
+\[
+\text{كمية الحركة}=\text{ك}\text{ع}
+\]
+\[
+\text{الدفع}=\text{ق}\text{ز}=\Delta(\text{ك}\text{ع})
+\]
+
+## الفيزياء: الموائع والحرارة
+
+\[
+\text{ض}=\frac{\text{ق}}{\text{م}}
+\]
+\[
+\text{الكثافة}=\frac{\text{ك}}{\text{ح}}
+\]
+\[
+\text{ض}=\text{ض}_{\text{٠}}+\rho\text{ج}\text{ع}
+\]
+\[
+\text{قوة الطفو}=\rho_{\text{مائع}}\text{ج}\text{ح}_{\text{مزاح}}
+\]
+\[
+\text{ط}_{\text{حرارية}}=\text{ك}\text{س}\Delta\text{د}
+\]
+\[
+\text{ض}\text{ح}=\text{ن}\text{ر}\text{د}
+\]
+\[
+\frac{\text{ض}_{\text{١}}\text{ح}_{\text{١}}}{\text{د}_{\text{١}}}=\frac{\text{ض}_{\text{٢}}\text{ح}_{\text{٢}}}{\text{د}_{\text{٢}}}
+\]
+
+## الفيزياء: الكهرباء والمغناطيسية
+
+\[
+\text{ت}=\frac{\text{ش}}{\text{ز}}
+\]
+\[
+\text{ج}=\text{ت}\text{م}
+\]
+\[
+\text{م}=\frac{\text{ج}}{\text{ت}}
+\]
+\[
+\text{ق}_{\text{كولوم}}=\text{ث}\frac{\text{ش}_{\text{١}}\text{ش}_{\text{٢}}}{\text{ر}^{\text{٢}}}
+\]
+\[
+\text{ط}_{\text{كهربائية}}=\text{ج}\text{ت}\text{ز}
+\]
+\[
+\text{ق}_{\text{مغناطيسية}}=\text{ش}\text{ع}\text{ب}\sin\theta
+\]
+\[
+\text{فيض مغناطيسي}=\text{ب}\text{م}\cos\theta
+\]
+
+## الفيزياء: الموجات والضوء والكم
+
+\[
+\text{ع}=\lambda\text{ت}
+\]
+\[
+\text{ت}=\frac{\text{١}}{\text{ز}_{\text{دورة}}}
+\]
+\[
+\text{ن}_{\text{١}}\sin\theta_{\text{١}}=\text{ن}_{\text{٢}}\sin\theta_{\text{٢}}
+\]
+\[
+\frac{\text{١}}{\text{ب}}=\frac{\text{١}}{\text{ف}}+\frac{\text{١}}{\text{ص}}
+\]
+\[
+\text{هـ}=\text{ك}\text{ض}^{\text{٢}}
+\]
+\[
+\text{ط}_{\text{فوتون}}=\text{ث } \text{ت}
+\]
+\[
+\text{ن}(\text{ز})=\text{ن}_{\text{٠}}e^{-\lambda\text{ز}}
+\]
+
+## ثوابت ونسب
+
+\[
+\pi\approx\text{٣٫١٤١٥٩}
+\]
+
+\[
+e\approx\text{٢٫٧١٨٢٨}
+\]
+
+\[
+\text{النسبة المئوية}=\frac{\text{الجزء}}{\text{الكل}}\times\text{١٠٠}\%\text{النسبة المئوية}
+\]
+
+
+\text{أمثلة على استخدام الحروف اليونانية في الرياضيات والفيزياء}
+
+\[
+\text{الزوايا}
+\alpha = \text{٣٠}^\circ
+\beta = \text{٤٥}^\circ
+\gamma = \text{٦٠}^\circ
+\]
+
+\text{٢. الدائرة}
+A = \pi r^{\text{٢}}
+C = \text{٢}\pi r
+\theta = \frac{s}{r}
+
+\text{٣. المثلثات}
+\sin(\text{α}) = \frac{\text{المقابل}}{\text{الوتر}}
+\cos(\text{β}) = \frac{\text{المجاور}}{\text{الوتر}}
+\tan(\text{γ}) = \frac{\sin(\text{γ})}{\cos(\text{γ})}
+
+\text{٤. المعادلات التربيعية}
+\Delta = b^{\text{٢}} - \text{٤}ac
+x = \frac{-b \pm \sqrt{\Delta}}{\text{٢}a}
+
+\text{٥. الفيزياء}
+F = ma
+E = mc^{\text{٢}}
+p = mv
+\alpha = \frac{\Delta v}{\Delta t}
+
+\text{٦. الحركة}
+v = v_{\text{٠}} + at
+x = x_{\text{٠}} + v_{\text{٠}}t + \frac{\text{١}}{\text{٢}}at^{\text{٢}}
+v^{\text{٢}} = v_{\text{٠}}^{\text{٢}} + \text{٢}a\Delta x
+
+\text{٧. الكهرباء}
+V = IR
+P = VI
+Q = It
+R = \rho\frac{L}{A}
+
+\text{٨. التفاضل والتكامل}
+\frac{d}{dx}x^n = nx^{n-\text{١}}
+\int x^n\,dx = \frac{x^{n+\text{١}}}{n+\text{١}} + C
+
+\text{٩. الإحصاء والاحتمالات}
+\mu = \frac{\sum x_i}{N}
+\sigma^{\text{٢}} = \frac{\sum(x_i-\mu)^{\text{٢}}}{N}
+P(A) = \frac{n(A)}{n(S)}
+
+\text{١٠. الحروف اليونانية}
+\text{ألفا: } \text{α}
+\text{بيتا: } \text{β}
+\text{جاما: } \text{γ}
+\text{دلتا: } \text{Δ}
+\text{ثيتا: } \text{θ}
+\text{لامبدا: } \text{λ}
+\text{ميو: } \text{μ}
+\text{باي: } \text{π}
+\text{سيغما: } \text{σ}
+\text{أوميغا: } \text{ω}

@@ -1,0 +1,100 @@
+\text{س} = \frac{-\text{ب} \pm \sqrt{\text{ب}^\text{٢} - \text{٤}\text{أ}\text{ج}}}{\text{٢}\text{أ}}
+\text{أ}^\text{٢} + \text{ب}^\text{٢} = \text{ج}^\text{٢}
+\text{م} = \pi \text{نق}^\text{٢}
+\text{م} = \frac{\text{ص}_\text{٢} - \text{ص}_\text{١}}{\text{س}_\text{٢} - \text{س}_\text{١}}
+\text{ف} = \sqrt{(\text{س}_\text{٢} - \text{س}_\text{١})^\text{٢} + (\text{ص}_\text{٢} - \text{ص}_\text{١})^\text{٢}}
+(\text{س} + \text{ص})^\text{٢} = \text{س}^\text{٢} + \text{٢}\text{س}\text{ص} + \text{ص}^\text{٢}
+\frac{d}{d\text{س}}\text{س}^\text{ن} = \text{ن}\text{س}^{\text{ن} - \text{١}}
+\int \text{س}^\text{ن} \, d\text{س} = \frac{\text{س}^{\text{ن} + \text{١}}}{\text{ن} + \text{١}} + \text{ث}
+\lim_{\text{س} \to \text{٠}} \frac{\sin \text{س}}{\text{س}} = \text{١}
+\lim_{\text{س} \to \infty} \frac{\text{س}^\text{٢} + \text{١}}{\text{س}^\text{٢}} = \text{١}
+\sum_{\text{ك} = \text{١}}^{\text{ن}} \text{ك} = \frac{\text{ن}(\text{ن} + \text{١})}{\text{٢}}
+\log(\text{س}\text{ص}) = \log \text{س} + \log \text{ص}
+\text{ح}_\text{ن} = \text{ح}_\text{١} + (\text{ن} - \text{١})\text{د}
+\text{م} = \text{أ}\frac{\text{ر}^\text{ن} - \text{١}}{\text{ر} - \text{١}}
+\begin{vmatrix} \text{أ} & \text{ب} \\ \text{ج} & \text{د} \end{vmatrix} = \text{أ}\text{د} - \text{ب}\text{ج}
+\sin^\text{٢}\theta + \cos^\text{٢}\theta = \text{١}
+\text{ج}^\text{٢} = \text{أ}^\text{٢} + \text{ب}^\text{٢} - \text{٢}\text{أ}\text{ب}\cos \text{ج}
+\bar{\text{س}} = \frac{\text{س}_\text{١} + \text{س}_\text{٢}}{\text{٢}}
+\text{ع} = \frac{\text{ف}}{\text{ز}}
+\text{ت} = \frac{\text{ع} - \text{ع}_\text{٠}}{\text{ز}}
+\text{ق} = \text{ك}\text{ت}
+\text{ط} = \frac{\text{١}}{\text{٢}}\text{ك}\text{ع}^\text{٢}
+\text{ط} = \text{ك}\text{ج}\text{ف}
+\text{ش} = \text{ق}\text{ف}\cos\theta
+\text{كح} = \text{ك}\text{ع}
+\text{ق} = \text{ج}\frac{\text{ك}_\text{١}\text{ك}_\text{٢}}{\text{ف}^\text{٢}}
+\text{ج} = \text{ت}\text{م}
+\text{قد} = \text{ج}\text{ت}
+\text{ق} = \text{ك}\frac{\text{ش}_\text{١}\text{ش}_\text{٢}}{\text{ف}^\text{٢}}
+\text{ع} = \text{ت}\lambda
+\text{ط} = \text{ك}c^\text{٢}
+\text{ز} = \text{٢}\pi\sqrt{\frac{\text{ل}}{\text{ج}}}
+\frac{\text{١}}{\text{ب}} = \frac{\text{١}}{\text{س}} + \frac{\text{١}}{\text{ص}}
+\rho = \frac{\text{ك}}{\text{ح}}
+\text{ض}\text{ح} = \text{ن}\text{ر}\text{د}
+\text{ض}_\text{١}\text{ح}_\text{١} = \text{ض}_\text{٢}\text{ح}_\text{٢}
+\frac{\text{ح}_\text{١}}{\text{د}_\text{١}} = \frac{\text{ح}_\text{٢}}{\text{د}_\text{٢}}
+\frac{\text{ض}_\text{١}\text{ح}_\text{١}}{\text{د}_\text{١}} = \frac{\text{ض}_\text{٢}\text{ح}_\text{٢}}{\text{د}_\text{٢}}
+\text{ن} = \frac{\text{ك}}{\text{ك}_\text{م}}
+\text{تر} = \frac{\text{ن}}{\text{ح}}
+\text{تر}_\text{١}\text{ح}_\text{١} = \text{تر}_\text{٢}\text{ح}_\text{٢}
+\text{ر} = -\log[\text{ه}^+]
+\text{ث} = \frac{[\text{ج}][\text{د}]}{[\text{أ}][\text{ب}]}
+\text{سر} = \text{ث}[\text{أ}]^\text{ن}
+\text{ز}_{\text{١}/\text{٢}} = \frac{\ln \text{٢}}{\text{ك}}
+\text{نس} = \frac{\text{ك}_\text{فع}}{\text{ك}_\text{نظ}} \times \text{١٠٠}\%
+\text{٢}\text{ه}_\text{٢} + \text{أ}_\text{٢} \rightarrow \text{٢}\text{ه}_\text{٢}\text{أ}
+\Delta\text{ط} = \Delta\text{ح} - \text{د}\Delta\text{س}
+
+multiline brackets
+\left(
+\begin{matrix}
+\text{س} + \text{ص} \\
+\text{س} - \text{ص} \\
+\text{٢}\text{س} + \text{ص}
+\end{matrix}
+\right)
+
+curly brackets
+\text{د}(\text{س}) = \begin{cases}
+\text{أ}\text{س} + \text{ب} & \text{س} < \text{٠} \\
+\text{س}^\text{٢} & \text{٠} \le \text{س} < \text{١} \\
+\text{س} + \text{١} & \text{س} \ge \text{١}
+\end{cases}
+
+square brackets
+\left[
+\begin{matrix}
+\text{أ} & \text{ب} & \text{ج} \\
+\text{د} & \text{ه} & \text{و} \\
+\text{ز} & \text{ح} & \text{ط}
+\end{matrix}
+\right]
+
+carved brackets
+\left\langle
+\begin{matrix}
+\text{س}_\text{١} \\
+\text{س}_\text{٢} \\
+\text{س}_\text{٣}
+\end{matrix}
+\right\rangle
+
+\left\lfloor
+\begin{matrix}
+\text{س} \\
+\text{ص} \\
+\text{ع}
+\end{matrix}
+\right\rfloor
+
+\left\lceil
+\begin{matrix}
+\text{أ} \\
+\text{ب} \\
+\text{ج}
+\end{matrix}
+\right\rceil
+
+\text{م}^{\text{س}^{\text{٢}} + \text{٥}\text{س} + \text{٩}}

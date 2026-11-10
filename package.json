@@ -1,0 +1,50 @@
+{
+  "name": "latex-hw",
+  "version": "0.1.0",
+  "description": "LaTeX math in, ordered handwriting pen strokes (SVG + JSON) out. LTR (Caveat Math) and Arabic RTL (Amiri).",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./node": {
+      "types": "./src/node.d.ts",
+      "default": "./src/node.js"
+    },
+    "./legacy": {
+      "default": "./src/legacy/convert.js"
+    }
+  },
+  "bin": {
+    "latex-hw": "./bin/latex-hw.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "fonts",
+    "dictionary.md",
+    "README.md",
+    "LICENSES"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "examples": "node scripts/examples.js",
+    "smoke": "node scripts/smoke.js",
+    "demo": "node scripts/serve-demo.js",
+    "build:browser": "node scripts/build-browser.js"
+  },
+  "dependencies": {
+    "harfbuzzjs": "1.6.2",
+    "mathjax-full": "3.2.2"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  }
+}
