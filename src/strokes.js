@@ -1,5 +1,7 @@
 // Stages 5 and 6: turn flattened leaves into pen strokes.
 // All coordinates here are MathJax root-frame units (1000 per em, y down).
+// Text-size Caveat glyphs are drawn from their own origin (the advance MathJax
+// was given in metrics.js). Size variants stay fitted to the TeX box.
 // In rtl, `G` mirrors the whole layout; glyphs not in keepMirroredCharacters
 // are pre-flipped around their own centre so they read normally (latex-svg rule).
 
@@ -27,7 +29,8 @@ function caveatInk(glyph) {
 }
 
 export function createStrokeBuilder(ctx) {
-  const { latin, arabicShaper, arabic, rtl, viewBox, pen, warn, opts } = ctx;
+  const { latin, arabicShaper, arabic, rtl, viewBox, pen, warn, opts, usesCaveat } = ctx;
+  const caveatEm = usesCaveat ?? (() => false);
   const mirrorAxis = 2 * viewBox.x + viewBox.w;
   const G = rtl ? (x, y) => [mirrorAxis - x, y] : (x, y) => [x, y];
   const caveatCache = new Map();
@@ -45,40 +48,54 @@ export function createStrokeBuilder(ctx) {
   /** rtl drawing policy for a TeX glyph code ({ keep, drawCode, relation }); ltr: drawn as is. */
   const glyphPolicy = (code) => (rtl ? rtlGlyphPolicy(code, opts, hasCaveat) : { keep: false, drawCode: code });
 
-  /** Strokes of a TeX glyph (<use>) from Caveat Math, or the outline fallback. */
-  function glyphUnit(leaf) {
+  /**
+   * Where a glyph's strokes sit in its local frame (y up, origin at the left
+   * of the advance). `em`: Caveat's own origin, matching the advance MathJax
+   * laid out. `box`: centred on the TeX outline (size variants, aliases).
+   * `cx` is the x the rtl pre-flip turns around.
+   */
+  function placement(leaf) {
     const ch = plainChar(leaf.code);
     const policy = glyphPolicy(leaf.code);
+    const drawCh = policy.drawCode !== leaf.code ? plainChar(policy.drawCode) : ch;
+    const alias = ALIASES.get(leaf.code);
+    const cav = getCaveat(drawCh) ?? (alias ? getCaveat(alias) : null);
+    const tb = leaf.inkLocal;
+    const texCx = (tb.x0 + tb.x1) / 2;
+    const big = LARGE_VARIANTS.has(leaf.variant);
+    const aliasFit = !!(alias && !getCaveat(ch));
+    const em = !!(cav && !big && !aliasFit && caveatEm(leaf.code, leaf.variant));
+    const cx = em ? ((cav.ink.x0 + cav.ink.x1) / 2) * opts.latinScale : texCx;
+    return { ch, policy, drawCh, cav, aliasFit, big, em, cx, texCx, texCy: (tb.y0 + tb.y1) / 2 };
+  }
+
+  /** Strokes of a TeX glyph (<use>) from Caveat Math, or the outline fallback. */
+  function glyphUnit(leaf) {
+    const place = placement(leaf);
+    const { ch, policy, drawCh, cav } = place;
     const keep = policy.keep;
     // A mirrored relation drawn as its partner glyph (< as >): upright strokes, natural order.
-    const drawCh = policy.drawCode !== leaf.code ? plainChar(policy.drawCode) : ch;
     const mirrored = rtl && (keep || drawCh !== ch);
     const sigma = sizeOf(leaf.M);
     const w = penFor(sigma);
     const tb = leaf.inkLocal; // y-up local units
-    const tcx = (tb.x0 + tb.x1) / 2;
-    const tcy = (tb.y0 + tb.y1) / 2;
     const flipLocal = rtl && !keep;
-    const toRoot = (X, Y) => G(...apply(leaf.M, flipLocal ? 2 * tcx - X : X, Y));
+    const toRoot = (X, Y) => G(...apply(leaf.M, flipLocal ? 2 * place.cx - X : X, Y));
     const base = { source: 'glyph', char: ch, font: 'latin', mirrored, node: nodeName(leaf.chain), ...(drawCh !== ch ? { glyphId: drawCh } : {}) };
-    const alias = ALIASES.get(leaf.code);
-    const cav = getCaveat(drawCh) ?? (alias ? getCaveat(alias) : null);
     if (!cav) return fallbackFromOutline(leaf.subpaths, toRoot, w, { ...base, source: 'fallback' }, ch, 'latin');
     const { g, ink } = cav;
-    // Caveat ink is a centreline: widen by the pen to compare with TeX outlines.
     const cw = ink.x1 - ink.x0;
     const chh = ink.y1 - ink.y0;
     const ccx = (ink.x0 + ink.x1) / 2;
     const ccy = -(ink.y0 + ink.y1) / 2; // y-up
     let kx = opts.latinScale;
     let ky = kx;
-    const big = LARGE_VARIANTS.has(leaf.variant);
-    if (big) {
+    if (!place.em && place.big) {
       // Large operators and size variants: fit the TeX box height.
       ky = kx = Math.max(0.3, (tb.y1 - tb.y0 - pen) / Math.max(chh, 1));
       // A taller ( [ { is drawn longer, not fatter: keep it inside its TeX box width.
       if (DELIMITER_CODES.has(leaf.code)) kx = Math.min(kx, Math.max(0.3, (tb.x1 - tb.x0) / Math.max(cw, 1)) * 1.1);
-    } else if (alias && !getCaveat(ch)) {
+    } else if (!place.em && place.aliasFit) {
       // Borrowed glyph: fit the TeX box.
       kx = Math.max(0.1, (tb.x1 - tb.x0 - pen * 0.5) / Math.max(cw, 1));
       ky = Math.min(kx * 1.5, Math.max(0.1, (tb.y1 - tb.y0) / Math.max(chh, 1)));
@@ -86,7 +103,10 @@ export function createStrokeBuilder(ctx) {
     const strokes = [];
     let prevEnd = 0;
     g.s.forEach((s, idx) => {
-      const pts = s.p.map((p) => toRoot(tcx + (p[0] - ccx) * kx, tcy + (-p[1] - ccy) * ky));
+      // em: Caveat font units from the advance origin. box: centred on the TeX outline.
+      const pts = s.p.map((p) => (place.em
+        ? toRoot(p[0] * kx, -p[1] * ky)
+        : toRoot(place.texCx + (p[0] - ccx) * kx, place.texCy + (-p[1] - ccy) * ky)));
       const scaleT = Math.sqrt(sigma * kx);
       const gap = idx === 0 ? 0 : Math.max(0, (s.d - prevEnd)) * scaleT;
       prevEnd = s.d + s.a;
@@ -298,7 +318,7 @@ export function createStrokeBuilder(ctx) {
     return false;
   }
 
-  return { glyphUnit, textUnit, ruleUnit, stretchyUnit, radicalUnit, isStretchyMo, glyphPolicy, G };
+  return { glyphUnit, textUnit, ruleUnit, stretchyUnit, radicalUnit, isStretchyMo, glyphPolicy, placement, G };
 }
 
 /** Shapes in the LTR frame, inside box b (y down), pen width w. */

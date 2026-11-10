@@ -2,7 +2,8 @@
 // Pipeline: preprocess -> MathJax 3 TeX->SVG -> flatten -> (rtl mirror) ->
 // glyph / geometry strokes -> writing order + timing -> SVG + JSON.
 
-import { getMathJax, setTextMeasurer, stripDelimiters } from './mathjax.js';
+import { getMathJax, mathJaxFont, setTextMeasurer, stripDelimiters } from './mathjax.js';
+import { applyCaveatMetrics, caveatMetrics, layoutUsesCaveat } from './metrics.js';
 import { flatten } from './flatten.js';
 import { createStrokeBuilder } from './strokes.js';
 import { orderUnits } from './order.js';
@@ -23,6 +24,7 @@ const DEFAULTS = {
   scale: 1,
   translateOperators: true,
   color: '#000',
+  // Caveat's em, relative to MathJax's em. Scales advances and strokes together.
   latinScale: 1.2,
   arabicScale: 1.0,
   penScale: 0.85,
@@ -56,6 +58,7 @@ export async function createRenderer(init = {}) {
     arabicShaper = createArabicShaper({ font: init.fontData.arabic, fullFont: init.fontData.arabicFull, bundle: arabic });
   }
   const mj = getMathJax();
+  const metrics = caveatMetrics(latin.glyphData, latin.unitsPerEm || 1000);
   const latinPen = meanBundleWidth(latin.glyphData);
   const dictionary = init.dictionary ? (typeof init.dictionary === 'string' ? parseDictionary(init.dictionary) : init.dictionary) : DEFAULT_DICTIONARY;
 
@@ -82,6 +85,9 @@ export async function createRenderer(init = {}) {
       return arabicShaper.advance(text) * (fontSize / arabicShaper.upem) * opts.arabicScale;
     };
     setTextMeasurer(measure);
+    // Text-size Latin/Greek/symbol advances follow Caveat. Size variants stay TeX.
+    applyCaveatMetrics(mathJaxFont(), metrics, opts.latinScale);
+    const usesCaveat = (code, variant) => layoutUsesCaveat(mathJaxFont(), metrics, code, variant, opts.latinScale);
     let svgNode;
     try {
       svgNode = mj.convert(expression, { display });
@@ -93,7 +99,7 @@ export async function createRenderer(init = {}) {
     }
     const flat = flatten(mj.adaptor, svgNode, { measure });
     const pen = latinPen * opts.latinScale * opts.penScale;
-    const builder = createStrokeBuilder({ latin, arabic, arabicShaper, rtl, viewBox: flat.viewBox, pen, warn, opts });
+    const builder = createStrokeBuilder({ latin, arabic, arabicShaper, rtl, viewBox: flat.viewBox, pen, warn, opts, usesCaveat });
     return { opts, rtl, flat, builder, pen, warn, warnings, expression };
   }
 

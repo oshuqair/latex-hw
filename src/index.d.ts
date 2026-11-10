@@ -32,7 +32,7 @@ export interface RenderOptions {
   translateOperators?: boolean;
   /** Stroke colour (default '#000'). */
   color?: string;
-  /** Caveat glyph size relative to the TeX glyph (default 1.2). */
+  /** Caveat's em relative to MathJax's em (default 1.2). Scales advances, heights and strokes together. */
   latinScale?: number;
   /** Amiri size factor (default 1). */
   arabicScale?: number;

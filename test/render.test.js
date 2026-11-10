@@ -149,6 +149,22 @@ test('TeX errors are reported and drawn, not dropped', async () => {
   assert.ok(r.strokes.length > 0);
 });
 
+test('letter spacing follows Caveat advances, not TeX italic widths', async () => {
+  // Caveat m advances 560 font units; latinScale 1.2 maps that to 672 MathJax units.
+  const l = await layout('mm');
+  const ms = l.elements.filter((e) => e.char === 'm');
+  assert.equal(ms.length, 2);
+  const dx = ms[1].matrix[4] - ms[0].matrix[4];
+  assert.ok(Math.abs(dx - 672) < 1, `default latinScale dx=${dx}`);
+  const tight = await layout('mm', { latinScale: 1 });
+  const ms1 = tight.elements.filter((e) => e.char === 'm');
+  const dx1 = ms1[1].matrix[4] - ms1[0].matrix[4];
+  assert.ok(Math.abs(dx1 - 560) < 1, `latinScale 1 dx=${dx1}`);
+  const again = await layout('mm');
+  const againDx = again.elements.filter((e) => e.char === 'm').map((e) => e.matrix[4]);
+  assert.deepEqual(againDx, ms.map((e) => e.matrix[4]));
+});
+
 test('element list has glyphs, rules, stretchy parts and text runs with matrices', async () => {
   const l = await layout('\\left( \\begin{matrix} a \\\\ b \\\\ c \\end{matrix} \\right) \\frac{\\text{س}}{2}', { dir: 'rtl' });
   const kinds = new Set(l.elements.map((e) => e.kind));

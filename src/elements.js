@@ -34,13 +34,22 @@ export function elementList(flat, builder, { rtl, opts }) {
       return;
     }
     if (n.kind === 'glyph') {
-      const policy = builder.glyphPolicy(n.code);
+      const place = builder.placement(n);
+      const policy = place.policy;
       const keep = policy.keep;
-      const tcx = (n.inkLocal.x0 + n.inkLocal.x1) / 2;
-      const L = rtl && !keep ? [-1, 0, 0, 1, 2 * tcx, 0] : IDENTITY;
+      const L = rtl && !keep ? [-1, 0, 0, 1, 2 * place.cx, 0] : IDENTITY;
       const isSurd = (parent?.mml === 'mo') && (n.code === 0x221a);
       const swapped = policy.drawCode !== n.code;
-      out.push({ kind: isSurd ? 'stretchy' : 'glyph', ...(isSurd ? { shape: 'radical' } : {}), char: plainChar(n.code), code: n.code, ...(swapped ? { drawnAs: plainChar(policy.drawCode) } : {}), variant: n.variant, font: 'latin', box: box(transformBox(G, n.box)), matrix: mat(mul(G, mul(n.M, L))), mirrored: rtl && (keep || swapped), node: node(n.chain) });
+      // Caveat-spaced glyphs: the box is the handwriting ink, not the TeX outline.
+      let glyphBox = n.box;
+      if (place.em && place.cav) {
+        const k = opts.latinScale;
+        const ink = place.cav.ink;
+        let local = { x0: ink.x0 * k, x1: ink.x1 * k, y0: -ink.y1 * k, y1: -ink.y0 * k };
+        if (rtl && !keep) local = { x0: 2 * place.cx - local.x1, x1: 2 * place.cx - local.x0, y0: local.y0, y1: local.y1 };
+        glyphBox = transformBox(n.M, local);
+      }
+      out.push({ kind: isSurd ? 'stretchy' : 'glyph', ...(isSurd ? { shape: 'radical' } : {}), char: plainChar(n.code), code: n.code, ...(swapped ? { drawnAs: plainChar(policy.drawCode) } : {}), variant: n.variant, font: 'latin', box: box(transformBox(G, glyphBox)), matrix: mat(mul(G, mul(n.M, L))), mirrored: rtl && (keep || swapped), node: node(n.chain) });
     } else if (n.kind === 'rule') {
       out.push({ kind: 'rule', box: box(transformBox(G, n.box)), node: node(n.chain) });
     } else if (n.kind === 'text') {

@@ -145,6 +145,11 @@ export function getMathJax() {
     return svgNode;
   }
 
-  engine = { adaptor, convert };
+  engine = { adaptor, convert, font: svg.font };
   return engine;
+}
+
+/** The shared TeX font data (metrics are overwritten per render; see metrics.js). */
+export function mathJaxFont() {
+  return getMathJax().font;
 }

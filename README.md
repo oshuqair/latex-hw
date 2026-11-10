@@ -71,7 +71,7 @@ are passed in as data.
 | `translateOperators` | `true` | rtl: `\sin`→جا, `\log`→لو, `\lim`→نهـــا … (`dictionary.md`) |
 | `mirrorRelations` | `true` | rtl: draw `< > ≤ ≥ ≪ ≫ ⊂ ⊃ ⊆ ⊇ ∈ ∋ ∉ ⊢ ⊣ …` mirrored, as Unicode bidi does; `false` = latex-svg (LTR shapes) |
 | `penScale` | `0.85` | pen width relative to Caveat's mean stroke width |
-| `latinScale` / `arabicScale` | `1.2` / `1` | glyph size factors against the TeX boxes |
+| `latinScale` / `arabicScale` | `1.2` / `1` | Caveat em relative to MathJax's em (advances and strokes); Amiri size factor |
 | `strokeWidth` | `'uniform'` | one pen for everything; `'stroke'` keeps Amiri's per-stroke mean width |
 | `unitPause` | `0.12` | seconds between glyphs / rules / delimiters in the suggested timing |
 | `color` | `'#000'` | stroke colour |
@@ -116,10 +116,10 @@ animates the strokes with `stroke-dashoffset`. The demo is the only place with a
 | stage | file | notes |
 |---|---|---|
 | preprocess | `src/mathjax.js`, `src/dictionary.js` | delimiter stripping, operator dictionary (rtl), TeX reset per call — from latex-svg `convert.js` |
-| layout | `src/mathjax.js` | MathJax 3.2.2 TeX→SVG, liteAdaptor, keepPhrasesTogether patch; text measured with harfbuzzjs + Amiri instead of `hb-shape` |
+| layout | `src/mathjax.js`, `src/metrics.js` | MathJax 3.2.2 TeX→SVG, liteAdaptor, keepPhrasesTogether patch; text measured with harfbuzzjs + Amiri. Text-size advances and heights are Caveat's (`latinScale`) |
 | flatten | `src/flatten.js` | SVG tree → leaves with absolute matrices (nested `<svg>` viewports included) |
 | rtl | `src/mirror-set.js`, `src/strokes.js`, `src/elements.js` | same rule as latex-svg `rtl.js`: mirror the layout, flip glyphs back unless in `keepMirroredCharacters` (now + horizontal arrows); Bidi_Mirrored relations drawn as their mirror partner (`rtlGlyphPolicy`) |
-| glyphs | `src/strokes.js` | Caveat Math strokes fitted to the MathJax glyph box; Arabic runs shaped with `src/arabic.js` → `glyphDataById` |
+| glyphs | `src/strokes.js` | Caveat Math strokes drawn from the glyph's own origin (size variants still fitted to the TeX box); Arabic runs shaped with `src/arabic.js` → `glyphDataById` |
 | geometry | `src/strokes.js` | rules → one pen line; √ + bar → one stroke; tall ( [ { | ‖ ⟨ ⌊ ⌈, braces and long arrows → synthesized fitted strokes |
 | order | `src/order.js` | reading direction; numerator → bar → denominator; radical → index → radicand; base → sup → sub; matrix brackets → cells row by row |
 | emit | `src/svg.js` | px conversion, suggested timing, SVG + JSON |
@@ -165,7 +165,7 @@ Numbers inside Arabic text keep their left-to-right order (١٠٠).
 Smoke test (`npm run smoke`, 176 rtl expressions from the two sample files): **176 clean** — 0 errors,
 0 warnings.
 
-- Glyphs are fitted into MathJax's Latin Modern boxes, so spacing is TeX's, not Caveat's (Phase 4: a MATH table).
+- Text-size spacing follows Caveat's advances (scaled by `latinScale`). MathJax's mu skips, axis height and fraction clearance are still the TeX font's. Large operators and stretched delimiters keep TeX's boxes.
 - A math symbol inside Arabic `\text{}` that Amiri lacks sits in Amiri's .notdef slot, so it can look tight.
 - Characters in neither font (ℵ ℘ ∎ …) still use the outline fallback with a warning.
 - Stretchy shapes without a synthesizer (e.g. `\widehat` size variants, `\overbrace` pieces other than the brace) fall back to stretched glyphs or outlines.
