@@ -4,21 +4,17 @@
 // Changed: text runs are measured by a pluggable measurer (harfbuzzjs + Amiri)
 // instead of the hb-shape CLI.
 
-import mathjaxModule from 'mathjax-full/js/mathjax.js';
-import texModule from 'mathjax-full/js/input/tex.js';
-import svgModule from 'mathjax-full/js/output/svg.js';
-import liteModule from 'mathjax-full/js/adaptors/liteAdaptor.js';
-import htmlModule from 'mathjax-full/js/handlers/html.js';
-import allPackagesModule from 'mathjax-full/js/input/tex/AllPackages.js';
-import textNodeModule from 'mathjax-full/js/output/svg/Wrappers/TextNode.js';
-
-const { mathjax } = mathjaxModule;
-const { TeX } = texModule;
-const { SVG } = svgModule;
-const { liteAdaptor } = liteModule;
-const { RegisterHTMLHandler } = htmlModule;
-const { AllPackages } = allPackagesModule;
-const { SVGTextNode } = textNodeModule;
+// Named imports. These files are CommonJS (`exports.Name` only). esbuild turns
+// `module.exports` into a default, so a default import works in Node and in
+// dist/latex-hw.browser.js. Vite serving the raw file (optimizeDeps.exclude)
+// does not synthesize that default: "does not provide an export named 'default'".
+import { mathjax } from 'mathjax-full/js/mathjax.js';
+import { TeX } from 'mathjax-full/js/input/tex.js';
+import { SVG } from 'mathjax-full/js/output/svg.js';
+import { liteAdaptor } from 'mathjax-full/js/adaptors/liteAdaptor.js';
+import { RegisterHTMLHandler } from 'mathjax-full/js/handlers/html.js';
+import { AllPackages } from 'mathjax-full/js/input/tex/AllPackages.js';
+import { SVGTextNode } from 'mathjax-full/js/output/svg/Wrappers/TextNode.js';
 
 /** Current text measurer: (text, fontSize) => advance in the same units as fontSize, or null. */
 let currentMeasurer = null;

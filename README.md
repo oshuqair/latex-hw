@@ -24,8 +24,9 @@ npm install latex-hw           # once a release is published to npm (see "Releas
 Until then, install a release tarball from GitHub (`npm install https://github.com/oshuqair/latex-hw/releases/download/vX.Y.Z/latex-hw-X.Y.Z.tgz`)
 or work from a clone. For a page without a bundler, download `latex-hw-browser-X.Y.Z.zip` from the
 release: it holds `latex-hw.browser.js`, `harfbuzz.wasm` and `fonts/`; pass the URL of that `fonts/`
-folder to `createBrowserRenderer`. From the npm package the bundle is `latex-hw/dist/latex-hw.browser.js`
-and it finds the package's `fonts/` by itself.
+folder to `createBrowserRenderer`. Bundlers resolve `latex-hw/browser` to `dist/latex-hw.browser.js`
+(the `browser` export) and that bundle finds the package's `fonts/` by itself. Node resolves the same
+entry to `src/browser.js`.
 
 ## Run from a clone
 
@@ -66,7 +67,8 @@ const elements = await layout('\\text{س}^\\text{٢}', { dir: 'rtl' }); // posit
 
 ```js
 import { createBrowserRenderer } from 'latex-hw/browser';
-const r = await createBrowserRenderer('/path/to/latex-hw/fonts/');   // fetches the font data once
+const r = await createBrowserRenderer();                             // fonts shipped with the package
+// or createBrowserRenderer(new URL('./fonts/', import.meta.url).href) to fetch another fonts/ folder
 const { svg } = r.render('\\frac{1}{2}', { dir: 'rtl' });           // synchronous after that
 ```
 

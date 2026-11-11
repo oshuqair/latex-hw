@@ -40,6 +40,7 @@
     },
     "./browser": {
       "types": "./src/browser.d.ts",
+      "browser": "./dist/latex-hw.browser.js",
       "default": "./src/browser.js"
     },
     "./legacy": {

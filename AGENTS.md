@@ -53,7 +53,7 @@ latex ─► preprocess ─► MathJax TeX→SVG ─► flatten ─► rtl mirro
 | Stage | File | What it does |
 |---|---|---|
 | entry | `src/index.js` | `createRenderer({ fonts, fontData, dictionary })` → `{ render, layout }`; DEFAULTS; TeX errors → drawn message + `tex-error` warning |
-| Node / browser loaders | `src/node.js`, `src/browser.js` | load `fonts/` from disk / via `fetch`; nothing else differs |
+| Node / browser loaders | `src/node.js`, `src/browser.js` | load `fonts/` from disk / via `fetch` of static `new URL('../fonts/…file', import.meta.url)` (Vite emits those; a passed `base` is still a fonts/ directory). `src/bundler-assets.js` fixes Vite ≤7 prebundle URLs that would otherwise hit index.html. The `browser` export condition serves `dist/latex-hw.browser.js` so a bundler does not load MathJax's CommonJS as raw ESM |
 | preprocess | `src/autowrap.js`, `src/dictionary.js`, `dictionary.md` | bare Arabic → `\text{}` (`autoWrapArabic`); rtl operator translation: `\mathop{\text{جا}}\nolimits`; limit words (lim, max, min…) keep limits |
 | layout | `src/mathjax.js`, `src/metrics.js` | MathJax 3.2.2 (AllPackages minus noerrors/noundefined), TeX reset per call, `keepPhrasesTogether` patch (Arabic `\text{}` = one run), text widths from harfbuzzjs via `setTextMeasurer`. Text-size char advances, heights and depths are Caveat's (`latinScale` scales them); large-op and stretchy size variants stay TeX |
 | flatten | `src/flatten.js` | SVG tree → nodes (`mml`, chain) and leaves (glyph `<use>`, rule `<rect>`, text) with absolute matrices, nested `<svg>` viewports |
