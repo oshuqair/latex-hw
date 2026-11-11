@@ -1,6 +1,6 @@
 {
   "name": "latex-hw",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "LaTeX math in, ordered handwriting pen strokes (SVG + JSON) out. LTR (Caveat Math) and Arabic RTL (Amiri).",
   "keywords": [
     "latex",
