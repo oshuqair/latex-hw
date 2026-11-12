@@ -1,0 +1,1357 @@
+{
+  "font": "Amiri",
+  "source": "fonts/amiri/glyphData.json",
+  "count": 150,
+  "glyphs": [
+    {
+      "id": "U+0021",
+      "char": "!",
+      "name": "EXCLAMATION MARK",
+      "block": "Basic Latin",
+      "advance": 235,
+      "strokes": 2,
+      "duration": 0.298
+    },
+    {
+      "id": "U+0022",
+      "char": "\"",
+      "name": "QUOTATION MARK",
+      "block": "Basic Latin",
+      "advance": 273,
+      "strokes": 2,
+      "duration": 0.262
+    },
+    {
+      "id": "U+0023",
+      "char": "#",
+      "name": "NUMBER SIGN",
+      "block": "Basic Latin",
+      "advance": 468,
+      "strokes": 4,
+      "duration": 0.928
+    },
+    {
+      "id": "U+0024",
+      "char": "$",
+      "name": "DOLLAR SIGN",
+      "block": "Basic Latin",
+      "advance": 486,
+      "strokes": 2,
+      "duration": 0.84
+    },
+    {
+      "id": "U+0025",
+      "char": "%",
+      "name": "PERCENT SIGN",
+      "block": "Basic Latin",
+      "advance": 651,
+      "strokes": 3,
+      "duration": 1.096
+    },
+    {
+      "id": "U+0026",
+      "char": "&",
+      "name": "AMPERSAND",
+      "block": "Basic Latin",
+      "advance": 666,
+      "strokes": 1,
+      "duration": 0.812
+    },
+    {
+      "id": "U+0028",
+      "char": "(",
+      "name": "LEFT PARENTHESIS",
+      "block": "Basic Latin",
+      "advance": 458,
+      "strokes": 1,
+      "duration": 0.398
+    },
+    {
+      "id": "U+0029",
+      "char": ")",
+      "name": "RIGHT PARENTHESIS",
+      "block": "Basic Latin",
+      "advance": 458,
+      "strokes": 1,
+      "duration": 0.398
+    },
+    {
+      "id": "U+002A",
+      "char": "*",
+      "name": "ASTERISK",
+      "block": "Basic Latin",
+      "advance": 432,
+      "strokes": 3,
+      "duration": 0.548
+    },
+    {
+      "id": "U+002B",
+      "char": "+",
+      "name": "PLUS SIGN",
+      "block": "Basic Latin",
+      "advance": 529,
+      "strokes": 2,
+      "duration": 0.43
+    },
+    {
+      "id": "U+002C",
+      "char": ",",
+      "name": "COMMA",
+      "block": "Basic Latin",
+      "advance": 196,
+      "strokes": 1,
+      "duration": 0.068
+    },
+    {
+      "id": "U+002D",
+      "char": "-",
+      "name": "HYPHEN-MINUS",
+      "block": "Basic Latin",
+      "advance": 368,
+      "strokes": 1,
+      "duration": 0.079
+    },
+    {
+      "id": "U+002E",
+      "char": ".",
+      "name": "FULL STOP",
+      "block": "Basic Latin",
+      "advance": 317,
+      "strokes": 1,
+      "duration": 0.041
+    },
+    {
+      "id": "U+002F",
+      "char": "/",
+      "name": "SOLIDUS",
+      "block": "Basic Latin",
+      "advance": 344,
+      "strokes": 1,
+      "duration": 0.293
+    },
+    {
+      "id": "U+0030",
+      "char": "0",
+      "name": "DIGIT ZERO",
+      "block": "Basic Latin",
+      "advance": 532,
+      "strokes": 1,
+      "duration": 0.501
+    },
+    {
+      "id": "U+0031",
+      "char": "1",
+      "name": "DIGIT ONE",
+      "block": "Basic Latin",
+      "advance": 532,
+      "strokes": 1,
+      "duration": 0.374
+    },
+    {
+      "id": "U+0032",
+      "char": "2",
+      "name": "DIGIT TWO",
+      "block": "Basic Latin",
+      "advance": 532,
+      "strokes": 1,
+      "duration": 0.467
+    },
+    {
+      "id": "U+0033",
+      "char": "3",
+      "name": "DIGIT THREE",
+      "block": "Basic Latin",
+      "advance": 532,
+      "strokes": 1,
+      "duration": 0.432
+    },
+    {
+      "id": "U+0034",
+      "char": "4",
+      "name": "DIGIT FOUR",
+      "block": "Basic Latin",
+      "advance": 532,
+      "strokes": 2,
+      "duration": 0.676
+    },
+    {
+      "id": "U+0035",
+      "char": "5",
+      "name": "DIGIT FIVE",
+      "block": "Basic Latin",
+      "advance": 532,
+      "strokes": 1,
+      "duration": 0.407
+    },
+    {
+      "id": "U+0036",
+      "char": "6",
+      "name": "DIGIT SIX",
+      "block": "Basic Latin",
+      "advance": 532,
+      "strokes": 1,
+      "duration": 0.496
+    },
+    {
+      "id": "U+0037",
+      "char": "7",
+      "name": "DIGIT SEVEN",
+      "block": "Basic Latin",
+      "advance": 532,
+      "strokes": 2,
+      "duration": 0.528
+    },
+    {
+      "id": "U+0038",
+      "char": "8",
+      "name": "DIGIT EIGHT",
+      "block": "Basic Latin",
+      "advance": 532,
+      "strokes": 1,
+      "duration": 0.582
+    },
+    {
+      "id": "U+0039",
+      "char": "9",
+      "name": "DIGIT NINE",
+      "block": "Basic Latin",
+      "advance": 532,
+      "strokes": 1,
+      "duration": 0.496
+    },
+    {
+      "id": "U+003A",
+      "char": ":",
+      "name": "COLON",
+      "block": "Basic Latin",
+      "advance": 220,
+      "strokes": 2,
+      "duration": 0.152
+    },
+    {
+      "id": "U+003B",
+      "char": ";",
+      "name": "SEMICOLON",
+      "block": "Basic Latin",
+      "advance": 226,
+      "strokes": 2,
+      "duration": 0.22
+    },
+    {
+      "id": "U+003C",
+      "char": "<",
+      "name": "LESS-THAN SIGN",
+      "block": "Basic Latin",
+      "advance": 480,
+      "strokes": 1,
+      "duration": 0.251
+    },
+    {
+      "id": "U+003D",
+      "char": "=",
+      "name": "EQUALS SIGN",
+      "block": "Basic Latin",
+      "advance": 551,
+      "strokes": 2,
+      "duration": 0.388
+    },
+    {
+      "id": "U+003E",
+      "char": ">",
+      "name": "GREATER-THAN SIGN",
+      "block": "Basic Latin",
+      "advance": 481,
+      "strokes": 1,
+      "duration": 0.251
+    },
+    {
+      "id": "U+003F",
+      "char": "?",
+      "name": "QUESTION MARK",
+      "block": "Basic Latin",
+      "advance": 347,
+      "strokes": 2,
+      "duration": 0.353
+    },
+    {
+      "id": "U+0040",
+      "char": "@",
+      "name": "COMMERCIAL AT",
+      "block": "Basic Latin",
+      "advance": 730,
+      "strokes": 1,
+      "duration": 0.97
+    },
+    {
+      "id": "U+0041",
+      "char": "A",
+      "name": "LATIN CAPITAL LETTER A",
+      "block": "Basic Latin",
+      "advance": 612,
+      "strokes": 2,
+      "duration": 0.832
+    },
+    {
+      "id": "U+0042",
+      "char": "B",
+      "name": "LATIN CAPITAL LETTER B",
+      "block": "Basic Latin",
+      "advance": 582,
+      "strokes": 2,
+      "duration": 0.936
+    },
+    {
+      "id": "U+0043",
+      "char": "C",
+      "name": "LATIN CAPITAL LETTER C",
+      "block": "Basic Latin",
+      "advance": 658,
+      "strokes": 1,
+      "duration": 0.511
+    },
+    {
+      "id": "U+0044",
+      "char": "D",
+      "name": "LATIN CAPITAL LETTER D",
+      "block": "Basic Latin",
+      "advance": 693,
+      "strokes": 2,
+      "duration": 0.819
+    },
+    {
+      "id": "U+0045",
+      "char": "E",
+      "name": "LATIN CAPITAL LETTER E",
+      "block": "Basic Latin",
+      "advance": 573,
+      "strokes": 4,
+      "duration": 1.14
+    },
+    {
+      "id": "U+0046",
+      "char": "F",
+      "name": "LATIN CAPITAL LETTER F",
+      "block": "Basic Latin",
+      "advance": 522,
+      "strokes": 3,
+      "duration": 0.922
+    },
+    {
+      "id": "U+0047",
+      "char": "G",
+      "name": "LATIN CAPITAL LETTER G",
+      "block": "Basic Latin",
+      "advance": 703,
+      "strokes": 2,
+      "duration": 0.789
+    },
+    {
+      "id": "U+0048",
+      "char": "H",
+      "name": "LATIN CAPITAL LETTER H",
+      "block": "Basic Latin",
+      "advance": 708,
+      "strokes": 3,
+      "duration": 1.229
+    },
+    {
+      "id": "U+0049",
+      "char": "I",
+      "name": "LATIN CAPITAL LETTER I",
+      "block": "Basic Latin",
+      "advance": 316,
+      "strokes": 1,
+      "duration": 0.403
+    },
+    {
+      "id": "U+004A",
+      "char": "J",
+      "name": "LATIN CAPITAL LETTER J",
+      "block": "Basic Latin",
+      "advance": 305,
+      "strokes": 2,
+      "duration": 0.57
+    },
+    {
+      "id": "U+004B",
+      "char": "K",
+      "name": "LATIN CAPITAL LETTER K",
+      "block": "Basic Latin",
+      "advance": 641,
+      "strokes": 3,
+      "duration": 1.113
+    },
+    {
+      "id": "U+004C",
+      "char": "L",
+      "name": "LATIN CAPITAL LETTER L",
+      "block": "Basic Latin",
+      "advance": 550,
+      "strokes": 2,
+      "duration": 0.626
+    },
+    {
+      "id": "U+004D",
+      "char": "M",
+      "name": "LATIN CAPITAL LETTER M",
+      "block": "Basic Latin",
+      "advance": 885,
+      "strokes": 1,
+      "duration": 1.484
+    },
+    {
+      "id": "U+004E",
+      "char": "N",
+      "name": "LATIN CAPITAL LETTER N",
+      "block": "Basic Latin",
+      "advance": 757,
+      "strokes": 1,
+      "duration": 0.937
+    },
+    {
+      "id": "U+004F",
+      "char": "O",
+      "name": "LATIN CAPITAL LETTER O",
+      "block": "Basic Latin",
+      "advance": 730,
+      "strokes": 1,
+      "duration": 0.612
+    },
+    {
+      "id": "U+0050",
+      "char": "P",
+      "name": "LATIN CAPITAL LETTER P",
+      "block": "Basic Latin",
+      "advance": 535,
+      "strokes": 2,
+      "duration": 0.777
+    },
+    {
+      "id": "U+0051",
+      "char": "Q",
+      "name": "LATIN CAPITAL LETTER Q",
+      "block": "Basic Latin",
+      "advance": 729,
+      "strokes": 1,
+      "duration": 0.737
+    },
+    {
+      "id": "U+0052",
+      "char": "R",
+      "name": "LATIN CAPITAL LETTER R",
+      "block": "Basic Latin",
+      "advance": 606,
+      "strokes": 3,
+      "duration": 1.025
+    },
+    {
+      "id": "U+0053",
+      "char": "S",
+      "name": "LATIN CAPITAL LETTER S",
+      "block": "Basic Latin",
+      "advance": 490,
+      "strokes": 1,
+      "duration": 0.482
+    },
+    {
+      "id": "U+0054",
+      "char": "T",
+      "name": "LATIN CAPITAL LETTER T",
+      "block": "Basic Latin",
+      "advance": 611,
+      "strokes": 2,
+      "duration": 0.686
+    },
+    {
+      "id": "U+0055",
+      "char": "U",
+      "name": "LATIN CAPITAL LETTER U",
+      "block": "Basic Latin",
+      "advance": 706,
+      "strokes": 1,
+      "duration": 0.677
+    },
+    {
+      "id": "U+0056",
+      "char": "V",
+      "name": "LATIN CAPITAL LETTER V",
+      "block": "Basic Latin",
+      "advance": 623,
+      "strokes": 1,
+      "duration": 0.621
+    },
+    {
+      "id": "U+0057",
+      "char": "W",
+      "name": "LATIN CAPITAL LETTER W",
+      "block": "Basic Latin",
+      "advance": 878,
+      "strokes": 1,
+      "duration": 1.012
+    },
+    {
+      "id": "U+0058",
+      "char": "X",
+      "name": "LATIN CAPITAL LETTER X",
+      "block": "Basic Latin",
+      "advance": 652,
+      "strokes": 2,
+      "duration": 1.048
+    },
+    {
+      "id": "U+0059",
+      "char": "Y",
+      "name": "LATIN CAPITAL LETTER Y",
+      "block": "Basic Latin",
+      "advance": 583,
+      "strokes": 2,
+      "duration": 0.796
+    },
+    {
+      "id": "U+005A",
+      "char": "Z",
+      "name": "LATIN CAPITAL LETTER Z",
+      "block": "Basic Latin",
+      "advance": 618,
+      "strokes": 1,
+      "duration": 0.665
+    },
+    {
+      "id": "U+005C",
+      "char": "\\",
+      "name": "REVERSE SOLIDUS",
+      "block": "Basic Latin",
+      "advance": 344,
+      "strokes": 1,
+      "duration": 0.293
+    },
+    {
+      "id": "U+005E",
+      "char": "^",
+      "name": "CIRCUMFLEX ACCENT",
+      "block": "Basic Latin",
+      "advance": 380,
+      "strokes": 1,
+      "duration": 0.158
+    },
+    {
+      "id": "U+005F",
+      "char": "_",
+      "name": "LOW LINE",
+      "block": "Basic Latin",
+      "advance": 493,
+      "strokes": 1,
+      "duration": 0.131
+    },
+    {
+      "id": "U+0060",
+      "char": "`",
+      "name": "GRAVE ACCENT",
+      "block": "Basic Latin",
+      "advance": 333,
+      "strokes": 1,
+      "duration": 0.05
+    },
+    {
+      "id": "U+0061",
+      "char": "a",
+      "name": "LATIN SMALL LETTER A",
+      "block": "Basic Latin",
+      "advance": 420,
+      "strokes": 2,
+      "duration": 0.561
+    },
+    {
+      "id": "U+0062",
+      "char": "b",
+      "name": "LATIN SMALL LETTER B",
+      "block": "Basic Latin",
+      "advance": 486,
+      "strokes": 1,
+      "duration": 0.537
+    },
+    {
+      "id": "U+0063",
+      "char": "c",
+      "name": "LATIN SMALL LETTER C",
+      "block": "Basic Latin",
+      "advance": 413,
+      "strokes": 1,
+      "duration": 0.269
+    },
+    {
+      "id": "U+0064",
+      "char": "d",
+      "name": "LATIN SMALL LETTER D",
+      "block": "Basic Latin",
+      "advance": 502,
+      "strokes": 2,
+      "duration": 0.844
+    },
+    {
+      "id": "U+0065",
+      "char": "e",
+      "name": "LATIN SMALL LETTER E",
+      "block": "Basic Latin",
+      "advance": 419,
+      "strokes": 1,
+      "duration": 0.385
+    },
+    {
+      "id": "U+0066",
+      "char": "f",
+      "name": "LATIN SMALL LETTER F",
+      "block": "Basic Latin",
+      "advance": 300,
+      "strokes": 2,
+      "duration": 0.555
+    },
+    {
+      "id": "U+0067",
+      "char": "g",
+      "name": "LATIN SMALL LETTER G",
+      "block": "Basic Latin",
+      "advance": 455,
+      "strokes": 3,
+      "duration": 1.033
+    },
+    {
+      "id": "U+0068",
+      "char": "h",
+      "name": "LATIN SMALL LETTER H",
+      "block": "Basic Latin",
+      "advance": 503,
+      "strokes": 1,
+      "duration": 0.849
+    },
+    {
+      "id": "U+0069",
+      "char": "i",
+      "name": "LATIN SMALL LETTER I",
+      "block": "Basic Latin",
+      "advance": 263,
+      "strokes": 2,
+      "duration": 0.432
+    },
+    {
+      "id": "U+006A",
+      "char": "j",
+      "name": "LATIN SMALL LETTER J",
+      "block": "Basic Latin",
+      "advance": 233,
+      "strokes": 2,
+      "duration": 0.427
+    },
+    {
+      "id": "U+006B",
+      "char": "k",
+      "name": "LATIN SMALL LETTER K",
+      "block": "Basic Latin",
+      "advance": 505,
+      "strokes": 3,
+      "duration": 0.955
+    },
+    {
+      "id": "U+006C",
+      "char": "l",
+      "name": "LATIN SMALL LETTER L",
+      "block": "Basic Latin",
+      "advance": 249,
+      "strokes": 1,
+      "duration": 0.358
+    },
+    {
+      "id": "U+006D",
+      "char": "m",
+      "name": "LATIN SMALL LETTER M",
+      "block": "Basic Latin",
+      "advance": 771,
+      "strokes": 3,
+      "duration": 1.173
+    },
+    {
+      "id": "U+006E",
+      "char": "n",
+      "name": "LATIN SMALL LETTER N",
+      "block": "Basic Latin",
+      "advance": 519,
+      "strokes": 2,
+      "duration": 0.727
+    },
+    {
+      "id": "U+006F",
+      "char": "o",
+      "name": "LATIN SMALL LETTER O",
+      "block": "Basic Latin",
+      "advance": 497,
+      "strokes": 1,
+      "duration": 0.388
+    },
+    {
+      "id": "U+0070",
+      "char": "p",
+      "name": "LATIN SMALL LETTER P",
+      "block": "Basic Latin",
+      "advance": 498,
+      "strokes": 2,
+      "duration": 0.865
+    },
+    {
+      "id": "U+0071",
+      "char": "q",
+      "name": "LATIN SMALL LETTER Q",
+      "block": "Basic Latin",
+      "advance": 485,
+      "strokes": 2,
+      "duration": 0.707
+    },
+    {
+      "id": "U+0072",
+      "char": "r",
+      "name": "LATIN SMALL LETTER R",
+      "block": "Basic Latin",
+      "advance": 374,
+      "strokes": 2,
+      "duration": 0.506
+    },
+    {
+      "id": "U+0073",
+      "char": "s",
+      "name": "LATIN SMALL LETTER S",
+      "block": "Basic Latin",
+      "advance": 360,
+      "strokes": 1,
+      "duration": 0.314
+    },
+    {
+      "id": "U+0074",
+      "char": "t",
+      "name": "LATIN SMALL LETTER T",
+      "block": "Basic Latin",
+      "advance": 303,
+      "strokes": 2,
+      "duration": 0.454
+    },
+    {
+      "id": "U+0075",
+      "char": "u",
+      "name": "LATIN SMALL LETTER U",
+      "block": "Basic Latin",
+      "advance": 502,
+      "strokes": 1,
+      "duration": 0.662
+    },
+    {
+      "id": "U+0076",
+      "char": "v",
+      "name": "LATIN SMALL LETTER V",
+      "block": "Basic Latin",
+      "advance": 461,
+      "strokes": 1,
+      "duration": 0.436
+    },
+    {
+      "id": "U+0077",
+      "char": "w",
+      "name": "LATIN SMALL LETTER W",
+      "block": "Basic Latin",
+      "advance": 704,
+      "strokes": 2,
+      "duration": 0.917
+    },
+    {
+      "id": "U+0078",
+      "char": "x",
+      "name": "LATIN SMALL LETTER X",
+      "block": "Basic Latin",
+      "advance": 464,
+      "strokes": 2,
+      "duration": 0.763
+    },
+    {
+      "id": "U+0079",
+      "char": "y",
+      "name": "LATIN SMALL LETTER Y",
+      "block": "Basic Latin",
+      "advance": 458,
+      "strokes": 2,
+      "duration": 0.682
+    },
+    {
+      "id": "U+007A",
+      "char": "z",
+      "name": "LATIN SMALL LETTER Z",
+      "block": "Basic Latin",
+      "advance": 436,
+      "strokes": 1,
+      "duration": 0.435
+    },
+    {
+      "id": "U+007C",
+      "char": "|",
+      "name": "VERTICAL LINE",
+      "block": "Basic Latin",
+      "advance": 200,
+      "strokes": 1,
+      "duration": 0.348
+    },
+    {
+      "id": "U+007E",
+      "char": "~",
+      "name": "TILDE",
+      "block": "Basic Latin",
+      "advance": 556,
+      "strokes": 1,
+      "duration": 0.164
+    },
+    {
+      "id": "U+060C",
+      "char": "،",
+      "name": "ARABIC COMMA",
+      "block": "Arabic",
+      "advance": 369,
+      "strokes": 1,
+      "duration": 0.379
+    },
+    {
+      "id": "U+061B",
+      "char": "؛",
+      "name": "ARABIC SEMICOLON",
+      "block": "Arabic",
+      "advance": 369,
+      "strokes": 2,
+      "duration": 0.53
+    },
+    {
+      "id": "U+061F",
+      "char": "؟",
+      "name": "ARABIC QUESTION MARK",
+      "block": "Arabic",
+      "advance": 413,
+      "strokes": 4,
+      "duration": 0.756
+    },
+    {
+      "id": "U+0621",
+      "char": "ء",
+      "name": "ARABIC LETTER HAMZA",
+      "block": "Arabic",
+      "advance": 381,
+      "strokes": 2,
+      "duration": 0.385
+    },
+    {
+      "id": "U+0622",
+      "char": "آ",
+      "name": "ARABIC LETTER ALEF WITH MADDA ABOVE",
+      "block": "Arabic",
+      "advance": 217,
+      "strokes": 2,
+      "duration": 0.52
+    },
+    {
+      "id": "U+0623",
+      "char": "أ",
+      "name": "ARABIC LETTER ALEF WITH HAMZA ABOVE",
+      "block": "Arabic",
+      "advance": 234,
+      "strokes": 3,
+      "duration": 0.68
+    },
+    {
+      "id": "U+0624",
+      "char": "ؤ",
+      "name": "ARABIC LETTER WAW WITH HAMZA ABOVE",
+      "block": "Arabic",
+      "advance": 400,
+      "strokes": 3,
+      "duration": 0.929
+    },
+    {
+      "id": "U+0625",
+      "char": "إ",
+      "name": "ARABIC LETTER ALEF WITH HAMZA BELOW",
+      "block": "Arabic",
+      "advance": 217,
+      "strokes": 3,
+      "duration": 0.68
+    },
+    {
+      "id": "U+0626",
+      "char": "ئ",
+      "name": "ARABIC LETTER YEH WITH HAMZA ABOVE",
+      "block": "Arabic",
+      "advance": 764,
+      "strokes": 3,
+      "duration": 0.988
+    },
+    {
+      "id": "U+0627",
+      "char": "ا",
+      "name": "ARABIC LETTER ALEF",
+      "block": "Arabic",
+      "advance": 217,
+      "strokes": 1,
+      "duration": 0.228
+    },
+    {
+      "id": "U+0628",
+      "char": "ب",
+      "name": "ARABIC LETTER BEH",
+      "block": "Arabic",
+      "advance": 926,
+      "strokes": 2,
+      "duration": 0.542
+    },
+    {
+      "id": "U+0629",
+      "char": "ة",
+      "name": "ARABIC LETTER TEH MARBUTA",
+      "block": "Arabic",
+      "advance": 369,
+      "strokes": 2,
+      "duration": 0.426
+    },
+    {
+      "id": "U+062A",
+      "char": "ت",
+      "name": "ARABIC LETTER TEH",
+      "block": "Arabic",
+      "advance": 926,
+      "strokes": 2,
+      "duration": 0.604
+    },
+    {
+      "id": "U+062B",
+      "char": "ث",
+      "name": "ARABIC LETTER THEH",
+      "block": "Arabic",
+      "advance": 926,
+      "strokes": 3,
+      "duration": 0.751
+    },
+    {
+      "id": "U+062C",
+      "char": "ج",
+      "name": "ARABIC LETTER JEEM",
+      "block": "Arabic",
+      "advance": 661,
+      "strokes": 3,
+      "duration": 0.919
+    },
+    {
+      "id": "U+062D",
+      "char": "ح",
+      "name": "ARABIC LETTER HAH",
+      "block": "Arabic",
+      "advance": 661,
+      "strokes": 2,
+      "duration": 0.768
+    },
+    {
+      "id": "U+062E",
+      "char": "خ",
+      "name": "ARABIC LETTER KHAH",
+      "block": "Arabic",
+      "advance": 661,
+      "strokes": 3,
+      "duration": 0.919
+    },
+    {
+      "id": "U+062F",
+      "char": "د",
+      "name": "ARABIC LETTER DAL",
+      "block": "Arabic",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.254
+    },
+    {
+      "id": "U+0630",
+      "char": "ذ",
+      "name": "ARABIC LETTER THAL",
+      "block": "Arabic",
+      "advance": 450,
+      "strokes": 2,
+      "duration": 0.405
+    },
+    {
+      "id": "U+0631",
+      "char": "ر",
+      "name": "ARABIC LETTER REH",
+      "block": "Arabic",
+      "advance": 399,
+      "strokes": 1,
+      "duration": 0.251
+    },
+    {
+      "id": "U+0632",
+      "char": "ز",
+      "name": "ARABIC LETTER ZAIN",
+      "block": "Arabic",
+      "advance": 399,
+      "strokes": 2,
+      "duration": 0.402
+    },
+    {
+      "id": "U+0633",
+      "char": "س",
+      "name": "ARABIC LETTER SEEN",
+      "block": "Arabic",
+      "advance": 992,
+      "strokes": 3,
+      "duration": 0.856
+    },
+    {
+      "id": "U+0634",
+      "char": "ش",
+      "name": "ARABIC LETTER SHEEN",
+      "block": "Arabic",
+      "advance": 992,
+      "strokes": 5,
+      "duration": 1.216
+    },
+    {
+      "id": "U+0635",
+      "char": "ص",
+      "name": "ARABIC LETTER SAD",
+      "block": "Arabic",
+      "advance": 1212,
+      "strokes": 2,
+      "duration": 0.929
+    },
+    {
+      "id": "U+0636",
+      "char": "ض",
+      "name": "ARABIC LETTER DAD",
+      "block": "Arabic",
+      "advance": 1212,
+      "strokes": 3,
+      "duration": 1.08
+    },
+    {
+      "id": "U+0637",
+      "char": "ط",
+      "name": "ARABIC LETTER TAH",
+      "block": "Arabic",
+      "advance": 792,
+      "strokes": 2,
+      "duration": 0.774
+    },
+    {
+      "id": "U+0638",
+      "char": "ظ",
+      "name": "ARABIC LETTER ZAH",
+      "block": "Arabic",
+      "advance": 792,
+      "strokes": 3,
+      "duration": 0.925
+    },
+    {
+      "id": "U+0639",
+      "char": "ع",
+      "name": "ARABIC LETTER AIN",
+      "block": "Arabic",
+      "advance": 540,
+      "strokes": 2,
+      "duration": 0.801
+    },
+    {
+      "id": "U+063A",
+      "char": "غ",
+      "name": "ARABIC LETTER GHAIN",
+      "block": "Arabic",
+      "advance": 540,
+      "strokes": 3,
+      "duration": 0.952
+    },
+    {
+      "id": "U+0640",
+      "char": "ـ",
+      "name": "ARABIC TATWEEL",
+      "block": "Arabic",
+      "advance": 185,
+      "strokes": 1,
+      "duration": 0.07
+    },
+    {
+      "id": "U+0641",
+      "char": "ف",
+      "name": "ARABIC LETTER FEH",
+      "block": "Arabic",
+      "advance": 983,
+      "strokes": 2,
+      "duration": 0.724
+    },
+    {
+      "id": "U+0642",
+      "char": "ق",
+      "name": "ARABIC LETTER QAF",
+      "block": "Arabic",
+      "advance": 687,
+      "strokes": 2,
+      "duration": 0.907
+    },
+    {
+      "id": "U+0643",
+      "char": "ك",
+      "name": "ARABIC LETTER KAF",
+      "block": "Arabic",
+      "advance": 657,
+      "strokes": 2,
+      "duration": 0.721
+    },
+    {
+      "id": "U+0644",
+      "char": "ل",
+      "name": "ARABIC LETTER LAM",
+      "block": "Arabic",
+      "advance": 603,
+      "strokes": 1,
+      "duration": 0.455
+    },
+    {
+      "id": "U+0645",
+      "char": "م",
+      "name": "ARABIC LETTER MEEM",
+      "block": "Arabic",
+      "advance": 452,
+      "strokes": 1,
+      "duration": 0.52
+    },
+    {
+      "id": "U+0646",
+      "char": "ن",
+      "name": "ARABIC LETTER NOON",
+      "block": "Arabic",
+      "advance": 572,
+      "strokes": 2,
+      "duration": 0.501
+    },
+    {
+      "id": "U+0647",
+      "char": "ه",
+      "name": "ARABIC LETTER HEH",
+      "block": "Arabic",
+      "advance": 369,
+      "strokes": 1,
+      "duration": 0.213
+    },
+    {
+      "id": "U+0648",
+      "char": "و",
+      "name": "ARABIC LETTER WAW",
+      "block": "Arabic",
+      "advance": 400,
+      "strokes": 1,
+      "duration": 0.477
+    },
+    {
+      "id": "U+0649",
+      "char": "ى",
+      "name": "ARABIC LETTER ALEF MAKSURA",
+      "block": "Arabic",
+      "advance": 764,
+      "strokes": 1,
+      "duration": 0.536
+    },
+    {
+      "id": "U+064A",
+      "char": "ي",
+      "name": "ARABIC LETTER YEH",
+      "block": "Arabic",
+      "advance": 764,
+      "strokes": 2,
+      "duration": 0.749
+    },
+    {
+      "id": "U+064B",
+      "char": "ً",
+      "name": "ARABIC FATHATAN",
+      "block": "Arabic",
+      "advance": 0,
+      "strokes": 2,
+      "duration": 0.327
+    },
+    {
+      "id": "U+064C",
+      "char": "ٌ",
+      "name": "ARABIC DAMMATAN",
+      "block": "Arabic",
+      "advance": 0,
+      "strokes": 2,
+      "duration": 0.403
+    },
+    {
+      "id": "U+064D",
+      "char": "ٍ",
+      "name": "ARABIC KASRATAN",
+      "block": "Arabic",
+      "advance": 0,
+      "strokes": 2,
+      "duration": 0.327
+    },
+    {
+      "id": "U+064E",
+      "char": "َ",
+      "name": "ARABIC FATHA",
+      "block": "Arabic",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.089
+    },
+    {
+      "id": "U+064F",
+      "char": "ُ",
+      "name": "ARABIC DAMMA",
+      "block": "Arabic",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.184
+    },
+    {
+      "id": "U+0650",
+      "char": "ِ",
+      "name": "ARABIC KASRA",
+      "block": "Arabic",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.089
+    },
+    {
+      "id": "U+0651",
+      "char": "ّ",
+      "name": "ARABIC SHADDA",
+      "block": "Arabic",
+      "advance": 0,
+      "strokes": 2,
+      "duration": 0.299
+    },
+    {
+      "id": "U+0652",
+      "char": "ْ",
+      "name": "ARABIC SUKUN",
+      "block": "Arabic",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.137
+    },
+    {
+      "id": "U+0660",
+      "char": "٠",
+      "name": "ARABIC-INDIC DIGIT ZERO",
+      "block": "Arabic",
+      "advance": 585,
+      "strokes": 1,
+      "duration": 0.04
+    },
+    {
+      "id": "U+0661",
+      "char": "١",
+      "name": "ARABIC-INDIC DIGIT ONE",
+      "block": "Arabic",
+      "advance": 585,
+      "strokes": 1,
+      "duration": 0.205
+    },
+    {
+      "id": "U+0662",
+      "char": "٢",
+      "name": "ARABIC-INDIC DIGIT TWO",
+      "block": "Arabic",
+      "advance": 585,
+      "strokes": 1,
+      "duration": 0.389
+    },
+    {
+      "id": "U+0663",
+      "char": "٣",
+      "name": "ARABIC-INDIC DIGIT THREE",
+      "block": "Arabic",
+      "advance": 585,
+      "strokes": 3,
+      "duration": 0.835
+    },
+    {
+      "id": "U+0664",
+      "char": "٤",
+      "name": "ARABIC-INDIC DIGIT FOUR",
+      "block": "Arabic",
+      "advance": 585,
+      "strokes": 1,
+      "duration": 0.315
+    },
+    {
+      "id": "U+0665",
+      "char": "٥",
+      "name": "ARABIC-INDIC DIGIT FIVE",
+      "block": "Arabic",
+      "advance": 585,
+      "strokes": 1,
+      "duration": 0.335
+    },
+    {
+      "id": "U+0666",
+      "char": "٦",
+      "name": "ARABIC-INDIC DIGIT SIX",
+      "block": "Arabic",
+      "advance": 585,
+      "strokes": 2,
+      "duration": 0.433
+    },
+    {
+      "id": "U+0667",
+      "char": "٧",
+      "name": "ARABIC-INDIC DIGIT SEVEN",
+      "block": "Arabic",
+      "advance": 585,
+      "strokes": 1,
+      "duration": 0.432
+    },
+    {
+      "id": "U+0668",
+      "char": "٨",
+      "name": "ARABIC-INDIC DIGIT EIGHT",
+      "block": "Arabic",
+      "advance": 585,
+      "strokes": 2,
+      "duration": 0.539
+    },
+    {
+      "id": "U+0669",
+      "char": "٩",
+      "name": "ARABIC-INDIC DIGIT NINE",
+      "block": "Arabic",
+      "advance": 585,
+      "strokes": 1,
+      "duration": 0.371
+    },
+    {
+      "id": "U+066A",
+      "char": "٪",
+      "name": "ARABIC PERCENT SIGN",
+      "block": "Arabic",
+      "advance": 661,
+      "strokes": 3,
+      "duration": 0.595
+    },
+    {
+      "id": "U+066B",
+      "char": "٫",
+      "name": "ARABIC DECIMAL SEPARATOR",
+      "block": "Arabic",
+      "advance": 299,
+      "strokes": 1,
+      "duration": 0.172
+    },
+    {
+      "id": "U+066C",
+      "char": "٬",
+      "name": "ARABIC THOUSANDS SEPARATOR",
+      "block": "Arabic",
+      "advance": 299,
+      "strokes": 1,
+      "duration": 0.172
+    }
+  ]
+}

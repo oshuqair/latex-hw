@@ -15,6 +15,48 @@ so you can animate them one by one.
 
 Status: Phase 0 + Phase 1, plus the first Phase 2 items: Greek, Arabic punctuation, mirrored rtl relations, natural tall radicals (see "Status and known gaps").
 
+## Examples
+
+Each figure is the SVG in `examples/` (one `<path>` per pen stroke). The line under it is the input.
+
+### Left to right
+
+![fraction and square root](examples/ltr-fraction-sqrt.svg)
+
+`\frac{a+b}{2} = \sqrt{x^2+1}`
+
+![quadratic formula](examples/ltr-quadratic.svg)
+
+`x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}`
+
+![limit of sin x over x](examples/ltr-limit.svg)
+
+`\lim_{x \to 0} \frac{\sin x}{x} = 1`
+
+### Right to left
+
+![Arabic limit of sin](examples/rtl-limit-sin.svg)
+
+`\lim_{\text{س} \to \text{٠}} \frac{\sin \text{س}}{\text{س}} = \text{١}`
+
+![2 by 2 determinant](examples/rtl-vmatrix.svg)
+
+`\begin{vmatrix} \text{أ} & \text{ب} \\ \text{ج} & \text{د} \end{vmatrix} = \text{أ}\text{د} - \text{ب}\text{ج}`
+
+![piecewise function](examples/rtl-cases.svg)
+
+```latex
+\text{د}(\text{س}) = \begin{cases}
+  \text{أ}\text{س} + \text{ب} & \text{س} < \text{٠} \\
+  \text{س}^\text{٢} & \text{٠} \le \text{س} < \text{١} \\
+  \text{س} + \text{١} & \text{س} \ge \text{١}
+\end{cases}
+```
+
+![Arabic punctuation, percent, thousands separator and hamza](examples/rtl-punctuation.svg)
+
+`\text{إذا كان س ≠ ٠، فإن ص = ٢٫٥؛ لماذا؟} \quad \text{٪٥٠} \quad \text{١٬٠٠٠} \quad \text{رؤوس}`
+
 ## Install
 
 ```sh

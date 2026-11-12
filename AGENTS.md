@@ -139,6 +139,7 @@ npm run parity                 # after build:browser: starts the demo server, ru
 ./scripts/parity.sh            # needs build:browser + demo running + google-chrome; default = rtl quadratic
 ./scripts/parity.sh '\sqrt{\frac{a}{b}}' ltr
 node bin/latex-hw.js '\text{س} < \text{٥}' --dir rtl -o out.svg -j out.json
+python3 tools/catalog/catalog.py   # examples/catalog/: SVG stroke sheet + JSON index per font
 python3 scripts/raster.py final|order in.svg out.png [--scale 2]     # needs python3 + cairosvg
 python3 scripts/raster.py anim  in.svg out.gif|out.mp4 [--fps 15] [--scale 1.2]   # + ffmpeg
 ```
@@ -162,7 +163,7 @@ Everything needed is in the repo (`/workspace/caveat-math` on the original box i
   It runs `generate --font-file … -c true -p geometry --reference-file …` and copies `glyphData.json`,
   the TTF and the strokes JSON into `fonts/caveat-math/`. `--no-install` leaves output in `tools/caveat-math/out/`.
   Verified 2026-11-10: `--no-install` rebuilds of both Caveat Math and Amiri produce glyph JSON byte-identical to the committed `fonts/` files (Tegaki generation is deterministic), so `cmp` against `fonts/` is a valid regression check.
-- Check: `python3 tools/caveat-math/ordersheet.py fonts/caveat-math "αβγ" /tmp/sheet` (numbered order sheet),
+- Check: `python3 tools/caveat-math/ordersheet.py fonts/caveat-math "αβγ" /tmp/sheet` (numbered order sheet for a string you pass in). The full per-font sheet is `python3 tools/catalog/catalog.py` → `examples/catalog/` (SVG + JSON + `index.html`).
   Tegaki `stroke-order-report` / `coverage-report` (see `tools/caveat-math/CAVEAT-MATH.md`, reports in
   `tools/caveat-math/reports/`). Current: 174 added glyphs (122 symbols + 52 Greek), 924 bundle glyphs.
 - To add a glyph: write a `@G(0xCODE)` spec in `build.py` (pen strokes in writing order), rebuild, look at the

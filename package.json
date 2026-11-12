@@ -74,6 +74,7 @@
     "demo": "node scripts/serve-demo.js",
     "build:browser": "node scripts/build-browser.js",
     "parity": "scripts/ci-parity.sh",
+    "catalog": "python3 tools/catalog/catalog.py",
     "prepack": "npm run build:browser"
   },
   "dependencies": {

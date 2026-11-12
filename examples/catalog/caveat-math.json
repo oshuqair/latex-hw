@@ -1,0 +1,8323 @@
+{
+  "font": "Caveat Math",
+  "source": "fonts/caveat-math/glyphData.json",
+  "count": 924,
+  "glyphs": [
+    {
+      "id": "U+0000",
+      "char": "\u0000",
+      "name": "",
+      "block": "Basic Latin",
+      "advance": 0,
+      "strokes": 0,
+      "duration": 0.0
+    },
+    {
+      "id": "U+0021",
+      "char": "!",
+      "name": "EXCLAMATION MARK",
+      "block": "Basic Latin",
+      "advance": 210,
+      "strokes": 2,
+      "duration": 0.328
+    },
+    {
+      "id": "U+0022",
+      "char": "\"",
+      "name": "QUOTATION MARK",
+      "block": "Basic Latin",
+      "advance": 237,
+      "strokes": 2,
+      "duration": 0.28
+    },
+    {
+      "id": "U+0023",
+      "char": "#",
+      "name": "NUMBER SIGN",
+      "block": "Basic Latin",
+      "advance": 559,
+      "strokes": 4,
+      "duration": 1.387
+    },
+    {
+      "id": "U+0024",
+      "char": "$",
+      "name": "DOLLAR SIGN",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 2,
+      "duration": 0.79
+    },
+    {
+      "id": "U+0025",
+      "char": "%",
+      "name": "PERCENT SIGN",
+      "block": "Basic Latin",
+      "advance": 600,
+      "strokes": 3,
+      "duration": 1.01
+    },
+    {
+      "id": "U+0026",
+      "char": "&",
+      "name": "AMPERSAND",
+      "block": "Basic Latin",
+      "advance": 564,
+      "strokes": 1,
+      "duration": 0.76
+    },
+    {
+      "id": "U+0027",
+      "char": "'",
+      "name": "APOSTROPHE",
+      "block": "Basic Latin",
+      "advance": 117,
+      "strokes": 1,
+      "duration": 0.065
+    },
+    {
+      "id": "U+0028",
+      "char": "(",
+      "name": "LEFT PARENTHESIS",
+      "block": "Basic Latin",
+      "advance": 330,
+      "strokes": 1,
+      "duration": 0.33
+    },
+    {
+      "id": "U+0029",
+      "char": ")",
+      "name": "RIGHT PARENTHESIS",
+      "block": "Basic Latin",
+      "advance": 330,
+      "strokes": 1,
+      "duration": 0.299
+    },
+    {
+      "id": "U+002A",
+      "char": "*",
+      "name": "ASTERISK",
+      "block": "Basic Latin",
+      "advance": 363,
+      "strokes": 3,
+      "duration": 0.565
+    },
+    {
+      "id": "U+002B",
+      "char": "+",
+      "name": "PLUS SIGN",
+      "block": "Basic Latin",
+      "advance": 446,
+      "strokes": 2,
+      "duration": 0.362
+    },
+    {
+      "id": "U+002C",
+      "char": ",",
+      "name": "COMMA",
+      "block": "Basic Latin",
+      "advance": 198,
+      "strokes": 1,
+      "duration": 0.07
+    },
+    {
+      "id": "U+002D",
+      "char": "-",
+      "name": "HYPHEN-MINUS",
+      "block": "Basic Latin",
+      "advance": 326,
+      "strokes": 1,
+      "duration": 0.065
+    },
+    {
+      "id": "U+002E",
+      "char": ".",
+      "name": "FULL STOP",
+      "block": "Basic Latin",
+      "advance": 198,
+      "strokes": 1,
+      "duration": 0.001
+    },
+    {
+      "id": "U+002F",
+      "char": "/",
+      "name": "SOLIDUS",
+      "block": "Basic Latin",
+      "advance": 330,
+      "strokes": 1,
+      "duration": 0.286
+    },
+    {
+      "id": "U+0030",
+      "char": "0",
+      "name": "DIGIT ZERO",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.393
+    },
+    {
+      "id": "U+0031",
+      "char": "1",
+      "name": "DIGIT ONE",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.31
+    },
+    {
+      "id": "U+0032",
+      "char": "2",
+      "name": "DIGIT TWO",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.342
+    },
+    {
+      "id": "U+0033",
+      "char": "3",
+      "name": "DIGIT THREE",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.376
+    },
+    {
+      "id": "U+0034",
+      "char": "4",
+      "name": "DIGIT FOUR",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.417
+    },
+    {
+      "id": "U+0035",
+      "char": "5",
+      "name": "DIGIT FIVE",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.316
+    },
+    {
+      "id": "U+0036",
+      "char": "6",
+      "name": "DIGIT SIX",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.41
+    },
+    {
+      "id": "U+0037",
+      "char": "7",
+      "name": "DIGIT SEVEN",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 3,
+      "duration": 0.632
+    },
+    {
+      "id": "U+0038",
+      "char": "8",
+      "name": "DIGIT EIGHT",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.524
+    },
+    {
+      "id": "U+0039",
+      "char": "9",
+      "name": "DIGIT NINE",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.354
+    },
+    {
+      "id": "U+003A",
+      "char": ":",
+      "name": "COLON",
+      "block": "Basic Latin",
+      "advance": 198,
+      "strokes": 2,
+      "duration": 0.152
+    },
+    {
+      "id": "U+003B",
+      "char": ";",
+      "name": "SEMICOLON",
+      "block": "Basic Latin",
+      "advance": 198,
+      "strokes": 2,
+      "duration": 0.221
+    },
+    {
+      "id": "U+003C",
+      "char": "<",
+      "name": "LESS-THAN SIGN",
+      "block": "Basic Latin",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.214
+    },
+    {
+      "id": "U+003D",
+      "char": "=",
+      "name": "EQUALS SIGN",
+      "block": "Basic Latin",
+      "advance": 446,
+      "strokes": 2,
+      "duration": 0.326
+    },
+    {
+      "id": "U+003E",
+      "char": ">",
+      "name": "GREATER-THAN SIGN",
+      "block": "Basic Latin",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.211
+    },
+    {
+      "id": "U+003F",
+      "char": "?",
+      "name": "QUESTION MARK",
+      "block": "Basic Latin",
+      "advance": 374,
+      "strokes": 2,
+      "duration": 0.445
+    },
+    {
+      "id": "U+0040",
+      "char": "@",
+      "name": "COMMERCIAL AT",
+      "block": "Basic Latin",
+      "advance": 643,
+      "strokes": 2,
+      "duration": 0.89
+    },
+    {
+      "id": "U+0041",
+      "char": "A",
+      "name": "LATIN CAPITAL LETTER A",
+      "block": "Basic Latin",
+      "advance": 502,
+      "strokes": 2,
+      "duration": 0.698
+    },
+    {
+      "id": "U+0042",
+      "char": "B",
+      "name": "LATIN CAPITAL LETTER B",
+      "block": "Basic Latin",
+      "advance": 520,
+      "strokes": 2,
+      "duration": 0.827
+    },
+    {
+      "id": "U+0043",
+      "char": "C",
+      "name": "LATIN CAPITAL LETTER C",
+      "block": "Basic Latin",
+      "advance": 472,
+      "strokes": 1,
+      "duration": 0.463
+    },
+    {
+      "id": "U+0044",
+      "char": "D",
+      "name": "LATIN CAPITAL LETTER D",
+      "block": "Basic Latin",
+      "advance": 578,
+      "strokes": 2,
+      "duration": 0.822
+    },
+    {
+      "id": "U+0045",
+      "char": "E",
+      "name": "LATIN CAPITAL LETTER E",
+      "block": "Basic Latin",
+      "advance": 529,
+      "strokes": 4,
+      "duration": 0.985
+    },
+    {
+      "id": "U+0046",
+      "char": "F",
+      "name": "LATIN CAPITAL LETTER F",
+      "block": "Basic Latin",
+      "advance": 454,
+      "strokes": 3,
+      "duration": 0.721
+    },
+    {
+      "id": "U+0047",
+      "char": "G",
+      "name": "LATIN CAPITAL LETTER G",
+      "block": "Basic Latin",
+      "advance": 487,
+      "strokes": 2,
+      "duration": 0.657
+    },
+    {
+      "id": "U+0048",
+      "char": "H",
+      "name": "LATIN CAPITAL LETTER H",
+      "block": "Basic Latin",
+      "advance": 563,
+      "strokes": 3,
+      "duration": 0.883
+    },
+    {
+      "id": "U+0049",
+      "char": "I",
+      "name": "LATIN CAPITAL LETTER I",
+      "block": "Basic Latin",
+      "advance": 400,
+      "strokes": 3,
+      "duration": 0.713
+    },
+    {
+      "id": "U+004A",
+      "char": "J",
+      "name": "LATIN CAPITAL LETTER J",
+      "block": "Basic Latin",
+      "advance": 306,
+      "strokes": 2,
+      "duration": 0.523
+    },
+    {
+      "id": "U+004B",
+      "char": "K",
+      "name": "LATIN CAPITAL LETTER K",
+      "block": "Basic Latin",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.848
+    },
+    {
+      "id": "U+004C",
+      "char": "L",
+      "name": "LATIN CAPITAL LETTER L",
+      "block": "Basic Latin",
+      "advance": 426,
+      "strokes": 1,
+      "duration": 0.324
+    },
+    {
+      "id": "U+004D",
+      "char": "M",
+      "name": "LATIN CAPITAL LETTER M",
+      "block": "Basic Latin",
+      "advance": 720,
+      "strokes": 1,
+      "duration": 0.897
+    },
+    {
+      "id": "U+004E",
+      "char": "N",
+      "name": "LATIN CAPITAL LETTER N",
+      "block": "Basic Latin",
+      "advance": 599,
+      "strokes": 1,
+      "duration": 0.695
+    },
+    {
+      "id": "U+004F",
+      "char": "O",
+      "name": "LATIN CAPITAL LETTER O",
+      "block": "Basic Latin",
+      "advance": 496,
+      "strokes": 1,
+      "duration": 0.548
+    },
+    {
+      "id": "U+0050",
+      "char": "P",
+      "name": "LATIN CAPITAL LETTER P",
+      "block": "Basic Latin",
+      "advance": 464,
+      "strokes": 2,
+      "duration": 0.632
+    },
+    {
+      "id": "U+0051",
+      "char": "Q",
+      "name": "LATIN CAPITAL LETTER Q",
+      "block": "Basic Latin",
+      "advance": 502,
+      "strokes": 2,
+      "duration": 0.807
+    },
+    {
+      "id": "U+0052",
+      "char": "R",
+      "name": "LATIN CAPITAL LETTER R",
+      "block": "Basic Latin",
+      "advance": 537,
+      "strokes": 2,
+      "duration": 0.805
+    },
+    {
+      "id": "U+0053",
+      "char": "S",
+      "name": "LATIN CAPITAL LETTER S",
+      "block": "Basic Latin",
+      "advance": 486,
+      "strokes": 1,
+      "duration": 0.514
+    },
+    {
+      "id": "U+0054",
+      "char": "T",
+      "name": "LATIN CAPITAL LETTER T",
+      "block": "Basic Latin",
+      "advance": 458,
+      "strokes": 2,
+      "duration": 0.502
+    },
+    {
+      "id": "U+0055",
+      "char": "U",
+      "name": "LATIN CAPITAL LETTER U",
+      "block": "Basic Latin",
+      "advance": 482,
+      "strokes": 1,
+      "duration": 0.506
+    },
+    {
+      "id": "U+0056",
+      "char": "V",
+      "name": "LATIN CAPITAL LETTER V",
+      "block": "Basic Latin",
+      "advance": 490,
+      "strokes": 1,
+      "duration": 0.461
+    },
+    {
+      "id": "U+0057",
+      "char": "W",
+      "name": "LATIN CAPITAL LETTER W",
+      "block": "Basic Latin",
+      "advance": 720,
+      "strokes": 1,
+      "duration": 0.916
+    },
+    {
+      "id": "U+0058",
+      "char": "X",
+      "name": "LATIN CAPITAL LETTER X",
+      "block": "Basic Latin",
+      "advance": 524,
+      "strokes": 2,
+      "duration": 0.657
+    },
+    {
+      "id": "U+0059",
+      "char": "Y",
+      "name": "LATIN CAPITAL LETTER Y",
+      "block": "Basic Latin",
+      "advance": 504,
+      "strokes": 2,
+      "duration": 0.555
+    },
+    {
+      "id": "U+005A",
+      "char": "Z",
+      "name": "LATIN CAPITAL LETTER Z",
+      "block": "Basic Latin",
+      "advance": 522,
+      "strokes": 1,
+      "duration": 0.532
+    },
+    {
+      "id": "U+005B",
+      "char": "[",
+      "name": "LEFT SQUARE BRACKET",
+      "block": "Basic Latin",
+      "advance": 330,
+      "strokes": 1,
+      "duration": 0.42
+    },
+    {
+      "id": "U+005C",
+      "char": "\\",
+      "name": "REVERSE SOLIDUS",
+      "block": "Basic Latin",
+      "advance": 330,
+      "strokes": 1,
+      "duration": 0.262
+    },
+    {
+      "id": "U+005D",
+      "char": "]",
+      "name": "RIGHT SQUARE BRACKET",
+      "block": "Basic Latin",
+      "advance": 330,
+      "strokes": 2,
+      "duration": 0.565
+    },
+    {
+      "id": "U+005E",
+      "char": "^",
+      "name": "CIRCUMFLEX ACCENT",
+      "block": "Basic Latin",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.169
+    },
+    {
+      "id": "U+005F",
+      "char": "_",
+      "name": "LOW LINE",
+      "block": "Basic Latin",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.11
+    },
+    {
+      "id": "U+0060",
+      "char": "`",
+      "name": "GRAVE ACCENT",
+      "block": "Basic Latin",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.032
+    },
+    {
+      "id": "U+0061",
+      "char": "a",
+      "name": "LATIN SMALL LETTER A",
+      "block": "Basic Latin",
+      "advance": 437,
+      "strokes": 1,
+      "duration": 0.346
+    },
+    {
+      "id": "U+0062",
+      "char": "b",
+      "name": "LATIN SMALL LETTER B",
+      "block": "Basic Latin",
+      "advance": 435,
+      "strokes": 1,
+      "duration": 0.421
+    },
+    {
+      "id": "U+0063",
+      "char": "c",
+      "name": "LATIN SMALL LETTER C",
+      "block": "Basic Latin",
+      "advance": 355,
+      "strokes": 1,
+      "duration": 0.255
+    },
+    {
+      "id": "U+0064",
+      "char": "d",
+      "name": "LATIN SMALL LETTER D",
+      "block": "Basic Latin",
+      "advance": 393,
+      "strokes": 2,
+      "duration": 0.57
+    },
+    {
+      "id": "U+0065",
+      "char": "e",
+      "name": "LATIN SMALL LETTER E",
+      "block": "Basic Latin",
+      "advance": 325,
+      "strokes": 1,
+      "duration": 0.295
+    },
+    {
+      "id": "U+0066",
+      "char": "f",
+      "name": "LATIN SMALL LETTER F",
+      "block": "Basic Latin",
+      "advance": 291,
+      "strokes": 2,
+      "duration": 0.513
+    },
+    {
+      "id": "U+0067",
+      "char": "g",
+      "name": "LATIN SMALL LETTER G",
+      "block": "Basic Latin",
+      "advance": 355,
+      "strokes": 2,
+      "duration": 0.587
+    },
+    {
+      "id": "U+0068",
+      "char": "h",
+      "name": "LATIN SMALL LETTER H",
+      "block": "Basic Latin",
+      "advance": 464,
+      "strokes": 1,
+      "duration": 0.388
+    },
+    {
+      "id": "U+0069",
+      "char": "i",
+      "name": "LATIN SMALL LETTER I",
+      "block": "Basic Latin",
+      "advance": 187,
+      "strokes": 2,
+      "duration": 0.236
+    },
+    {
+      "id": "U+006A",
+      "char": "j",
+      "name": "LATIN SMALL LETTER J",
+      "block": "Basic Latin",
+      "advance": 204,
+      "strokes": 2,
+      "duration": 0.378
+    },
+    {
+      "id": "U+006B",
+      "char": "k",
+      "name": "LATIN SMALL LETTER K",
+      "block": "Basic Latin",
+      "advance": 365,
+      "strokes": 3,
+      "duration": 0.675
+    },
+    {
+      "id": "U+006C",
+      "char": "l",
+      "name": "LATIN SMALL LETTER L",
+      "block": "Basic Latin",
+      "advance": 169,
+      "strokes": 1,
+      "duration": 0.209
+    },
+    {
+      "id": "U+006D",
+      "char": "m",
+      "name": "LATIN SMALL LETTER M",
+      "block": "Basic Latin",
+      "advance": 560,
+      "strokes": 1,
+      "duration": 0.431
+    },
+    {
+      "id": "U+006E",
+      "char": "n",
+      "name": "LATIN SMALL LETTER N",
+      "block": "Basic Latin",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.299
+    },
+    {
+      "id": "U+006F",
+      "char": "o",
+      "name": "LATIN SMALL LETTER O",
+      "block": "Basic Latin",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.277
+    },
+    {
+      "id": "U+0070",
+      "char": "p",
+      "name": "LATIN SMALL LETTER P",
+      "block": "Basic Latin",
+      "advance": 378,
+      "strokes": 2,
+      "duration": 0.529
+    },
+    {
+      "id": "U+0071",
+      "char": "q",
+      "name": "LATIN SMALL LETTER Q",
+      "block": "Basic Latin",
+      "advance": 377,
+      "strokes": 1,
+      "duration": 0.377
+    },
+    {
+      "id": "U+0072",
+      "char": "r",
+      "name": "LATIN SMALL LETTER R",
+      "block": "Basic Latin",
+      "advance": 360,
+      "strokes": 1,
+      "duration": 0.239
+    },
+    {
+      "id": "U+0073",
+      "char": "s",
+      "name": "LATIN SMALL LETTER S",
+      "block": "Basic Latin",
+      "advance": 341,
+      "strokes": 1,
+      "duration": 0.267
+    },
+    {
+      "id": "U+0074",
+      "char": "t",
+      "name": "LATIN SMALL LETTER T",
+      "block": "Basic Latin",
+      "advance": 331,
+      "strokes": 2,
+      "duration": 0.461
+    },
+    {
+      "id": "U+0075",
+      "char": "u",
+      "name": "LATIN SMALL LETTER U",
+      "block": "Basic Latin",
+      "advance": 370,
+      "strokes": 1,
+      "duration": 0.32
+    },
+    {
+      "id": "U+0076",
+      "char": "v",
+      "name": "LATIN SMALL LETTER V",
+      "block": "Basic Latin",
+      "advance": 331,
+      "strokes": 1,
+      "duration": 0.173
+    },
+    {
+      "id": "U+0077",
+      "char": "w",
+      "name": "LATIN SMALL LETTER W",
+      "block": "Basic Latin",
+      "advance": 517,
+      "strokes": 2,
+      "duration": 0.474
+    },
+    {
+      "id": "U+0078",
+      "char": "x",
+      "name": "LATIN SMALL LETTER X",
+      "block": "Basic Latin",
+      "advance": 343,
+      "strokes": 2,
+      "duration": 0.4
+    },
+    {
+      "id": "U+0079",
+      "char": "y",
+      "name": "LATIN SMALL LETTER Y",
+      "block": "Basic Latin",
+      "advance": 341,
+      "strokes": 2,
+      "duration": 0.488
+    },
+    {
+      "id": "U+007A",
+      "char": "z",
+      "name": "LATIN SMALL LETTER Z",
+      "block": "Basic Latin",
+      "advance": 315,
+      "strokes": 1,
+      "duration": 0.291
+    },
+    {
+      "id": "U+007B",
+      "char": "{",
+      "name": "LEFT CURLY BRACKET",
+      "block": "Basic Latin",
+      "advance": 330,
+      "strokes": 2,
+      "duration": 0.509
+    },
+    {
+      "id": "U+007C",
+      "char": "|",
+      "name": "VERTICAL LINE",
+      "block": "Basic Latin",
+      "advance": 330,
+      "strokes": 1,
+      "duration": 0.298
+    },
+    {
+      "id": "U+007D",
+      "char": "}",
+      "name": "RIGHT CURLY BRACKET",
+      "block": "Basic Latin",
+      "advance": 330,
+      "strokes": 1,
+      "duration": 0.321
+    },
+    {
+      "id": "U+007E",
+      "char": "~",
+      "name": "TILDE",
+      "block": "Basic Latin",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.124
+    },
+    {
+      "id": "U+00A1",
+      "char": "¡",
+      "name": "INVERTED EXCLAMATION MARK",
+      "block": "Latin-1 Supplement",
+      "advance": 210,
+      "strokes": 2,
+      "duration": 0.328
+    },
+    {
+      "id": "U+00A2",
+      "char": "¢",
+      "name": "CENT SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 450,
+      "strokes": 2,
+      "duration": 0.609
+    },
+    {
+      "id": "U+00A3",
+      "char": "£",
+      "name": "POUND SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 450,
+      "strokes": 2,
+      "duration": 0.719
+    },
+    {
+      "id": "U+00A4",
+      "char": "¤",
+      "name": "CURRENCY SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 450,
+      "strokes": 4,
+      "duration": 0.896
+    },
+    {
+      "id": "U+00A5",
+      "char": "¥",
+      "name": "YEN SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 450,
+      "strokes": 4,
+      "duration": 1.059
+    },
+    {
+      "id": "U+00A6",
+      "char": "¦",
+      "name": "BROKEN BAR",
+      "block": "Latin-1 Supplement",
+      "advance": 330,
+      "strokes": 2,
+      "duration": 0.389
+    },
+    {
+      "id": "U+00A7",
+      "char": "§",
+      "name": "SECTION SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 385,
+      "strokes": 2,
+      "duration": 0.564
+    },
+    {
+      "id": "U+00A8",
+      "char": "¨",
+      "name": "DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.182
+    },
+    {
+      "id": "U+00A9",
+      "char": "©",
+      "name": "COPYRIGHT SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.698
+    },
+    {
+      "id": "U+00AA",
+      "char": "ª",
+      "name": "FEMININE ORDINAL INDICATOR",
+      "block": "Latin-1 Supplement",
+      "advance": 350,
+      "strokes": 1,
+      "duration": 0.29
+    },
+    {
+      "id": "U+00AB",
+      "char": "«",
+      "name": "LEFT-POINTING DOUBLE ANGLE QUOTATION MARK",
+      "block": "Latin-1 Supplement",
+      "advance": 646,
+      "strokes": 2,
+      "duration": 0.572
+    },
+    {
+      "id": "U+00AC",
+      "char": "¬",
+      "name": "NOT SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 465,
+      "strokes": 1,
+      "duration": 0.145
+    },
+    {
+      "id": "U+00AD",
+      "char": "­",
+      "name": "SOFT HYPHEN",
+      "block": "Latin-1 Supplement",
+      "advance": 326,
+      "strokes": 1,
+      "duration": 0.065
+    },
+    {
+      "id": "U+00AE",
+      "char": "®",
+      "name": "REGISTERED SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 496,
+      "strokes": 3,
+      "duration": 0.9
+    },
+    {
+      "id": "U+00AF",
+      "char": "¯",
+      "name": "MACRON",
+      "block": "Latin-1 Supplement",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.06
+    },
+    {
+      "id": "U+00B0",
+      "char": "°",
+      "name": "DEGREE SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 283,
+      "strokes": 1,
+      "duration": 0.231
+    },
+    {
+      "id": "U+00B1",
+      "char": "±",
+      "name": "PLUS-MINUS SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 446,
+      "strokes": 3,
+      "duration": 0.599
+    },
+    {
+      "id": "U+00B2",
+      "char": "²",
+      "name": "SUPERSCRIPT TWO",
+      "block": "Latin-1 Supplement",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.255
+    },
+    {
+      "id": "U+00B3",
+      "char": "³",
+      "name": "SUPERSCRIPT THREE",
+      "block": "Latin-1 Supplement",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.3
+    },
+    {
+      "id": "U+00B4",
+      "char": "´",
+      "name": "ACUTE ACCENT",
+      "block": "Latin-1 Supplement",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.044
+    },
+    {
+      "id": "U+00B5",
+      "char": "µ",
+      "name": "MICRO SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 370,
+      "strokes": 3,
+      "duration": 0.652
+    },
+    {
+      "id": "U+00B6",
+      "char": "¶",
+      "name": "PILCROW SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 424,
+      "strokes": 2,
+      "duration": 0.673
+    },
+    {
+      "id": "U+00B7",
+      "char": "·",
+      "name": "MIDDLE DOT",
+      "block": "Latin-1 Supplement",
+      "advance": 187,
+      "strokes": 1,
+      "duration": 0.012
+    },
+    {
+      "id": "U+00B8",
+      "char": "¸",
+      "name": "CEDILLA",
+      "block": "Latin-1 Supplement",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.125
+    },
+    {
+      "id": "U+00B9",
+      "char": "¹",
+      "name": "SUPERSCRIPT ONE",
+      "block": "Latin-1 Supplement",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.227
+    },
+    {
+      "id": "U+00BA",
+      "char": "º",
+      "name": "MASCULINE ORDINAL INDICATOR",
+      "block": "Latin-1 Supplement",
+      "advance": 283,
+      "strokes": 1,
+      "duration": 0.236
+    },
+    {
+      "id": "U+00BB",
+      "char": "»",
+      "name": "RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK",
+      "block": "Latin-1 Supplement",
+      "advance": 708,
+      "strokes": 2,
+      "duration": 0.574
+    },
+    {
+      "id": "U+00BC",
+      "char": "¼",
+      "name": "VULGAR FRACTION ONE QUARTER",
+      "block": "Latin-1 Supplement",
+      "advance": 800,
+      "strokes": 4,
+      "duration": 1.207
+    },
+    {
+      "id": "U+00BD",
+      "char": "½",
+      "name": "VULGAR FRACTION ONE HALF",
+      "block": "Latin-1 Supplement",
+      "advance": 800,
+      "strokes": 3,
+      "duration": 1.055
+    },
+    {
+      "id": "U+00BE",
+      "char": "¾",
+      "name": "VULGAR FRACTION THREE QUARTERS",
+      "block": "Latin-1 Supplement",
+      "advance": 800,
+      "strokes": 4,
+      "duration": 1.28
+    },
+    {
+      "id": "U+00BF",
+      "char": "¿",
+      "name": "INVERTED QUESTION MARK",
+      "block": "Latin-1 Supplement",
+      "advance": 374,
+      "strokes": 2,
+      "duration": 0.445
+    },
+    {
+      "id": "U+00C0",
+      "char": "À",
+      "name": "LATIN CAPITAL LETTER A WITH GRAVE",
+      "block": "Latin-1 Supplement",
+      "advance": 502,
+      "strokes": 3,
+      "duration": 0.892
+    },
+    {
+      "id": "U+00C1",
+      "char": "Á",
+      "name": "LATIN CAPITAL LETTER A WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 502,
+      "strokes": 3,
+      "duration": 0.892
+    },
+    {
+      "id": "U+00C2",
+      "char": "Â",
+      "name": "LATIN CAPITAL LETTER A WITH CIRCUMFLEX",
+      "block": "Latin-1 Supplement",
+      "advance": 502,
+      "strokes": 3,
+      "duration": 0.923
+    },
+    {
+      "id": "U+00C3",
+      "char": "Ã",
+      "name": "LATIN CAPITAL LETTER A WITH TILDE",
+      "block": "Latin-1 Supplement",
+      "advance": 502,
+      "strokes": 3,
+      "duration": 0.947
+    },
+    {
+      "id": "U+00C4",
+      "char": "Ä",
+      "name": "LATIN CAPITAL LETTER A WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 502,
+      "strokes": 4,
+      "duration": 1.046
+    },
+    {
+      "id": "U+00C5",
+      "char": "Å",
+      "name": "LATIN CAPITAL LETTER A WITH RING ABOVE",
+      "block": "Latin-1 Supplement",
+      "advance": 502,
+      "strokes": 3,
+      "duration": 0.968
+    },
+    {
+      "id": "U+00C6",
+      "char": "Æ",
+      "name": "LATIN CAPITAL LETTER AE",
+      "block": "Latin-1 Supplement",
+      "advance": 784,
+      "strokes": 4,
+      "duration": 1.262
+    },
+    {
+      "id": "U+00C7",
+      "char": "Ç",
+      "name": "LATIN CAPITAL LETTER C WITH CEDILLA",
+      "block": "Latin-1 Supplement",
+      "advance": 482,
+      "strokes": 1,
+      "duration": 0.729
+    },
+    {
+      "id": "U+00C8",
+      "char": "È",
+      "name": "LATIN CAPITAL LETTER E WITH GRAVE",
+      "block": "Latin-1 Supplement",
+      "advance": 548,
+      "strokes": 5,
+      "duration": 1.179
+    },
+    {
+      "id": "U+00C9",
+      "char": "É",
+      "name": "LATIN CAPITAL LETTER E WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 548,
+      "strokes": 5,
+      "duration": 1.179
+    },
+    {
+      "id": "U+00CA",
+      "char": "Ê",
+      "name": "LATIN CAPITAL LETTER E WITH CIRCUMFLEX",
+      "block": "Latin-1 Supplement",
+      "advance": 548,
+      "strokes": 5,
+      "duration": 1.21
+    },
+    {
+      "id": "U+00CB",
+      "char": "Ë",
+      "name": "LATIN CAPITAL LETTER E WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 548,
+      "strokes": 6,
+      "duration": 1.333
+    },
+    {
+      "id": "U+00CC",
+      "char": "Ì",
+      "name": "LATIN CAPITAL LETTER I WITH GRAVE",
+      "block": "Latin-1 Supplement",
+      "advance": 400,
+      "strokes": 4,
+      "duration": 0.907
+    },
+    {
+      "id": "U+00CD",
+      "char": "Í",
+      "name": "LATIN CAPITAL LETTER I WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 400,
+      "strokes": 4,
+      "duration": 0.907
+    },
+    {
+      "id": "U+00CE",
+      "char": "Î",
+      "name": "LATIN CAPITAL LETTER I WITH CIRCUMFLEX",
+      "block": "Latin-1 Supplement",
+      "advance": 400,
+      "strokes": 4,
+      "duration": 0.938
+    },
+    {
+      "id": "U+00CF",
+      "char": "Ï",
+      "name": "LATIN CAPITAL LETTER I WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 400,
+      "strokes": 5,
+      "duration": 1.061
+    },
+    {
+      "id": "U+00D0",
+      "char": "Ð",
+      "name": "LATIN CAPITAL LETTER ETH",
+      "block": "Latin-1 Supplement",
+      "advance": 578,
+      "strokes": 2,
+      "duration": 0.885
+    },
+    {
+      "id": "U+00D1",
+      "char": "Ñ",
+      "name": "LATIN CAPITAL LETTER N WITH TILDE",
+      "block": "Latin-1 Supplement",
+      "advance": 566,
+      "strokes": 2,
+      "duration": 0.944
+    },
+    {
+      "id": "U+00D2",
+      "char": "Ò",
+      "name": "LATIN CAPITAL LETTER O WITH GRAVE",
+      "block": "Latin-1 Supplement",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.742
+    },
+    {
+      "id": "U+00D3",
+      "char": "Ó",
+      "name": "LATIN CAPITAL LETTER O WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.742
+    },
+    {
+      "id": "U+00D4",
+      "char": "Ô",
+      "name": "LATIN CAPITAL LETTER O WITH CIRCUMFLEX",
+      "block": "Latin-1 Supplement",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.773
+    },
+    {
+      "id": "U+00D5",
+      "char": "Õ",
+      "name": "LATIN CAPITAL LETTER O WITH TILDE",
+      "block": "Latin-1 Supplement",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.797
+    },
+    {
+      "id": "U+00D6",
+      "char": "Ö",
+      "name": "LATIN CAPITAL LETTER O WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 496,
+      "strokes": 3,
+      "duration": 0.896
+    },
+    {
+      "id": "U+00D7",
+      "char": "×",
+      "name": "MULTIPLICATION SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 446,
+      "strokes": 2,
+      "duration": 0.396
+    },
+    {
+      "id": "U+00D8",
+      "char": "Ø",
+      "name": "LATIN CAPITAL LETTER O WITH STROKE",
+      "block": "Latin-1 Supplement",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.984
+    },
+    {
+      "id": "U+00D9",
+      "char": "Ù",
+      "name": "LATIN CAPITAL LETTER U WITH GRAVE",
+      "block": "Latin-1 Supplement",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.7
+    },
+    {
+      "id": "U+00DA",
+      "char": "Ú",
+      "name": "LATIN CAPITAL LETTER U WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.7
+    },
+    {
+      "id": "U+00DB",
+      "char": "Û",
+      "name": "LATIN CAPITAL LETTER U WITH CIRCUMFLEX",
+      "block": "Latin-1 Supplement",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.731
+    },
+    {
+      "id": "U+00DC",
+      "char": "Ü",
+      "name": "LATIN CAPITAL LETTER U WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 482,
+      "strokes": 3,
+      "duration": 0.854
+    },
+    {
+      "id": "U+00DD",
+      "char": "Ý",
+      "name": "LATIN CAPITAL LETTER Y WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 504,
+      "strokes": 3,
+      "duration": 0.749
+    },
+    {
+      "id": "U+00DE",
+      "char": "Þ",
+      "name": "LATIN CAPITAL LETTER THORN",
+      "block": "Latin-1 Supplement",
+      "advance": 472,
+      "strokes": 2,
+      "duration": 0.664
+    },
+    {
+      "id": "U+00DF",
+      "char": "ß",
+      "name": "LATIN SMALL LETTER SHARP S",
+      "block": "Latin-1 Supplement",
+      "advance": 398,
+      "strokes": 1,
+      "duration": 0.567
+    },
+    {
+      "id": "U+00E0",
+      "char": "à",
+      "name": "LATIN SMALL LETTER A WITH GRAVE",
+      "block": "Latin-1 Supplement",
+      "advance": 437,
+      "strokes": 2,
+      "duration": 0.528
+    },
+    {
+      "id": "U+00E1",
+      "char": "á",
+      "name": "LATIN SMALL LETTER A WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 437,
+      "strokes": 2,
+      "duration": 0.54
+    },
+    {
+      "id": "U+00E2",
+      "char": "â",
+      "name": "LATIN SMALL LETTER A WITH CIRCUMFLEX",
+      "block": "Latin-1 Supplement",
+      "advance": 437,
+      "strokes": 2,
+      "duration": 0.571
+    },
+    {
+      "id": "U+00E3",
+      "char": "ã",
+      "name": "LATIN SMALL LETTER A WITH TILDE",
+      "block": "Latin-1 Supplement",
+      "advance": 437,
+      "strokes": 2,
+      "duration": 0.595
+    },
+    {
+      "id": "U+00E4",
+      "char": "ä",
+      "name": "LATIN SMALL LETTER A WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 437,
+      "strokes": 3,
+      "duration": 0.678
+    },
+    {
+      "id": "U+00E5",
+      "char": "å",
+      "name": "LATIN SMALL LETTER A WITH RING ABOVE",
+      "block": "Latin-1 Supplement",
+      "advance": 437,
+      "strokes": 2,
+      "duration": 0.616
+    },
+    {
+      "id": "U+00E6",
+      "char": "æ",
+      "name": "LATIN SMALL LETTER AE",
+      "block": "Latin-1 Supplement",
+      "advance": 574,
+      "strokes": 2,
+      "duration": 0.76
+    },
+    {
+      "id": "U+00E7",
+      "char": "ç",
+      "name": "LATIN SMALL LETTER C WITH CEDILLA",
+      "block": "Latin-1 Supplement",
+      "advance": 355,
+      "strokes": 2,
+      "duration": 0.53
+    },
+    {
+      "id": "U+00E8",
+      "char": "è",
+      "name": "LATIN SMALL LETTER E WITH GRAVE",
+      "block": "Latin-1 Supplement",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.477
+    },
+    {
+      "id": "U+00E9",
+      "char": "é",
+      "name": "LATIN SMALL LETTER E WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.489
+    },
+    {
+      "id": "U+00EA",
+      "char": "ê",
+      "name": "LATIN SMALL LETTER E WITH CIRCUMFLEX",
+      "block": "Latin-1 Supplement",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.52
+    },
+    {
+      "id": "U+00EB",
+      "char": "ë",
+      "name": "LATIN SMALL LETTER E WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 325,
+      "strokes": 3,
+      "duration": 0.627
+    },
+    {
+      "id": "U+00EC",
+      "char": "ì",
+      "name": "LATIN SMALL LETTER I WITH GRAVE",
+      "block": "Latin-1 Supplement",
+      "advance": 187,
+      "strokes": 2,
+      "duration": 0.256
+    },
+    {
+      "id": "U+00ED",
+      "char": "í",
+      "name": "LATIN SMALL LETTER I WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 187,
+      "strokes": 2,
+      "duration": 0.268
+    },
+    {
+      "id": "U+00EE",
+      "char": "î",
+      "name": "LATIN SMALL LETTER I WITH CIRCUMFLEX",
+      "block": "Latin-1 Supplement",
+      "advance": 187,
+      "strokes": 2,
+      "duration": 0.299
+    },
+    {
+      "id": "U+00EF",
+      "char": "ï",
+      "name": "LATIN SMALL LETTER I WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 187,
+      "strokes": 3,
+      "duration": 0.406
+    },
+    {
+      "id": "U+00F0",
+      "char": "ð",
+      "name": "LATIN SMALL LETTER ETH",
+      "block": "Latin-1 Supplement",
+      "advance": 349,
+      "strokes": 2,
+      "duration": 0.594
+    },
+    {
+      "id": "U+00F1",
+      "char": "ñ",
+      "name": "LATIN SMALL LETTER N WITH TILDE",
+      "block": "Latin-1 Supplement",
+      "advance": 450,
+      "strokes": 2,
+      "duration": 0.548
+    },
+    {
+      "id": "U+00F2",
+      "char": "ò",
+      "name": "LATIN SMALL LETTER O WITH GRAVE",
+      "block": "Latin-1 Supplement",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.459
+    },
+    {
+      "id": "U+00F3",
+      "char": "ó",
+      "name": "LATIN SMALL LETTER O WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.471
+    },
+    {
+      "id": "U+00F4",
+      "char": "ô",
+      "name": "LATIN SMALL LETTER O WITH CIRCUMFLEX",
+      "block": "Latin-1 Supplement",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.502
+    },
+    {
+      "id": "U+00F5",
+      "char": "õ",
+      "name": "LATIN SMALL LETTER O WITH TILDE",
+      "block": "Latin-1 Supplement",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.526
+    },
+    {
+      "id": "U+00F6",
+      "char": "ö",
+      "name": "LATIN SMALL LETTER O WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 353,
+      "strokes": 3,
+      "duration": 0.609
+    },
+    {
+      "id": "U+00F7",
+      "char": "÷",
+      "name": "DIVISION SIGN",
+      "block": "Latin-1 Supplement",
+      "advance": 446,
+      "strokes": 3,
+      "duration": 0.434
+    },
+    {
+      "id": "U+00F8",
+      "char": "ø",
+      "name": "LATIN SMALL LETTER O WITH STROKE",
+      "block": "Latin-1 Supplement",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.603
+    },
+    {
+      "id": "U+00F9",
+      "char": "ù",
+      "name": "LATIN SMALL LETTER U WITH GRAVE",
+      "block": "Latin-1 Supplement",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.502
+    },
+    {
+      "id": "U+00FA",
+      "char": "ú",
+      "name": "LATIN SMALL LETTER U WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.514
+    },
+    {
+      "id": "U+00FB",
+      "char": "û",
+      "name": "LATIN SMALL LETTER U WITH CIRCUMFLEX",
+      "block": "Latin-1 Supplement",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.545
+    },
+    {
+      "id": "U+00FC",
+      "char": "ü",
+      "name": "LATIN SMALL LETTER U WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 370,
+      "strokes": 3,
+      "duration": 0.652
+    },
+    {
+      "id": "U+00FD",
+      "char": "ý",
+      "name": "LATIN SMALL LETTER Y WITH ACUTE",
+      "block": "Latin-1 Supplement",
+      "advance": 341,
+      "strokes": 3,
+      "duration": 0.682
+    },
+    {
+      "id": "U+00FE",
+      "char": "þ",
+      "name": "LATIN SMALL LETTER THORN",
+      "block": "Latin-1 Supplement",
+      "advance": 378,
+      "strokes": 2,
+      "duration": 0.598
+    },
+    {
+      "id": "U+00FF",
+      "char": "ÿ",
+      "name": "LATIN SMALL LETTER Y WITH DIAERESIS",
+      "block": "Latin-1 Supplement",
+      "advance": 341,
+      "strokes": 4,
+      "duration": 0.82
+    },
+    {
+      "id": "U+0100",
+      "char": "Ā",
+      "name": "LATIN CAPITAL LETTER A WITH MACRON",
+      "block": "Latin Extended-A",
+      "advance": 502,
+      "strokes": 3,
+      "duration": 0.923
+    },
+    {
+      "id": "U+0101",
+      "char": "ā",
+      "name": "LATIN SMALL LETTER A WITH MACRON",
+      "block": "Latin Extended-A",
+      "advance": 437,
+      "strokes": 2,
+      "duration": 0.556
+    },
+    {
+      "id": "U+0102",
+      "char": "Ă",
+      "name": "LATIN CAPITAL LETTER A WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 502,
+      "strokes": 3,
+      "duration": 0.944
+    },
+    {
+      "id": "U+0103",
+      "char": "ă",
+      "name": "LATIN SMALL LETTER A WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 437,
+      "strokes": 2,
+      "duration": 0.592
+    },
+    {
+      "id": "U+0104",
+      "char": "Ą",
+      "name": "LATIN CAPITAL LETTER A WITH OGONEK",
+      "block": "Latin Extended-A",
+      "advance": 502,
+      "strokes": 2,
+      "duration": 0.847
+    },
+    {
+      "id": "U+0105",
+      "char": "ą",
+      "name": "LATIN SMALL LETTER A WITH OGONEK",
+      "block": "Latin Extended-A",
+      "advance": 437,
+      "strokes": 2,
+      "duration": 0.612
+    },
+    {
+      "id": "U+0106",
+      "char": "Ć",
+      "name": "LATIN CAPITAL LETTER C WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.657
+    },
+    {
+      "id": "U+0107",
+      "char": "ć",
+      "name": "LATIN SMALL LETTER C WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 355,
+      "strokes": 2,
+      "duration": 0.449
+    },
+    {
+      "id": "U+0108",
+      "char": "Ĉ",
+      "name": "LATIN CAPITAL LETTER C WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.688
+    },
+    {
+      "id": "U+0109",
+      "char": "ĉ",
+      "name": "LATIN SMALL LETTER C WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 355,
+      "strokes": 2,
+      "duration": 0.48
+    },
+    {
+      "id": "U+010A",
+      "char": "Ċ",
+      "name": "LATIN CAPITAL LETTER C WITH DOT ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.614
+    },
+    {
+      "id": "U+010B",
+      "char": "ċ",
+      "name": "LATIN SMALL LETTER C WITH DOT ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 355,
+      "strokes": 2,
+      "duration": 0.406
+    },
+    {
+      "id": "U+010C",
+      "char": "Č",
+      "name": "LATIN CAPITAL LETTER C WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.686
+    },
+    {
+      "id": "U+010D",
+      "char": "č",
+      "name": "LATIN SMALL LETTER C WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 355,
+      "strokes": 2,
+      "duration": 0.478
+    },
+    {
+      "id": "U+010E",
+      "char": "Ď",
+      "name": "LATIN CAPITAL LETTER D WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 578,
+      "strokes": 3,
+      "duration": 1.045
+    },
+    {
+      "id": "U+010F",
+      "char": "ď",
+      "name": "LATIN SMALL LETTER D WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 459,
+      "strokes": 3,
+      "duration": 0.766
+    },
+    {
+      "id": "U+0110",
+      "char": "Đ",
+      "name": "LATIN CAPITAL LETTER D WITH STROKE",
+      "block": "Latin Extended-A",
+      "advance": 578,
+      "strokes": 2,
+      "duration": 0.885
+    },
+    {
+      "id": "U+0111",
+      "char": "đ",
+      "name": "LATIN SMALL LETTER D WITH STROKE",
+      "block": "Latin Extended-A",
+      "advance": 393,
+      "strokes": 3,
+      "duration": 0.78
+    },
+    {
+      "id": "U+0112",
+      "char": "Ē",
+      "name": "LATIN CAPITAL LETTER E WITH MACRON",
+      "block": "Latin Extended-A",
+      "advance": 548,
+      "strokes": 5,
+      "duration": 1.21
+    },
+    {
+      "id": "U+0113",
+      "char": "ē",
+      "name": "LATIN SMALL LETTER E WITH MACRON",
+      "block": "Latin Extended-A",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.505
+    },
+    {
+      "id": "U+0114",
+      "char": "Ĕ",
+      "name": "LATIN CAPITAL LETTER E WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 548,
+      "strokes": 5,
+      "duration": 1.231
+    },
+    {
+      "id": "U+0115",
+      "char": "ĕ",
+      "name": "LATIN SMALL LETTER E WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.541
+    },
+    {
+      "id": "U+0116",
+      "char": "Ė",
+      "name": "LATIN CAPITAL LETTER E WITH DOT ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 548,
+      "strokes": 5,
+      "duration": 1.136
+    },
+    {
+      "id": "U+0117",
+      "char": "ė",
+      "name": "LATIN SMALL LETTER E WITH DOT ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.446
+    },
+    {
+      "id": "U+0118",
+      "char": "Ę",
+      "name": "LATIN CAPITAL LETTER E WITH OGONEK",
+      "block": "Latin Extended-A",
+      "advance": 548,
+      "strokes": 3,
+      "duration": 0.952
+    },
+    {
+      "id": "U+0119",
+      "char": "ę",
+      "name": "LATIN SMALL LETTER E WITH OGONEK",
+      "block": "Latin Extended-A",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.561
+    },
+    {
+      "id": "U+011A",
+      "char": "Ě",
+      "name": "LATIN CAPITAL LETTER E WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 548,
+      "strokes": 5,
+      "duration": 1.208
+    },
+    {
+      "id": "U+011B",
+      "char": "ě",
+      "name": "LATIN SMALL LETTER E WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.518
+    },
+    {
+      "id": "U+011C",
+      "char": "Ĝ",
+      "name": "LATIN CAPITAL LETTER G WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.882
+    },
+    {
+      "id": "U+011D",
+      "char": "ĝ",
+      "name": "LATIN SMALL LETTER G WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 355,
+      "strokes": 3,
+      "duration": 0.812
+    },
+    {
+      "id": "U+011E",
+      "char": "Ğ",
+      "name": "LATIN CAPITAL LETTER G WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.903
+    },
+    {
+      "id": "U+011F",
+      "char": "ğ",
+      "name": "LATIN SMALL LETTER G WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 355,
+      "strokes": 3,
+      "duration": 0.833
+    },
+    {
+      "id": "U+0120",
+      "char": "Ġ",
+      "name": "LATIN CAPITAL LETTER G WITH DOT ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.808
+    },
+    {
+      "id": "U+0121",
+      "char": "ġ",
+      "name": "LATIN SMALL LETTER G WITH DOT ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 355,
+      "strokes": 3,
+      "duration": 0.738
+    },
+    {
+      "id": "U+0122",
+      "char": "Ģ",
+      "name": "LATIN CAPITAL LETTER G WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.851
+    },
+    {
+      "id": "U+0123",
+      "char": "ģ",
+      "name": "LATIN SMALL LETTER G WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 355,
+      "strokes": 3,
+      "duration": 0.775
+    },
+    {
+      "id": "U+0124",
+      "char": "Ĥ",
+      "name": "LATIN CAPITAL LETTER H WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 564,
+      "strokes": 4,
+      "duration": 1.108
+    },
+    {
+      "id": "U+0125",
+      "char": "ĥ",
+      "name": "LATIN SMALL LETTER H WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 464,
+      "strokes": 2,
+      "duration": 0.613
+    },
+    {
+      "id": "U+0126",
+      "char": "Ħ",
+      "name": "LATIN CAPITAL LETTER H WITH STROKE",
+      "block": "Latin Extended-A",
+      "advance": 564,
+      "strokes": 4,
+      "duration": 1.216
+    },
+    {
+      "id": "U+0127",
+      "char": "ħ",
+      "name": "LATIN SMALL LETTER H WITH STROKE",
+      "block": "Latin Extended-A",
+      "advance": 464,
+      "strokes": 2,
+      "duration": 0.598
+    },
+    {
+      "id": "U+0128",
+      "char": "Ĩ",
+      "name": "LATIN CAPITAL LETTER I WITH TILDE",
+      "block": "Latin Extended-A",
+      "advance": 400,
+      "strokes": 4,
+      "duration": 0.962
+    },
+    {
+      "id": "U+0129",
+      "char": "ĩ",
+      "name": "LATIN SMALL LETTER I WITH TILDE",
+      "block": "Latin Extended-A",
+      "advance": 187,
+      "strokes": 2,
+      "duration": 0.323
+    },
+    {
+      "id": "U+012A",
+      "char": "Ī",
+      "name": "LATIN CAPITAL LETTER I WITH MACRON",
+      "block": "Latin Extended-A",
+      "advance": 400,
+      "strokes": 4,
+      "duration": 0.938
+    },
+    {
+      "id": "U+012B",
+      "char": "ī",
+      "name": "LATIN SMALL LETTER I WITH MACRON",
+      "block": "Latin Extended-A",
+      "advance": 187,
+      "strokes": 2,
+      "duration": 0.284
+    },
+    {
+      "id": "U+012C",
+      "char": "Ĭ",
+      "name": "LATIN CAPITAL LETTER I WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 400,
+      "strokes": 4,
+      "duration": 0.959
+    },
+    {
+      "id": "U+012D",
+      "char": "ĭ",
+      "name": "LATIN SMALL LETTER I WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 187,
+      "strokes": 2,
+      "duration": 0.32
+    },
+    {
+      "id": "U+012E",
+      "char": "Į",
+      "name": "LATIN CAPITAL LETTER I WITH OGONEK",
+      "block": "Latin Extended-A",
+      "advance": 400,
+      "strokes": 1,
+      "duration": 0.682
+    },
+    {
+      "id": "U+012F",
+      "char": "į",
+      "name": "LATIN SMALL LETTER I WITH OGONEK",
+      "block": "Latin Extended-A",
+      "advance": 187,
+      "strokes": 3,
+      "duration": 0.509
+    },
+    {
+      "id": "U+0130",
+      "char": "İ",
+      "name": "LATIN CAPITAL LETTER I WITH DOT ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 400,
+      "strokes": 4,
+      "duration": 0.864
+    },
+    {
+      "id": "U+0131",
+      "char": "ı",
+      "name": "LATIN SMALL LETTER DOTLESS I",
+      "block": "Latin Extended-A",
+      "advance": 187,
+      "strokes": 1,
+      "duration": 0.074
+    },
+    {
+      "id": "U+0132",
+      "char": "Ĳ",
+      "name": "LATIN CAPITAL LIGATURE IJ",
+      "block": "Latin Extended-A",
+      "advance": 746,
+      "strokes": 4,
+      "duration": 1.235
+    },
+    {
+      "id": "U+0133",
+      "char": "ĳ",
+      "name": "LATIN SMALL LIGATURE IJ",
+      "block": "Latin Extended-A",
+      "advance": 391,
+      "strokes": 4,
+      "duration": 0.764
+    },
+    {
+      "id": "U+0134",
+      "char": "Ĵ",
+      "name": "LATIN CAPITAL LETTER J WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 306,
+      "strokes": 3,
+      "duration": 0.748
+    },
+    {
+      "id": "U+0135",
+      "char": "ĵ",
+      "name": "LATIN SMALL LETTER J WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 204,
+      "strokes": 3,
+      "duration": 0.599
+    },
+    {
+      "id": "U+0136",
+      "char": "Ķ",
+      "name": "LATIN CAPITAL LETTER K WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 494,
+      "strokes": 4,
+      "duration": 1.042
+    },
+    {
+      "id": "U+0137",
+      "char": "ķ",
+      "name": "LATIN SMALL LETTER K WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 365,
+      "strokes": 4,
+      "duration": 0.869
+    },
+    {
+      "id": "U+0138",
+      "char": "ĸ",
+      "name": "LATIN SMALL LETTER KRA",
+      "block": "Latin Extended-A",
+      "advance": 365,
+      "strokes": 3,
+      "duration": 0.576
+    },
+    {
+      "id": "U+0139",
+      "char": "Ĺ",
+      "name": "LATIN CAPITAL LETTER L WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 426,
+      "strokes": 2,
+      "duration": 0.518
+    },
+    {
+      "id": "U+013A",
+      "char": "ĺ",
+      "name": "LATIN SMALL LETTER L WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 169,
+      "strokes": 2,
+      "duration": 0.403
+    },
+    {
+      "id": "U+013B",
+      "char": "Ļ",
+      "name": "LATIN CAPITAL LETTER L WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 426,
+      "strokes": 2,
+      "duration": 0.518
+    },
+    {
+      "id": "U+013C",
+      "char": "ļ",
+      "name": "LATIN SMALL LETTER L WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 169,
+      "strokes": 2,
+      "duration": 0.403
+    },
+    {
+      "id": "U+013D",
+      "char": "Ľ",
+      "name": "LATIN CAPITAL LETTER L WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 426,
+      "strokes": 2,
+      "duration": 0.52
+    },
+    {
+      "id": "U+013E",
+      "char": "ľ",
+      "name": "LATIN SMALL LETTER L WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 302,
+      "strokes": 2,
+      "duration": 0.405
+    },
+    {
+      "id": "U+013F",
+      "char": "Ŀ",
+      "name": "LATIN CAPITAL LETTER L WITH MIDDLE DOT",
+      "block": "Latin Extended-A",
+      "advance": 426,
+      "strokes": 2,
+      "duration": 0.486
+    },
+    {
+      "id": "U+0140",
+      "char": "ŀ",
+      "name": "LATIN SMALL LETTER L WITH MIDDLE DOT",
+      "block": "Latin Extended-A",
+      "advance": 251,
+      "strokes": 2,
+      "duration": 0.371
+    },
+    {
+      "id": "U+0141",
+      "char": "Ł",
+      "name": "LATIN CAPITAL LETTER L WITH STROKE",
+      "block": "Latin Extended-A",
+      "advance": 426,
+      "strokes": 2,
+      "duration": 0.589
+    },
+    {
+      "id": "U+0142",
+      "char": "ł",
+      "name": "LATIN SMALL LETTER L WITH STROKE",
+      "block": "Latin Extended-A",
+      "advance": 225,
+      "strokes": 2,
+      "duration": 0.467
+    },
+    {
+      "id": "U+0143",
+      "char": "Ń",
+      "name": "LATIN CAPITAL LETTER N WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 566,
+      "strokes": 2,
+      "duration": 0.889
+    },
+    {
+      "id": "U+0144",
+      "char": "ń",
+      "name": "LATIN SMALL LETTER N WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 450,
+      "strokes": 2,
+      "duration": 0.493
+    },
+    {
+      "id": "U+0145",
+      "char": "Ņ",
+      "name": "LATIN CAPITAL LETTER N WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 566,
+      "strokes": 2,
+      "duration": 0.889
+    },
+    {
+      "id": "U+0146",
+      "char": "ņ",
+      "name": "LATIN SMALL LETTER N WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 450,
+      "strokes": 2,
+      "duration": 0.493
+    },
+    {
+      "id": "U+0147",
+      "char": "Ň",
+      "name": "LATIN CAPITAL LETTER N WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 566,
+      "strokes": 2,
+      "duration": 0.918
+    },
+    {
+      "id": "U+0148",
+      "char": "ň",
+      "name": "LATIN SMALL LETTER N WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 450,
+      "strokes": 2,
+      "duration": 0.522
+    },
+    {
+      "id": "U+0149",
+      "char": "ŉ",
+      "name": "LATIN SMALL LETTER N PRECEDED BY APOSTROPHE",
+      "block": "Latin Extended-A",
+      "advance": 450,
+      "strokes": 2,
+      "duration": 0.495
+    },
+    {
+      "id": "U+014A",
+      "char": "Ŋ",
+      "name": "LATIN CAPITAL LETTER ENG",
+      "block": "Latin Extended-A",
+      "advance": 566,
+      "strokes": 2,
+      "duration": 0.851
+    },
+    {
+      "id": "U+014B",
+      "char": "ŋ",
+      "name": "LATIN SMALL LETTER ENG",
+      "block": "Latin Extended-A",
+      "advance": 450,
+      "strokes": 1,
+      "duration": 0.382
+    },
+    {
+      "id": "U+014C",
+      "char": "Ō",
+      "name": "LATIN CAPITAL LETTER O WITH MACRON",
+      "block": "Latin Extended-A",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.773
+    },
+    {
+      "id": "U+014D",
+      "char": "ō",
+      "name": "LATIN SMALL LETTER O WITH MACRON",
+      "block": "Latin Extended-A",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.487
+    },
+    {
+      "id": "U+014E",
+      "char": "Ŏ",
+      "name": "LATIN CAPITAL LETTER O WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.794
+    },
+    {
+      "id": "U+014F",
+      "char": "ŏ",
+      "name": "LATIN SMALL LETTER O WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.523
+    },
+    {
+      "id": "U+0150",
+      "char": "Ő",
+      "name": "LATIN CAPITAL LETTER O WITH DOUBLE ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 496,
+      "strokes": 3,
+      "duration": 0.919
+    },
+    {
+      "id": "U+0151",
+      "char": "ő",
+      "name": "LATIN SMALL LETTER O WITH DOUBLE ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 353,
+      "strokes": 3,
+      "duration": 0.648
+    },
+    {
+      "id": "U+0152",
+      "char": "Œ",
+      "name": "LATIN CAPITAL LIGATURE OE",
+      "block": "Latin Extended-A",
+      "advance": 784,
+      "strokes": 3,
+      "duration": 1.179
+    },
+    {
+      "id": "U+0153",
+      "char": "œ",
+      "name": "LATIN SMALL LIGATURE OE",
+      "block": "Latin Extended-A",
+      "advance": 541,
+      "strokes": 2,
+      "duration": 0.721
+    },
+    {
+      "id": "U+0154",
+      "char": "Ŕ",
+      "name": "LATIN CAPITAL LETTER R WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.999
+    },
+    {
+      "id": "U+0155",
+      "char": "ŕ",
+      "name": "LATIN SMALL LETTER R WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 360,
+      "strokes": 2,
+      "duration": 0.433
+    },
+    {
+      "id": "U+0156",
+      "char": "Ŗ",
+      "name": "LATIN CAPITAL LETTER R WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.999
+    },
+    {
+      "id": "U+0157",
+      "char": "ŗ",
+      "name": "LATIN SMALL LETTER R WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 360,
+      "strokes": 2,
+      "duration": 0.433
+    },
+    {
+      "id": "U+0158",
+      "char": "Ř",
+      "name": "LATIN CAPITAL LETTER R WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 1.028
+    },
+    {
+      "id": "U+0159",
+      "char": "ř",
+      "name": "LATIN SMALL LETTER R WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 360,
+      "strokes": 2,
+      "duration": 0.462
+    },
+    {
+      "id": "U+015A",
+      "char": "Ś",
+      "name": "LATIN CAPITAL LETTER S WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 486,
+      "strokes": 2,
+      "duration": 0.708
+    },
+    {
+      "id": "U+015B",
+      "char": "ś",
+      "name": "LATIN SMALL LETTER S WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 341,
+      "strokes": 2,
+      "duration": 0.461
+    },
+    {
+      "id": "U+015C",
+      "char": "Ŝ",
+      "name": "LATIN CAPITAL LETTER S WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 486,
+      "strokes": 2,
+      "duration": 0.739
+    },
+    {
+      "id": "U+015D",
+      "char": "ŝ",
+      "name": "LATIN SMALL LETTER S WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 341,
+      "strokes": 2,
+      "duration": 0.492
+    },
+    {
+      "id": "U+015E",
+      "char": "Ş",
+      "name": "LATIN CAPITAL LETTER S WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 486,
+      "strokes": 2,
+      "duration": 0.789
+    },
+    {
+      "id": "U+015F",
+      "char": "ş",
+      "name": "LATIN SMALL LETTER S WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 341,
+      "strokes": 2,
+      "duration": 0.542
+    },
+    {
+      "id": "U+0160",
+      "char": "Š",
+      "name": "LATIN CAPITAL LETTER S WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 486,
+      "strokes": 2,
+      "duration": 0.737
+    },
+    {
+      "id": "U+0161",
+      "char": "š",
+      "name": "LATIN SMALL LETTER S WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 341,
+      "strokes": 2,
+      "duration": 0.49
+    },
+    {
+      "id": "U+0162",
+      "char": "Ţ",
+      "name": "LATIN CAPITAL LETTER T WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 458,
+      "strokes": 2,
+      "duration": 0.636
+    },
+    {
+      "id": "U+0163",
+      "char": "ţ",
+      "name": "LATIN SMALL LETTER T WITH CEDILLA",
+      "block": "Latin Extended-A",
+      "advance": 331,
+      "strokes": 2,
+      "duration": 0.629
+    },
+    {
+      "id": "U+0164",
+      "char": "Ť",
+      "name": "LATIN CAPITAL LETTER T WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 458,
+      "strokes": 3,
+      "duration": 0.725
+    },
+    {
+      "id": "U+0165",
+      "char": "ť",
+      "name": "LATIN SMALL LETTER T WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 350,
+      "strokes": 3,
+      "duration": 0.657
+    },
+    {
+      "id": "U+0166",
+      "char": "Ŧ",
+      "name": "LATIN CAPITAL LETTER T WITH STROKE",
+      "block": "Latin Extended-A",
+      "advance": 458,
+      "strokes": 3,
+      "duration": 0.725
+    },
+    {
+      "id": "U+0167",
+      "char": "ŧ",
+      "name": "LATIN SMALL LETTER T WITH STROKE",
+      "block": "Latin Extended-A",
+      "advance": 331,
+      "strokes": 3,
+      "duration": 0.671
+    },
+    {
+      "id": "U+0168",
+      "char": "Ũ",
+      "name": "LATIN CAPITAL LETTER U WITH TILDE",
+      "block": "Latin Extended-A",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.755
+    },
+    {
+      "id": "U+0169",
+      "char": "ũ",
+      "name": "LATIN SMALL LETTER U WITH TILDE",
+      "block": "Latin Extended-A",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.569
+    },
+    {
+      "id": "U+016A",
+      "char": "Ū",
+      "name": "LATIN CAPITAL LETTER U WITH MACRON",
+      "block": "Latin Extended-A",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.731
+    },
+    {
+      "id": "U+016B",
+      "char": "ū",
+      "name": "LATIN SMALL LETTER U WITH MACRON",
+      "block": "Latin Extended-A",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.53
+    },
+    {
+      "id": "U+016C",
+      "char": "Ŭ",
+      "name": "LATIN CAPITAL LETTER U WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.752
+    },
+    {
+      "id": "U+016D",
+      "char": "ŭ",
+      "name": "LATIN SMALL LETTER U WITH BREVE",
+      "block": "Latin Extended-A",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.566
+    },
+    {
+      "id": "U+016E",
+      "char": "Ů",
+      "name": "LATIN CAPITAL LETTER U WITH RING ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.776
+    },
+    {
+      "id": "U+016F",
+      "char": "ů",
+      "name": "LATIN SMALL LETTER U WITH RING ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.59
+    },
+    {
+      "id": "U+0170",
+      "char": "Ű",
+      "name": "LATIN CAPITAL LETTER U WITH DOUBLE ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 482,
+      "strokes": 3,
+      "duration": 0.877
+    },
+    {
+      "id": "U+0171",
+      "char": "ű",
+      "name": "LATIN SMALL LETTER U WITH DOUBLE ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 370,
+      "strokes": 3,
+      "duration": 0.691
+    },
+    {
+      "id": "U+0172",
+      "char": "Ų",
+      "name": "LATIN CAPITAL LETTER U WITH OGONEK",
+      "block": "Latin Extended-A",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.772
+    },
+    {
+      "id": "U+0173",
+      "char": "ų",
+      "name": "LATIN SMALL LETTER U WITH OGONEK",
+      "block": "Latin Extended-A",
+      "advance": 370,
+      "strokes": 3,
+      "duration": 0.673
+    },
+    {
+      "id": "U+0174",
+      "char": "Ŵ",
+      "name": "LATIN CAPITAL LETTER W WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 720,
+      "strokes": 2,
+      "duration": 1.141
+    },
+    {
+      "id": "U+0175",
+      "char": "ŵ",
+      "name": "LATIN SMALL LETTER W WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 517,
+      "strokes": 3,
+      "duration": 0.699
+    },
+    {
+      "id": "U+0176",
+      "char": "Ŷ",
+      "name": "LATIN CAPITAL LETTER Y WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 504,
+      "strokes": 3,
+      "duration": 0.78
+    },
+    {
+      "id": "U+0177",
+      "char": "ŷ",
+      "name": "LATIN SMALL LETTER Y WITH CIRCUMFLEX",
+      "block": "Latin Extended-A",
+      "advance": 341,
+      "strokes": 3,
+      "duration": 0.713
+    },
+    {
+      "id": "U+0178",
+      "char": "Ÿ",
+      "name": "LATIN CAPITAL LETTER Y WITH DIAERESIS",
+      "block": "Latin Extended-A",
+      "advance": 504,
+      "strokes": 4,
+      "duration": 0.903
+    },
+    {
+      "id": "U+0179",
+      "char": "Ź",
+      "name": "LATIN CAPITAL LETTER Z WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 522,
+      "strokes": 2,
+      "duration": 0.726
+    },
+    {
+      "id": "U+017A",
+      "char": "ź",
+      "name": "LATIN SMALL LETTER Z WITH ACUTE",
+      "block": "Latin Extended-A",
+      "advance": 315,
+      "strokes": 2,
+      "duration": 0.485
+    },
+    {
+      "id": "U+017B",
+      "char": "Ż",
+      "name": "LATIN CAPITAL LETTER Z WITH DOT ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 522,
+      "strokes": 2,
+      "duration": 0.683
+    },
+    {
+      "id": "U+017C",
+      "char": "ż",
+      "name": "LATIN SMALL LETTER Z WITH DOT ABOVE",
+      "block": "Latin Extended-A",
+      "advance": 315,
+      "strokes": 2,
+      "duration": 0.442
+    },
+    {
+      "id": "U+017D",
+      "char": "Ž",
+      "name": "LATIN CAPITAL LETTER Z WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 522,
+      "strokes": 2,
+      "duration": 0.755
+    },
+    {
+      "id": "U+017E",
+      "char": "ž",
+      "name": "LATIN SMALL LETTER Z WITH CARON",
+      "block": "Latin Extended-A",
+      "advance": 315,
+      "strokes": 2,
+      "duration": 0.514
+    },
+    {
+      "id": "U+018F",
+      "char": "Ə",
+      "name": "LATIN CAPITAL LETTER SCHWA",
+      "block": "Latin Extended-B",
+      "advance": 498,
+      "strokes": 1,
+      "duration": 0.547
+    },
+    {
+      "id": "U+0192",
+      "char": "ƒ",
+      "name": "LATIN SMALL LETTER F WITH HOOK",
+      "block": "Latin Extended-B",
+      "advance": 291,
+      "strokes": 2,
+      "duration": 0.545
+    },
+    {
+      "id": "U+01C4",
+      "char": "Ǆ",
+      "name": "LATIN CAPITAL LETTER DZ WITH CARON",
+      "block": "Latin Extended-B",
+      "advance": 1100,
+      "strokes": 3,
+      "duration": 1.577
+    },
+    {
+      "id": "U+01C5",
+      "char": "ǅ",
+      "name": "LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON",
+      "block": "Latin Extended-B",
+      "advance": 893,
+      "strokes": 3,
+      "duration": 1.336
+    },
+    {
+      "id": "U+01C6",
+      "char": "ǆ",
+      "name": "LATIN SMALL LETTER DZ WITH CARON",
+      "block": "Latin Extended-B",
+      "advance": 708,
+      "strokes": 4,
+      "duration": 1.229
+    },
+    {
+      "id": "U+01C7",
+      "char": "Ǉ",
+      "name": "LATIN CAPITAL LETTER LJ",
+      "block": "Latin Extended-B",
+      "advance": 732,
+      "strokes": 2,
+      "duration": 0.846
+    },
+    {
+      "id": "U+01C8",
+      "char": "ǈ",
+      "name": "LATIN CAPITAL LETTER L WITH SMALL LETTER J",
+      "block": "Latin Extended-B",
+      "advance": 650,
+      "strokes": 3,
+      "duration": 0.852
+    },
+    {
+      "id": "U+01C9",
+      "char": "ǉ",
+      "name": "LATIN SMALL LETTER LJ",
+      "block": "Latin Extended-B",
+      "advance": 373,
+      "strokes": 3,
+      "duration": 0.737
+    },
+    {
+      "id": "U+01CA",
+      "char": "Ǌ",
+      "name": "LATIN CAPITAL LETTER NJ",
+      "block": "Latin Extended-B",
+      "advance": 872,
+      "strokes": 2,
+      "duration": 1.217
+    },
+    {
+      "id": "U+01CB",
+      "char": "ǋ",
+      "name": "LATIN CAPITAL LETTER N WITH SMALL LETTER J",
+      "block": "Latin Extended-B",
+      "advance": 790,
+      "strokes": 3,
+      "duration": 1.223
+    },
+    {
+      "id": "U+01CC",
+      "char": "ǌ",
+      "name": "LATIN SMALL LETTER NJ",
+      "block": "Latin Extended-B",
+      "advance": 654,
+      "strokes": 3,
+      "duration": 0.827
+    },
+    {
+      "id": "U+01D4",
+      "char": "ǔ",
+      "name": "LATIN SMALL LETTER U WITH CARON",
+      "block": "Latin Extended-B",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.543
+    },
+    {
+      "id": "U+01E5",
+      "char": "ǥ",
+      "name": "LATIN SMALL LETTER G WITH STROKE",
+      "block": "Latin Extended-B",
+      "advance": 404,
+      "strokes": 3,
+      "duration": 0.797
+    },
+    {
+      "id": "U+01E7",
+      "char": "ǧ",
+      "name": "LATIN SMALL LETTER G WITH CARON",
+      "block": "Latin Extended-B",
+      "advance": 355,
+      "strokes": 3,
+      "duration": 0.81
+    },
+    {
+      "id": "U+01E9",
+      "char": "ǩ",
+      "name": "LATIN SMALL LETTER K WITH CARON",
+      "block": "Latin Extended-B",
+      "advance": 365,
+      "strokes": 4,
+      "duration": 0.898
+    },
+    {
+      "id": "U+01EA",
+      "char": "Ǫ",
+      "name": "LATIN CAPITAL LETTER O WITH OGONEK",
+      "block": "Latin Extended-B",
+      "advance": 496,
+      "strokes": 1,
+      "duration": 0.788
+    },
+    {
+      "id": "U+01EB",
+      "char": "ǫ",
+      "name": "LATIN SMALL LETTER O WITH OGONEK",
+      "block": "Latin Extended-B",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.543
+    },
+    {
+      "id": "U+01EF",
+      "char": "ǯ",
+      "name": "LATIN SMALL LETTER EZH WITH CARON",
+      "block": "Latin Extended-B",
+      "advance": 316,
+      "strokes": 2,
+      "duration": 0.701
+    },
+    {
+      "id": "U+01F1",
+      "char": "Ǳ",
+      "name": "LATIN CAPITAL LETTER DZ",
+      "block": "Latin Extended-B",
+      "advance": 1070,
+      "strokes": 2,
+      "duration": 1.354
+    },
+    {
+      "id": "U+01F2",
+      "char": "ǲ",
+      "name": "LATIN CAPITAL LETTER D WITH SMALL LETTER Z",
+      "block": "Latin Extended-B",
+      "advance": 923,
+      "strokes": 2,
+      "duration": 1.113
+    },
+    {
+      "id": "U+01F3",
+      "char": "ǳ",
+      "name": "LATIN SMALL LETTER DZ",
+      "block": "Latin Extended-B",
+      "advance": 708,
+      "strokes": 3,
+      "duration": 1.006
+    },
+    {
+      "id": "U+01F4",
+      "char": "Ǵ",
+      "name": "LATIN CAPITAL LETTER G WITH ACUTE",
+      "block": "Latin Extended-B",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.851
+    },
+    {
+      "id": "U+01F5",
+      "char": "ǵ",
+      "name": "LATIN SMALL LETTER G WITH ACUTE",
+      "block": "Latin Extended-B",
+      "advance": 355,
+      "strokes": 3,
+      "duration": 0.781
+    },
+    {
+      "id": "U+01FA",
+      "char": "Ǻ",
+      "name": "LATIN CAPITAL LETTER A WITH RING ABOVE AND ACUTE",
+      "block": "Latin Extended-B",
+      "advance": 502,
+      "strokes": 4,
+      "duration": 1.162
+    },
+    {
+      "id": "U+01FB",
+      "char": "ǻ",
+      "name": "LATIN SMALL LETTER A WITH RING ABOVE AND ACUTE",
+      "block": "Latin Extended-B",
+      "advance": 437,
+      "strokes": 3,
+      "duration": 0.81
+    },
+    {
+      "id": "U+01FC",
+      "char": "Ǽ",
+      "name": "LATIN CAPITAL LETTER AE WITH ACUTE",
+      "block": "Latin Extended-B",
+      "advance": 784,
+      "strokes": 5,
+      "duration": 1.456
+    },
+    {
+      "id": "U+01FD",
+      "char": "ǽ",
+      "name": "LATIN SMALL LETTER AE WITH ACUTE",
+      "block": "Latin Extended-B",
+      "advance": 574,
+      "strokes": 3,
+      "duration": 0.954
+    },
+    {
+      "id": "U+01FE",
+      "char": "Ǿ",
+      "name": "LATIN CAPITAL LETTER O WITH STROKE AND ACUTE",
+      "block": "Latin Extended-B",
+      "advance": 496,
+      "strokes": 3,
+      "duration": 1.178
+    },
+    {
+      "id": "U+01FF",
+      "char": "ǿ",
+      "name": "LATIN SMALL LETTER O WITH STROKE AND ACUTE",
+      "block": "Latin Extended-B",
+      "advance": 353,
+      "strokes": 3,
+      "duration": 0.797
+    },
+    {
+      "id": "U+0200",
+      "char": "Ȁ",
+      "name": "LATIN CAPITAL LETTER A WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 502,
+      "strokes": 4,
+      "duration": 1.076
+    },
+    {
+      "id": "U+0201",
+      "char": "ȁ",
+      "name": "LATIN SMALL LETTER A WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 437,
+      "strokes": 3,
+      "duration": 0.724
+    },
+    {
+      "id": "U+0202",
+      "char": "Ȃ",
+      "name": "LATIN CAPITAL LETTER A WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 502,
+      "strokes": 3,
+      "duration": 0.944
+    },
+    {
+      "id": "U+0203",
+      "char": "ȃ",
+      "name": "LATIN SMALL LETTER A WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 437,
+      "strokes": 2,
+      "duration": 0.591
+    },
+    {
+      "id": "U+0204",
+      "char": "Ȅ",
+      "name": "LATIN CAPITAL LETTER E WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 548,
+      "strokes": 6,
+      "duration": 1.363
+    },
+    {
+      "id": "U+0205",
+      "char": "ȅ",
+      "name": "LATIN SMALL LETTER E WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 325,
+      "strokes": 3,
+      "duration": 0.673
+    },
+    {
+      "id": "U+0206",
+      "char": "Ȇ",
+      "name": "LATIN CAPITAL LETTER E WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 548,
+      "strokes": 5,
+      "duration": 1.231
+    },
+    {
+      "id": "U+0207",
+      "char": "ȇ",
+      "name": "LATIN SMALL LETTER E WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.54
+    },
+    {
+      "id": "U+0208",
+      "char": "Ȉ",
+      "name": "LATIN CAPITAL LETTER I WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 400,
+      "strokes": 5,
+      "duration": 1.091
+    },
+    {
+      "id": "U+0209",
+      "char": "ȉ",
+      "name": "LATIN SMALL LETTER I WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 187,
+      "strokes": 3,
+      "duration": 0.452
+    },
+    {
+      "id": "U+020A",
+      "char": "Ȋ",
+      "name": "LATIN CAPITAL LETTER I WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 400,
+      "strokes": 4,
+      "duration": 0.959
+    },
+    {
+      "id": "U+020B",
+      "char": "ȋ",
+      "name": "LATIN SMALL LETTER I WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 187,
+      "strokes": 2,
+      "duration": 0.319
+    },
+    {
+      "id": "U+020C",
+      "char": "Ȍ",
+      "name": "LATIN CAPITAL LETTER O WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 496,
+      "strokes": 3,
+      "duration": 0.926
+    },
+    {
+      "id": "U+020D",
+      "char": "ȍ",
+      "name": "LATIN SMALL LETTER O WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 353,
+      "strokes": 3,
+      "duration": 0.655
+    },
+    {
+      "id": "U+020E",
+      "char": "Ȏ",
+      "name": "LATIN CAPITAL LETTER O WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.794
+    },
+    {
+      "id": "U+020F",
+      "char": "ȏ",
+      "name": "LATIN SMALL LETTER O WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.522
+    },
+    {
+      "id": "U+0210",
+      "char": "Ȑ",
+      "name": "LATIN CAPITAL LETTER R WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 498,
+      "strokes": 4,
+      "duration": 1.183
+    },
+    {
+      "id": "U+0211",
+      "char": "ȑ",
+      "name": "LATIN SMALL LETTER R WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 360,
+      "strokes": 3,
+      "duration": 0.617
+    },
+    {
+      "id": "U+0212",
+      "char": "Ȓ",
+      "name": "LATIN CAPITAL LETTER R WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 1.051
+    },
+    {
+      "id": "U+0213",
+      "char": "ȓ",
+      "name": "LATIN SMALL LETTER R WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 360,
+      "strokes": 2,
+      "duration": 0.484
+    },
+    {
+      "id": "U+0214",
+      "char": "Ȕ",
+      "name": "LATIN CAPITAL LETTER U WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 482,
+      "strokes": 3,
+      "duration": 0.884
+    },
+    {
+      "id": "U+0215",
+      "char": "ȕ",
+      "name": "LATIN SMALL LETTER U WITH DOUBLE GRAVE",
+      "block": "Latin Extended-B",
+      "advance": 370,
+      "strokes": 3,
+      "duration": 0.698
+    },
+    {
+      "id": "U+0216",
+      "char": "Ȗ",
+      "name": "LATIN CAPITAL LETTER U WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.752
+    },
+    {
+      "id": "U+0217",
+      "char": "ȗ",
+      "name": "LATIN SMALL LETTER U WITH INVERTED BREVE",
+      "block": "Latin Extended-B",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.565
+    },
+    {
+      "id": "U+0218",
+      "char": "Ș",
+      "name": "LATIN CAPITAL LETTER S WITH COMMA BELOW",
+      "block": "Latin Extended-B",
+      "advance": 486,
+      "strokes": 2,
+      "duration": 0.708
+    },
+    {
+      "id": "U+0219",
+      "char": "ș",
+      "name": "LATIN SMALL LETTER S WITH COMMA BELOW",
+      "block": "Latin Extended-B",
+      "advance": 341,
+      "strokes": 2,
+      "duration": 0.461
+    },
+    {
+      "id": "U+021A",
+      "char": "Ț",
+      "name": "LATIN CAPITAL LETTER T WITH COMMA BELOW",
+      "block": "Latin Extended-B",
+      "advance": 458,
+      "strokes": 3,
+      "duration": 0.696
+    },
+    {
+      "id": "U+021B",
+      "char": "ț",
+      "name": "LATIN SMALL LETTER T WITH COMMA BELOW",
+      "block": "Latin Extended-B",
+      "advance": 331,
+      "strokes": 3,
+      "duration": 0.655
+    },
+    {
+      "id": "U+021F",
+      "char": "ȟ",
+      "name": "LATIN SMALL LETTER H WITH CARON",
+      "block": "Latin Extended-B",
+      "advance": 464,
+      "strokes": 2,
+      "duration": 0.611
+    },
+    {
+      "id": "U+0237",
+      "char": "ȷ",
+      "name": "LATIN SMALL LETTER DOTLESS J",
+      "block": "Latin Extended-B",
+      "advance": 204,
+      "strokes": 1,
+      "duration": 0.224
+    },
+    {
+      "id": "U+0259",
+      "char": "ə",
+      "name": "LATIN SMALL LETTER SCHWA",
+      "block": "IPA Extensions",
+      "advance": 325,
+      "strokes": 1,
+      "duration": 0.294
+    },
+    {
+      "id": "U+0292",
+      "char": "ʒ",
+      "name": "LATIN SMALL LETTER EZH",
+      "block": "IPA Extensions",
+      "advance": 293,
+      "strokes": 1,
+      "duration": 0.478
+    },
+    {
+      "id": "U+02BC",
+      "char": "ʼ",
+      "name": "MODIFIER LETTER APOSTROPHE",
+      "block": "Spacing Modifier Letters",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.046
+    },
+    {
+      "id": "U+02C6",
+      "char": "ˆ",
+      "name": "MODIFIER LETTER CIRCUMFLEX ACCENT",
+      "block": "Spacing Modifier Letters",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.075
+    },
+    {
+      "id": "U+02C7",
+      "char": "ˇ",
+      "name": "CARON",
+      "block": "Spacing Modifier Letters",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.073
+    },
+    {
+      "id": "U+02C9",
+      "char": "ˉ",
+      "name": "MODIFIER LETTER MACRON",
+      "block": "Spacing Modifier Letters",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.06
+    },
+    {
+      "id": "U+02D8",
+      "char": "˘",
+      "name": "BREVE",
+      "block": "Spacing Modifier Letters",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.096
+    },
+    {
+      "id": "U+02D9",
+      "char": "˙",
+      "name": "DOT ABOVE",
+      "block": "Spacing Modifier Letters",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.001
+    },
+    {
+      "id": "U+02DA",
+      "char": "˚",
+      "name": "RING ABOVE",
+      "block": "Spacing Modifier Letters",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.12
+    },
+    {
+      "id": "U+02DB",
+      "char": "˛",
+      "name": "OGONEK",
+      "block": "Spacing Modifier Letters",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.116
+    },
+    {
+      "id": "U+02DC",
+      "char": "˜",
+      "name": "SMALL TILDE",
+      "block": "Spacing Modifier Letters",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.099
+    },
+    {
+      "id": "U+02DD",
+      "char": "˝",
+      "name": "DOUBLE ACUTE ACCENT",
+      "block": "Spacing Modifier Letters",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.221
+    },
+    {
+      "id": "U+0300",
+      "char": "̀",
+      "name": "COMBINING GRAVE ACCENT",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.032
+    },
+    {
+      "id": "U+0301",
+      "char": "́",
+      "name": "COMBINING ACUTE ACCENT",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.044
+    },
+    {
+      "id": "U+0302",
+      "char": "̂",
+      "name": "COMBINING CIRCUMFLEX ACCENT",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.075
+    },
+    {
+      "id": "U+0303",
+      "char": "̃",
+      "name": "COMBINING TILDE",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.099
+    },
+    {
+      "id": "U+0304",
+      "char": "̄",
+      "name": "COMBINING MACRON",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.06
+    },
+    {
+      "id": "U+0306",
+      "char": "̆",
+      "name": "COMBINING BREVE",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.096
+    },
+    {
+      "id": "U+0307",
+      "char": "̇",
+      "name": "COMBINING DOT ABOVE",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.001
+    },
+    {
+      "id": "U+0308",
+      "char": "̈",
+      "name": "COMBINING DIAERESIS",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 2,
+      "duration": 0.182
+    },
+    {
+      "id": "U+030A",
+      "char": "̊",
+      "name": "COMBINING RING ABOVE",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.12
+    },
+    {
+      "id": "U+030B",
+      "char": "̋",
+      "name": "COMBINING DOUBLE ACUTE ACCENT",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 2,
+      "duration": 0.221
+    },
+    {
+      "id": "U+030C",
+      "char": "̌",
+      "name": "COMBINING CARON",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.073
+    },
+    {
+      "id": "U+030F",
+      "char": "̏",
+      "name": "COMBINING DOUBLE GRAVE ACCENT",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 2,
+      "duration": 0.228
+    },
+    {
+      "id": "U+0311",
+      "char": "̑",
+      "name": "COMBINING INVERTED BREVE",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.095
+    },
+    {
+      "id": "U+0323",
+      "char": "̣",
+      "name": "COMBINING DOT BELOW",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.002
+    },
+    {
+      "id": "U+0326",
+      "char": "̦",
+      "name": "COMBINING COMMA BELOW",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.044
+    },
+    {
+      "id": "U+0327",
+      "char": "̧",
+      "name": "COMBINING CEDILLA",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.125
+    },
+    {
+      "id": "U+0328",
+      "char": "̨",
+      "name": "COMBINING OGONEK",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.116
+    },
+    {
+      "id": "U+0335",
+      "char": "̵",
+      "name": "COMBINING SHORT STROKE OVERLAY",
+      "block": "Combining Diacritical Marks",
+      "advance": 0,
+      "strokes": 1,
+      "duration": 0.06
+    },
+    {
+      "id": "U+0391",
+      "char": "Α",
+      "name": "GREEK CAPITAL LETTER ALPHA",
+      "block": "Greek and Coptic",
+      "advance": 502,
+      "strokes": 2,
+      "duration": 0.698
+    },
+    {
+      "id": "U+0392",
+      "char": "Β",
+      "name": "GREEK CAPITAL LETTER BETA",
+      "block": "Greek and Coptic",
+      "advance": 520,
+      "strokes": 2,
+      "duration": 0.827
+    },
+    {
+      "id": "U+0393",
+      "char": "Γ",
+      "name": "GREEK CAPITAL LETTER GAMMA",
+      "block": "Greek and Coptic",
+      "advance": 599,
+      "strokes": 2,
+      "duration": 0.485
+    },
+    {
+      "id": "U+0394",
+      "char": "Δ",
+      "name": "GREEK CAPITAL LETTER DELTA",
+      "block": "Greek and Coptic",
+      "advance": 567,
+      "strokes": 1,
+      "duration": 0.602
+    },
+    {
+      "id": "U+0395",
+      "char": "Ε",
+      "name": "GREEK CAPITAL LETTER EPSILON",
+      "block": "Greek and Coptic",
+      "advance": 529,
+      "strokes": 4,
+      "duration": 0.986
+    },
+    {
+      "id": "U+0396",
+      "char": "Ζ",
+      "name": "GREEK CAPITAL LETTER ZETA",
+      "block": "Greek and Coptic",
+      "advance": 522,
+      "strokes": 1,
+      "duration": 0.532
+    },
+    {
+      "id": "U+0397",
+      "char": "Η",
+      "name": "GREEK CAPITAL LETTER ETA",
+      "block": "Greek and Coptic",
+      "advance": 563,
+      "strokes": 3,
+      "duration": 0.883
+    },
+    {
+      "id": "U+0398",
+      "char": "Θ",
+      "name": "GREEK CAPITAL LETTER THETA",
+      "block": "Greek and Coptic",
+      "advance": 593,
+      "strokes": 2,
+      "duration": 0.813
+    },
+    {
+      "id": "U+0399",
+      "char": "Ι",
+      "name": "GREEK CAPITAL LETTER IOTA",
+      "block": "Greek and Coptic",
+      "advance": 400,
+      "strokes": 3,
+      "duration": 0.713
+    },
+    {
+      "id": "U+039A",
+      "char": "Κ",
+      "name": "GREEK CAPITAL LETTER KAPPA",
+      "block": "Greek and Coptic",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.848
+    },
+    {
+      "id": "U+039B",
+      "char": "Λ",
+      "name": "GREEK CAPITAL LETTER LAMDA",
+      "block": "Greek and Coptic",
+      "advance": 590,
+      "strokes": 1,
+      "duration": 0.473
+    },
+    {
+      "id": "U+039C",
+      "char": "Μ",
+      "name": "GREEK CAPITAL LETTER MU",
+      "block": "Greek and Coptic",
+      "advance": 720,
+      "strokes": 1,
+      "duration": 0.897
+    },
+    {
+      "id": "U+039D",
+      "char": "Ν",
+      "name": "GREEK CAPITAL LETTER NU",
+      "block": "Greek and Coptic",
+      "advance": 599,
+      "strokes": 1,
+      "duration": 0.695
+    },
+    {
+      "id": "U+039E",
+      "char": "Ξ",
+      "name": "GREEK CAPITAL LETTER XI",
+      "block": "Greek and Coptic",
+      "advance": 663,
+      "strokes": 3,
+      "duration": 0.645
+    },
+    {
+      "id": "U+039F",
+      "char": "Ο",
+      "name": "GREEK CAPITAL LETTER OMICRON",
+      "block": "Greek and Coptic",
+      "advance": 496,
+      "strokes": 1,
+      "duration": 0.548
+    },
+    {
+      "id": "U+03A0",
+      "char": "Π",
+      "name": "GREEK CAPITAL LETTER PI",
+      "block": "Greek and Coptic",
+      "advance": 561,
+      "strokes": 2,
+      "duration": 0.702
+    },
+    {
+      "id": "U+03A1",
+      "char": "Ρ",
+      "name": "GREEK CAPITAL LETTER RHO",
+      "block": "Greek and Coptic",
+      "advance": 464,
+      "strokes": 2,
+      "duration": 0.632
+    },
+    {
+      "id": "U+03A3",
+      "char": "Σ",
+      "name": "GREEK CAPITAL LETTER SIGMA",
+      "block": "Greek and Coptic",
+      "advance": 634,
+      "strokes": 1,
+      "duration": 0.492
+    },
+    {
+      "id": "U+03A4",
+      "char": "Τ",
+      "name": "GREEK CAPITAL LETTER TAU",
+      "block": "Greek and Coptic",
+      "advance": 458,
+      "strokes": 2,
+      "duration": 0.502
+    },
+    {
+      "id": "U+03A5",
+      "char": "Υ",
+      "name": "GREEK CAPITAL LETTER UPSILON",
+      "block": "Greek and Coptic",
+      "advance": 581,
+      "strokes": 2,
+      "duration": 0.582
+    },
+    {
+      "id": "U+03A6",
+      "char": "Φ",
+      "name": "GREEK CAPITAL LETTER PHI",
+      "block": "Greek and Coptic",
+      "advance": 592,
+      "strokes": 2,
+      "duration": 0.804
+    },
+    {
+      "id": "U+03A7",
+      "char": "Χ",
+      "name": "GREEK CAPITAL LETTER CHI",
+      "block": "Greek and Coptic",
+      "advance": 524,
+      "strokes": 2,
+      "duration": 0.657
+    },
+    {
+      "id": "U+03A8",
+      "char": "Ψ",
+      "name": "GREEK CAPITAL LETTER PSI",
+      "block": "Greek and Coptic",
+      "advance": 612,
+      "strokes": 2,
+      "duration": 0.694
+    },
+    {
+      "id": "U+03A9",
+      "char": "Ω",
+      "name": "GREEK CAPITAL LETTER OMEGA",
+      "block": "Greek and Coptic",
+      "advance": 654,
+      "strokes": 1,
+      "duration": 0.603
+    },
+    {
+      "id": "U+03B1",
+      "char": "α",
+      "name": "GREEK SMALL LETTER ALPHA",
+      "block": "Greek and Coptic",
+      "advance": 475,
+      "strokes": 1,
+      "duration": 0.458
+    },
+    {
+      "id": "U+03B2",
+      "char": "β",
+      "name": "GREEK SMALL LETTER BETA",
+      "block": "Greek and Coptic",
+      "advance": 456,
+      "strokes": 1,
+      "duration": 0.673
+    },
+    {
+      "id": "U+03B3",
+      "char": "γ",
+      "name": "GREEK SMALL LETTER GAMMA",
+      "block": "Greek and Coptic",
+      "advance": 478,
+      "strokes": 1,
+      "duration": 0.422
+    },
+    {
+      "id": "U+03B4",
+      "char": "δ",
+      "name": "GREEK SMALL LETTER DELTA",
+      "block": "Greek and Coptic",
+      "advance": 444,
+      "strokes": 1,
+      "duration": 0.497
+    },
+    {
+      "id": "U+03B5",
+      "char": "ε",
+      "name": "GREEK SMALL LETTER EPSILON",
+      "block": "Greek and Coptic",
+      "advance": 426,
+      "strokes": 1,
+      "duration": 0.323
+    },
+    {
+      "id": "U+03B6",
+      "char": "ζ",
+      "name": "GREEK SMALL LETTER ZETA",
+      "block": "Greek and Coptic",
+      "advance": 407,
+      "strokes": 1,
+      "duration": 0.433
+    },
+    {
+      "id": "U+03B7",
+      "char": "η",
+      "name": "GREEK SMALL LETTER ETA",
+      "block": "Greek and Coptic",
+      "advance": 403,
+      "strokes": 2,
+      "duration": 0.56
+    },
+    {
+      "id": "U+03B8",
+      "char": "θ",
+      "name": "GREEK SMALL LETTER THETA",
+      "block": "Greek and Coptic",
+      "advance": 439,
+      "strokes": 2,
+      "duration": 0.749
+    },
+    {
+      "id": "U+03B9",
+      "char": "ι",
+      "name": "GREEK SMALL LETTER IOTA",
+      "block": "Greek and Coptic",
+      "advance": 262,
+      "strokes": 1,
+      "duration": 0.154
+    },
+    {
+      "id": "U+03BA",
+      "char": "κ",
+      "name": "GREEK SMALL LETTER KAPPA",
+      "block": "Greek and Coptic",
+      "advance": 417,
+      "strokes": 2,
+      "duration": 0.458
+    },
+    {
+      "id": "U+03BB",
+      "char": "λ",
+      "name": "GREEK SMALL LETTER LAMDA",
+      "block": "Greek and Coptic",
+      "advance": 468,
+      "strokes": 2,
+      "duration": 0.545
+    },
+    {
+      "id": "U+03BC",
+      "char": "μ",
+      "name": "GREEK SMALL LETTER MU",
+      "block": "Greek and Coptic",
+      "advance": 370,
+      "strokes": 3,
+      "duration": 0.639
+    },
+    {
+      "id": "U+03BD",
+      "char": "ν",
+      "name": "GREEK SMALL LETTER NU",
+      "block": "Greek and Coptic",
+      "advance": 453,
+      "strokes": 1,
+      "duration": 0.303
+    },
+    {
+      "id": "U+03BE",
+      "char": "ξ",
+      "name": "GREEK SMALL LETTER XI",
+      "block": "Greek and Coptic",
+      "advance": 389,
+      "strokes": 1,
+      "duration": 0.541
+    },
+    {
+      "id": "U+03BF",
+      "char": "ο",
+      "name": "GREEK SMALL LETTER OMICRON",
+      "block": "Greek and Coptic",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.277
+    },
+    {
+      "id": "U+03C0",
+      "char": "π",
+      "name": "GREEK SMALL LETTER PI",
+      "block": "Greek and Coptic",
+      "advance": 537,
+      "strokes": 3,
+      "duration": 0.714
+    },
+    {
+      "id": "U+03C1",
+      "char": "ρ",
+      "name": "GREEK SMALL LETTER RHO",
+      "block": "Greek and Coptic",
+      "advance": 439,
+      "strokes": 1,
+      "duration": 0.426
+    },
+    {
+      "id": "U+03C2",
+      "char": "ς",
+      "name": "GREEK SMALL LETTER FINAL SIGMA",
+      "block": "Greek and Coptic",
+      "advance": 412,
+      "strokes": 1,
+      "duration": 0.298
+    },
+    {
+      "id": "U+03C3",
+      "char": "σ",
+      "name": "GREEK SMALL LETTER SIGMA",
+      "block": "Greek and Coptic",
+      "advance": 491,
+      "strokes": 1,
+      "duration": 0.372
+    },
+    {
+      "id": "U+03C4",
+      "char": "τ",
+      "name": "GREEK SMALL LETTER TAU",
+      "block": "Greek and Coptic",
+      "advance": 494,
+      "strokes": 2,
+      "duration": 0.419
+    },
+    {
+      "id": "U+03C5",
+      "char": "υ",
+      "name": "GREEK SMALL LETTER UPSILON",
+      "block": "Greek and Coptic",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.296
+    },
+    {
+      "id": "U+03C6",
+      "char": "φ",
+      "name": "GREEK SMALL LETTER PHI",
+      "block": "Greek and Coptic",
+      "advance": 470,
+      "strokes": 1,
+      "duration": 0.52
+    },
+    {
+      "id": "U+03C7",
+      "char": "χ",
+      "name": "GREEK SMALL LETTER CHI",
+      "block": "Greek and Coptic",
+      "advance": 500,
+      "strokes": 2,
+      "duration": 0.601
+    },
+    {
+      "id": "U+03C8",
+      "char": "ψ",
+      "name": "GREEK SMALL LETTER PSI",
+      "block": "Greek and Coptic",
+      "advance": 462,
+      "strokes": 2,
+      "duration": 0.723
+    },
+    {
+      "id": "U+03C9",
+      "char": "ω",
+      "name": "GREEK SMALL LETTER OMEGA",
+      "block": "Greek and Coptic",
+      "advance": 527,
+      "strokes": 1,
+      "duration": 0.447
+    },
+    {
+      "id": "U+03D1",
+      "char": "ϑ",
+      "name": "GREEK THETA SYMBOL",
+      "block": "Greek and Coptic",
+      "advance": 552,
+      "strokes": 1,
+      "duration": 0.581
+    },
+    {
+      "id": "U+03D5",
+      "char": "ϕ",
+      "name": "GREEK PHI SYMBOL",
+      "block": "Greek and Coptic",
+      "advance": 442,
+      "strokes": 2,
+      "duration": 0.774
+    },
+    {
+      "id": "U+03D6",
+      "char": "ϖ",
+      "name": "GREEK PI SYMBOL",
+      "block": "Greek and Coptic",
+      "advance": 565,
+      "strokes": 2,
+      "duration": 0.681
+    },
+    {
+      "id": "U+03F1",
+      "char": "ϱ",
+      "name": "GREEK RHO SYMBOL",
+      "block": "Greek and Coptic",
+      "advance": 421,
+      "strokes": 1,
+      "duration": 0.497
+    },
+    {
+      "id": "U+03F5",
+      "char": "ϵ",
+      "name": "GREEK LUNATE EPSILON SYMBOL",
+      "block": "Greek and Coptic",
+      "advance": 414,
+      "strokes": 2,
+      "duration": 0.461
+    },
+    {
+      "id": "U+0400",
+      "char": "Ѐ",
+      "name": "CYRILLIC CAPITAL LETTER IE WITH GRAVE",
+      "block": "Cyrillic",
+      "advance": 548,
+      "strokes": 3,
+      "duration": 0.88
+    },
+    {
+      "id": "U+0401",
+      "char": "Ё",
+      "name": "CYRILLIC CAPITAL LETTER IO",
+      "block": "Cyrillic",
+      "advance": 548,
+      "strokes": 4,
+      "duration": 1.034
+    },
+    {
+      "id": "U+0402",
+      "char": "Ђ",
+      "name": "CYRILLIC CAPITAL LETTER DJE",
+      "block": "Cyrillic",
+      "advance": 612,
+      "strokes": 3,
+      "duration": 1.01
+    },
+    {
+      "id": "U+0403",
+      "char": "Ѓ",
+      "name": "CYRILLIC CAPITAL LETTER GJE",
+      "block": "Cyrillic",
+      "advance": 459,
+      "strokes": 3,
+      "duration": 0.656
+    },
+    {
+      "id": "U+0404",
+      "char": "Є",
+      "name": "CYRILLIC CAPITAL LETTER UKRAINIAN IE",
+      "block": "Cyrillic",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.661
+    },
+    {
+      "id": "U+0405",
+      "char": "Ѕ",
+      "name": "CYRILLIC CAPITAL LETTER DZE",
+      "block": "Cyrillic",
+      "advance": 486,
+      "strokes": 1,
+      "duration": 0.514
+    },
+    {
+      "id": "U+0406",
+      "char": "І",
+      "name": "CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I",
+      "block": "Cyrillic",
+      "advance": 400,
+      "strokes": 3,
+      "duration": 0.713
+    },
+    {
+      "id": "U+0407",
+      "char": "Ї",
+      "name": "CYRILLIC CAPITAL LETTER YI",
+      "block": "Cyrillic",
+      "advance": 400,
+      "strokes": 5,
+      "duration": 1.061
+    },
+    {
+      "id": "U+0408",
+      "char": "Ј",
+      "name": "CYRILLIC CAPITAL LETTER JE",
+      "block": "Cyrillic",
+      "advance": 306,
+      "strokes": 1,
+      "duration": 0.372
+    },
+    {
+      "id": "U+0409",
+      "char": "Љ",
+      "name": "CYRILLIC CAPITAL LETTER LJE",
+      "block": "Cyrillic",
+      "advance": 859,
+      "strokes": 1,
+      "duration": 0.813
+    },
+    {
+      "id": "U+040A",
+      "char": "Њ",
+      "name": "CYRILLIC CAPITAL LETTER NJE",
+      "block": "Cyrillic",
+      "advance": 729,
+      "strokes": 3,
+      "duration": 1.128
+    },
+    {
+      "id": "U+040B",
+      "char": "Ћ",
+      "name": "CYRILLIC CAPITAL LETTER TSHE",
+      "block": "Cyrillic",
+      "advance": 685,
+      "strokes": 4,
+      "duration": 1.094
+    },
+    {
+      "id": "U+040C",
+      "char": "Ќ",
+      "name": "CYRILLIC CAPITAL LETTER KJE",
+      "block": "Cyrillic",
+      "advance": 498,
+      "strokes": 4,
+      "duration": 1.042
+    },
+    {
+      "id": "U+040D",
+      "char": "Ѝ",
+      "name": "CYRILLIC CAPITAL LETTER I WITH GRAVE",
+      "block": "Cyrillic",
+      "advance": 631,
+      "strokes": 2,
+      "duration": 0.987
+    },
+    {
+      "id": "U+040E",
+      "char": "Ў",
+      "name": "CYRILLIC CAPITAL LETTER SHORT U",
+      "block": "Cyrillic",
+      "advance": 512,
+      "strokes": 3,
+      "duration": 0.822
+    },
+    {
+      "id": "U+040F",
+      "char": "Џ",
+      "name": "CYRILLIC CAPITAL LETTER DZHE",
+      "block": "Cyrillic",
+      "advance": 551,
+      "strokes": 2,
+      "duration": 0.724
+    },
+    {
+      "id": "U+0410",
+      "char": "А",
+      "name": "CYRILLIC CAPITAL LETTER A",
+      "block": "Cyrillic",
+      "advance": 502,
+      "strokes": 2,
+      "duration": 0.698
+    },
+    {
+      "id": "U+0411",
+      "char": "Б",
+      "name": "CYRILLIC CAPITAL LETTER BE",
+      "block": "Cyrillic",
+      "advance": 509,
+      "strokes": 3,
+      "duration": 0.885
+    },
+    {
+      "id": "U+0412",
+      "char": "В",
+      "name": "CYRILLIC CAPITAL LETTER VE",
+      "block": "Cyrillic",
+      "advance": 512,
+      "strokes": 2,
+      "duration": 0.827
+    },
+    {
+      "id": "U+0413",
+      "char": "Г",
+      "name": "CYRILLIC CAPITAL LETTER GHE",
+      "block": "Cyrillic",
+      "advance": 459,
+      "strokes": 2,
+      "duration": 0.462
+    },
+    {
+      "id": "U+0414",
+      "char": "Д",
+      "name": "CYRILLIC CAPITAL LETTER DE",
+      "block": "Cyrillic",
+      "advance": 723,
+      "strokes": 3,
+      "duration": 1.161
+    },
+    {
+      "id": "U+0415",
+      "char": "Е",
+      "name": "CYRILLIC CAPITAL LETTER IE",
+      "block": "Cyrillic",
+      "advance": 548,
+      "strokes": 2,
+      "duration": 0.686
+    },
+    {
+      "id": "U+0416",
+      "char": "Ж",
+      "name": "CYRILLIC CAPITAL LETTER ZHE",
+      "block": "Cyrillic",
+      "advance": 826,
+      "strokes": 4,
+      "duration": 1.265
+    },
+    {
+      "id": "U+0417",
+      "char": "З",
+      "name": "CYRILLIC CAPITAL LETTER ZE",
+      "block": "Cyrillic",
+      "advance": 545,
+      "strokes": 1,
+      "duration": 0.535
+    },
+    {
+      "id": "U+0418",
+      "char": "И",
+      "name": "CYRILLIC CAPITAL LETTER I",
+      "block": "Cyrillic",
+      "advance": 631,
+      "strokes": 1,
+      "duration": 0.793
+    },
+    {
+      "id": "U+0419",
+      "char": "Й",
+      "name": "CYRILLIC CAPITAL LETTER SHORT I",
+      "block": "Cyrillic",
+      "advance": 631,
+      "strokes": 2,
+      "duration": 1.03
+    },
+    {
+      "id": "U+041A",
+      "char": "К",
+      "name": "CYRILLIC CAPITAL LETTER KA",
+      "block": "Cyrillic",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.848
+    },
+    {
+      "id": "U+041B",
+      "char": "Л",
+      "name": "CYRILLIC CAPITAL LETTER EL",
+      "block": "Cyrillic",
+      "advance": 605,
+      "strokes": 2,
+      "duration": 0.726
+    },
+    {
+      "id": "U+041C",
+      "char": "М",
+      "name": "CYRILLIC CAPITAL LETTER EM",
+      "block": "Cyrillic",
+      "advance": 720,
+      "strokes": 1,
+      "duration": 0.897
+    },
+    {
+      "id": "U+041D",
+      "char": "Н",
+      "name": "CYRILLIC CAPITAL LETTER EN",
+      "block": "Cyrillic",
+      "advance": 564,
+      "strokes": 3,
+      "duration": 0.883
+    },
+    {
+      "id": "U+041E",
+      "char": "О",
+      "name": "CYRILLIC CAPITAL LETTER O",
+      "block": "Cyrillic",
+      "advance": 496,
+      "strokes": 1,
+      "duration": 0.548
+    },
+    {
+      "id": "U+041F",
+      "char": "П",
+      "name": "CYRILLIC CAPITAL LETTER PE",
+      "block": "Cyrillic",
+      "advance": 604,
+      "strokes": 1,
+      "duration": 0.569
+    },
+    {
+      "id": "U+0420",
+      "char": "Р",
+      "name": "CYRILLIC CAPITAL LETTER ER",
+      "block": "Cyrillic",
+      "advance": 472,
+      "strokes": 1,
+      "duration": 0.482
+    },
+    {
+      "id": "U+0421",
+      "char": "С",
+      "name": "CYRILLIC CAPITAL LETTER ES",
+      "block": "Cyrillic",
+      "advance": 482,
+      "strokes": 1,
+      "duration": 0.463
+    },
+    {
+      "id": "U+0422",
+      "char": "Т",
+      "name": "CYRILLIC CAPITAL LETTER TE",
+      "block": "Cyrillic",
+      "advance": 458,
+      "strokes": 2,
+      "duration": 0.502
+    },
+    {
+      "id": "U+0423",
+      "char": "У",
+      "name": "CYRILLIC CAPITAL LETTER U",
+      "block": "Cyrillic",
+      "advance": 512,
+      "strokes": 2,
+      "duration": 0.585
+    },
+    {
+      "id": "U+0424",
+      "char": "Ф",
+      "name": "CYRILLIC CAPITAL LETTER EF",
+      "block": "Cyrillic",
+      "advance": 653,
+      "strokes": 2,
+      "duration": 0.971
+    },
+    {
+      "id": "U+0425",
+      "char": "Х",
+      "name": "CYRILLIC CAPITAL LETTER HA",
+      "block": "Cyrillic",
+      "advance": 524,
+      "strokes": 2,
+      "duration": 0.657
+    },
+    {
+      "id": "U+0426",
+      "char": "Ц",
+      "name": "CYRILLIC CAPITAL LETTER TSE",
+      "block": "Cyrillic",
+      "advance": 650,
+      "strokes": 2,
+      "duration": 0.757
+    },
+    {
+      "id": "U+0427",
+      "char": "Ч",
+      "name": "CYRILLIC CAPITAL LETTER CHE",
+      "block": "Cyrillic",
+      "advance": 524,
+      "strokes": 2,
+      "duration": 0.671
+    },
+    {
+      "id": "U+0428",
+      "char": "Ш",
+      "name": "CYRILLIC CAPITAL LETTER SHA",
+      "block": "Cyrillic",
+      "advance": 808,
+      "strokes": 2,
+      "duration": 0.97
+    },
+    {
+      "id": "U+0429",
+      "char": "Щ",
+      "name": "CYRILLIC CAPITAL LETTER SHCHA",
+      "block": "Cyrillic",
+      "advance": 844,
+      "strokes": 3,
+      "duration": 1.148
+    },
+    {
+      "id": "U+042A",
+      "char": "Ъ",
+      "name": "CYRILLIC CAPITAL LETTER HARD SIGN",
+      "block": "Cyrillic",
+      "advance": 570,
+      "strokes": 1,
+      "duration": 0.531
+    },
+    {
+      "id": "U+042B",
+      "char": "Ы",
+      "name": "CYRILLIC CAPITAL LETTER YERU",
+      "block": "Cyrillic",
+      "advance": 662,
+      "strokes": 2,
+      "duration": 0.821
+    },
+    {
+      "id": "U+042C",
+      "char": "Ь",
+      "name": "CYRILLIC CAPITAL LETTER SOFT SIGN",
+      "block": "Cyrillic",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.457
+    },
+    {
+      "id": "U+042D",
+      "char": "Э",
+      "name": "CYRILLIC CAPITAL LETTER E",
+      "block": "Cyrillic",
+      "advance": 484,
+      "strokes": 2,
+      "duration": 0.583
+    },
+    {
+      "id": "U+042E",
+      "char": "Ю",
+      "name": "CYRILLIC CAPITAL LETTER YU",
+      "block": "Cyrillic",
+      "advance": 718,
+      "strokes": 3,
+      "duration": 1.115
+    },
+    {
+      "id": "U+042F",
+      "char": "Я",
+      "name": "CYRILLIC CAPITAL LETTER YA",
+      "block": "Cyrillic",
+      "advance": 548,
+      "strokes": 2,
+      "duration": 0.797
+    },
+    {
+      "id": "U+0430",
+      "char": "а",
+      "name": "CYRILLIC SMALL LETTER A",
+      "block": "Cyrillic",
+      "advance": 437,
+      "strokes": 1,
+      "duration": 0.346
+    },
+    {
+      "id": "U+0431",
+      "char": "б",
+      "name": "CYRILLIC SMALL LETTER BE",
+      "block": "Cyrillic",
+      "advance": 308,
+      "strokes": 1,
+      "duration": 0.365
+    },
+    {
+      "id": "U+0432",
+      "char": "в",
+      "name": "CYRILLIC SMALL LETTER VE",
+      "block": "Cyrillic",
+      "advance": 302,
+      "strokes": 1,
+      "duration": 0.507
+    },
+    {
+      "id": "U+0433",
+      "char": "г",
+      "name": "CYRILLIC SMALL LETTER GHE",
+      "block": "Cyrillic",
+      "advance": 280,
+      "strokes": 1,
+      "duration": 0.157
+    },
+    {
+      "id": "U+0434",
+      "char": "д",
+      "name": "CYRILLIC SMALL LETTER DE",
+      "block": "Cyrillic",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.406
+    },
+    {
+      "id": "U+0435",
+      "char": "е",
+      "name": "CYRILLIC SMALL LETTER IE",
+      "block": "Cyrillic",
+      "advance": 325,
+      "strokes": 1,
+      "duration": 0.295
+    },
+    {
+      "id": "U+0436",
+      "char": "ж",
+      "name": "CYRILLIC SMALL LETTER ZHE",
+      "block": "Cyrillic",
+      "advance": 536,
+      "strokes": 4,
+      "duration": 0.886
+    },
+    {
+      "id": "U+0437",
+      "char": "з",
+      "name": "CYRILLIC SMALL LETTER ZE",
+      "block": "Cyrillic",
+      "advance": 273,
+      "strokes": 1,
+      "duration": 0.477
+    },
+    {
+      "id": "U+0438",
+      "char": "и",
+      "name": "CYRILLIC SMALL LETTER I",
+      "block": "Cyrillic",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.407
+    },
+    {
+      "id": "U+0439",
+      "char": "й",
+      "name": "CYRILLIC SMALL LETTER SHORT I",
+      "block": "Cyrillic",
+      "advance": 417,
+      "strokes": 3,
+      "duration": 0.64
+    },
+    {
+      "id": "U+043A",
+      "char": "к",
+      "name": "CYRILLIC SMALL LETTER KA",
+      "block": "Cyrillic",
+      "advance": 369,
+      "strokes": 3,
+      "duration": 0.56
+    },
+    {
+      "id": "U+043B",
+      "char": "л",
+      "name": "CYRILLIC SMALL LETTER EL",
+      "block": "Cyrillic",
+      "advance": 354,
+      "strokes": 2,
+      "duration": 0.423
+    },
+    {
+      "id": "U+043C",
+      "char": "м",
+      "name": "CYRILLIC SMALL LETTER EM",
+      "block": "Cyrillic",
+      "advance": 522,
+      "strokes": 1,
+      "duration": 0.396
+    },
+    {
+      "id": "U+043D",
+      "char": "н",
+      "name": "CYRILLIC SMALL LETTER EN",
+      "block": "Cyrillic",
+      "advance": 412,
+      "strokes": 4,
+      "duration": 0.728
+    },
+    {
+      "id": "U+043E",
+      "char": "о",
+      "name": "CYRILLIC SMALL LETTER O",
+      "block": "Cyrillic",
+      "advance": 353,
+      "strokes": 1,
+      "duration": 0.277
+    },
+    {
+      "id": "U+043F",
+      "char": "п",
+      "name": "CYRILLIC SMALL LETTER PE",
+      "block": "Cyrillic",
+      "advance": 390,
+      "strokes": 1,
+      "duration": 0.24
+    },
+    {
+      "id": "U+0440",
+      "char": "р",
+      "name": "CYRILLIC SMALL LETTER ER",
+      "block": "Cyrillic",
+      "advance": 378,
+      "strokes": 2,
+      "duration": 0.529
+    },
+    {
+      "id": "U+0441",
+      "char": "с",
+      "name": "CYRILLIC SMALL LETTER ES",
+      "block": "Cyrillic",
+      "advance": 355,
+      "strokes": 1,
+      "duration": 0.255
+    },
+    {
+      "id": "U+0442",
+      "char": "т",
+      "name": "CYRILLIC SMALL LETTER TE",
+      "block": "Cyrillic",
+      "advance": 509,
+      "strokes": 2,
+      "duration": 0.545
+    },
+    {
+      "id": "U+0443",
+      "char": "у",
+      "name": "CYRILLIC SMALL LETTER U",
+      "block": "Cyrillic",
+      "advance": 341,
+      "strokes": 2,
+      "duration": 0.488
+    },
+    {
+      "id": "U+0444",
+      "char": "ф",
+      "name": "CYRILLIC SMALL LETTER EF",
+      "block": "Cyrillic",
+      "advance": 543,
+      "strokes": 3,
+      "duration": 0.954
+    },
+    {
+      "id": "U+0445",
+      "char": "х",
+      "name": "CYRILLIC SMALL LETTER HA",
+      "block": "Cyrillic",
+      "advance": 343,
+      "strokes": 2,
+      "duration": 0.4
+    },
+    {
+      "id": "U+0446",
+      "char": "ц",
+      "name": "CYRILLIC SMALL LETTER TSE",
+      "block": "Cyrillic",
+      "advance": 415,
+      "strokes": 2,
+      "duration": 0.504
+    },
+    {
+      "id": "U+0447",
+      "char": "ч",
+      "name": "CYRILLIC SMALL LETTER CHE",
+      "block": "Cyrillic",
+      "advance": 330,
+      "strokes": 1,
+      "duration": 0.279
+    },
+    {
+      "id": "U+0448",
+      "char": "ш",
+      "name": "CYRILLIC SMALL LETTER SHA",
+      "block": "Cyrillic",
+      "advance": 589,
+      "strokes": 1,
+      "duration": 0.456
+    },
+    {
+      "id": "U+0449",
+      "char": "щ",
+      "name": "CYRILLIC SMALL LETTER SHCHA",
+      "block": "Cyrillic",
+      "advance": 510,
+      "strokes": 3,
+      "duration": 0.716
+    },
+    {
+      "id": "U+044A",
+      "char": "ъ",
+      "name": "CYRILLIC SMALL LETTER HARD SIGN",
+      "block": "Cyrillic",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.308
+    },
+    {
+      "id": "U+044B",
+      "char": "ы",
+      "name": "CYRILLIC SMALL LETTER YERU",
+      "block": "Cyrillic",
+      "advance": 528,
+      "strokes": 2,
+      "duration": 0.565
+    },
+    {
+      "id": "U+044C",
+      "char": "ь",
+      "name": "CYRILLIC SMALL LETTER SOFT SIGN",
+      "block": "Cyrillic",
+      "advance": 326,
+      "strokes": 1,
+      "duration": 0.256
+    },
+    {
+      "id": "U+044D",
+      "char": "э",
+      "name": "CYRILLIC SMALL LETTER E",
+      "block": "Cyrillic",
+      "advance": 308,
+      "strokes": 2,
+      "duration": 0.384
+    },
+    {
+      "id": "U+044E",
+      "char": "ю",
+      "name": "CYRILLIC SMALL LETTER YU",
+      "block": "Cyrillic",
+      "advance": 527,
+      "strokes": 3,
+      "duration": 0.728
+    },
+    {
+      "id": "U+044F",
+      "char": "я",
+      "name": "CYRILLIC SMALL LETTER YA",
+      "block": "Cyrillic",
+      "advance": 363,
+      "strokes": 1,
+      "duration": 0.358
+    },
+    {
+      "id": "U+0450",
+      "char": "ѐ",
+      "name": "CYRILLIC SMALL LETTER IE WITH GRAVE",
+      "block": "Cyrillic",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.477
+    },
+    {
+      "id": "U+0451",
+      "char": "ё",
+      "name": "CYRILLIC SMALL LETTER IO",
+      "block": "Cyrillic",
+      "advance": 325,
+      "strokes": 3,
+      "duration": 0.627
+    },
+    {
+      "id": "U+0452",
+      "char": "ђ",
+      "name": "CYRILLIC SMALL LETTER DJE",
+      "block": "Cyrillic",
+      "advance": 415,
+      "strokes": 3,
+      "duration": 0.871
+    },
+    {
+      "id": "U+0453",
+      "char": "ѓ",
+      "name": "CYRILLIC SMALL LETTER GJE",
+      "block": "Cyrillic",
+      "advance": 304,
+      "strokes": 2,
+      "duration": 0.351
+    },
+    {
+      "id": "U+0454",
+      "char": "є",
+      "name": "CYRILLIC SMALL LETTER UKRAINIAN IE",
+      "block": "Cyrillic",
+      "advance": 335,
+      "strokes": 2,
+      "duration": 0.434
+    },
+    {
+      "id": "U+0455",
+      "char": "ѕ",
+      "name": "CYRILLIC SMALL LETTER DZE",
+      "block": "Cyrillic",
+      "advance": 341,
+      "strokes": 1,
+      "duration": 0.267
+    },
+    {
+      "id": "U+0456",
+      "char": "і",
+      "name": "CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I",
+      "block": "Cyrillic",
+      "advance": 187,
+      "strokes": 2,
+      "duration": 0.236
+    },
+    {
+      "id": "U+0457",
+      "char": "ї",
+      "name": "CYRILLIC SMALL LETTER YI",
+      "block": "Cyrillic",
+      "advance": 187,
+      "strokes": 3,
+      "duration": 0.406
+    },
+    {
+      "id": "U+0458",
+      "char": "ј",
+      "name": "CYRILLIC SMALL LETTER JE",
+      "block": "Cyrillic",
+      "advance": 204,
+      "strokes": 2,
+      "duration": 0.378
+    },
+    {
+      "id": "U+0459",
+      "char": "љ",
+      "name": "CYRILLIC SMALL LETTER LJE",
+      "block": "Cyrillic",
+      "advance": 507,
+      "strokes": 1,
+      "duration": 0.423
+    },
+    {
+      "id": "U+045A",
+      "char": "њ",
+      "name": "CYRILLIC SMALL LETTER NJE",
+      "block": "Cyrillic",
+      "advance": 467,
+      "strokes": 2,
+      "duration": 0.546
+    },
+    {
+      "id": "U+045B",
+      "char": "ћ",
+      "name": "CYRILLIC SMALL LETTER TSHE",
+      "block": "Cyrillic",
+      "advance": 429,
+      "strokes": 2,
+      "duration": 0.661
+    },
+    {
+      "id": "U+045C",
+      "char": "ќ",
+      "name": "CYRILLIC SMALL LETTER KJE",
+      "block": "Cyrillic",
+      "advance": 394,
+      "strokes": 4,
+      "duration": 0.754
+    },
+    {
+      "id": "U+045D",
+      "char": "ѝ",
+      "name": "CYRILLIC SMALL LETTER I WITH GRAVE",
+      "block": "Cyrillic",
+      "advance": 380,
+      "strokes": 3,
+      "duration": 0.594
+    },
+    {
+      "id": "U+045E",
+      "char": "ў",
+      "name": "CYRILLIC SMALL LETTER SHORT U",
+      "block": "Cyrillic",
+      "advance": 360,
+      "strokes": 3,
+      "duration": 0.716
+    },
+    {
+      "id": "U+045F",
+      "char": "џ",
+      "name": "CYRILLIC SMALL LETTER DZHE",
+      "block": "Cyrillic",
+      "advance": 379,
+      "strokes": 3,
+      "duration": 0.614
+    },
+    {
+      "id": "U+0462",
+      "char": "Ѣ",
+      "name": "CYRILLIC CAPITAL LETTER YAT",
+      "block": "Cyrillic",
+      "advance": 497,
+      "strokes": 2,
+      "duration": 0.718
+    },
+    {
+      "id": "U+0463",
+      "char": "ѣ",
+      "name": "CYRILLIC SMALL LETTER YAT",
+      "block": "Cyrillic",
+      "advance": 491,
+      "strokes": 1,
+      "duration": 0.394
+    },
+    {
+      "id": "U+046A",
+      "char": "Ѫ",
+      "name": "CYRILLIC CAPITAL LETTER BIG YUS",
+      "block": "Cyrillic",
+      "advance": 621,
+      "strokes": 2,
+      "duration": 0.936
+    },
+    {
+      "id": "U+046B",
+      "char": "ѫ",
+      "name": "CYRILLIC SMALL LETTER BIG YUS",
+      "block": "Cyrillic",
+      "advance": 401,
+      "strokes": 2,
+      "duration": 0.707
+    },
+    {
+      "id": "U+0472",
+      "char": "Ѳ",
+      "name": "CYRILLIC CAPITAL LETTER FITA",
+      "block": "Cyrillic",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.826
+    },
+    {
+      "id": "U+0473",
+      "char": "ѳ",
+      "name": "CYRILLIC SMALL LETTER FITA",
+      "block": "Cyrillic",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.509
+    },
+    {
+      "id": "U+0474",
+      "char": "Ѵ",
+      "name": "CYRILLIC CAPITAL LETTER IZHITSA",
+      "block": "Cyrillic",
+      "advance": 535,
+      "strokes": 1,
+      "duration": 0.486
+    },
+    {
+      "id": "U+0475",
+      "char": "ѵ",
+      "name": "CYRILLIC SMALL LETTER IZHITSA",
+      "block": "Cyrillic",
+      "advance": 357,
+      "strokes": 1,
+      "duration": 0.231
+    },
+    {
+      "id": "U+048A",
+      "char": "Ҋ",
+      "name": "CYRILLIC CAPITAL LETTER SHORT I WITH TAIL",
+      "block": "Cyrillic",
+      "advance": 682,
+      "strokes": 3,
+      "duration": 1.277
+    },
+    {
+      "id": "U+048B",
+      "char": "ҋ",
+      "name": "CYRILLIC SMALL LETTER SHORT I WITH TAIL",
+      "block": "Cyrillic",
+      "advance": 423,
+      "strokes": 4,
+      "duration": 0.871
+    },
+    {
+      "id": "U+048C",
+      "char": "Ҍ",
+      "name": "CYRILLIC CAPITAL LETTER SEMISOFT SIGN",
+      "block": "Cyrillic",
+      "advance": 467,
+      "strokes": 2,
+      "duration": 0.718
+    },
+    {
+      "id": "U+048D",
+      "char": "ҍ",
+      "name": "CYRILLIC SMALL LETTER SEMISOFT SIGN",
+      "block": "Cyrillic",
+      "advance": 328,
+      "strokes": 2,
+      "duration": 0.584
+    },
+    {
+      "id": "U+048E",
+      "char": "Ҏ",
+      "name": "CYRILLIC CAPITAL LETTER ER WITH TICK",
+      "block": "Cyrillic",
+      "advance": 464,
+      "strokes": 2,
+      "duration": 0.693
+    },
+    {
+      "id": "U+048F",
+      "char": "ҏ",
+      "name": "CYRILLIC SMALL LETTER ER WITH TICK",
+      "block": "Cyrillic",
+      "advance": 378,
+      "strokes": 3,
+      "duration": 0.734
+    },
+    {
+      "id": "U+0490",
+      "char": "Ґ",
+      "name": "CYRILLIC CAPITAL LETTER GHE WITH UPTURN",
+      "block": "Cyrillic",
+      "advance": 519,
+      "strokes": 2,
+      "duration": 0.534
+    },
+    {
+      "id": "U+0491",
+      "char": "ґ",
+      "name": "CYRILLIC SMALL LETTER GHE WITH UPTURN",
+      "block": "Cyrillic",
+      "advance": 312,
+      "strokes": 1,
+      "duration": 0.215
+    },
+    {
+      "id": "U+0492",
+      "char": "Ғ",
+      "name": "CYRILLIC CAPITAL LETTER GHE WITH STROKE",
+      "block": "Cyrillic",
+      "advance": 501,
+      "strokes": 3,
+      "duration": 0.699
+    },
+    {
+      "id": "U+0493",
+      "char": "ғ",
+      "name": "CYRILLIC SMALL LETTER GHE WITH STROKE",
+      "block": "Cyrillic",
+      "advance": 256,
+      "strokes": 2,
+      "duration": 0.367
+    },
+    {
+      "id": "U+0494",
+      "char": "Ҕ",
+      "name": "CYRILLIC CAPITAL LETTER GHE WITH MIDDLE HOOK",
+      "block": "Cyrillic",
+      "advance": 502,
+      "strokes": 2,
+      "duration": 0.787
+    },
+    {
+      "id": "U+0495",
+      "char": "ҕ",
+      "name": "CYRILLIC SMALL LETTER GHE WITH MIDDLE HOOK",
+      "block": "Cyrillic",
+      "advance": 333,
+      "strokes": 2,
+      "duration": 0.549
+    },
+    {
+      "id": "U+0496",
+      "char": "Җ",
+      "name": "CYRILLIC CAPITAL LETTER ZHE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 876,
+      "strokes": 5,
+      "duration": 1.507
+    },
+    {
+      "id": "U+0497",
+      "char": "җ",
+      "name": "CYRILLIC SMALL LETTER ZHE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 473,
+      "strokes": 4,
+      "duration": 1.07
+    },
+    {
+      "id": "U+0498",
+      "char": "Ҙ",
+      "name": "CYRILLIC CAPITAL LETTER ZE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 545,
+      "strokes": 2,
+      "duration": 0.742
+    },
+    {
+      "id": "U+0499",
+      "char": "ҙ",
+      "name": "CYRILLIC SMALL LETTER ZE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 276,
+      "strokes": 1,
+      "duration": 0.45
+    },
+    {
+      "id": "U+049A",
+      "char": "Қ",
+      "name": "CYRILLIC CAPITAL LETTER KA WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 550,
+      "strokes": 4,
+      "duration": 1.09
+    },
+    {
+      "id": "U+049B",
+      "char": "қ",
+      "name": "CYRILLIC SMALL LETTER KA WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 399,
+      "strokes": 3,
+      "duration": 0.756
+    },
+    {
+      "id": "U+049C",
+      "char": "Ҝ",
+      "name": "CYRILLIC CAPITAL LETTER KA WITH VERTICAL STROKE",
+      "block": "Cyrillic",
+      "advance": 583,
+      "strokes": 4,
+      "duration": 1.096
+    },
+    {
+      "id": "U+049D",
+      "char": "ҝ",
+      "name": "CYRILLIC SMALL LETTER KA WITH VERTICAL STROKE",
+      "block": "Cyrillic",
+      "advance": 384,
+      "strokes": 4,
+      "duration": 0.78
+    },
+    {
+      "id": "U+049E",
+      "char": "Ҟ",
+      "name": "CYRILLIC CAPITAL LETTER KA WITH STROKE",
+      "block": "Cyrillic",
+      "advance": 535,
+      "strokes": 4,
+      "duration": 1.082
+    },
+    {
+      "id": "U+049F",
+      "char": "ҟ",
+      "name": "CYRILLIC SMALL LETTER KA WITH STROKE",
+      "block": "Cyrillic",
+      "advance": 360,
+      "strokes": 4,
+      "duration": 0.864
+    },
+    {
+      "id": "U+04A0",
+      "char": "Ҡ",
+      "name": "CYRILLIC CAPITAL LETTER BASHKIR KA",
+      "block": "Cyrillic",
+      "advance": 641,
+      "strokes": 4,
+      "duration": 1.083
+    },
+    {
+      "id": "U+04A1",
+      "char": "ҡ",
+      "name": "CYRILLIC SMALL LETTER BASHKIR KA",
+      "block": "Cyrillic",
+      "advance": 406,
+      "strokes": 4,
+      "duration": 0.753
+    },
+    {
+      "id": "U+04A2",
+      "char": "Ң",
+      "name": "CYRILLIC CAPITAL LETTER EN WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 624,
+      "strokes": 4,
+      "duration": 1.141
+    },
+    {
+      "id": "U+04A3",
+      "char": "ң",
+      "name": "CYRILLIC SMALL LETTER EN WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 399,
+      "strokes": 5,
+      "duration": 0.958
+    },
+    {
+      "id": "U+04A4",
+      "char": "Ҥ",
+      "name": "CYRILLIC CAPITAL LIGATURE EN GHE",
+      "block": "Cyrillic",
+      "advance": 761,
+      "strokes": 4,
+      "duration": 1.129
+    },
+    {
+      "id": "U+04A5",
+      "char": "ҥ",
+      "name": "CYRILLIC SMALL LIGATURE EN GHE",
+      "block": "Cyrillic",
+      "advance": 452,
+      "strokes": 5,
+      "duration": 0.973
+    },
+    {
+      "id": "U+04A8",
+      "char": "Ҩ",
+      "name": "CYRILLIC CAPITAL LETTER ABKHASIAN HA",
+      "block": "Cyrillic",
+      "advance": 703,
+      "strokes": 1,
+      "duration": 0.791
+    },
+    {
+      "id": "U+04A9",
+      "char": "ҩ",
+      "name": "CYRILLIC SMALL LETTER ABKHASIAN HA",
+      "block": "Cyrillic",
+      "advance": 476,
+      "strokes": 1,
+      "duration": 0.457
+    },
+    {
+      "id": "U+04AA",
+      "char": "Ҫ",
+      "name": "CYRILLIC CAPITAL LETTER ES WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 472,
+      "strokes": 2,
+      "duration": 0.656
+    },
+    {
+      "id": "U+04AB",
+      "char": "ҫ",
+      "name": "CYRILLIC SMALL LETTER ES WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 428,
+      "strokes": 2,
+      "duration": 0.491
+    },
+    {
+      "id": "U+04AC",
+      "char": "Ҭ",
+      "name": "CYRILLIC CAPITAL LETTER TE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 496,
+      "strokes": 3,
+      "duration": 0.75
+    },
+    {
+      "id": "U+04AD",
+      "char": "ҭ",
+      "name": "CYRILLIC SMALL LETTER TE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 550,
+      "strokes": 1,
+      "duration": 0.54
+    },
+    {
+      "id": "U+04AE",
+      "char": "Ү",
+      "name": "CYRILLIC CAPITAL LETTER STRAIGHT U",
+      "block": "Cyrillic",
+      "advance": 504,
+      "strokes": 2,
+      "duration": 0.547
+    },
+    {
+      "id": "U+04AF",
+      "char": "ү",
+      "name": "CYRILLIC SMALL LETTER STRAIGHT U",
+      "block": "Cyrillic",
+      "advance": 371,
+      "strokes": 2,
+      "duration": 0.448
+    },
+    {
+      "id": "U+04B0",
+      "char": "Ұ",
+      "name": "CYRILLIC CAPITAL LETTER STRAIGHT U WITH STROKE",
+      "block": "Cyrillic",
+      "advance": 551,
+      "strokes": 3,
+      "duration": 0.797
+    },
+    {
+      "id": "U+04B1",
+      "char": "ұ",
+      "name": "CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE",
+      "block": "Cyrillic",
+      "advance": 449,
+      "strokes": 3,
+      "duration": 0.669
+    },
+    {
+      "id": "U+04B2",
+      "char": "Ҳ",
+      "name": "CYRILLIC CAPITAL LETTER HA WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 509,
+      "strokes": 2,
+      "duration": 0.708
+    },
+    {
+      "id": "U+04B3",
+      "char": "ҳ",
+      "name": "CYRILLIC SMALL LETTER HA WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 323,
+      "strokes": 3,
+      "duration": 0.635
+    },
+    {
+      "id": "U+04B4",
+      "char": "Ҵ",
+      "name": "CYRILLIC CAPITAL LIGATURE TE TSE",
+      "block": "Cyrillic",
+      "advance": 676,
+      "strokes": 3,
+      "duration": 1.022
+    },
+    {
+      "id": "U+04B5",
+      "char": "ҵ",
+      "name": "CYRILLIC SMALL LIGATURE TE TSE",
+      "block": "Cyrillic",
+      "advance": 460,
+      "strokes": 3,
+      "duration": 0.728
+    },
+    {
+      "id": "U+04B6",
+      "char": "Ҷ",
+      "name": "CYRILLIC CAPITAL LETTER CHE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 563,
+      "strokes": 3,
+      "duration": 0.929
+    },
+    {
+      "id": "U+04B7",
+      "char": "ҷ",
+      "name": "CYRILLIC SMALL LETTER CHE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 330,
+      "strokes": 2,
+      "duration": 0.515
+    },
+    {
+      "id": "U+04B8",
+      "char": "Ҹ",
+      "name": "CYRILLIC CAPITAL LETTER CHE WITH VERTICAL STROKE",
+      "block": "Cyrillic",
+      "advance": 503,
+      "strokes": 3,
+      "duration": 0.931
+    },
+    {
+      "id": "U+04B9",
+      "char": "ҹ",
+      "name": "CYRILLIC SMALL LETTER CHE WITH VERTICAL STROKE",
+      "block": "Cyrillic",
+      "advance": 400,
+      "strokes": 2,
+      "duration": 0.518
+    },
+    {
+      "id": "U+04BA",
+      "char": "Һ",
+      "name": "CYRILLIC CAPITAL LETTER SHHA",
+      "block": "Cyrillic",
+      "advance": 482,
+      "strokes": 3,
+      "duration": 0.786
+    },
+    {
+      "id": "U+04BB",
+      "char": "һ",
+      "name": "CYRILLIC SMALL LETTER SHHA",
+      "block": "Cyrillic",
+      "advance": 464,
+      "strokes": 1,
+      "duration": 0.388
+    },
+    {
+      "id": "U+04BC",
+      "char": "Ҽ",
+      "name": "CYRILLIC CAPITAL LETTER ABKHASIAN CHE",
+      "block": "Cyrillic",
+      "advance": 674,
+      "strokes": 2,
+      "duration": 0.745
+    },
+    {
+      "id": "U+04BD",
+      "char": "ҽ",
+      "name": "CYRILLIC SMALL LETTER ABKHASIAN CHE",
+      "block": "Cyrillic",
+      "advance": 354,
+      "strokes": 2,
+      "duration": 0.49
+    },
+    {
+      "id": "U+04BE",
+      "char": "Ҿ",
+      "name": "CYRILLIC CAPITAL LETTER ABKHASIAN CHE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 662,
+      "strokes": 3,
+      "duration": 0.952
+    },
+    {
+      "id": "U+04BF",
+      "char": "ҿ",
+      "name": "CYRILLIC SMALL LETTER ABKHASIAN CHE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 354,
+      "strokes": 3,
+      "duration": 0.726
+    },
+    {
+      "id": "U+04C0",
+      "char": "Ӏ",
+      "name": "CYRILLIC LETTER PALOCHKA",
+      "block": "Cyrillic",
+      "advance": 400,
+      "strokes": 3,
+      "duration": 0.713
+    },
+    {
+      "id": "U+04C1",
+      "char": "Ӂ",
+      "name": "CYRILLIC CAPITAL LETTER ZHE WITH BREVE",
+      "block": "Cyrillic",
+      "advance": 826,
+      "strokes": 5,
+      "duration": 1.502
+    },
+    {
+      "id": "U+04C2",
+      "char": "ӂ",
+      "name": "CYRILLIC SMALL LETTER ZHE WITH BREVE",
+      "block": "Cyrillic",
+      "advance": 536,
+      "strokes": 5,
+      "duration": 1.114
+    },
+    {
+      "id": "U+04C3",
+      "char": "Ӄ",
+      "name": "CYRILLIC CAPITAL LETTER KA WITH HOOK",
+      "block": "Cyrillic",
+      "advance": 529,
+      "strokes": 3,
+      "duration": 0.868
+    },
+    {
+      "id": "U+04C4",
+      "char": "ӄ",
+      "name": "CYRILLIC SMALL LETTER KA WITH HOOK",
+      "block": "Cyrillic",
+      "advance": 390,
+      "strokes": 2,
+      "duration": 0.474
+    },
+    {
+      "id": "U+04C5",
+      "char": "Ӆ",
+      "name": "CYRILLIC CAPITAL LETTER EL WITH TAIL",
+      "block": "Cyrillic",
+      "advance": 578,
+      "strokes": 3,
+      "duration": 0.973
+    },
+    {
+      "id": "U+04C6",
+      "char": "ӆ",
+      "name": "CYRILLIC SMALL LETTER EL WITH TAIL",
+      "block": "Cyrillic",
+      "advance": 391,
+      "strokes": 3,
+      "duration": 0.658
+    },
+    {
+      "id": "U+04C7",
+      "char": "Ӈ",
+      "name": "CYRILLIC CAPITAL LETTER EN WITH HOOK",
+      "block": "Cyrillic",
+      "advance": 563,
+      "strokes": 3,
+      "duration": 0.978
+    },
+    {
+      "id": "U+04C8",
+      "char": "ӈ",
+      "name": "CYRILLIC SMALL LETTER EN WITH HOOK",
+      "block": "Cyrillic",
+      "advance": 387,
+      "strokes": 4,
+      "duration": 0.826
+    },
+    {
+      "id": "U+04C9",
+      "char": "Ӊ",
+      "name": "CYRILLIC CAPITAL LETTER EN WITH TAIL",
+      "block": "Cyrillic",
+      "advance": 625,
+      "strokes": 4,
+      "duration": 1.13
+    },
+    {
+      "id": "U+04CA",
+      "char": "ӊ",
+      "name": "CYRILLIC SMALL LETTER EN WITH TAIL",
+      "block": "Cyrillic",
+      "advance": 411,
+      "strokes": 5,
+      "duration": 0.963
+    },
+    {
+      "id": "U+04CB",
+      "char": "Ӌ",
+      "name": "CYRILLIC CAPITAL LETTER KHAKASSIAN CHE",
+      "block": "Cyrillic",
+      "advance": 522,
+      "strokes": 2,
+      "duration": 0.722
+    },
+    {
+      "id": "U+04CC",
+      "char": "ӌ",
+      "name": "CYRILLIC SMALL LETTER KHAKASSIAN CHE",
+      "block": "Cyrillic",
+      "advance": 407,
+      "strokes": 2,
+      "duration": 0.512
+    },
+    {
+      "id": "U+04CD",
+      "char": "Ӎ",
+      "name": "CYRILLIC CAPITAL LETTER EM WITH TAIL",
+      "block": "Cyrillic",
+      "advance": 784,
+      "strokes": 2,
+      "duration": 1.144
+    },
+    {
+      "id": "U+04CE",
+      "char": "ӎ",
+      "name": "CYRILLIC SMALL LETTER EM WITH TAIL",
+      "block": "Cyrillic",
+      "advance": 534,
+      "strokes": 2,
+      "duration": 0.631
+    },
+    {
+      "id": "U+04CF",
+      "char": "ӏ",
+      "name": "CYRILLIC SMALL LETTER PALOCHKA",
+      "block": "Cyrillic",
+      "advance": 169,
+      "strokes": 1,
+      "duration": 0.209
+    },
+    {
+      "id": "U+04D0",
+      "char": "Ӑ",
+      "name": "CYRILLIC CAPITAL LETTER A WITH BREVE",
+      "block": "Cyrillic",
+      "advance": 635,
+      "strokes": 3,
+      "duration": 0.935
+    },
+    {
+      "id": "U+04D1",
+      "char": "ӑ",
+      "name": "CYRILLIC SMALL LETTER A WITH BREVE",
+      "block": "Cyrillic",
+      "advance": 437,
+      "strokes": 2,
+      "duration": 0.574
+    },
+    {
+      "id": "U+04D2",
+      "char": "Ӓ",
+      "name": "CYRILLIC CAPITAL LETTER A WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 599,
+      "strokes": 4,
+      "duration": 1.046
+    },
+    {
+      "id": "U+04D3",
+      "char": "ӓ",
+      "name": "CYRILLIC SMALL LETTER A WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 438,
+      "strokes": 3,
+      "duration": 0.678
+    },
+    {
+      "id": "U+04D4",
+      "char": "Ӕ",
+      "name": "CYRILLIC CAPITAL LIGATURE A IE",
+      "block": "Cyrillic",
+      "advance": 784,
+      "strokes": 4,
+      "duration": 1.262
+    },
+    {
+      "id": "U+04D5",
+      "char": "ӕ",
+      "name": "CYRILLIC SMALL LIGATURE A IE",
+      "block": "Cyrillic",
+      "advance": 574,
+      "strokes": 2,
+      "duration": 0.76
+    },
+    {
+      "id": "U+04D6",
+      "char": "Ӗ",
+      "name": "CYRILLIC CAPITAL LETTER IE WITH BREVE",
+      "block": "Cyrillic",
+      "advance": 585,
+      "strokes": 3,
+      "duration": 0.923
+    },
+    {
+      "id": "U+04D7",
+      "char": "ӗ",
+      "name": "CYRILLIC SMALL LETTER IE WITH BREVE",
+      "block": "Cyrillic",
+      "advance": 407,
+      "strokes": 2,
+      "duration": 0.523
+    },
+    {
+      "id": "U+04D8",
+      "char": "Ә",
+      "name": "CYRILLIC CAPITAL LETTER SCHWA",
+      "block": "Cyrillic",
+      "advance": 498,
+      "strokes": 1,
+      "duration": 0.547
+    },
+    {
+      "id": "U+04D9",
+      "char": "ә",
+      "name": "CYRILLIC SMALL LETTER SCHWA",
+      "block": "Cyrillic",
+      "advance": 325,
+      "strokes": 1,
+      "duration": 0.294
+    },
+    {
+      "id": "U+04DA",
+      "char": "Ӛ",
+      "name": "CYRILLIC CAPITAL LETTER SCHWA WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 510,
+      "strokes": 3,
+      "duration": 0.895
+    },
+    {
+      "id": "U+04DB",
+      "char": "ӛ",
+      "name": "CYRILLIC SMALL LETTER SCHWA WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 385,
+      "strokes": 3,
+      "duration": 0.626
+    },
+    {
+      "id": "U+04DC",
+      "char": "Ӝ",
+      "name": "CYRILLIC CAPITAL LETTER ZHE WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 826,
+      "strokes": 6,
+      "duration": 1.613
+    },
+    {
+      "id": "U+04DD",
+      "char": "ӝ",
+      "name": "CYRILLIC SMALL LETTER ZHE WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 536,
+      "strokes": 6,
+      "duration": 1.218
+    },
+    {
+      "id": "U+04DE",
+      "char": "Ӟ",
+      "name": "CYRILLIC CAPITAL LETTER ZE WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 562,
+      "strokes": 3,
+      "duration": 0.883
+    },
+    {
+      "id": "U+04DF",
+      "char": "ӟ",
+      "name": "CYRILLIC SMALL LETTER ZE WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 334,
+      "strokes": 3,
+      "duration": 0.809
+    },
+    {
+      "id": "U+04E0",
+      "char": "Ӡ",
+      "name": "CYRILLIC CAPITAL LETTER ABKHASIAN DZE",
+      "block": "Cyrillic",
+      "advance": 545,
+      "strokes": 2,
+      "duration": 0.687
+    },
+    {
+      "id": "U+04E1",
+      "char": "ӡ",
+      "name": "CYRILLIC SMALL LETTER ABKHASIAN DZE",
+      "block": "Cyrillic",
+      "advance": 293,
+      "strokes": 1,
+      "duration": 0.478
+    },
+    {
+      "id": "U+04E2",
+      "char": "Ӣ",
+      "name": "CYRILLIC CAPITAL LETTER I WITH MACRON",
+      "block": "Cyrillic",
+      "advance": 611,
+      "strokes": 2,
+      "duration": 1.018
+    },
+    {
+      "id": "U+04E3",
+      "char": "ӣ",
+      "name": "CYRILLIC SMALL LETTER I WITH MACRON",
+      "block": "Cyrillic",
+      "advance": 425,
+      "strokes": 3,
+      "duration": 0.617
+    },
+    {
+      "id": "U+04E4",
+      "char": "Ӥ",
+      "name": "CYRILLIC CAPITAL LETTER I WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 611,
+      "strokes": 3,
+      "duration": 1.141
+    },
+    {
+      "id": "U+04E5",
+      "char": "ӥ",
+      "name": "CYRILLIC SMALL LETTER I WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 421,
+      "strokes": 4,
+      "duration": 0.739
+    },
+    {
+      "id": "U+04E6",
+      "char": "Ӧ",
+      "name": "CYRILLIC CAPITAL LETTER O WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 543,
+      "strokes": 3,
+      "duration": 0.896
+    },
+    {
+      "id": "U+04E7",
+      "char": "ӧ",
+      "name": "CYRILLIC SMALL LETTER O WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 412,
+      "strokes": 3,
+      "duration": 0.609
+    },
+    {
+      "id": "U+04E8",
+      "char": "Ө",
+      "name": "CYRILLIC CAPITAL LETTER BARRED O",
+      "block": "Cyrillic",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.812
+    },
+    {
+      "id": "U+04E9",
+      "char": "ө",
+      "name": "CYRILLIC SMALL LETTER BARRED O",
+      "block": "Cyrillic",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.484
+    },
+    {
+      "id": "U+04EA",
+      "char": "Ӫ",
+      "name": "CYRILLIC CAPITAL LETTER BARRED O WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 543,
+      "strokes": 4,
+      "duration": 1.16
+    },
+    {
+      "id": "U+04EB",
+      "char": "ӫ",
+      "name": "CYRILLIC SMALL LETTER BARRED O WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 403,
+      "strokes": 4,
+      "duration": 0.816
+    },
+    {
+      "id": "U+04EC",
+      "char": "Ӭ",
+      "name": "CYRILLIC CAPITAL LETTER E WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 484,
+      "strokes": 4,
+      "duration": 0.931
+    },
+    {
+      "id": "U+04ED",
+      "char": "ӭ",
+      "name": "CYRILLIC SMALL LETTER E WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 335,
+      "strokes": 4,
+      "duration": 0.716
+    },
+    {
+      "id": "U+04EE",
+      "char": "Ӯ",
+      "name": "CYRILLIC CAPITAL LETTER U WITH MACRON",
+      "block": "Cyrillic",
+      "advance": 519,
+      "strokes": 3,
+      "duration": 0.81
+    },
+    {
+      "id": "U+04EF",
+      "char": "ӯ",
+      "name": "CYRILLIC SMALL LETTER U WITH MACRON",
+      "block": "Cyrillic",
+      "advance": 372,
+      "strokes": 3,
+      "duration": 0.698
+    },
+    {
+      "id": "U+04F0",
+      "char": "Ӱ",
+      "name": "CYRILLIC CAPITAL LETTER U WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 512,
+      "strokes": 4,
+      "duration": 0.933
+    },
+    {
+      "id": "U+04F1",
+      "char": "ӱ",
+      "name": "CYRILLIC SMALL LETTER U WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 347,
+      "strokes": 4,
+      "duration": 0.82
+    },
+    {
+      "id": "U+04F2",
+      "char": "Ӳ",
+      "name": "CYRILLIC CAPITAL LETTER U WITH DOUBLE ACUTE",
+      "block": "Cyrillic",
+      "advance": 512,
+      "strokes": 4,
+      "duration": 0.956
+    },
+    {
+      "id": "U+04F3",
+      "char": "ӳ",
+      "name": "CYRILLIC SMALL LETTER U WITH DOUBLE ACUTE",
+      "block": "Cyrillic",
+      "advance": 410,
+      "strokes": 4,
+      "duration": 0.859
+    },
+    {
+      "id": "U+04F4",
+      "char": "Ӵ",
+      "name": "CYRILLIC CAPITAL LETTER CHE WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 524,
+      "strokes": 4,
+      "duration": 1.019
+    },
+    {
+      "id": "U+04F5",
+      "char": "ӵ",
+      "name": "CYRILLIC SMALL LETTER CHE WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 368,
+      "strokes": 3,
+      "duration": 0.611
+    },
+    {
+      "id": "U+04F6",
+      "char": "Ӷ",
+      "name": "CYRILLIC CAPITAL LETTER GHE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 459,
+      "strokes": 3,
+      "duration": 0.72
+    },
+    {
+      "id": "U+04F7",
+      "char": "ӷ",
+      "name": "CYRILLIC SMALL LETTER GHE WITH DESCENDER",
+      "block": "Cyrillic",
+      "advance": 280,
+      "strokes": 2,
+      "duration": 0.396
+    },
+    {
+      "id": "U+04F8",
+      "char": "Ӹ",
+      "name": "CYRILLIC CAPITAL LETTER YERU WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 662,
+      "strokes": 4,
+      "duration": 1.169
+    },
+    {
+      "id": "U+04F9",
+      "char": "ӹ",
+      "name": "CYRILLIC SMALL LETTER YERU WITH DIAERESIS",
+      "block": "Cyrillic",
+      "advance": 528,
+      "strokes": 4,
+      "duration": 0.897
+    },
+    {
+      "id": "U+04FA",
+      "char": "Ӻ",
+      "name": "CYRILLIC CAPITAL LETTER GHE WITH STROKE AND HOOK",
+      "block": "Cyrillic",
+      "advance": 491,
+      "strokes": 4,
+      "duration": 0.976
+    },
+    {
+      "id": "U+04FB",
+      "char": "ӻ",
+      "name": "CYRILLIC SMALL LETTER GHE WITH STROKE AND HOOK",
+      "block": "Cyrillic",
+      "advance": 253,
+      "strokes": 3,
+      "duration": 0.633
+    },
+    {
+      "id": "U+04FC",
+      "char": "Ӽ",
+      "name": "CYRILLIC CAPITAL LETTER HA WITH HOOK",
+      "block": "Cyrillic",
+      "advance": 495,
+      "strokes": 2,
+      "duration": 0.705
+    },
+    {
+      "id": "U+04FD",
+      "char": "ӽ",
+      "name": "CYRILLIC SMALL LETTER HA WITH HOOK",
+      "block": "Cyrillic",
+      "advance": 404,
+      "strokes": 2,
+      "duration": 0.505
+    },
+    {
+      "id": "U+04FE",
+      "char": "Ӿ",
+      "name": "CYRILLIC CAPITAL LETTER HA WITH STROKE",
+      "block": "Cyrillic",
+      "advance": 534,
+      "strokes": 3,
+      "duration": 0.934
+    },
+    {
+      "id": "U+04FF",
+      "char": "ӿ",
+      "name": "CYRILLIC SMALL LETTER HA WITH STROKE",
+      "block": "Cyrillic",
+      "advance": 366,
+      "strokes": 3,
+      "duration": 0.648
+    },
+    {
+      "id": "U+0510",
+      "char": "Ԑ",
+      "name": "CYRILLIC CAPITAL LETTER REVERSED ZE",
+      "block": "Cyrillic Supplement",
+      "advance": 497,
+      "strokes": 3,
+      "duration": 0.754
+    },
+    {
+      "id": "U+0511",
+      "char": "ԑ",
+      "name": "CYRILLIC SMALL LETTER REVERSED ZE",
+      "block": "Cyrillic Supplement",
+      "advance": 326,
+      "strokes": 2,
+      "duration": 0.433
+    },
+    {
+      "id": "U+0512",
+      "char": "Ԓ",
+      "name": "CYRILLIC CAPITAL LETTER EL WITH HOOK",
+      "block": "Cyrillic Supplement",
+      "advance": 605,
+      "strokes": 2,
+      "duration": 0.818
+    },
+    {
+      "id": "U+0513",
+      "char": "ԓ",
+      "name": "CYRILLIC SMALL LETTER EL WITH HOOK",
+      "block": "Cyrillic Supplement",
+      "advance": 350,
+      "strokes": 2,
+      "duration": 0.5
+    },
+    {
+      "id": "U+051A",
+      "char": "Ԛ",
+      "name": "CYRILLIC CAPITAL LETTER QA",
+      "block": "Cyrillic Supplement",
+      "advance": 502,
+      "strokes": 2,
+      "duration": 0.807
+    },
+    {
+      "id": "U+051B",
+      "char": "ԛ",
+      "name": "CYRILLIC SMALL LETTER QA",
+      "block": "Cyrillic Supplement",
+      "advance": 377,
+      "strokes": 1,
+      "duration": 0.377
+    },
+    {
+      "id": "U+051C",
+      "char": "Ԝ",
+      "name": "CYRILLIC CAPITAL LETTER WE",
+      "block": "Cyrillic Supplement",
+      "advance": 720,
+      "strokes": 1,
+      "duration": 0.916
+    },
+    {
+      "id": "U+051D",
+      "char": "ԝ",
+      "name": "CYRILLIC SMALL LETTER WE",
+      "block": "Cyrillic Supplement",
+      "advance": 517,
+      "strokes": 2,
+      "duration": 0.474
+    },
+    {
+      "id": "U+0524",
+      "char": "Ԥ",
+      "name": "CYRILLIC CAPITAL LETTER PE WITH DESCENDER",
+      "block": "Cyrillic Supplement",
+      "advance": 665,
+      "strokes": 2,
+      "duration": 0.827
+    },
+    {
+      "id": "U+0525",
+      "char": "ԥ",
+      "name": "CYRILLIC SMALL LETTER PE WITH DESCENDER",
+      "block": "Cyrillic Supplement",
+      "advance": 429,
+      "strokes": 2,
+      "duration": 0.479
+    },
+    {
+      "id": "U+0526",
+      "char": "Ԧ",
+      "name": "CYRILLIC CAPITAL LETTER SHHA WITH DESCENDER",
+      "block": "Cyrillic Supplement",
+      "advance": 550,
+      "strokes": 4,
+      "duration": 1.044
+    },
+    {
+      "id": "U+0527",
+      "char": "ԧ",
+      "name": "CYRILLIC SMALL LETTER SHHA WITH DESCENDER",
+      "block": "Cyrillic Supplement",
+      "advance": 385,
+      "strokes": 1,
+      "duration": 0.491
+    },
+    {
+      "id": "U+0528",
+      "char": "Ԩ",
+      "name": "CYRILLIC CAPITAL LETTER EN WITH LEFT HOOK",
+      "block": "Cyrillic Supplement",
+      "advance": 604,
+      "strokes": 3,
+      "duration": 0.96
+    },
+    {
+      "id": "U+0529",
+      "char": "ԩ",
+      "name": "CYRILLIC SMALL LETTER EN WITH LEFT HOOK",
+      "block": "Cyrillic Supplement",
+      "advance": 387,
+      "strokes": 4,
+      "duration": 0.799
+    },
+    {
+      "id": "U+052E",
+      "char": "Ԯ",
+      "name": "CYRILLIC CAPITAL LETTER EL WITH DESCENDER",
+      "block": "Cyrillic Supplement",
+      "advance": 578,
+      "strokes": 3,
+      "duration": 0.984
+    },
+    {
+      "id": "U+052F",
+      "char": "ԯ",
+      "name": "CYRILLIC SMALL LETTER EL WITH DESCENDER",
+      "block": "Cyrillic Supplement",
+      "advance": 401,
+      "strokes": 3,
+      "duration": 0.662
+    },
+    {
+      "id": "U+1E0C",
+      "char": "Ḍ",
+      "name": "LATIN CAPITAL LETTER D WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 578,
+      "strokes": 3,
+      "duration": 0.974
+    },
+    {
+      "id": "U+1E0D",
+      "char": "ḍ",
+      "name": "LATIN SMALL LETTER D WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 393,
+      "strokes": 3,
+      "duration": 0.722
+    },
+    {
+      "id": "U+1E24",
+      "char": "Ḥ",
+      "name": "LATIN CAPITAL LETTER H WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 564,
+      "strokes": 4,
+      "duration": 1.035
+    },
+    {
+      "id": "U+1E25",
+      "char": "ḥ",
+      "name": "LATIN SMALL LETTER H WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 464,
+      "strokes": 2,
+      "duration": 0.54
+    },
+    {
+      "id": "U+1E44",
+      "char": "Ṅ",
+      "name": "LATIN CAPITAL LETTER N WITH DOT ABOVE",
+      "block": "Latin Extended Additional",
+      "advance": 566,
+      "strokes": 2,
+      "duration": 0.846
+    },
+    {
+      "id": "U+1E45",
+      "char": "ṅ",
+      "name": "LATIN SMALL LETTER N WITH DOT ABOVE",
+      "block": "Latin Extended Additional",
+      "advance": 450,
+      "strokes": 2,
+      "duration": 0.45
+    },
+    {
+      "id": "U+1E5A",
+      "char": "Ṛ",
+      "name": "LATIN CAPITAL LETTER R WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 498,
+      "strokes": 3,
+      "duration": 0.957
+    },
+    {
+      "id": "U+1E5B",
+      "char": "ṛ",
+      "name": "LATIN SMALL LETTER R WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 360,
+      "strokes": 2,
+      "duration": 0.391
+    },
+    {
+      "id": "U+1E62",
+      "char": "Ṣ",
+      "name": "LATIN CAPITAL LETTER S WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 486,
+      "strokes": 2,
+      "duration": 0.666
+    },
+    {
+      "id": "U+1E63",
+      "char": "ṣ",
+      "name": "LATIN SMALL LETTER S WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 341,
+      "strokes": 2,
+      "duration": 0.419
+    },
+    {
+      "id": "U+1E6C",
+      "char": "Ṭ",
+      "name": "LATIN CAPITAL LETTER T WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 458,
+      "strokes": 3,
+      "duration": 0.654
+    },
+    {
+      "id": "U+1E6D",
+      "char": "ṭ",
+      "name": "LATIN SMALL LETTER T WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 331,
+      "strokes": 3,
+      "duration": 0.613
+    },
+    {
+      "id": "U+1E80",
+      "char": "Ẁ",
+      "name": "LATIN CAPITAL LETTER W WITH GRAVE",
+      "block": "Latin Extended Additional",
+      "advance": 720,
+      "strokes": 2,
+      "duration": 1.11
+    },
+    {
+      "id": "U+1E81",
+      "char": "ẁ",
+      "name": "LATIN SMALL LETTER W WITH GRAVE",
+      "block": "Latin Extended Additional",
+      "advance": 517,
+      "strokes": 3,
+      "duration": 0.656
+    },
+    {
+      "id": "U+1E82",
+      "char": "Ẃ",
+      "name": "LATIN CAPITAL LETTER W WITH ACUTE",
+      "block": "Latin Extended Additional",
+      "advance": 720,
+      "strokes": 2,
+      "duration": 1.11
+    },
+    {
+      "id": "U+1E83",
+      "char": "ẃ",
+      "name": "LATIN SMALL LETTER W WITH ACUTE",
+      "block": "Latin Extended Additional",
+      "advance": 517,
+      "strokes": 3,
+      "duration": 0.668
+    },
+    {
+      "id": "U+1E84",
+      "char": "Ẅ",
+      "name": "LATIN CAPITAL LETTER W WITH DIAERESIS",
+      "block": "Latin Extended Additional",
+      "advance": 720,
+      "strokes": 3,
+      "duration": 1.264
+    },
+    {
+      "id": "U+1E85",
+      "char": "ẅ",
+      "name": "LATIN SMALL LETTER W WITH DIAERESIS",
+      "block": "Latin Extended Additional",
+      "advance": 517,
+      "strokes": 4,
+      "duration": 0.806
+    },
+    {
+      "id": "U+1E92",
+      "char": "Ẓ",
+      "name": "LATIN CAPITAL LETTER Z WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 522,
+      "strokes": 2,
+      "duration": 0.684
+    },
+    {
+      "id": "U+1E93",
+      "char": "ẓ",
+      "name": "LATIN SMALL LETTER Z WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 315,
+      "strokes": 2,
+      "duration": 0.443
+    },
+    {
+      "id": "U+1EB8",
+      "char": "Ẹ",
+      "name": "LATIN CAPITAL LETTER E WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 548,
+      "strokes": 5,
+      "duration": 1.137
+    },
+    {
+      "id": "U+1EB9",
+      "char": "ẹ",
+      "name": "LATIN SMALL LETTER E WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.447
+    },
+    {
+      "id": "U+1EBC",
+      "char": "Ẽ",
+      "name": "LATIN CAPITAL LETTER E WITH TILDE",
+      "block": "Latin Extended Additional",
+      "advance": 548,
+      "strokes": 5,
+      "duration": 1.234
+    },
+    {
+      "id": "U+1EBD",
+      "char": "ẽ",
+      "name": "LATIN SMALL LETTER E WITH TILDE",
+      "block": "Latin Extended Additional",
+      "advance": 325,
+      "strokes": 2,
+      "duration": 0.544
+    },
+    {
+      "id": "U+1ECA",
+      "char": "Ị",
+      "name": "LATIN CAPITAL LETTER I WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 400,
+      "strokes": 4,
+      "duration": 0.865
+    },
+    {
+      "id": "U+1ECB",
+      "char": "ị",
+      "name": "LATIN SMALL LETTER I WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 187,
+      "strokes": 3,
+      "duration": 0.388
+    },
+    {
+      "id": "U+1ECC",
+      "char": "Ọ",
+      "name": "LATIN CAPITAL LETTER O WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 496,
+      "strokes": 2,
+      "duration": 0.7
+    },
+    {
+      "id": "U+1ECD",
+      "char": "ọ",
+      "name": "LATIN SMALL LETTER O WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 353,
+      "strokes": 2,
+      "duration": 0.429
+    },
+    {
+      "id": "U+1EE4",
+      "char": "Ụ",
+      "name": "LATIN CAPITAL LETTER U WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 482,
+      "strokes": 2,
+      "duration": 0.658
+    },
+    {
+      "id": "U+1EE5",
+      "char": "ụ",
+      "name": "LATIN SMALL LETTER U WITH DOT BELOW",
+      "block": "Latin Extended Additional",
+      "advance": 370,
+      "strokes": 2,
+      "duration": 0.472
+    },
+    {
+      "id": "U+1EF2",
+      "char": "Ỳ",
+      "name": "LATIN CAPITAL LETTER Y WITH GRAVE",
+      "block": "Latin Extended Additional",
+      "advance": 504,
+      "strokes": 3,
+      "duration": 0.749
+    },
+    {
+      "id": "U+1EF3",
+      "char": "ỳ",
+      "name": "LATIN SMALL LETTER Y WITH GRAVE",
+      "block": "Latin Extended Additional",
+      "advance": 341,
+      "strokes": 3,
+      "duration": 0.67
+    },
+    {
+      "id": "U+1EF8",
+      "char": "Ỹ",
+      "name": "LATIN CAPITAL LETTER Y WITH TILDE",
+      "block": "Latin Extended Additional",
+      "advance": 504,
+      "strokes": 3,
+      "duration": 0.804
+    },
+    {
+      "id": "U+1EF9",
+      "char": "ỹ",
+      "name": "LATIN SMALL LETTER Y WITH TILDE",
+      "block": "Latin Extended Additional",
+      "advance": 341,
+      "strokes": 3,
+      "duration": 0.737
+    },
+    {
+      "id": "U+2010",
+      "char": "‐",
+      "name": "HYPHEN",
+      "block": "General Punctuation",
+      "advance": 326,
+      "strokes": 1,
+      "duration": 0.065
+    },
+    {
+      "id": "U+2013",
+      "char": "–",
+      "name": "EN DASH",
+      "block": "General Punctuation",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.11
+    },
+    {
+      "id": "U+2014",
+      "char": "—",
+      "name": "EM DASH",
+      "block": "General Punctuation",
+      "advance": 566,
+      "strokes": 1,
+      "duration": 0.15
+    },
+    {
+      "id": "U+2016",
+      "char": "‖",
+      "name": "DOUBLE VERTICAL LINE",
+      "block": "General Punctuation",
+      "advance": 558,
+      "strokes": 2,
+      "duration": 0.746
+    },
+    {
+      "id": "U+2018",
+      "char": "‘",
+      "name": "LEFT SINGLE QUOTATION MARK",
+      "block": "General Punctuation",
+      "advance": 117,
+      "strokes": 1,
+      "duration": 0.062
+    },
+    {
+      "id": "U+2019",
+      "char": "’",
+      "name": "RIGHT SINGLE QUOTATION MARK",
+      "block": "General Punctuation",
+      "advance": 117,
+      "strokes": 1,
+      "duration": 0.062
+    },
+    {
+      "id": "U+201A",
+      "char": "‚",
+      "name": "SINGLE LOW-9 QUOTATION MARK",
+      "block": "General Punctuation",
+      "advance": 117,
+      "strokes": 1,
+      "duration": 0.062
+    },
+    {
+      "id": "U+201C",
+      "char": "“",
+      "name": "LEFT DOUBLE QUOTATION MARK",
+      "block": "General Punctuation",
+      "advance": 267,
+      "strokes": 2,
+      "duration": 0.274
+    },
+    {
+      "id": "U+201D",
+      "char": "”",
+      "name": "RIGHT DOUBLE QUOTATION MARK",
+      "block": "General Punctuation",
+      "advance": 267,
+      "strokes": 2,
+      "duration": 0.274
+    },
+    {
+      "id": "U+201E",
+      "char": "„",
+      "name": "DOUBLE LOW-9 QUOTATION MARK",
+      "block": "General Punctuation",
+      "advance": 267,
+      "strokes": 2,
+      "duration": 0.274
+    },
+    {
+      "id": "U+2020",
+      "char": "†",
+      "name": "DAGGER",
+      "block": "General Punctuation",
+      "advance": 465,
+      "strokes": 2,
+      "duration": 0.482
+    },
+    {
+      "id": "U+2021",
+      "char": "‡",
+      "name": "DOUBLE DAGGER",
+      "block": "General Punctuation",
+      "advance": 465,
+      "strokes": 3,
+      "duration": 0.758
+    },
+    {
+      "id": "U+2022",
+      "char": "•",
+      "name": "BULLET",
+      "block": "General Punctuation",
+      "advance": 187,
+      "strokes": 1,
+      "duration": 0.005
+    },
+    {
+      "id": "U+2026",
+      "char": "…",
+      "name": "HORIZONTAL ELLIPSIS",
+      "block": "General Punctuation",
+      "advance": 594,
+      "strokes": 3,
+      "duration": 0.303
+    },
+    {
+      "id": "U+2030",
+      "char": "‰",
+      "name": "PER MILLE SIGN",
+      "block": "General Punctuation",
+      "advance": 880,
+      "strokes": 4,
+      "duration": 1.378
+    },
+    {
+      "id": "U+2032",
+      "char": "′",
+      "name": "PRIME",
+      "block": "General Punctuation",
+      "advance": 109,
+      "strokes": 1,
+      "duration": 0.073
+    },
+    {
+      "id": "U+2033",
+      "char": "″",
+      "name": "DOUBLE PRIME",
+      "block": "General Punctuation",
+      "advance": 259,
+      "strokes": 2,
+      "duration": 0.296
+    },
+    {
+      "id": "U+2034",
+      "char": "‴",
+      "name": "TRIPLE PRIME",
+      "block": "General Punctuation",
+      "advance": 480,
+      "strokes": 3,
+      "duration": 0.519
+    },
+    {
+      "id": "U+2039",
+      "char": "‹",
+      "name": "SINGLE LEFT-POINTING ANGLE QUOTATION MARK",
+      "block": "General Punctuation",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.211
+    },
+    {
+      "id": "U+203A",
+      "char": "›",
+      "name": "SINGLE RIGHT-POINTING ANGLE QUOTATION MARK",
+      "block": "General Punctuation",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.212
+    },
+    {
+      "id": "U+2044",
+      "char": "⁄",
+      "name": "FRACTION SLASH",
+      "block": "General Punctuation",
+      "advance": 193,
+      "strokes": 1,
+      "duration": 0.298
+    },
+    {
+      "id": "U+2052",
+      "char": "⁒",
+      "name": "COMMERCIAL MINUS SIGN",
+      "block": "General Punctuation",
+      "advance": 600,
+      "strokes": 3,
+      "duration": 0.584
+    },
+    {
+      "id": "U+2070",
+      "char": "⁰",
+      "name": "SUPERSCRIPT ZERO",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.332
+    },
+    {
+      "id": "U+2074",
+      "char": "⁴",
+      "name": "SUPERSCRIPT FOUR",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.406
+    },
+    {
+      "id": "U+2075",
+      "char": "⁵",
+      "name": "SUPERSCRIPT FIVE",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.243
+    },
+    {
+      "id": "U+2076",
+      "char": "⁶",
+      "name": "SUPERSCRIPT SIX",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.322
+    },
+    {
+      "id": "U+2077",
+      "char": "⁷",
+      "name": "SUPERSCRIPT SEVEN",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.414
+    },
+    {
+      "id": "U+2078",
+      "char": "⁸",
+      "name": "SUPERSCRIPT EIGHT",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.548
+    },
+    {
+      "id": "U+2079",
+      "char": "⁹",
+      "name": "SUPERSCRIPT NINE",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.28
+    },
+    {
+      "id": "U+207A",
+      "char": "⁺",
+      "name": "SUPERSCRIPT PLUS SIGN",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.296
+    },
+    {
+      "id": "U+207B",
+      "char": "⁻",
+      "name": "SUPERSCRIPT MINUS",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.074
+    },
+    {
+      "id": "U+207C",
+      "char": "⁼",
+      "name": "SUPERSCRIPT EQUALS SIGN",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.297
+    },
+    {
+      "id": "U+207D",
+      "char": "⁽",
+      "name": "SUPERSCRIPT LEFT PARENTHESIS",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.172
+    },
+    {
+      "id": "U+207E",
+      "char": "⁾",
+      "name": "SUPERSCRIPT RIGHT PARENTHESIS",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.172
+    },
+    {
+      "id": "U+207F",
+      "char": "ⁿ",
+      "name": "SUPERSCRIPT LATIN SMALL LETTER N",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.348
+    },
+    {
+      "id": "U+2080",
+      "char": "₀",
+      "name": "SUBSCRIPT ZERO",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.332
+    },
+    {
+      "id": "U+2081",
+      "char": "₁",
+      "name": "SUBSCRIPT ONE",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.227
+    },
+    {
+      "id": "U+2082",
+      "char": "₂",
+      "name": "SUBSCRIPT TWO",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.255
+    },
+    {
+      "id": "U+2083",
+      "char": "₃",
+      "name": "SUBSCRIPT THREE",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.3
+    },
+    {
+      "id": "U+2084",
+      "char": "₄",
+      "name": "SUBSCRIPT FOUR",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.406
+    },
+    {
+      "id": "U+2085",
+      "char": "₅",
+      "name": "SUBSCRIPT FIVE",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.243
+    },
+    {
+      "id": "U+2086",
+      "char": "₆",
+      "name": "SUBSCRIPT SIX",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.322
+    },
+    {
+      "id": "U+2087",
+      "char": "₇",
+      "name": "SUBSCRIPT SEVEN",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.414
+    },
+    {
+      "id": "U+2088",
+      "char": "₈",
+      "name": "SUBSCRIPT EIGHT",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.548
+    },
+    {
+      "id": "U+2089",
+      "char": "₉",
+      "name": "SUBSCRIPT NINE",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.284
+    },
+    {
+      "id": "U+208A",
+      "char": "₊",
+      "name": "SUBSCRIPT PLUS SIGN",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.297
+    },
+    {
+      "id": "U+208B",
+      "char": "₋",
+      "name": "SUBSCRIPT MINUS",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.073
+    },
+    {
+      "id": "U+208C",
+      "char": "₌",
+      "name": "SUBSCRIPT EQUALS SIGN",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.297
+    },
+    {
+      "id": "U+208D",
+      "char": "₍",
+      "name": "SUBSCRIPT LEFT PARENTHESIS",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.171
+    },
+    {
+      "id": "U+208E",
+      "char": "₎",
+      "name": "SUBSCRIPT RIGHT PARENTHESIS",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 1,
+      "duration": 0.17
+    },
+    {
+      "id": "U+2099",
+      "char": "ₙ",
+      "name": "LATIN SUBSCRIPT SMALL LETTER N",
+      "block": "Superscripts and Subscripts",
+      "advance": 320,
+      "strokes": 2,
+      "duration": 0.346
+    },
+    {
+      "id": "U+20A1",
+      "char": "₡",
+      "name": "COLON SIGN",
+      "block": "Currency Symbols",
+      "advance": 450,
+      "strokes": 3,
+      "duration": 1.319
+    },
+    {
+      "id": "U+20A3",
+      "char": "₣",
+      "name": "FRENCH FRANC SIGN",
+      "block": "Currency Symbols",
+      "advance": 450,
+      "strokes": 3,
+      "duration": 0.719
+    },
+    {
+      "id": "U+20A4",
+      "char": "₤",
+      "name": "LIRA SIGN",
+      "block": "Currency Symbols",
+      "advance": 450,
+      "strokes": 3,
+      "duration": 0.97
+    },
+    {
+      "id": "U+20A6",
+      "char": "₦",
+      "name": "NAIRA SIGN",
+      "block": "Currency Symbols",
+      "advance": 450,
+      "strokes": 3,
+      "duration": 1.195
+    },
+    {
+      "id": "U+20A9",
+      "char": "₩",
+      "name": "WON SIGN",
+      "block": "Currency Symbols",
+      "advance": 450,
+      "strokes": 4,
+      "duration": 1.47
+    },
+    {
+      "id": "U+20AC",
+      "char": "€",
+      "name": "EURO SIGN",
+      "block": "Currency Symbols",
+      "advance": 450,
+      "strokes": 3,
+      "duration": 0.941
+    },
+    {
+      "id": "U+20AE",
+      "char": "₮",
+      "name": "TUGRIK SIGN",
+      "block": "Currency Symbols",
+      "advance": 507,
+      "strokes": 4,
+      "duration": 1.011
+    },
+    {
+      "id": "U+20B4",
+      "char": "₴",
+      "name": "HRYVNIA SIGN",
+      "block": "Currency Symbols",
+      "advance": 499,
+      "strokes": 4,
+      "duration": 1.05
+    },
+    {
+      "id": "U+20B8",
+      "char": "₸",
+      "name": "TENGE SIGN",
+      "block": "Currency Symbols",
+      "advance": 492,
+      "strokes": 3,
+      "duration": 0.763
+    },
+    {
+      "id": "U+20B9",
+      "char": "₹",
+      "name": "INDIAN RUPEE SIGN",
+      "block": "Currency Symbols",
+      "advance": 450,
+      "strokes": 3,
+      "duration": 0.85
+    },
+    {
+      "id": "U+20BA",
+      "char": "₺",
+      "name": "TURKISH LIRA SIGN",
+      "block": "Currency Symbols",
+      "advance": 450,
+      "strokes": 3,
+      "duration": 0.875
+    },
+    {
+      "id": "U+20BD",
+      "char": "₽",
+      "name": "RUBLE SIGN",
+      "block": "Currency Symbols",
+      "advance": 474,
+      "strokes": 3,
+      "duration": 0.906
+    },
+    {
+      "id": "U+2102",
+      "char": "ℂ",
+      "name": "DOUBLE-STRUCK CAPITAL C",
+      "block": "Letterlike Symbols",
+      "advance": 472,
+      "strokes": 2,
+      "duration": 0.771
+    },
+    {
+      "id": "U+2115",
+      "char": "ℕ",
+      "name": "DOUBLE-STRUCK CAPITAL N",
+      "block": "Letterlike Symbols",
+      "advance": 599,
+      "strokes": 2,
+      "duration": 1.073
+    },
+    {
+      "id": "U+2116",
+      "char": "№",
+      "name": "NUMERO SIGN",
+      "block": "Letterlike Symbols",
+      "advance": 824,
+      "strokes": 3,
+      "duration": 1.15
+    },
+    {
+      "id": "U+211A",
+      "char": "ℚ",
+      "name": "DOUBLE-STRUCK CAPITAL Q",
+      "block": "Letterlike Symbols",
+      "advance": 502,
+      "strokes": 3,
+      "duration": 1.095
+    },
+    {
+      "id": "U+211D",
+      "char": "ℝ",
+      "name": "DOUBLE-STRUCK CAPITAL R",
+      "block": "Letterlike Symbols",
+      "advance": 537,
+      "strokes": 4,
+      "duration": 1.303
+    },
+    {
+      "id": "U+2120",
+      "char": "℠",
+      "name": "SERVICE MARK",
+      "block": "Letterlike Symbols",
+      "advance": 661,
+      "strokes": 2,
+      "duration": 0.874
+    },
+    {
+      "id": "U+2122",
+      "char": "™",
+      "name": "TRADE MARK SIGN",
+      "block": "Letterlike Symbols",
+      "advance": 660,
+      "strokes": 3,
+      "duration": 0.986
+    },
+    {
+      "id": "U+2124",
+      "char": "ℤ",
+      "name": "DOUBLE-STRUCK CAPITAL Z",
+      "block": "Letterlike Symbols",
+      "advance": 522,
+      "strokes": 2,
+      "duration": 0.867
+    },
+    {
+      "id": "U+2150",
+      "char": "⅐",
+      "name": "VULGAR FRACTION ONE SEVENTH",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 4,
+      "duration": 1.215
+    },
+    {
+      "id": "U+2151",
+      "char": "⅑",
+      "name": "VULGAR FRACTION ONE NINTH",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 3,
+      "duration": 1.085
+    },
+    {
+      "id": "U+2152",
+      "char": "⅒",
+      "name": "VULGAR FRACTION ONE TENTH",
+      "block": "Number Forms",
+      "advance": 960,
+      "strokes": 4,
+      "duration": 1.51
+    },
+    {
+      "id": "U+2153",
+      "char": "⅓",
+      "name": "VULGAR FRACTION ONE THIRD",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 3,
+      "duration": 1.101
+    },
+    {
+      "id": "U+2154",
+      "char": "⅔",
+      "name": "VULGAR FRACTION TWO THIRDS",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 3,
+      "duration": 1.129
+    },
+    {
+      "id": "U+2155",
+      "char": "⅕",
+      "name": "VULGAR FRACTION ONE FIFTH",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 3,
+      "duration": 1.044
+    },
+    {
+      "id": "U+2156",
+      "char": "⅖",
+      "name": "VULGAR FRACTION TWO FIFTHS",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 3,
+      "duration": 1.072
+    },
+    {
+      "id": "U+2157",
+      "char": "⅗",
+      "name": "VULGAR FRACTION THREE FIFTHS",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 3,
+      "duration": 1.117
+    },
+    {
+      "id": "U+2158",
+      "char": "⅘",
+      "name": "VULGAR FRACTION FOUR FIFTHS",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 4,
+      "duration": 1.223
+    },
+    {
+      "id": "U+2159",
+      "char": "⅙",
+      "name": "VULGAR FRACTION ONE SIXTH",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 3,
+      "duration": 1.123
+    },
+    {
+      "id": "U+215A",
+      "char": "⅚",
+      "name": "VULGAR FRACTION FIVE SIXTHS",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 3,
+      "duration": 1.139
+    },
+    {
+      "id": "U+215B",
+      "char": "⅛",
+      "name": "VULGAR FRACTION ONE EIGHTH",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 4,
+      "duration": 1.349
+    },
+    {
+      "id": "U+215C",
+      "char": "⅜",
+      "name": "VULGAR FRACTION THREE EIGHTHS",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 4,
+      "duration": 1.422
+    },
+    {
+      "id": "U+215D",
+      "char": "⅝",
+      "name": "VULGAR FRACTION FIVE EIGHTHS",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 4,
+      "duration": 1.365
+    },
+    {
+      "id": "U+215E",
+      "char": "⅞",
+      "name": "VULGAR FRACTION SEVEN EIGHTHS",
+      "block": "Number Forms",
+      "advance": 800,
+      "strokes": 5,
+      "duration": 1.536
+    },
+    {
+      "id": "U+2190",
+      "char": "←",
+      "name": "LEFTWARDS ARROW",
+      "block": "Arrows",
+      "advance": 631,
+      "strokes": 2,
+      "duration": 0.416
+    },
+    {
+      "id": "U+2191",
+      "char": "↑",
+      "name": "UPWARDS ARROW",
+      "block": "Arrows",
+      "advance": 384,
+      "strokes": 2,
+      "duration": 0.467
+    },
+    {
+      "id": "U+2192",
+      "char": "→",
+      "name": "RIGHTWARDS ARROW",
+      "block": "Arrows",
+      "advance": 630,
+      "strokes": 2,
+      "duration": 0.417
+    },
+    {
+      "id": "U+2193",
+      "char": "↓",
+      "name": "DOWNWARDS ARROW",
+      "block": "Arrows",
+      "advance": 388,
+      "strokes": 2,
+      "duration": 0.463
+    },
+    {
+      "id": "U+2194",
+      "char": "↔",
+      "name": "LEFT RIGHT ARROW",
+      "block": "Arrows",
+      "advance": 698,
+      "strokes": 3,
+      "duration": 0.692
+    },
+    {
+      "id": "U+21A6",
+      "char": "↦",
+      "name": "RIGHTWARDS ARROW FROM BAR",
+      "block": "Arrows",
+      "advance": 634,
+      "strokes": 3,
+      "duration": 0.64
+    },
+    {
+      "id": "U+21D0",
+      "char": "⇐",
+      "name": "LEFTWARDS DOUBLE ARROW",
+      "block": "Arrows",
+      "advance": 633,
+      "strokes": 3,
+      "duration": 0.728
+    },
+    {
+      "id": "U+21D2",
+      "char": "⇒",
+      "name": "RIGHTWARDS DOUBLE ARROW",
+      "block": "Arrows",
+      "advance": 634,
+      "strokes": 3,
+      "duration": 0.731
+    },
+    {
+      "id": "U+21D4",
+      "char": "⇔",
+      "name": "LEFT RIGHT DOUBLE ARROW",
+      "block": "Arrows",
+      "advance": 732,
+      "strokes": 4,
+      "duration": 1.057
+    },
+    {
+      "id": "U+2200",
+      "char": "∀",
+      "name": "FOR ALL",
+      "block": "Mathematical Operators",
+      "advance": 547,
+      "strokes": 2,
+      "duration": 0.675
+    },
+    {
+      "id": "U+2201",
+      "char": "∁",
+      "name": "COMPLEMENT",
+      "block": "Mathematical Operators",
+      "advance": 426,
+      "strokes": 1,
+      "duration": 0.308
+    },
+    {
+      "id": "U+2202",
+      "char": "∂",
+      "name": "PARTIAL DIFFERENTIAL",
+      "block": "Mathematical Operators",
+      "advance": 474,
+      "strokes": 1,
+      "duration": 0.517
+    },
+    {
+      "id": "U+2203",
+      "char": "∃",
+      "name": "THERE EXISTS",
+      "block": "Mathematical Operators",
+      "advance": 523,
+      "strokes": 2,
+      "duration": 0.668
+    },
+    {
+      "id": "U+2204",
+      "char": "∄",
+      "name": "THERE DOES NOT EXIST",
+      "block": "Mathematical Operators",
+      "advance": 550,
+      "strokes": 3,
+      "duration": 1.13
+    },
+    {
+      "id": "U+2205",
+      "char": "∅",
+      "name": "EMPTY SET",
+      "block": "Mathematical Operators",
+      "advance": 566,
+      "strokes": 2,
+      "duration": 0.882
+    },
+    {
+      "id": "U+2206",
+      "char": "∆",
+      "name": "INCREMENT",
+      "block": "Mathematical Operators",
+      "advance": 568,
+      "strokes": 1,
+      "duration": 0.599
+    },
+    {
+      "id": "U+2207",
+      "char": "∇",
+      "name": "NABLA",
+      "block": "Mathematical Operators",
+      "advance": 569,
+      "strokes": 1,
+      "duration": 0.6
+    },
+    {
+      "id": "U+2208",
+      "char": "∈",
+      "name": "ELEMENT OF",
+      "block": "Mathematical Operators",
+      "advance": 515,
+      "strokes": 2,
+      "duration": 0.561
+    },
+    {
+      "id": "U+2209",
+      "char": "∉",
+      "name": "NOT AN ELEMENT OF",
+      "block": "Mathematical Operators",
+      "advance": 513,
+      "strokes": 3,
+      "duration": 0.913
+    },
+    {
+      "id": "U+220A",
+      "char": "∊",
+      "name": "SMALL ELEMENT OF",
+      "block": "Mathematical Operators",
+      "advance": 400,
+      "strokes": 2,
+      "duration": 0.444
+    },
+    {
+      "id": "U+220B",
+      "char": "∋",
+      "name": "CONTAINS AS MEMBER",
+      "block": "Mathematical Operators",
+      "advance": 509,
+      "strokes": 2,
+      "duration": 0.56
+    },
+    {
+      "id": "U+220C",
+      "char": "∌",
+      "name": "DOES NOT CONTAIN AS MEMBER",
+      "block": "Mathematical Operators",
+      "advance": 524,
+      "strokes": 3,
+      "duration": 0.91
+    },
+    {
+      "id": "U+220F",
+      "char": "∏",
+      "name": "N-ARY PRODUCT",
+      "block": "Mathematical Operators",
+      "advance": 589,
+      "strokes": 3,
+      "duration": 0.991
+    },
+    {
+      "id": "U+2210",
+      "char": "∐",
+      "name": "N-ARY COPRODUCT",
+      "block": "Mathematical Operators",
+      "advance": 588,
+      "strokes": 3,
+      "duration": 0.993
+    },
+    {
+      "id": "U+2211",
+      "char": "∑",
+      "name": "N-ARY SUMMATION",
+      "block": "Mathematical Operators",
+      "advance": 618,
+      "strokes": 1,
+      "duration": 0.548
+    },
+    {
+      "id": "U+2212",
+      "char": "−",
+      "name": "MINUS SIGN",
+      "block": "Mathematical Operators",
+      "advance": 446,
+      "strokes": 1,
+      "duration": 0.11
+    },
+    {
+      "id": "U+2213",
+      "char": "∓",
+      "name": "MINUS-OR-PLUS SIGN",
+      "block": "Mathematical Operators",
+      "advance": 485,
+      "strokes": 3,
+      "duration": 0.599
+    },
+    {
+      "id": "U+2215",
+      "char": "∕",
+      "name": "DIVISION SLASH",
+      "block": "Mathematical Operators",
+      "advance": 193,
+      "strokes": 1,
+      "duration": 0.298
+    },
+    {
+      "id": "U+2216",
+      "char": "∖",
+      "name": "SET MINUS",
+      "block": "Mathematical Operators",
+      "advance": 372,
+      "strokes": 1,
+      "duration": 0.215
+    },
+    {
+      "id": "U+2217",
+      "char": "∗",
+      "name": "ASTERISK OPERATOR",
+      "block": "Mathematical Operators",
+      "advance": 424,
+      "strokes": 3,
+      "duration": 0.565
+    },
+    {
+      "id": "U+2218",
+      "char": "∘",
+      "name": "RING OPERATOR",
+      "block": "Mathematical Operators",
+      "advance": 326,
+      "strokes": 1,
+      "duration": 0.182
+    },
+    {
+      "id": "U+2219",
+      "char": "∙",
+      "name": "BULLET OPERATOR",
+      "block": "Mathematical Operators",
+      "advance": 187,
+      "strokes": 1,
+      "duration": 0.012
+    },
+    {
+      "id": "U+221A",
+      "char": "√",
+      "name": "SQUARE ROOT",
+      "block": "Mathematical Operators",
+      "advance": 695,
+      "strokes": 1,
+      "duration": 0.467
+    },
+    {
+      "id": "U+221B",
+      "char": "∛",
+      "name": "CUBE ROOT",
+      "block": "Mathematical Operators",
+      "advance": 702,
+      "strokes": 2,
+      "duration": 0.764
+    },
+    {
+      "id": "U+221C",
+      "char": "∜",
+      "name": "FOURTH ROOT",
+      "block": "Mathematical Operators",
+      "advance": 697,
+      "strokes": 3,
+      "duration": 0.892
+    },
+    {
+      "id": "U+221D",
+      "char": "∝",
+      "name": "PROPORTIONAL TO",
+      "block": "Mathematical Operators",
+      "advance": 510,
+      "strokes": 1,
+      "duration": 0.331
+    },
+    {
+      "id": "U+221E",
+      "char": "∞",
+      "name": "INFINITY",
+      "block": "Mathematical Operators",
+      "advance": 575,
+      "strokes": 1,
+      "duration": 0.454
+    },
+    {
+      "id": "U+2220",
+      "char": "∠",
+      "name": "ANGLE",
+      "block": "Mathematical Operators",
+      "advance": 551,
+      "strokes": 1,
+      "duration": 0.323
+    },
+    {
+      "id": "U+2221",
+      "char": "∡",
+      "name": "MEASURED ANGLE",
+      "block": "Mathematical Operators",
+      "advance": 541,
+      "strokes": 2,
+      "duration": 0.551
+    },
+    {
+      "id": "U+2223",
+      "char": "∣",
+      "name": "DIVIDES",
+      "block": "Mathematical Operators",
+      "advance": 408,
+      "strokes": 1,
+      "duration": 0.23
+    },
+    {
+      "id": "U+2224",
+      "char": "∤",
+      "name": "DOES NOT DIVIDE",
+      "block": "Mathematical Operators",
+      "advance": 398,
+      "strokes": 2,
+      "duration": 0.476
+    },
+    {
+      "id": "U+2225",
+      "char": "∥",
+      "name": "PARALLEL TO",
+      "block": "Mathematical Operators",
+      "advance": 558,
+      "strokes": 2,
+      "duration": 0.746
+    },
+    {
+      "id": "U+2226",
+      "char": "∦",
+      "name": "NOT PARALLEL TO",
+      "block": "Mathematical Operators",
+      "advance": 548,
+      "strokes": 3,
+      "duration": 1.037
+    },
+    {
+      "id": "U+2227",
+      "char": "∧",
+      "name": "LOGICAL AND",
+      "block": "Mathematical Operators",
+      "advance": 497,
+      "strokes": 1,
+      "duration": 0.355
+    },
+    {
+      "id": "U+2228",
+      "char": "∨",
+      "name": "LOGICAL OR",
+      "block": "Mathematical Operators",
+      "advance": 501,
+      "strokes": 1,
+      "duration": 0.337
+    },
+    {
+      "id": "U+2229",
+      "char": "∩",
+      "name": "INTERSECTION",
+      "block": "Mathematical Operators",
+      "advance": 479,
+      "strokes": 1,
+      "duration": 0.353
+    },
+    {
+      "id": "U+222A",
+      "char": "∪",
+      "name": "UNION",
+      "block": "Mathematical Operators",
+      "advance": 492,
+      "strokes": 1,
+      "duration": 0.352
+    },
+    {
+      "id": "U+222B",
+      "char": "∫",
+      "name": "INTEGRAL",
+      "block": "Mathematical Operators",
+      "advance": 580,
+      "strokes": 1,
+      "duration": 0.407
+    },
+    {
+      "id": "U+222C",
+      "char": "∬",
+      "name": "DOUBLE INTEGRAL",
+      "block": "Mathematical Operators",
+      "advance": 761,
+      "strokes": 2,
+      "duration": 0.964
+    },
+    {
+      "id": "U+222D",
+      "char": "∭",
+      "name": "TRIPLE INTEGRAL",
+      "block": "Mathematical Operators",
+      "advance": 935,
+      "strokes": 3,
+      "duration": 1.534
+    },
+    {
+      "id": "U+222E",
+      "char": "∮",
+      "name": "CONTOUR INTEGRAL",
+      "block": "Mathematical Operators",
+      "advance": 579,
+      "strokes": 2,
+      "duration": 0.748
+    },
+    {
+      "id": "U+2234",
+      "char": "∴",
+      "name": "THEREFORE",
+      "block": "Mathematical Operators",
+      "advance": 507,
+      "strokes": 3,
+      "duration": 0.303
+    },
+    {
+      "id": "U+2235",
+      "char": "∵",
+      "name": "BECAUSE",
+      "block": "Mathematical Operators",
+      "advance": 507,
+      "strokes": 3,
+      "duration": 0.303
+    },
+    {
+      "id": "U+2236",
+      "char": "∶",
+      "name": "RATIO",
+      "block": "Mathematical Operators",
+      "advance": 212,
+      "strokes": 2,
+      "duration": 0.152
+    },
+    {
+      "id": "U+2237",
+      "char": "∷",
+      "name": "PROPORTION",
+      "block": "Mathematical Operators",
+      "advance": 467,
+      "strokes": 4,
+      "duration": 0.454
+    },
+    {
+      "id": "U+223C",
+      "char": "∼",
+      "name": "TILDE OPERATOR",
+      "block": "Mathematical Operators",
+      "advance": 465,
+      "strokes": 1,
+      "duration": 0.124
+    },
+    {
+      "id": "U+2243",
+      "char": "≃",
+      "name": "ASYMPTOTICALLY EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 478,
+      "strokes": 2,
+      "duration": 0.37
+    },
+    {
+      "id": "U+2245",
+      "char": "≅",
+      "name": "APPROXIMATELY EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 490,
+      "strokes": 3,
+      "duration": 0.624
+    },
+    {
+      "id": "U+2248",
+      "char": "≈",
+      "name": "ALMOST EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 446,
+      "strokes": 2,
+      "duration": 0.435
+    },
+    {
+      "id": "U+2249",
+      "char": "≉",
+      "name": "NOT ALMOST EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 578,
+      "strokes": 3,
+      "duration": 0.754
+    },
+    {
+      "id": "U+2250",
+      "char": "≐",
+      "name": "APPROACHES THE LIMIT",
+      "block": "Mathematical Operators",
+      "advance": 471,
+      "strokes": 3,
+      "duration": 0.511
+    },
+    {
+      "id": "U+2254",
+      "char": "≔",
+      "name": "COLON EQUALS",
+      "block": "Mathematical Operators",
+      "advance": 551,
+      "strokes": 4,
+      "duration": 0.637
+    },
+    {
+      "id": "U+2259",
+      "char": "≙",
+      "name": "ESTIMATES",
+      "block": "Mathematical Operators",
+      "advance": 478,
+      "strokes": 3,
+      "duration": 0.632
+    },
+    {
+      "id": "U+225C",
+      "char": "≜",
+      "name": "DELTA EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 477,
+      "strokes": 3,
+      "duration": 0.668
+    },
+    {
+      "id": "U+2260",
+      "char": "≠",
+      "name": "NOT EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 446,
+      "strokes": 3,
+      "duration": 0.716
+    },
+    {
+      "id": "U+2261",
+      "char": "≡",
+      "name": "IDENTICAL TO",
+      "block": "Mathematical Operators",
+      "advance": 487,
+      "strokes": 3,
+      "duration": 0.614
+    },
+    {
+      "id": "U+2262",
+      "char": "≢",
+      "name": "NOT IDENTICAL TO",
+      "block": "Mathematical Operators",
+      "advance": 487,
+      "strokes": 4,
+      "duration": 0.941
+    },
+    {
+      "id": "U+2264",
+      "char": "≤",
+      "name": "LESS-THAN OR EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 446,
+      "strokes": 2,
+      "duration": 0.474
+    },
+    {
+      "id": "U+2265",
+      "char": "≥",
+      "name": "GREATER-THAN OR EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 446,
+      "strokes": 2,
+      "duration": 0.471
+    },
+    {
+      "id": "U+226A",
+      "char": "≪",
+      "name": "MUCH LESS-THAN",
+      "block": "Mathematical Operators",
+      "advance": 600,
+      "strokes": 2,
+      "duration": 0.578
+    },
+    {
+      "id": "U+226B",
+      "char": "≫",
+      "name": "MUCH GREATER-THAN",
+      "block": "Mathematical Operators",
+      "advance": 599,
+      "strokes": 2,
+      "duration": 0.572
+    },
+    {
+      "id": "U+226E",
+      "char": "≮",
+      "name": "NOT LESS-THAN",
+      "block": "Mathematical Operators",
+      "advance": 425,
+      "strokes": 2,
+      "duration": 0.535
+    },
+    {
+      "id": "U+226F",
+      "char": "≯",
+      "name": "NOT GREATER-THAN",
+      "block": "Mathematical Operators",
+      "advance": 424,
+      "strokes": 2,
+      "duration": 0.531
+    },
+    {
+      "id": "U+2282",
+      "char": "⊂",
+      "name": "SUBSET OF",
+      "block": "Mathematical Operators",
+      "advance": 508,
+      "strokes": 1,
+      "duration": 0.307
+    },
+    {
+      "id": "U+2283",
+      "char": "⊃",
+      "name": "SUPERSET OF",
+      "block": "Mathematical Operators",
+      "advance": 514,
+      "strokes": 1,
+      "duration": 0.305
+    },
+    {
+      "id": "U+2284",
+      "char": "⊄",
+      "name": "NOT A SUBSET OF",
+      "block": "Mathematical Operators",
+      "advance": 512,
+      "strokes": 2,
+      "duration": 0.653
+    },
+    {
+      "id": "U+2285",
+      "char": "⊅",
+      "name": "NOT A SUPERSET OF",
+      "block": "Mathematical Operators",
+      "advance": 519,
+      "strokes": 2,
+      "duration": 0.654
+    },
+    {
+      "id": "U+2286",
+      "char": "⊆",
+      "name": "SUBSET OF OR EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 544,
+      "strokes": 2,
+      "duration": 0.559
+    },
+    {
+      "id": "U+2287",
+      "char": "⊇",
+      "name": "SUPERSET OF OR EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 524,
+      "strokes": 2,
+      "duration": 0.558
+    },
+    {
+      "id": "U+228A",
+      "char": "⊊",
+      "name": "SUBSET OF WITH NOT EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 538,
+      "strokes": 3,
+      "duration": 0.781
+    },
+    {
+      "id": "U+228B",
+      "char": "⊋",
+      "name": "SUPERSET OF WITH NOT EQUAL TO",
+      "block": "Mathematical Operators",
+      "advance": 521,
+      "strokes": 3,
+      "duration": 0.782
+    },
+    {
+      "id": "U+2295",
+      "char": "⊕",
+      "name": "CIRCLED PLUS",
+      "block": "Mathematical Operators",
+      "advance": 515,
+      "strokes": 3,
+      "duration": 0.849
+    },
+    {
+      "id": "U+2296",
+      "char": "⊖",
+      "name": "CIRCLED MINUS",
+      "block": "Mathematical Operators",
+      "advance": 516,
+      "strokes": 2,
+      "duration": 0.621
+    },
+    {
+      "id": "U+2297",
+      "char": "⊗",
+      "name": "CIRCLED TIMES",
+      "block": "Mathematical Operators",
+      "advance": 518,
+      "strokes": 3,
+      "duration": 0.849
+    },
+    {
+      "id": "U+2298",
+      "char": "⊘",
+      "name": "CIRCLED DIVISION SLASH",
+      "block": "Mathematical Operators",
+      "advance": 520,
+      "strokes": 2,
+      "duration": 0.671
+    },
+    {
+      "id": "U+2299",
+      "char": "⊙",
+      "name": "CIRCLED DOT OPERATOR",
+      "block": "Mathematical Operators",
+      "advance": 513,
+      "strokes": 2,
+      "duration": 0.544
+    },
+    {
+      "id": "U+22A2",
+      "char": "⊢",
+      "name": "RIGHT TACK",
+      "block": "Mathematical Operators",
+      "advance": 516,
+      "strokes": 2,
+      "duration": 0.46
+    },
+    {
+      "id": "U+22A3",
+      "char": "⊣",
+      "name": "LEFT TACK",
+      "block": "Mathematical Operators",
+      "advance": 504,
+      "strokes": 2,
+      "duration": 0.459
+    },
+    {
+      "id": "U+22A4",
+      "char": "⊤",
+      "name": "DOWN TACK",
+      "block": "Mathematical Operators",
+      "advance": 519,
+      "strokes": 2,
+      "duration": 0.471
+    },
+    {
+      "id": "U+22A5",
+      "char": "⊥",
+      "name": "UP TACK",
+      "block": "Mathematical Operators",
+      "advance": 518,
+      "strokes": 2,
+      "duration": 0.47
+    },
+    {
+      "id": "U+22A8",
+      "char": "⊨",
+      "name": "TRUE",
+      "block": "Mathematical Operators",
+      "advance": 507,
+      "strokes": 3,
+      "duration": 0.718
+    },
+    {
+      "id": "U+22BB",
+      "char": "⊻",
+      "name": "XOR",
+      "block": "Mathematical Operators",
+      "advance": 537,
+      "strokes": 2,
+      "duration": 0.589
+    },
+    {
+      "id": "U+22BC",
+      "char": "⊼",
+      "name": "NAND",
+      "block": "Mathematical Operators",
+      "advance": 530,
+      "strokes": 2,
+      "duration": 0.578
+    },
+    {
+      "id": "U+22BD",
+      "char": "⊽",
+      "name": "NOR",
+      "block": "Mathematical Operators",
+      "advance": 494,
+      "strokes": 2,
+      "duration": 0.597
+    },
+    {
+      "id": "U+22C5",
+      "char": "⋅",
+      "name": "DOT OPERATOR",
+      "block": "Mathematical Operators",
+      "advance": 180,
+      "strokes": 1,
+      "duration": 0.012
+    },
+    {
+      "id": "U+22C6",
+      "char": "⋆",
+      "name": "STAR OPERATOR",
+      "block": "Mathematical Operators",
+      "advance": 421,
+      "strokes": 5,
+      "duration": 1.072
+    },
+    {
+      "id": "U+2308",
+      "char": "⌈",
+      "name": "LEFT CEILING",
+      "block": "Miscellaneous Technical",
+      "advance": 419,
+      "strokes": 1,
+      "duration": 0.347
+    },
+    {
+      "id": "U+2309",
+      "char": "⌉",
+      "name": "RIGHT CEILING",
+      "block": "Miscellaneous Technical",
+      "advance": 304,
+      "strokes": 1,
+      "duration": 0.346
+    },
+    {
+      "id": "U+230A",
+      "char": "⌊",
+      "name": "LEFT FLOOR",
+      "block": "Miscellaneous Technical",
+      "advance": 327,
+      "strokes": 1,
+      "duration": 0.344
+    },
+    {
+      "id": "U+230B",
+      "char": "⌋",
+      "name": "RIGHT FLOOR",
+      "block": "Miscellaneous Technical",
+      "advance": 408,
+      "strokes": 1,
+      "duration": 0.349
+    },
+    {
+      "id": "U+27E8",
+      "char": "⟨",
+      "name": "MATHEMATICAL LEFT ANGLE BRACKET",
+      "block": "Miscellaneous Mathematical Symbols-A",
+      "advance": 284,
+      "strokes": 1,
+      "duration": 0.275
+    },
+    {
+      "id": "U+27E9",
+      "char": "⟩",
+      "name": "MATHEMATICAL RIGHT ANGLE BRACKET",
+      "block": "Miscellaneous Mathematical Symbols-A",
+      "advance": 210,
+      "strokes": 1,
+      "duration": 0.27
+    },
+    {
+      "id": "U+F6C3",
+      "char": "",
+      "name": "",
+      "block": "U+F680",
+      "advance": 284,
+      "strokes": 1,
+      "duration": 0.044
+    },
+    {
+      "id": "U+FB00",
+      "char": "ﬀ",
+      "name": "LATIN SMALL LIGATURE FF",
+      "block": "Alphabetic Presentation Forms",
+      "advance": 500,
+      "strokes": 3,
+      "duration": 1.028
+    },
+    {
+      "id": "U+FB01",
+      "char": "ﬁ",
+      "name": "LATIN SMALL LIGATURE FI",
+      "block": "Alphabetic Presentation Forms",
+      "advance": 459,
+      "strokes": 4,
+      "duration": 0.897
+    },
+    {
+      "id": "U+FB02",
+      "char": "ﬂ",
+      "name": "LATIN SMALL LIGATURE FL",
+      "block": "Alphabetic Presentation Forms",
+      "advance": 460,
+      "strokes": 3,
+      "duration": 0.851
+    },
+    {
+      "id": "U+FB03",
+      "char": "ﬃ",
+      "name": "LATIN SMALL LIGATURE FFI",
+      "block": "Alphabetic Presentation Forms",
+      "advance": 654,
+      "strokes": 5,
+      "duration": 1.412
+    },
+    {
+      "id": "U+FB04",
+      "char": "ﬄ",
+      "name": "LATIN SMALL LIGATURE FFL",
+      "block": "Alphabetic Presentation Forms",
+      "advance": 670,
+      "strokes": 4,
+      "duration": 1.367
+    }
+  ]
+}
