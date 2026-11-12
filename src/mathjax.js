@@ -15,6 +15,7 @@ import { liteAdaptor } from 'mathjax-full/js/adaptors/liteAdaptor.js';
 import { RegisterHTMLHandler } from 'mathjax-full/js/handlers/html.js';
 import { AllPackages } from 'mathjax-full/js/input/tex/AllPackages.js';
 import { SVGTextNode } from 'mathjax-full/js/output/svg/Wrappers/TextNode.js';
+import { isLatinText } from './metrics.js';
 
 /** Current text measurer: (text, fontSize) => advance in the same units as fontSize, or null. */
 let currentMeasurer = null;
@@ -34,6 +35,8 @@ function isConnectedPhrase(wrapper) {
   // Arabic text (one script per \\text{}): the whole run goes to the Arabic shaper,
   // digits, = ≠ % and punctuation included, so letters join and numbers keep their order.
   if (/[\u0600-\u06FF]/u.test(text) && !/[A-Za-z]/.test(text)) return true;
+  // A Latin word (He, H2O) is one run too, drawn left to right even on an RTL page.
+  if (isLatinText(text)) return true;
   const chars = wrapper.remappedText(text, variant);
   if (chars.length < 2) return false;
   let letters = 0;

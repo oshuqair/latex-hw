@@ -3,7 +3,7 @@
 // glyph / geometry strokes -> writing order + timing -> SVG + JSON.
 
 import { getMathJax, mathJaxFont, setTextMeasurer, stripDelimiters } from './mathjax.js';
-import { applyCaveatMetrics, caveatMetrics, layoutUsesCaveat } from './metrics.js';
+import { applyCaveatMetrics, caveatMetrics, isLatinText, latinRunLayout, layoutUsesCaveat } from './metrics.js';
 import { flatten } from './flatten.js';
 import { createStrokeBuilder } from './strokes.js';
 import { orderUnits } from './order.js';
@@ -88,6 +88,11 @@ export async function createRenderer(init = {}) {
     if (rtl && opts.translateOperators) expression = translateOperators(expression, dictionary);
 
     const measure = (text, fontSize) => {
+      // A Latin word is measured with Caveat, the same advances the strokes use.
+      if (isLatinText(text)) {
+        const upem = latin.unitsPerEm || 1000;
+        return latinRunLayout(text, latin.glyphData, upem).advance * (fontSize / upem) * opts.latinScale;
+      }
       if (!arabicShaper) return null;
       return arabicShaper.advance(text) * (fontSize / arabicShaper.upem) * opts.arabicScale;
     };

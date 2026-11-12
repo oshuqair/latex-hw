@@ -8,6 +8,7 @@
 import { apply, emptyBox, addPoint, parsePath, polylineLength, sizeOf } from './geom.js';
 import { plainChar, classifyStretchy, PIECE_RANGE, DELIMITER_CODES, ALIASES } from './chars.js';
 import { rtlGlyphPolicy } from './mirror-set.js';
+import { isLatinText, latinRunLayout } from './metrics.js';
 
 const LARGE_VARIANTS = new Set(['LO', 'SO', 'S1', 'S2', 'S3', 'S4']);
 // Tegaki's default glyph speed is ~3000 font units/s; synthesized strokes use a
@@ -138,19 +139,51 @@ export function createStrokeBuilder(ctx) {
     return { kind: 'glyph', strokes, box: bboxOfStrokes(strokes) };
   }
 
+  /**
+   * A Latin \\text{} (He, H2O) drawn with Caveat, letters left to right.
+   * On an RTL page `adv - X` cancels the page mirror, so the word stays LTR.
+   */
+  function latinTextUnit(leaf, node, sigma, w) {
+    const upem = latin.unitsPerEm || 1000;
+    const run = latinRunLayout(leaf.text, latin.glyphData, upem);
+    const k = (leaf.fontSize / upem) * opts.latinScale;
+    const adv = run.advance * k;
+    const toRoot = (X, Y) => G(...apply(leaf.M, rtl ? adv - X : X, Y));
+    const strokes = [];
+    for (const item of run.glyphs) {
+      if (item.space) continue;
+      const base = { source: 'glyph', char: item.char, font: 'latin', mirrored: false, node };
+      if (!item.g) {
+        warn('fallback-glyph', `No handwriting strokes for "${item.char}" (U+${(item.char.codePointAt(0) ?? 0).toString(16).toUpperCase().padStart(4, '0')}) in the latin bundle; nothing drawn for it.`, item.char);
+        continue;
+      }
+      let prevEnd = 0;
+      item.g.s.forEach((st, idx) => {
+        const pts = st.p.map((p) => toRoot((item.x + p[0]) * k, p[1] * k));
+        const scaleT = Math.sqrt(sigma * k);
+        const gap = idx === 0 ? 0 : Math.max(0, (st.d - prevEnd)) * scaleT;
+        prevEnd = st.d + st.a;
+        strokes.push({ ...base, pts, smooth: true, w, dur: Math.max(MIN_DUR, st.a * scaleT), gap, priority: st.r ?? 0 });
+      });
+    }
+    return { kind: 'text', strokes, box: bboxOfStrokes(strokes) };
+  }
+
   /** An Arabic (or other non-TeX) text run, shaped with harfbuzzjs + Amiri. */
   function textUnit(leaf) {
     const node = nodeName(leaf.chain);
     const sigma = sizeOf(leaf.M);
     const w = penFor(sigma);
-    if (!arabicShaper) {
-      warn('no-arabic-font', `No Arabic font loaded; "${leaf.text}" skipped.`, leaf.text);
-      return { kind: 'text', strokes: [], box: leaf.box };
-    }
     const chars = [...leaf.text];
     const hasArabic = chars.some((c) => /[\u0600-\u06FF]/u.test(c));
     const hasLatin = chars.some((c) => /[A-Za-z]/.test(c));
     if (hasArabic && hasLatin) warn('mixed-script-text', `\\text{${leaf.text}} mixes Arabic and Latin; one script per \\text{} is supported.`, leaf.text);
+    // Latin words are an LTR island. Arabic (and anything else) keeps the shaper.
+    if (isLatinText(leaf.text)) return latinTextUnit(leaf, node, sigma, w);
+    if (!arabicShaper) {
+      warn('no-arabic-font', `No Arabic font loaded; "${leaf.text}" skipped.`, leaf.text);
+      return { kind: 'text', strokes: [], box: leaf.box };
+    }
     const s = (leaf.fontSize / arabicShaper.upem) * opts.arabicScale;
     const shaped = arabicShaper.shapeRun(leaf.text);
     const adv = shaped.advance * s;

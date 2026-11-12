@@ -170,6 +170,45 @@ test('digits keep their order in rtl text (١٠٠)', async () => {
   assert.ok(centerX(one) < centerX(zero), '١ is drawn left of the zeros');
 });
 
+test('rtl prose keeps a Latin word inside \\text{} left to right (He)', async () => {
+  const tex = '\\text{ألفا } (\\alpha): \\text{ أنوية هيليوم } (^4_2\\text{He}) \\text{ ، الشحنة: } +2 \\text{ ، قدرة اختراق ضعيفة (توقفها ورقة)}';
+  const r = await render(tex, { dir: 'rtl' });
+  assert.equal(r.warnings.length, 0);
+  const meanX = (ch) => {
+    const ss = r.strokes.filter((s) => s.char === ch);
+    assert.ok(ss.length, ch);
+    return ss.reduce((sum, s) => sum + centerX(s), 0) / ss.length;
+  };
+  const H = meanX('H');
+  const e = meanX('e');
+  assert.ok(H < e, `He is reversed: H at ${H.toFixed(1)}, e at ${e.toFixed(1)}`);
+  const iH = r.strokes.findIndex((s) => s.char === 'H');
+  const iE = r.strokes.findIndex((s) => s.char === 'e');
+  assert.ok(iH >= 0 && iH < iE, 'H is written before e');
+});
+
+test('latin \\text{He} stays left to right in ltr, and an Arabic word is unchanged', async () => {
+  const meanOf = (strokes, ch) => {
+    const ss = strokes.filter((s) => s.char === ch);
+    assert.ok(ss.length, ch);
+    return ss.reduce((sum, s) => sum + centerX(s), 0) / ss.length;
+  };
+  const ltr = await render('\\text{He}', { dir: 'ltr' });
+  assert.equal(ltr.warnings.length, 0);
+  assert.ok(ltr.strokes.every((s) => s.font === 'latin' && s.source === 'glyph'));
+  assert.ok(meanOf(ltr.strokes, 'H') < meanOf(ltr.strokes, 'e'));
+
+  const water = await render('\\text{H2O}', { dir: 'rtl' });
+  assert.equal(water.warnings.length, 0);
+  assert.ok(meanOf(water.strokes, 'H') < meanOf(water.strokes, '2'));
+  assert.ok(meanOf(water.strokes, '2') < meanOf(water.strokes, 'O'));
+
+  const ar = await render('\\text{هيليوم}', { dir: 'rtl' });
+  assert.equal(ar.warnings.length, 0);
+  assert.ok(ar.strokes.length > 0 && ar.strokes.every((s) => s.font === 'arabic'));
+  assert.ok(meanOf(ar.strokes, 'ه') > meanOf(ar.strokes, 'م'), 'هيليوم still reads right to left');
+});
+
 test('unknown glyph falls back to its outline with a warning, never silently', async () => {
   const r = await render('\\aleph');
   assert.ok(r.strokes.length > 0);

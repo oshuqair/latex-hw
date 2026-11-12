@@ -7,6 +7,42 @@
 
 import { plainChar, PIECE_RANGE } from './chars.js';
 
+const ARABIC_LETTER = /[\u0600-\u06FF]/u;
+const LATIN_LETTER = /[A-Za-z]/;
+// A word space inside a Latin \\text{} run, in ems. Caveat has no space glyph.
+const LATIN_SPACE_EM = 0.25;
+const LATIN_MISSING_EM = 0.5;
+
+/** A \\text{} run of Latin letters (digits and spaces may ride along), with no Arabic. */
+export function isLatinText(text) {
+  return LATIN_LETTER.test(text) && !ARABIC_LETTER.test(text);
+}
+
+/**
+ * Left-to-right placement of a Latin \\text{} run in Caveat font units.
+ * `x` is the pen at the left of each character. Missing glyphs keep a slot
+ * (`g` null) so the advance matches what is drawn.
+ */
+export function latinRunLayout(text, glyphData, upem = 1000) {
+  const u = upem || 1000;
+  const glyphs = [];
+  let pen = 0;
+  for (const ch of text) {
+    if (/\s/u.test(ch)) {
+      const w = LATIN_SPACE_EM * u;
+      glyphs.push({ char: ch, x: pen, w, space: true, g: null });
+      pen += w;
+      continue;
+    }
+    const g = glyphData?.[ch] ?? glyphData?.[ch.normalize('NFKC')] ?? null;
+    const known = !!(g?.s?.length && g.w > 0);
+    const w = known ? g.w : LATIN_MISSING_EM * u;
+    glyphs.push({ char: ch, x: pen, w, space: false, g: known ? g : null });
+    pen += w;
+  }
+  return { glyphs, advance: pen };
+}
+
 // MathJax SVG cache id → font variant name (tex.js variantCacheIds).
 const CACHE_TO_VARIANT = {
   N: 'normal', B: 'bold', I: 'italic', BI: 'bold-italic',

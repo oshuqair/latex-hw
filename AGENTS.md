@@ -103,7 +103,8 @@ glyph strokes, 2600 units/s for synthesized strokes, `unitPause` 0.12 s between 
      (`<` drawn as `>`; `data-char="<"`, `data-glyph=">"`, `data-mirrored="true"`), so stroke order,
      direction and Caveat's slant stay natural. Otherwise (⊨ ⊩, or no Caveat data) reflect the glyph.
 2. Arabic text runs are **not** flipped: shaped RTL by harfbuzzjs (digit runs and their separators
-   shaped LTR inside), placed in the mirrored box.
+   shaped LTR inside), placed in the mirrored box. A Latin `\text{}` (`He`, `H2O`) is a left-to-right
+   island drawn with Caveat; the page direction is still the caller's.
 3. Synthesized strokes (rules, radicals, delimiters, arrows) are built in the LTR frame and mirrored by `G`
    — a mirrored radical starts at its tick on the right.
 4. Operator dictionary (`dictionary.md`, embedded as `DEFAULT_DICTIONARY` in `src/dictionary.js` — keep
