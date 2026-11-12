@@ -187,6 +187,18 @@ test('rtl prose keeps a Latin word inside \\text{} left to right (He)', async ()
   assert.ok(iH >= 0 && iH < iE, 'H is written before e');
 });
 
+test('operator names stay separate glyphs; Latin \\text{} stays one run', async () => {
+  const sin = await layout('\\sin x');
+  const letters = sin.elements.filter((e) => e.char === 's' || e.char === 'i' || e.char === 'n');
+  assert.equal(letters.length, 3);
+  assert.ok(letters.every((e) => e.kind === 'glyph'));
+  const lim = await layout('\\lim_{x \\to 0}');
+  assert.equal(lim.elements.some((e) => e.kind === 'text-run'), false);
+  assert.ok(lim.elements.some((e) => e.kind === 'glyph' && e.char === 'l'));
+  const word = await layout('\\text{He}', { dir: 'rtl' });
+  assert.ok(word.elements.some((e) => e.kind === 'text-run' && e.text === 'He'));
+});
+
 test('latin \\text{He} stays left to right in ltr, and an Arabic word is unchanged', async () => {
   const meanOf = (strokes, ch) => {
     const ss = strokes.filter((s) => s.char === ch);

@@ -35,8 +35,9 @@ function isConnectedPhrase(wrapper) {
   // Arabic text (one script per \\text{}): the whole run goes to the Arabic shaper,
   // digits, = ≠ % and punctuation included, so letters join and numbers keep their order.
   if (/[\u0600-\u06FF]/u.test(text) && !/[A-Za-z]/.test(text)) return true;
-  // A Latin word (He, H2O) is one run too, drawn left to right even on an RTL page.
-  if (isLatinText(text)) return true;
+  // A Latin word inside \text{} (He, H2O) is one run, drawn left to right even on
+  // an RTL page. Operator names (\sin, \lim, \cos) are mi/mo and stay separate glyphs.
+  if (isLatinText(text) && wrapper.parent?.node?.kind === 'mtext') return true;
   const chars = wrapper.remappedText(text, variant);
   if (chars.length < 2) return false;
   let letters = 0;
