@@ -267,9 +267,10 @@ To ship a version:
    `package.json` version, runs `npm pack` (its `prepack` builds `dist/`) and creates a GitHub
    Release with auto-generated notes and these assets: `latex-hw-X.Y.Z.tgz`,
    `latex-hw-browser-X.Y.Z.zip` and `latex-hw.browser.js`.
-4. npm: add an npm automation (or granular publish) token as the repository secret **`NPM_TOKEN`**
-   (Settings → Secrets and variables → Actions). With it the release job runs
-   `npm publish --provenance --access public`; without it the job skips npm and leaves a notice.
+4. npm: the release job publishes with `npm publish --access public` through npm trusted
+   publishing (GitHub OIDC, no token or 2FA code; provenance is attached automatically). This needs
+   a trusted publisher on npmjs.com (package Settings → Trusted Publisher → GitHub Actions, owner
+   `oshuqair`, repository `latex-hw`, workflow `release.yml`).
 
 The npm package holds `src/`, `bin/`, `fonts/` (without build reports), `dist/latex-hw.browser.js`,
 `dist/harfbuzz.wasm`, `dictionary.md` and the license files: about 1.8 MB packed, 5.4 MB unpacked

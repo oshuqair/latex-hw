@@ -205,8 +205,8 @@ Everything needed is in the repo (`/workspace/caveat-math` on the original box i
 - Scratch work goes in `scratch/` (gitignored), font build output in `tools/*/out/` (gitignored).
 - CI and releases: `.github/workflows/ci.yml` (push/PR to master, Node 20/22/24: test, smoke --strict,
   examples byte check, build:browser, parity, npm pack + artifacts) and `release.yml` (tag `vX.Y.Z` that
-  matches `package.json`: same checks, GitHub Release with the .tgz and browser zip, `npm publish
-  --provenance` only when the `NPM_TOKEN` secret exists). The package name is `latex-hw` (free on npm as of
+  matches `package.json`: same checks, GitHub Release with the .tgz and browser zip, `npm publish`
+  through npm trusted publishing over GitHub OIDC, no token; provenance is automatic). The package name is `latex-hw` (free on npm as of
   2026-11-11). Keep the `files` whitelist in `package.json` and `THIRD_PARTY_NOTICES.md` current when you
   add a dependency, font or shipped folder. Lint edited workflows with actionlint (https://github.com/rhysd/actionlint, with shellcheck installed).
 
