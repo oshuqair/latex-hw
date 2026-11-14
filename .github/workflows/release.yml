@@ -24,10 +24,11 @@ jobs:
         with:
           node-version: 24
           cache: npm
-          registry-url: https://registry.npmjs.org
+          # No registry-url here: setup-node would write an .npmrc with a placeholder
+          # NODE_AUTH_TOKEN, and npm would send that instead of using OIDC.
 
-      # Trusted publishing needs npm >= 11.5.1.
-      - run: npm install -g npm@latest && npm --version
+      # Trusted publishing (OIDC) needs npm >= 11.5.1; stay on npm 11.
+      - run: npm install -g npm@^11.5.1 && npm --version
 
       - run: npm ci
 
@@ -56,6 +57,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          if gh release view "${GITHUB_REF_NAME}" >/dev/null 2>&1; then
+            echo "Release ${GITHUB_REF_NAME} already exists; uploading assets with --clobber"
+            gh release upload "${GITHUB_REF_NAME}" "${TGZ}" "latex-hw-browser-${PKG_VERSION}.zip" dist/latex-hw.browser.js --clobber
+            exit 0
+          fi
           gh release create "${GITHUB_REF_NAME}" \
             "${TGZ}" \
             "latex-hw-browser-${PKG_VERSION}.zip" \
